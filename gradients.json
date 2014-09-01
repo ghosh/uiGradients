@@ -1,0 +1,77 @@
+[
+  {
+    "name": "Purple Haze",
+    "colour1": "#526E8C",
+    "colour2": "#55557B"
+  },
+  {
+    "name": "Emerald Water",
+    "colour1": "#348F50",
+    "colour2": "#56B4D3"
+  },
+  {
+    "name": "Lemon Twist",
+    "colour1": "#3CA55C",
+    "colour2": "#B5AC49"
+  },
+  {
+    "name": "Horizon",
+    "colour1": "#003973",
+    "colour2": "#E5E5BE"
+  },
+  {
+    "name": "Rose Water",
+    "colour1": "#E55D87",
+    "colour2": "#5FC3E4"
+  },
+  {
+    "name": "Mango Pulp",
+    "colour1": "#F09819",
+    "colour2": "#EDDE5D"
+  },
+  {
+    "name": "Bloody Mary",
+    "colour1": "#FF512F",
+    "colour2": "#DD2476"
+  },
+  {
+    "name": "Aubergine",
+    "colour1": "#AA076B",
+    "colour2": "#61045F"
+  },
+  {
+    "name": "Aqua Marine",
+    "colour1": "#1A2980",
+    "colour2": "#26D0CE"
+  },
+  {
+    "name": "Sunrise",
+    "colour1": "#FF512F",
+    "colour2": "#F09819"
+  },
+  {
+    "name": "Purple Paradise",
+    "colour1": "#1D2B64",
+    "colour2": "#F8CDDA"
+  },
+  {
+    "name": "Dawn",
+    "colour1": "#00396F",
+    "colour2": "#E5E9BF"
+  },
+  {
+    "name": "Sea Weed",
+    "colour1": "#4CB8C4",
+    "colour2": "#3CD3AD"
+  },
+  {
+    "name": "Pinky",
+    "colour1": "#DD5E89",
+    "colour2": "#F7BB97"
+  },
+  {
+  	"name": "Cherry",
+  	"colour1": "#EB3349",
+  	"colour2": "#F45C43"
+  }
+]
