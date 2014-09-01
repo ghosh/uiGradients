@@ -1,0 +1,21 @@
+.infobox {
+  @include font-smoothing();
+  position: absolute;
+  top: 120px;
+  padding-left: 20px;
+  color: #fff;
+
+  &__heading {
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  &__info {
+    font-family: monospace;
+    font-size: 12px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+  }
+
+}

@@ -1,0 +1,80 @@
+.footer {
+  @include clearfix();
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+
+  border-top: solid 1px rgba(255, 255, 255, 0.1);
+
+  &__toggle {
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 3px;
+  }
+
+  &__footnote {
+    @include font-smoothing();
+    float: right;
+    margin-right: 20px;
+    font-size: 10px;
+    color: #fff;
+    line-height: 59px;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  &__keyboard {
+    float: left;
+    width: 35px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  &__gradient-btn {
+    @include transition(all, 0.25s, ease-in-out);
+    @include clearfix;
+    float: left;
+
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 19px;
+    margin-left: 20px;
+
+    border-radius: 2px;
+    border: solid 1px rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.9);
+
+    text-decoration: none;
+
+    span {
+      float: left;
+      display: inline-block;
+      vertical-align: top;
+      height: 23px;
+      line-height: 23px;
+      font-size: 12px;
+
+    }
+
+    span.text {
+      font-size: 10px;
+    }
+
+    span.icon {
+      margin-right: 8px;
+    }
+
+    &:hover {
+      border: solid 1px rgba(255, 255, 255, 0.2);
+      background-color: rgba(255, 255, 255, 0.4);
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+}

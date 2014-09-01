@@ -1,0 +1,126 @@
+.toggle {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  text-align: center;
+
+  &__dot {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin-top: -5px;
+    border: solid 1px #fff;
+    border-radius: 100%;
+    transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    &--1 {
+      left: 0;
+    }
+
+    &--2 {
+      left: 50%;
+    }
+
+    &--3 {
+      left: 100%;
+    }
+  }
+}
+
+
+.toggle {
+
+  &.is-active {
+    opacity: 0;
+
+
+  }
+
+}
+
+
+
+.modal-toggle {
+  bottom: 0;
+  left: 20px;
+  width: 34px;
+  height: 36px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  vertical-align: middle
+}
+
+.modal-toggle .dot {
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  margin-top: -5px;
+  border: solid 1px #fff;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  -webkit-transition: all 500ms cubic-bezier(0.68, 0, 0.265, 1);
+  -webkit-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.modal-toggle .dot1 {
+  left: 0
+}
+
+.modal-toggle .dot2 {
+  left: 50%;
+  margin-left: -7px
+}
+
+.modal-toggle .dot3 {
+  left: 100%;
+  margin-left: -14px
+}
+
+.modal-toggle:hover .dot {
+  border: solid 1px #f1f1f1;
+}
+
+.modal-toggle.toggled .dot1 {
+  left: 50%;
+  margin-left: -10px;
+  width: 20px;
+  height: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  margin-top: -1px;
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg)
+}
+
+.modal-toggle.toggled .dot2 {
+  opacity: 0
+}
+
+.modal-toggle.toggled .dot3 {
+  left: 50%;
+  margin-left: -10px;
+  width: 20px;
+  height: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  margin-top: -1px;
+  -moz-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg)
+}

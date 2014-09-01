@@ -1,0 +1,151 @@
+/*============================================================================
+  Social Icon Buttons v1.0
+  Author:
+    Carson Shold | @cshold
+    http://www.carsonshold.com
+  MIT License
+==============================================================================*/
+@font-face {
+  font-family: 'icons';
+  src:url('assets/fonts/icons.eot?social');
+  src:url('assets/fonts/icons.eot?#iefixsocial') format('embedded-opentype'),
+    url('assets/fonts/icons.woff?social') format('woff'),
+    url('assets/fonts/icons.ttf?social') format('truetype'),
+    url('assets/fonts/icons.svg?social#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before { content: "c"; }
+.icon-facebook:before { content: "b"; }
+.icon-info:before { content: "a" };
+.icon-plus:before { content: "d" };
+.icon-github:before { content: "e" };
+
+
+/*================ Social share buttons ================*/
+$shareButtonHeight: 23px;
+$shareButtonCleanHeight: 30px;
+$shareCountBg: #fff;
+$shareBorderColor: #cccccc;
+
+.social-sharing {
+
+  a {
+    display: inline-block;
+    color: #fff;
+    border-radius: 2px;
+    margin: 0 10px 10px 0;
+    height: $shareButtonHeight;
+    line-height: $shareButtonHeight;
+    text-decoration: none;
+    font-weight: normal;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  span {
+    display: inline-block;
+    vertical-align: top;
+    height: $shareButtonHeight;
+    line-height: $shareButtonHeight;
+    font-size: 12px;
+  }
+
+  .icon {
+    padding: 0 5px 0 10px;
+
+    &:before {
+      line-height: $shareButtonHeight;
+    }
+  }
+}
+
+.share-title {
+  font-weight: 900;
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+.share-facebook {
+  background-color: #3b5998;
+
+  &:hover {
+    background-color: darken(#3b5998, 10%);
+  }
+}
+
+.share-twitter {
+  background-color: #00aced;
+
+  &:hover {
+    background-color: darken(#00aced, 10%);
+  }
+}
+
+.share-count {
+  position: relative;
+  background-color: $shareCountBg;
+  padding: 0 8px;
+  margin-right: -2px;
+  font-size: 14px;
+  line-height: $shareButtonHeight - 2;
+  color: #333;
+  border-radius: 0 2px 2px 0;
+  border: 1px solid $shareBorderColor;
+  opacity: 0;
+  @include transition(opacity, 0.3s, ease-in);
+
+  &.is-loaded {
+    opacity: 1;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid;
+  }
+
+  &:before {
+    left: -6px;
+    border-right-color: $shareBorderColor;
+  }
+
+  &:after {
+    left: -5px;
+    border-right-color: $shareCountBg;
+  }
+
+  a:hover & {
+    background-color: darken($shareCountBg, 4%);
+
+    &:after {
+      border-right-color: darken($shareCountBg, 4%);
+    }
+  }
+
+}
