@@ -32,7 +32,7 @@ Please feel free to open a new issue [here](https://github.com/Ghosh/uiGradients
 
 ### Source Code
 
-Want to take peek at the source code of the uigradients site? Have a look at the `gh-pages` branch [here](https://github.com/Ghosh/uiGradients/tree/gh-pages).
+Want to take peek at the source code of the uigradients site? Have a look at the `site` branch [here](https://github.com/Ghosh/uiGradients/tree/site).
 
 
 ### Inspiration
@@ -46,3 +46,5 @@ Want to take peek at the source code of the uigradients site? Have a look at the
 -
 
 A little project by [@_ighosh](http://twitter.com/_ighosh).
+
+\m/
