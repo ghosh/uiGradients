@@ -73,5 +73,10 @@
   	"name": "Cherry",
   	"colour1": "#EB3349",
   	"colour2": "#F45C43"
+  },
+  {
+  	"name": "Ocean",
+  	"colour1": "#085078",
+  	"colour2": "#4290A0"
   }
 ]
