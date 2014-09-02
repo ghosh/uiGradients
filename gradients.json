@@ -78,25 +78,30 @@
   	"name": "Mojito",
   	"colour1": "#1D976C",
   	"colour2": "#93F9B9"
-  }
+  },
   {
   	"name": "Mirage",
   	"colour1": "#16222A",
   	"colour2": "#3A6073"
-  }
+  },
   {
   	"name": "Steel Gray",
   	"colour1": "#1F1C2C",
   	"colour2": "#928DAB"
-  }
+  },
   {
   	"name": "Kashmir",
   	"colour1": "#614385",
   	"colour2": "#516395"
-  }
+  },
   {
   	"name": "Electric Violet",
   	"colour1": "#4776E6",
   	"colour2": "#8E54E9"
+  },
+  {
+  	"name": "Venice Blue",
+  	"colour1": "#085078",
+  	"colour2": "#85D8CE"
   }
 ]
