@@ -78,5 +78,10 @@
   	"name": "Ocean",
   	"colour1": "#085078",
   	"colour2": "#4290A0"
+  },
+  {
+  	"name": "Mojito",
+  	"colour1": "#1D976C",
+  	"colour2": "#93F9B9"
   }
 ]
