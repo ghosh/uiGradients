@@ -1,24 +1,24 @@
 // -------------------------------------------------------------
-// InfoText
+// popup
 // -------------------------------------------------------------
 // Thank you -
 // https://medium.com/tictail-makers/giving-animations-life-8b20165224c5
 
-$infotext-height: 280px;
-$infotext-width: 480px;
+$popup-height: 280px;
+$popup-width: 480px;
 
-.infotext {
+.popup {
   @include transition(all, 0.2s, ease-out);
   display: none;
   position: absolute;
   left: 50%;
   top: 50%;
 
-  width: $infotext-width;
-  height: $infotext-height;
+  width: $popup-width;
+  height: $popup-height;
 
-  margin-left: -1 * ($infotext-width/2);
-  margin-top: -1 * ($infotext-height/2);
+  margin-left: -1 * ($popup-width/2);
+  margin-top: -1 * ($popup-height/2);
 
   background-color: #fff;
   text-align: center;

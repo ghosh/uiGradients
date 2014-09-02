@@ -1,12 +1,12 @@
 // http://jsfiddle.net/RgfQw/
-// Setting up the UIGrad namespace if it doenst exist
-window.UIGrad = window.UIGrad || {};
+// Setting up the uiGradients namespace if it doesn't exist
+window.uiGradients = window.uiGradients || {};
 
 (function( window, document, $ ){
 
   "use strict";
 
-  UIGrad.Gradients = (function () {
+  uiGradients.Gradients = (function () {
 
     var gradients;
     var gradientIndex;
@@ -121,6 +121,6 @@ window.UIGrad = window.UIGrad || {};
   })();
 
   // Initiating the events
-  window.UIGrad.Gradients.init();
+  window.uiGradients.Gradients.init();
 
 })( window, document, $ );

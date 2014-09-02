@@ -4,8 +4,13 @@
   bottom: 0;
   width: 100%;
   height: 60px;
+  text-align: center;
 
   border-top: solid 1px rgba(255, 255, 255, 0.1);
+
+  @include respond-to(small) {
+    text-align: none;
+  }
 
   &__toggle {
     float: left;
@@ -16,11 +21,15 @@
 
   &__footnote {
     @include font-smoothing();
-    float: right;
+
     margin-right: 20px;
     font-size: 10px;
     color: #fff;
     line-height: 59px;
+
+    @include respond-to(small) {
+      float: right;
+    }
 
     a {
       text-decoration: none;
@@ -34,6 +43,11 @@
     margin-right: 20px;
     margin-top: 20px;
     margin-left: 20px;
+    display: none;
+
+    @include respond-to(small) {
+      display: block;
+    }
   }
 
   &__gradient-btn {
@@ -52,6 +66,12 @@
     color: rgba(255, 255, 255, 0.9);
 
     text-decoration: none;
+
+    display: none;
+
+    @include respond-to(small) {
+      display: block;
+    }
 
     span {
       float: left;

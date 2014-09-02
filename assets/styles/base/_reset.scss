@@ -100,3 +100,18 @@ hr {
 input, select {
     vertical-align:middle;
 }
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+
+html {
+  font-family: 'Helvetica Neue', sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}

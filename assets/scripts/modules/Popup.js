@@ -1,11 +1,10 @@
-// Setting up the UIGrad namespace if it doenst exist
-window.UIGrad = window.UIGrad || {};
+window.uiGradients = window.uiGradients || {};
 
 (function( window, document, $ ){
 
   "use strict";
 
-  UIGrad.Popup = (function () {
+  uiGradients.Popup = (function () {
 
     var popup = $('#popup');
     var popupTrigger = $("#add-gradient");
@@ -63,6 +62,6 @@ window.UIGrad = window.UIGrad || {};
   })();
 
   // Initiating the events
-  window.UIGrad.Popup.init();
+  window.uiGradients.Popup.init();
 
 })( window, document, $ );

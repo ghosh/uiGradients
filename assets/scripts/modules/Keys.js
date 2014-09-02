@@ -1,11 +1,10 @@
-// Setting up the UIGrad namespace if it doenst exist
-window.UIGrad = window.UIGrad || {};
+window.uiGradients = window.uiGradients || {};
 
 (function( window, document, $ ){
 
   "use strict";
 
-  UIGrad.Keys = (function () {
+  uiGradients.Keys = (function () {
 
     var canvas = $("#canvas");
 
@@ -37,6 +36,6 @@ window.UIGrad = window.UIGrad || {};
   })();
 
   // Initiating the events
-  window.UIGrad.Keys.init();
+  window.uiGradients.Keys.init();
 
 })( window, document, $ );

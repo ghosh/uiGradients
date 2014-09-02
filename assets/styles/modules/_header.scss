@@ -11,10 +11,19 @@
   background-color: #fff;
   z-index: 2;
 
+  text-align: center;
+
+  @include respond-to(small) {
+    text-align: none;
+  }
+
   &__intro {
     display: inline-block;
-    float: left;
     margin-top: 30px;
+
+    @include respond-to(small) {
+      float: left;
+    }
   }
 
   &__logo {
@@ -32,8 +41,12 @@
   }
 
   &__share-btns {
-    display: inline-block;
+    display: none;
     float: right;
     margin-top: 40px;
+
+    @include respond-to(small) {
+      display: inline-block;
+    }
   }
 }

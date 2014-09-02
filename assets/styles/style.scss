@@ -1,36 +1,14 @@
 @import "base/reset";
+@import "base/breakpoints";
 
 @import "helpers/toolkit";
 
 @import "modules/canvas";
 @import "modules/header";
 @import "modules/nav";
+@import "modules/github";
 @import "modules/infobox";
-@import "modules/infotext";
+@import "modules/popup";
 @import "modules/footer";
 
 @import "vendor/social-buttons";
-
-*,
-*:after,
-*:before {
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  box-sizing:border-box;
-}
-
-
-html {
-  font-family: 'Helvetica Neue', sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-.link--github {
-  position: absolute;
-  top: 120px;
-  color: #FFF;
-  right: 30px;
-  text-decoration: none;
-  font-size: 30px;
-}
