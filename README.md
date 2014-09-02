@@ -11,7 +11,7 @@ Adding a gradient to the library is super simple. All the gradients are loaded a
 
 For convenience, the `gradients.json` is the only file which exists in this branch (apart from the readme of course).
 
-To add your gradient, fork this branch, add your two gradient colours in the HEX format along with a name to the end of the json file and submit a pull request.
+To add your gradient, fork this branch, add your two gradient colours in the HEX format along with a name to the end of the json file and submit a pull request. Don't forget the commas!
 
     [
         {
