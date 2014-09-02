@@ -73,5 +73,10 @@
   	"name": "Cherry",
   	"colour1": "#EB3349",
   	"colour2": "#F45C43"
+  },
+  {
+  	"name": "Mojito",
+  	"colour1": "#1D976C",
+  	"colour2": "#93F9B9"
   }
 ]
