@@ -78,5 +78,10 @@
   	"name": "Mojito",
   	"colour1": "#1D976C",
   	"colour2": "#93F9B9"
+  },
+  {
+    "name": "Juicy Orange",
+    "colour1": "#FF8008",
+    "colour2": "#FFC837"
   }
 ]
