@@ -108,5 +108,10 @@
   	"name": "Venice Blue",
   	"colour1": "#085078",
   	"colour2": "#85D8CE"
+  },
+  {
+  	"name": "Shroom Haze",
+  	"colour1": "#5C258D",
+  	"colour2": "#4389A2"
   }
 ]
