@@ -123,5 +123,10 @@
   	"name": "Midnight City",
   	"colour1": "#232526",
   	"colour2": "#414345"
+  },
+  {
+  	"name": "Sea Blizz",
+  	"colour1": "#1CD8D2",
+  	"colour2": "#93EDC7"
   }
 ]
