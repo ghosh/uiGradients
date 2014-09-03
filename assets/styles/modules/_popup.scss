@@ -50,9 +50,16 @@ $popup-width: 480px;
     margin-bottom: 30px;
   }
 
+  &__cont {
+    background-color: #EDF0F1;
+    border-radius: 3px;
+    height: 93px;
+    margin-bottom: 25px;
+  }
+
   &__codeblock {
     overflow: scroll;
-    background-color: #EAEAEA;
+    width: 100%;
     border-radius: 3px;
     padding: 0 10px;
     margin-bottom: 25px;
@@ -64,6 +71,18 @@ $popup-width: 480px;
     }
   }
 
+  &__success {
+    height: 93px;
+    width: 100%;
+    color: #5982AF;
+    display: none;
+    margin-bottom: 25px;
+
+    p {
+      line-height: 93px;
+    }
+  }
+
   &__btn {
     background-color: #1abc9c;
     color: white;
@@ -72,6 +91,7 @@ $popup-width: 480px;
     text-decoration: none;
     padding: 15px 25px;
     border-radius: 20px;
+    outline: 0 !important;
 
     font-weight: bold;
     letter-spacing: 1px;

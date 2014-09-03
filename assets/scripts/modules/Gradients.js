@@ -81,6 +81,8 @@ window.uiGradients = window.uiGradients || {};
 
     function _renderDisplay( direction ) {
 
+      canvas.trigger('updating-gradient');
+
       // Making direction an optional variable
       direction = (typeof direction === "undefined") ? "no direction set" : direction;
 

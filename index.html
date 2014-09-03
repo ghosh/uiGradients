@@ -107,22 +107,32 @@ I'm @_ighosh on twitter.
   </section>
 
 
+
   <section class="popup" id="popup--code">
     <h6 class="popup__heading">
-      Copy the Code
+      Get the CSS Code
     </h6>
 
-    <pre class="popup__codeblock"><code id="codebox">
-      <script id="gradient-code-template" type="text/template">
-background: -webkit-linear-gradient(90deg, {{ colour1 }} 10%, {{ colour2 }} 90%); /* Chrome 10+, Saf5.1+ */
-background:    -moz-linear-gradient(90deg, {{ colour1 }} 10%, {{ colour2 }} 90%); /* FF3.6+ */
-background:     -ms-linear-gradient(90deg, {{ colour1 }} 10%, {{ colour2 }} 90%); /* IE10 */
-background:      -o-linear-gradient(90deg, {{ colour1 }} 10%, {{ colour2 }} 90%); /* Opera 11.10+ */
-background:         linear-gradient(90deg, {{ colour1 }} 10%, {{ colour2 }} 90%); /* W3C */
-      </script>
-    </code></pre>
+    <div class="popup__cont">
 
-    <a href="#" class="popup__btn" target="_blank">Copy to clipboard</a>
+      <div class="popup__success">
+        <p>You got it. Go make something awesome!</p>
+      </div>
+
+      <pre class="popup__codeblock"><code id="codebox">
+        <script id="gradient-code-template" type="text/template">
+  background: -webkit-linear-gradient(90deg, {{ colour1 }} 10%, {{ colour2 }} 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, {{ colour1 }} 10%, {{ colour2 }} 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, {{ colour1 }} 10%, {{ colour2 }} 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, {{ colour1 }} 10%, {{ colour2 }} 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, {{ colour1 }} 10%, {{ colour2 }} 90%); /* W3C */
+        </script>
+      </code></pre>
+
+    </div>
+
+    <a href="#" class="popup__btn" data-clipboard-target="codebox" id="do-copy-to-clipboard">Copy to clipboard</a>
+
   </section>
 
 
@@ -130,6 +140,7 @@ background:         linear-gradient(90deg, {{ colour1 }} 10%, {{ colour2 }} 90%)
     <li class="nav__item" id="nav--prev"><img class="nav__arrow" src="assets/images/back.png" alt="Back"></li>
     <li class="nav__item" id="nav--next"><img class="nav__arrow" src="assets/images/next.png" alt="Back"></li>
   </ul>
+
 
   <footer class="footer">
 
