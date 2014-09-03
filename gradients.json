@@ -100,8 +100,13 @@
   	"colour2": "#516395"
   },
   {
-  	"name": "Electric Violet",
-  	"colour1": "#4776E6",
-  	"colour2": "#8E54E9"
+    "name": "Electric Violet",
+    "colour1": "#4776E6",
+    "colour2": "#8E54E9"
+  },
+  {
+  	"name": "Shroom Haze",
+  	"colour1": "#5C258D",
+  	"colour2": "#4389A2"
   }
 ]
