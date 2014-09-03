@@ -113,5 +113,10 @@
   	"name": "Shroom Haze",
   	"colour1": "#5C258D",
   	"colour2": "#4389A2"
+  },
+  {
+  	"name": "Mystic",
+  	"colour1": "#757F9A",
+  	"colour2": "#D7DDE8"
   }
 ]
