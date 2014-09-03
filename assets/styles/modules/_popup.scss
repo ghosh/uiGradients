@@ -1,5 +1,5 @@
 // -------------------------------------------------------------
-// popup
+// Popup
 // -------------------------------------------------------------
 // Thank you -
 // https://medium.com/tictail-makers/giving-animations-life-8b20165224c5
@@ -48,6 +48,20 @@ $popup-width: 480px;
     color: #696767;
     line-height: 1.6;
     margin-bottom: 30px;
+  }
+
+  &__codeblock {
+    overflow: scroll;
+    background-color: #EAEAEA;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-bottom: 25px;
+
+    code {
+      color: #5982AF;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 12px;
+    }
   }
 
   &__btn {

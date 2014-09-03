@@ -1,5 +1,9 @@
-// http://jsfiddle.net/RgfQw/
-// Setting up the uiGradients namespace if it doesn't exist
+/**
+ * The Main Gradients module. Handles the loading
+ * and shwing of gradient data
+ *
+ * @author Indrashish Ghosh (@_ighosh)
+ */
 window.uiGradients = window.uiGradients || {};
 
 (function( window, document, $ ){
@@ -11,7 +15,8 @@ window.uiGradients = window.uiGradients || {};
     var gradients;
     var gradientIndex;
     var canvas = $("#canvas");
-    var template = $('#gradient-info-template').html();
+    var infoTemplate = $('#gradient-info-template').html();
+    var codeTemplate = $('#gradient-code-template').html();
 
 
     function _loadGradients() {
@@ -50,9 +55,23 @@ window.uiGradients = window.uiGradients || {};
 
       var newGradient = gradients[gradientIndex];
 
-      var gradientInfo = Mustache.to_html(template, newGradient);
+      var gradientInfo = Mustache.to_html(infoTemplate, newGradient);
 
       $('#infobox').stop().animate( {opacity: 0.5}, 100, function(){
+        $(this).html(gradientInfo).animate( {opacity: 1}, {duration:100} );
+      });
+
+    }
+
+
+
+    function _updateCodeBox() {
+
+      var newGradient = gradients[gradientIndex];
+
+      var gradientInfo = Mustache.to_html(codeTemplate, newGradient);
+
+      $('#codebox').stop().animate( {opacity: 0.9}, 100, function(){
         $(this).html(gradientInfo).animate( {opacity: 1}, {duration:100} );
       });
 
@@ -75,6 +94,7 @@ window.uiGradients = window.uiGradients || {};
 
       _updateGradient();
       _updateInfobox();
+      _updateCodeBox();
 
     }
 
