@@ -129,4 +129,14 @@
   	"colour1": "#1CD8D2",
   	"colour2": "#93EDC7"
   }
+  {
+  	"name": "Titanium",
+  	"colour1": "#283048",
+  	"colour2": "#859398"
+  }
+  {
+  	"name": "Mantle",
+  	"colour1": "#24c6dc",
+  	"colour2": "#514a9d"
+  }
 ]
