@@ -136,7 +136,12 @@
   }
   {
   	"name": "Mantle",
-  	"colour1": "#24c6dc",
-  	"colour2": "#514a9d"
+  	"colour1": "#24C6DC",
+  	"colour2": "#514A9D"
+  }
+  {
+  	"name": "Dracula",
+  	"colour1": "#DC2424",
+  	"colour2": "#4A569D"
   }
 ]
