@@ -133,5 +133,30 @@
   	"name": "Sea Blizz",
   	"colour1": "#1CD8D2",
   	"colour2": "#93EDC7"
+  },
+  {
+    "name":"Opa",
+    "colour1": "#3D7EAA",
+    "colour2": "#FFE47A"
+  },
+  {
+  	"name": "Titanium",
+  	"colour1": "#283048",
+  	"colour2": "#859398"
+  },
+  {
+  	"name": "Mantle",
+  	"colour1": "#24C6DC",
+  	"colour2": "#514A9D"
+  },
+  {
+  	"name": "Dracula",
+  	"colour1": "#DC2424",
+  	"colour2": "#4A569D"
+  },
+  {
+  	"name": "Peach",
+  	"colour1": "#ED4264",
+  	"colour2": "#FFEDBC"
   }
 ]
