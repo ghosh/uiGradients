@@ -103,5 +103,10 @@
   	"name": "Electric Violet",
   	"colour1": "#4776E6",
   	"colour2": "#8E54E9"
+  },
+  {
+  	"name": "Venice Blue",
+  	"colour1": "#085078",
+  	"colour2": "#85D8CE"
   }
 ]
