@@ -54,7 +54,7 @@ $popup-width: 480px;
     background-color: #EDF0F1;
     border-radius: 3px;
     height: 93px;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
   }
 
   &__codeblock {
@@ -101,6 +101,13 @@ $popup-width: 480px;
     &:hover {
       background-color: darken( #1abc9c, 12% );
     }
+  }
+}
+
+
+.popup--codeblock {
+  .popup__heading {
+    margin-top: 15px;
   }
 }
 
