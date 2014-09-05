@@ -163,5 +163,10 @@
     "name": "Moonrise",
     "colour1": "#DAE2F8",
     "colour2": "#D6A4A4"
+  },
+  {
+    "name": "Clouds",
+    "colour1": "#FFF",
+    "colour2": "#ECE9E6"
   }
 ]
