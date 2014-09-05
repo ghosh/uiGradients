@@ -168,5 +168,10 @@
     "name": "Clouds",
     "colour1": "#ECE9E6",
     "colour2": "#FFFFFF"
+  },
+  {
+    "name": "Stellar",
+    "colour1": "#7474BF",
+    "colour2": "#348AC7"
   }
 ]
