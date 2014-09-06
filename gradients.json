@@ -173,5 +173,10 @@
     "name": "Stellar",
     "colour1": "#7474BF",
     "colour2": "#348AC7"
+  },
+  {
+  	"name": "Bourbon",
+  	"colour1": "#EC6F66",
+  	"colour2": "#F3A183"
   }
 ]
