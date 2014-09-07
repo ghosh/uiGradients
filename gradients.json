@@ -50,11 +50,6 @@
     "colour2": "#F8CDDA"
   },
   {
-    "name": "Dawn",
-    "colour1": "#00396F",
-    "colour2": "#E5E9BF"
-  },
-  {
     "name": "Sea Weed",
     "colour1": "#4CB8C4",
     "colour2": "#3CD3AD"
@@ -188,5 +183,20 @@
     "name": "Influenza",
     "colour1": "#C04848",
     "colour2": "#480048"
+  },
+  {
+    "name": "Shrimpy",
+    "colour1": "#e43a15",
+    "colour2": "#e65245"
+  },
+  {
+    "name": "Army",
+    "colour1": "#414d0b",
+    "colour2": "#727a17"
+  },
+  {
+    "name": "Miaka",
+    "colour1": "#FC354C",
+    "colour2": "#0ABFBC"
   }
 ]
