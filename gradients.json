@@ -183,5 +183,10 @@
     "name": "Influenza",
     "colour1": "#C04848",
     "colour2": "#480048"
+  },
+  {
+    "name": "Miaka",
+    "colour1": "#FC354C",
+    "colour2": "#0ABFBC"
   }
 ]
