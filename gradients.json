@@ -193,5 +193,10 @@
     "name": "Army",
     "colour1": "#414d0b",
     "colour2": "#727a17"
+  },
+  {
+    "name": "Miaka",
+    "colour1": "#FC354C",
+    "colour2": "#0ABFBC"
   }
 ]
