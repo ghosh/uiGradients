@@ -198,5 +198,10 @@
     "name":"Pinot Noir",
     "colour1":"#4b6cb7",
     "colour2":"#182848"
+  },
+  {
+    "name":"Petrichor",
+    "colour1":"#666600",
+    "colour2":"#999966"
   }
 ]
