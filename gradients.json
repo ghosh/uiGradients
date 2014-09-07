@@ -178,5 +178,10 @@
     "name": "Calm Darya",
     "colour1": "#5f2c82",
     "colour2": "#49a09d"
+  },
+  {
+    "name": "Influenza",
+    "colour1": "#C04848",
+    "colour2": "#480048"
   }
 ]
