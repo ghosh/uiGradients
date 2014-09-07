@@ -183,5 +183,15 @@
     "name": "Influenza",
     "colour1": "#C04848",
     "colour2": "#480048"
+  },
+  {
+    "name": "Shrimpy",
+    "colour1": "#e43a15",
+    "colour2": "#e65245"
+  },
+  {
+    "name": "Army",
+    "colour1": "#414d0b",
+    "colour2": "#727a17"
   }
 ]
