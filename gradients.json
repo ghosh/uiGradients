@@ -223,5 +223,10 @@
     "name": "A Lost Memory",
     "colour1": "#DE6262",
     "colour2": "#FFB88C"
+  },
+  {
+    "name":"Petrichor",
+    "colour1":"#666600",
+    "colour2":"#999966"
   }
 ]
