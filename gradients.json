@@ -228,5 +228,10 @@
     "name":"Petrichor",
     "colour1":"#666600",
     "colour2":"#999966"
+  },
+  {
+    "name":"Aqualicious",
+    "colour1":"#50C9C3",
+    "colour2":"#96DEDA"
   }
 ]
