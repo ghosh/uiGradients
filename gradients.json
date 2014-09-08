@@ -178,5 +178,15 @@
     "name": "Calm Darya",
     "colour1": "#5f2c82",
     "colour2": "#49a09d"
+  },
+  {
+    "name": "Shrimpy",
+    "colour1": "#e43a15",
+    "colour2": "#e65245"
+  },
+  {
+    "name": "Army",
+    "colour1": "#414d0b",
+    "colour2": "#727a17"
   }
 ]
