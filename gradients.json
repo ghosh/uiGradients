@@ -228,5 +228,40 @@
     "name":"Petrichor",
     "colour1":"#666600",
     "colour2":"#999966"
+  },
+  {
+    "name":"Jonquil",
+    "colour1":"#FFEEEE",
+    "colour2":"#DDEFBB"
+  },
+  {
+    "name":"Sirius Tamed",
+    "colour1":"#EFEFBB",
+    "colour2":"#D4D3DD"
+  },
+  {
+    "name":"Kyoto",
+    "colour1":"#c21500",
+    "colour2":"#ffc500"
+  },
+  {
+    "name":"Misty Meadow",
+    "colour1":"#215f00",
+    "colour2":"#e4e4d9"
+  },
+  {
+    "name":"Aqualicious",
+    "colour1":"#50C9C3",
+    "colour2":"#96DEDA"
+  },
+  {
+    "name":"Moor",
+    "colour1":"#616161",
+    "colour2":"#9bc5c3"
+  },
+  {
+    "name":"Almost",
+    "colour1":"#ddd6f3",
+    "colour2":"#faaca8"
   }
 ]
