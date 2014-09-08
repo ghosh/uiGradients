@@ -273,5 +273,10 @@
     "name":"Autumn",
     "colour1":"#DAD299",
     "colour2":"#B0DAB9"
+  },
+  {
+    "name":"Candy",
+    "colour1":"#D3959B",
+    "colour2":"#BFE6BA"
   }
 ]
