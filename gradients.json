@@ -228,5 +228,15 @@
     "name":"Petrichor",
     "colour1":"#666600",
     "colour2":"#999966"
+  },
+  {
+    "name":"Moor",
+    "colour1":"#616161",
+    "colour2":"#9bc5c3"
+  },
+  {
+    "name":"Almost",
+    "colour1":"#ddd6f3",
+    "colour2":"#faaca8"
   }
 ]
