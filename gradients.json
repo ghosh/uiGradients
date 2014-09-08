@@ -213,5 +213,10 @@
     "name":"Blurry Beach",
     "colour1":"#d53369",
     "colour2":"#cbad6d"
+  },
+  {
+    "name":"Vasily",
+    "colour1":"#e9d362",
+    "colour2":"#333333"
   }
 ]
