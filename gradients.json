@@ -229,7 +229,7 @@
     "colour1":"#666600",
     "colour2":"#999966"
   },
-   {
+  {
     "name":"Jonquil",
     "colour1":"#FFEEEE",
     "colour2":"#DDEFBB"
@@ -248,5 +248,10 @@
     "name":"Misty Meadow",
     "colour1":"#215f00",
     "colour2":"#e4e4d9"
+  },
+  {
+    "name":"Aqualicious",
+    "colour1":"#50C9C3",
+    "colour2":"#96DEDA"
   }
 ]
