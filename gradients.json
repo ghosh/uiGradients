@@ -228,5 +228,15 @@
     "name":"Petrichor",
     "colour1":"#666600",
     "colour2":"#999966"
+  },
+   {
+    "name":"Jonquil",
+    "colour1":"#FFEEEE",
+    "colour2":"#DDEFBB"
+  },
+   {
+    "name":"Sirius Tamed",
+    "colour1":"EFEFBB",
+    "colour2":"#D4D3DD"
   }
 ]
