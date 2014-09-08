@@ -198,5 +198,20 @@
     "name":"Pinot Noir",
     "colour1":"#4b6cb7",
     "colour2":"#182848"
+  },
+  {
+    "name":"Day Tripper",
+    "colour1":"#f857a6",
+    "colour2":"#ff5858"
+  },
+  {
+    "name":"Namn",
+    "colour1":"a73737",
+    "colour2":"7a2828"
+  },
+  {
+    "name":"Blurry Beach",
+    "colour1":"d53369",
+    "colour2":"cbad6d"
   }
 ]
