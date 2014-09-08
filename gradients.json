@@ -206,12 +206,12 @@
   },
   {
     "name":"Namn",
-    "colour1":"a73737",
-    "colour2":"7a2828"
+    "colour1":"#a73737",
+    "colour2":"#7a2828"
   },
   {
     "name":"Blurry Beach",
-    "colour1":"d53369",
-    "colour2":"cbad6d"
+    "colour1":"#d53369",
+    "colour2":"#cbad6d"
   }
 ]
