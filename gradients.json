@@ -268,5 +268,10 @@
     "name":"Winter",
     "colour1":"#E6DADA",
     "colour2":"#274046"
+  },
+  {
+    "name":"Autumn",
+    "colour1":"#DAD299",
+    "colour2":"#B0DAB9"
   }
 ]
