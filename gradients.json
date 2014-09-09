@@ -293,5 +293,10 @@
     "name":"Candy",
     "colour1":"#D3959B",
     "colour2":"#BFE6BA"
+  },
+  {
+    "name":"Reef",
+    "colour1":"#00d2ff",
+    "colour2":"#3a7bd5"
   }
 ]
