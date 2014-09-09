@@ -323,5 +323,10 @@
     "name":"Ash",
     "colour1":"#606c88",
     "colour2":"#3f4c6b"
+  },
+  {
+    "name":"Shadow Night",
+    "colour1":"#000000",
+    "colour2":"#53346D"
   }
 ]
