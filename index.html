@@ -1,0 +1,169 @@
+<!--
+ _  _  __  ___  ____   __   ____  __  ____  __ _  ____  ____
+/ )( \(  )/ __)(  _ \ / _\ (    \(  )(  __)(  ( \(_  _)/ ___)
+) \/ ( )(( (_ \ )   //    \ ) D ( )(  ) _) /    /  )(  \___ \
+\____/(__)\___/(__\_)\_/\_/(____/(__)(____)\_)__) (__) (____/
+
+Beautiful colour gradients for design and code.
+
+Hit me up if you want to collaborate on a side project or something.
+I'm @_ighosh on twitter.
+
+ -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" href="main.css">
+
+  <title>uiGradients - Beautiful coloured gradients</title>
+  <meta name="description" content="A handpicked collection of beautiful colour gradients for use in designs and code">
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="uiGradients"/>
+  <meta property="og:url" content="http://uigradients.com"/>
+  <meta property="og:title" content="uiGradients - Beautiful coloured gradients"/>
+  <meta property="og:description" content="uiGradients is a handpicked collection of beautiful colour gradients for use in designs and code." />
+  <meta property="og:image" content="http://uigradients.com/assets/images/uigradients.jpg"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16" />
+
+</head>
+
+<body>
+
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49604576-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+  <div class="overlay"></div>
+
+  <header class="header">
+
+    <div class="header__intro">
+      <img class="header__logo" src="assets/images/logo.png" alt="Ui Gradients">
+      <span class="header__byline">Beautiful colour gradients</span>
+    </div>
+
+   <div class="social-sharing header__share-btns" data-permalink="http://uigradients.com">
+
+      <!-- https://developers.facebook.com/docs/plugins/share-button/ -->
+      <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://uigradients.com" class="share-facebook">
+        <span class="icon icon-facebook"></span>
+        <span class="share-title">Share</span>
+        <span class="share-count">0</span>
+      </a>
+
+      <!-- https://dev.twitter.com/docs/intents -->
+      <a target="_blank" href="http://twitter.com/share?url=http://uigradients.com&amp;text=Beautiful%20colour%20gradients%20for%20designers%20and%20developers&amp;via=_ighosh" class="share-twitter">
+        <span class="icon icon-twitter"></span>
+        <span class="share-title">Tweet</span>
+        <span class="share-count">0</span>
+      </a>
+
+    </div>
+
+  </header>
+
+  <section id="canvas" class="canvas"></section>
+
+  <section class="infobox" id="infobox">
+    <script id="gradient-info-template" type="text/template">
+      <p id="gradient-name" class="infobox__heading">{{ name }}</p>
+      <p class="infobox__info">Colour 1: <span id="gradient-from">{{ colour1 }}</span></p>
+      <p class="infobox__info">Colour 2: <span id="gradient-to">{{ colour2 }}</span></p>
+    </script>
+  </section>
+
+
+  <a class="icon icon-github link--github" href="https://github.com/Ghosh/uiGradients"></a>
+
+
+  <section class="popup" id="popup-github">
+    <h6 class="popup__heading">
+      Add your gradient
+    </h6>
+
+    <p class="popup__para">
+      Adding a gradient is easy. All gradients are read from a <code>gradients.json</code> file which is available in this project's repo. Simply add your gradient details to it and submit a pull request.
+    </p>
+
+    <a href="https://github.com/Ghosh/uiGradients#contributing" class="popup__btn" target="_blank">Tell me more</a>
+  </section>
+
+
+
+  <section class="popup popup--codeblock" id="popup--code">
+    <h6 class="popup__heading">
+      Get the CSS Code
+    </h6>
+
+    <div class="popup__cont">
+
+      <div class="popup__success">
+        <p>You got it. Go make something awesome!</p>
+      </div>
+
+      <pre class="popup__codeblock"><code id="codebox">
+        <script id="gradient-code-template" type="text/template">
+  background: -webkit-linear-gradient(90deg, {{ colour1 }} 10%, {{ colour2 }} 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, {{ colour1 }} 10%, {{ colour2 }} 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, {{ colour1 }} 10%, {{ colour2 }} 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, {{ colour1 }} 10%, {{ colour2 }} 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, {{ colour1 }} 10%, {{ colour2 }} 90%); /* W3C */
+        </script>
+      </code></pre>
+
+    </div>
+
+    <a href="#" class="popup__btn" data-clipboard-target="codebox" id="do-copy-to-clipboard">Copy to clipboard</a>
+
+  </section>
+
+
+  <ul class="nav" id="nav">
+    <li class="nav__item" id="nav--prev"><span class="nav__arrow icon icon-prev"></span></li>
+    <li class="nav__item" id="nav--next"><span class="nav__arrow icon icon-next"></span></li>
+  </ul>
+
+
+  <footer class="footer">
+
+    <a href="#" class="footer__gradient-btn" id="do-show-github-popup">
+      <span class="icon icon-plus"></span>
+      <span class="text">Add Gradient (Spacebar)</span>
+    </a>
+
+    <a href="#" class="footer__gradient-btn" id="do-show-code-popup">
+      <span class="icon icon-code"></span>
+      <span class="text">Get CSS Code (Enter)</span>
+    </a>
+
+    <p class="footer__footnote">
+      A little thing by <a href="http://twitter.com/_ighosh" target="_blank">@_ighosh</a>
+    </p>
+
+    <img class="footer__keyboard" src="assets/images/keyboard.svg" alt="Toggle gradients with the arrow keys">
+
+  </footer>
+
+  <script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>

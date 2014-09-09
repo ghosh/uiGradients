@@ -1,0 +1,52 @@
+.header {
+  @include clearfix();
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: #fff;
+  z-index: 2;
+
+  text-align: center;
+
+  @include respond-to(small) {
+    text-align: none;
+  }
+
+  &__intro {
+    display: inline-block;
+    margin-top: 30px;
+
+    @include respond-to(small) {
+      float: left;
+    }
+  }
+
+  &__logo {
+    width: 155px;
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  &__byline {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #979292;
+    letter-spacing: 0.03rem;
+  }
+
+  &__share-btns {
+    display: none;
+    float: right;
+    margin-top: 40px;
+
+    @include respond-to(small) {
+      display: inline-block;
+    }
+  }
+}
