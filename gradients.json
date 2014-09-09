@@ -263,5 +263,10 @@
     "name":"Almost",
     "colour1":"#ddd6f3",
     "colour2":"#faaca8"
+  },
+  {
+    "name":"Reef",
+    "colour1":"#00d2ff",
+    "colour2":"#3a7bd5"
   }
 ]
