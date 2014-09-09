@@ -263,5 +263,10 @@
     "name":"Almost",
     "colour1":"#ddd6f3",
     "colour2":"#faaca8"
+  },
+  {
+    "name":"Shadow Night",
+    "colour1":"#000000",
+    "colour2":"#53346D"
   }
 ]
