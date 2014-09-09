@@ -297,6 +297,26 @@
   {
     "name":"Reef",
     "colour1":"#00d2ff",
-    "colour2":"#3a7bd5"
+    "colour2":"#3a7bd5",
+  },
+  {
+    "name":"The Strain",
+    "colour1":"#870000",
+    "colour2":"#190A05"
+  },
+  {
+    "name":"Dirty Fog",
+    "colour1":"#B993D6",
+    "colour2":"#8CA6DB"
+  },
+  {
+    "name":"Earthly",
+    "colour1":"#649173",
+    "colour2":"#DBD5A4"
+  },
+  {
+    "name":"Virgin",
+    "colour1":"#C9FFBF",
+    "colour2":"#FFAFBD"
   }
 ]
