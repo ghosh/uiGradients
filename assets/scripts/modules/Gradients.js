@@ -39,6 +39,7 @@ window.uiGradients = window.uiGradients || {};
           'background-image': [
             '-webkit-linear-gradient(left,'+from+','+to+')',
             '-moz-linear-gradient(left,'+from+','+to+')',
+            '-ms-linear-gradient(left,'+from+','+to+')',
             '-o-linear-gradient(left,'+from+','+to+')',
             'linear-gradient(left,'+from+','+to+')'
           ]
