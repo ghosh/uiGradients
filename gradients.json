@@ -20,6 +20,11 @@
     "colour2":"#5FC3E4"
   },
   {
+    "name": "Frozen",
+    "colour1": "#403B4A",
+    "colour2": "#E7E9BB"
+  },
+  {
     "name":"Mango Pulp",
     "colour1":"#F09819",
     "colour2":"#EDDE5D"
@@ -98,6 +103,11 @@
     "name":"Venice Blue",
     "colour1":"#085078",
     "colour2":"#85D8CE"
+  },
+  {
+    "name":"Bora Bora",
+    "colour1":"#2BC0E4",
+    "colour2":"#EAECC6"
   },
   {
     "name":"Moss",
@@ -263,5 +273,60 @@
     "name":"Almost",
     "colour1":"#ddd6f3",
     "colour2":"#faaca8"
+  },
+  {
+    "name": "Forever Lost",
+    "colour1": "#5D4157",
+    "colour2": "#A8CABA"
+  },
+  {
+    "name":"Winter",
+    "colour1":"#E6DADA",
+    "colour2":"#274046"
+  },
+  {
+    "name":"Autumn",
+    "colour1":"#DAD299",
+    "colour2":"#B0DAB9"
+  },
+  {
+    "name":"Candy",
+    "colour1":"#D3959B",
+    "colour2":"#BFE6BA"
+  },
+  {
+    "name":"Reef",
+    "colour1":"#00d2ff",
+    "colour2":"#3a7bd5",
+  },
+  {
+    "name":"The Strain",
+    "colour1":"#870000",
+    "colour2":"#190A05"
+  },
+  {
+    "name":"Dirty Fog",
+    "colour1":"#B993D6",
+    "colour2":"#8CA6DB"
+  },
+  {
+    "name":"Earthly",
+    "colour1":"#649173",
+    "colour2":"#DBD5A4"
+  },
+  {
+    "name":"Virgin",
+    "colour1":"#C9FFBF",
+    "colour2":"#FFAFBD"
+  }
+  {
+    "name":"Ash",
+    "colour1":"#606c88",
+    "colour2":"#3f4c6b"
+  },
+  {
+    "name":"Shadow Night",
+    "colour1":"#000000",
+    "colour2":"#53346D"
   }
 ]
