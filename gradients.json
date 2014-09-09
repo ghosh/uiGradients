@@ -20,6 +20,11 @@
     "colour2":"#5FC3E4"
   },
   {
+    "name": "Frozen",
+    "colour1": "#403B4A",
+    "colour2": "#E7E9BB"
+  },
+  {
     "name":"Mango Pulp",
     "colour1":"#F09819",
     "colour2":"#EDDE5D"
@@ -98,6 +103,11 @@
     "name":"Venice Blue",
     "colour1":"#085078",
     "colour2":"#85D8CE"
+  },
+  {
+    "name":"Bora Bora",
+    "colour1":"#2BC0E4",
+    "colour2":"#EAECC6"
   },
   {
     "name":"Moss",
@@ -268,5 +278,20 @@
     "name": "Forever Lost",
     "colour1": "#5D4157",
     "colour2": "#A8CABA"
+  },
+  {
+    "name":"Winter",
+    "colour1":"#E6DADA",
+    "colour2":"#274046"
+  },
+  {
+    "name":"Autumn",
+    "colour1":"#DAD299",
+    "colour2":"#B0DAB9"
+  },
+  {
+    "name":"Candy",
+    "colour1":"#D3959B",
+    "colour2":"#BFE6BA"
   }
 ]
