@@ -20,9 +20,9 @@
     "colour2":"#5FC3E4"
   },
   {
-    "name": "Frozen",
-    "colour1": "#403B4A",
-    "colour2": "#E7E9BB"
+    "name":"Frozen",
+    "colour1":"#403B4A",
+    "colour2":"#E7E9BB"
   },
   {
     "name":"Mango Pulp",
@@ -230,9 +230,9 @@
     "colour2":"#333333"
   },
   {
-    "name": "A Lost Memory",
-    "colour1": "#DE6262",
-    "colour2": "#FFB88C"
+    "name":"A Lost Memory",
+    "colour1":"#DE6262",
+    "colour2":"#FFB88C"
   },
   {
     "name":"Petrichor",
@@ -275,9 +275,9 @@
     "colour2":"#faaca8"
   },
   {
-    "name": "Forever Lost",
-    "colour1": "#5D4157",
-    "colour2": "#A8CABA"
+    "name":"Forever Lost",
+    "colour1":"#5D4157",
+    "colour2":"#A8CABA"
   },
   {
     "name":"Winter",
@@ -297,7 +297,7 @@
   {
     "name":"Reef",
     "colour1":"#00d2ff",
-    "colour2":"#3a7bd5",
+    "colour2":"#3a7bd5"
   },
   {
     "name":"The Strain",
@@ -318,7 +318,7 @@
     "name":"Virgin",
     "colour1":"#C9FFBF",
     "colour2":"#FFAFBD"
-  }
+  },
   {
     "name":"Ash",
     "colour1":"#606c88",
