@@ -328,5 +328,15 @@
     "name":"Shadow Night",
     "colour1":"#000000",
     "colour2":"#53346D"
+  },
+  {
+    "name":"Cherryblossoms",
+    "colour1":"#FBD3E9",
+    "colour2":"#BB377D"
+  },
+  {
+    "name":"Parklife",
+    "colour1":"#ADD100",
+    "colour2":"#7B920A"
   }
 ]
