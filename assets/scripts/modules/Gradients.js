@@ -51,6 +51,29 @@ window.uiGradients = window.uiGradients || {};
     }
 
 
+    function _updateHash() {
+
+      var newGradient = gradients[gradientIndex];
+
+      window.location.hash = newGradient.name.replace(/\s/g, '');
+
+    }
+
+
+    function _loadHash() {
+
+      var hash = window.location.hash.substring(1);
+
+      $.each(gradients, function(index, item) {
+        if(item.name.replace(/\s/g, '') === hash) {
+          gradientIndex = index;
+          return false;
+        }
+      });
+
+    }
+
+
     function _updateInfobox() {
 
       var newGradient = gradients[gradientIndex];
@@ -97,6 +120,7 @@ window.uiGradients = window.uiGradients || {};
       _updateGradient();
       _updateInfobox();
       _updateCodeBox();
+      _updateHash();
 
     }
 
@@ -106,6 +130,8 @@ window.uiGradients = window.uiGradients || {};
 
         var randomIndex = Math.floor(Math.random() * ((gradients.length - 1) - 0 + 1)) + 0;
         gradientIndex = randomIndex;
+
+        _loadHash();
         _renderDisplay();
 
       });
