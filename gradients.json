@@ -328,5 +328,10 @@
     "name":"Shadow Night",
     "colour1":"#000000",
     "colour2":"#53346D"
+  },
+  {
+    "name":"Red Mist",
+    "colour1":"#000000",
+    "colour2":"#e74c3c"
   }
 ]
