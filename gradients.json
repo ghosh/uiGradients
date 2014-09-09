@@ -20,6 +20,11 @@
     "colour2":"#5FC3E4"
   },
   {
+    "name": "Frozen",
+    "colour1": "#403B4A",
+    "colour2": "#E7E9BB"
+  }
+  {
     "name":"Mango Pulp",
     "colour1":"#F09819",
     "colour2":"#EDDE5D"
