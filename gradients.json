@@ -338,5 +338,15 @@
     "name":"Parklife",
     "colour1":"#ADD100",
     "colour2":"#7B920A"
+  },
+  {
+    "name": "Dance To Forget",
+    "colour1": "#FF4E50",
+    "colour2": "#F9D423"
+  },
+  {
+    "name": "Starfall",
+    "colour1": "#F0C27B",
+    "colour2": "#4B1248"
   }
 ]
