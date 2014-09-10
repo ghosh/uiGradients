@@ -328,5 +328,22 @@
     "name":"Shadow Night",
     "colour1":"#000000",
     "colour2":"#53346D"
+  },
+  {
+        "name": "Teal Love",
+        "colour1": "#AAFFA9",
+        "colour2": "#11FFBD"
+  },
+  {
+        "name": "Neon Life",
+        "colour1": "#B3FFAB",
+        "colour2": "#12FFF7"
+  },
+  {
+        "name": "Man of Steel",
+        "colour1": "#780206",
+        "colour2": "#061161"
   }
+  
+  
 ]
