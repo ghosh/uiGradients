@@ -328,5 +328,45 @@
     "name":"Shadow Night",
     "colour1":"#000000",
     "colour2":"#53346D"
+  },
+  {
+    "name":"Cherryblossoms",
+    "colour1":"#FBD3E9",
+    "colour2":"#BB377D"
+  },
+  {
+    "name":"Parklife",
+    "colour1":"#ADD100",
+    "colour2":"#7B920A"
+  },
+  {
+    "name": "Dance To Forget",
+    "colour1": "#FF4E50",
+    "colour2": "#F9D423"
+  },
+  {
+    "name": "Starfall",
+    "colour1": "#F0C27B",
+    "colour2": "#4B1248"
+  },
+  {
+    "name":"Red Mist",
+    "colour1":"#000000",
+    "colour2":"#e74c3c"
+  },
+  {
+    "name": "Teal Love",
+    "colour1": "#AAFFA9",
+    "colour2": "#11FFBD"
+  },
+  {
+    "name": "Neon Life",
+    "colour1": "#B3FFAB",
+    "colour2": "#12FFF7"
+  },
+  {
+    "name": "Man of Steel",
+    "colour1": "#780206",
+    "colour2": "#061161"
   }
 ]
