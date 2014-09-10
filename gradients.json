@@ -353,5 +353,20 @@
     "name":"Red Mist",
     "colour1":"#000000",
     "colour2":"#e74c3c"
+  },
+  {
+    "name": "Teal Love",
+    "colour1": "#AAFFA9",
+    "colour2": "#11FFBD"
+  },
+  {
+    "name": "Neon Life",
+    "colour1": "#B3FFAB",
+    "colour2": "#12FFF7"
+  },
+  {
+    "name": "Man of Steel",
+    "colour1": "#780206",
+    "colour2": "#061161"
   }
 ]
