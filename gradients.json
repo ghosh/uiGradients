@@ -348,5 +348,10 @@
     "name": "Starfall",
     "colour1": "#F0C27B",
     "colour2": "#4B1248"
+  },
+  {
+    "name":"Red Mist",
+    "colour1":"#000000",
+    "colour2":"#e74c3c"
   }
 ]
