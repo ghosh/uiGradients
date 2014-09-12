@@ -379,4 +379,19 @@
     "colour1": "#556270",
     "colour2": "#FF6B6B"
   }
+  {
+    "name":"Shore",
+    "colour1":"#70e1f5",
+    "colour2":"#ffd194"
+  }
+  {
+    "name":"Facebook Messenger",
+    "colour1":"#00c6ff",
+    "colour2":"#0072ff"
+  }
+  {
+    "name":"SoundCloud",
+    "colour1":"#fe8c00",
+    "colour2":"#f83600"
+  }
 ]
