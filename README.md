@@ -5,6 +5,10 @@ This is the repo for [uigradients.com](http://uigradients.com) - A handpicked co
 Hopefully this little effort will help you draw inspiration and serve as a resource for picking gradients for your own projects. 
 
 
+### Contributors
+
+A huge thank you to all the contributors. A complete list can be found [here](https://github.com/Ghosh/uiGradients/network/members).
+
 ### Contributing
 
 Adding a gradient to the library is super simple. All the gradients are loaded and rendered from a single `gradients.json` file. Currently only gradients with two colours are allowed.
