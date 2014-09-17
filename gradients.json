@@ -408,5 +408,10 @@
     "name": "Friday",
     "colour1": "#83a4d4",
     "colour2": "#b6fbff"
+  },
+  {
+    "name": "Martini",
+    "colour1": "#FDFC47",
+    "colour2": "#24FE41"
   }
 ]
