@@ -429,5 +429,10 @@
     "name": "Crazy OrangeI",
     "colour1": "#D38312",
     "colour2": "#A83279"
+  },
+  {
+    "name":"Hersheys",
+    "colour1":"#e6e7e8",
+    "colour2":"#f1f1f2"
   }
 ]
