@@ -403,5 +403,10 @@
     "name": "ServQuick",
     "colour1": "#485563",
     "colour2": "#29323c"
+  },
+  {
+    "name": "Friday",
+    "colour1": "#83a4d4",
+    "colour2": "#b6fbff"
   }
 ]
