@@ -380,6 +380,7 @@
     "colour2": "#FF6B6B"
   },
   {
+<<<<<<< HEAD
     "name":"Shore",
     "colour1":"#70e1f5",
     "colour2":"#ffd194"
@@ -418,5 +419,10 @@
     "name": "Metallic Toad",
     "colour1": "#abbaab",
     "colour2": "#ffffff"
+  },
+  {
+    "name": "Between The Clouds",
+    "colour1": "#73C8A9",
+    "colour2": "#373B44"
   }
 ]
