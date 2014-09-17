@@ -328,5 +328,10 @@
     "name":"Shadow Night",
     "colour1":"#000000",
     "colour2":"#53346D"
+  },
+  {
+    "name":"Hersheys",
+    "colour1":"#e6e7e8",
+    "colour2":"#f1f1f2"
   }
 ]
