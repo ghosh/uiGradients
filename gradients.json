@@ -433,5 +433,10 @@
     "name":"Hersheys",
     "colour1":"#594a41",
     "colour2":"#9a8478"
-  }
+  },
+   {
+    "name":"Purple Bliss",
+    "colour1":"#360033",
+    "colour2":"#0b8793"
+   }
 ]
