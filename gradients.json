@@ -443,5 +443,10 @@
     "name":"Purple Bliss",
     "colour1":"#360033",
     "colour2":"#0b8793"
+  },
+  {
+    "name":"Predawn",
+    "colour1":"#FFA17F",
+    "colour2":"#00223E"
   }
 ]
