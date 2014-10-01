@@ -433,5 +433,10 @@
     "name":"Hersheys",
     "colour1":"#594a41",
     "colour2":"#9a8478"
+  },
+  {
+    "name":"Pastel Orange at the Sun",
+    "colour1":"#ffb347",
+    "colour2":"#ffcc33"
   }
 ]
