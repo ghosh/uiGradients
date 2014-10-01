@@ -438,5 +438,10 @@
     "name": "Talking To Mice Elf",
     "colour1": "#948E99",
     "colour2": "#2E1437"
+  },
+  {
+    "name":"Purple Bliss",
+    "colour1":"#360033",
+    "colour2":"#0b8793"
   }
 ]
