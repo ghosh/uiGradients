@@ -340,14 +340,14 @@
     "colour2":"#7B920A"
   },
   {
-    "name": "Dance To Forget",
-    "colour1": "#FF4E50",
-    "colour2": "#F9D423"
+    "name":"Dance To Forget",
+    "colour1":"#FF4E50",
+    "colour2":"#F9D423"
   },
   {
-    "name": "Starfall",
-    "colour1": "#F0C27B",
-    "colour2": "#4B1248"
+    "name":"Starfall",
+    "colour1":"#F0C27B",
+    "colour2":"#4B1248"
   },
   {
     "name":"Red Mist",
@@ -355,29 +355,29 @@
     "colour2":"#e74c3c"
   },
   {
-    "name": "Teal Love",
-    "colour1": "#AAFFA9",
-    "colour2": "#11FFBD"
+    "name":"Teal Love",
+    "colour1":"#AAFFA9",
+    "colour2":"#11FFBD"
   },
   {
-    "name": "Neon Life",
-    "colour1": "#B3FFAB",
-    "colour2": "#12FFF7"
+    "name":"Neon Life",
+    "colour1":"#B3FFAB",
+    "colour2":"#12FFF7"
   },
   {
-    "name": "Man of Steel",
-    "colour1": "#780206",
-    "colour2": "#061161"
+    "name":"Man of Steel",
+    "colour1":"#780206",
+    "colour2":"#061161"
   },
   {
-    "name": "Amethyst",
-    "colour1": "#9D50BB",
-    "colour2": "#6E48AA"
+    "name":"Amethyst",
+    "colour1":"#9D50BB",
+    "colour2":"#6E48AA"
   },
   {
-    "name": "Cheer Up Emo Kid",
-    "colour1": "#556270",
-    "colour2": "#FF6B6B"
+    "name":"Cheer Up Emo Kid",
+    "colour1":"#556270",
+    "colour2":"#FF6B6B"
   },
   {
     "name":"Shore",
@@ -395,43 +395,68 @@
     "colour2":"#f83600"
   },
   {
-    "name": "Behongo",
-    "colour1": "#52c234",
-    "colour2": "#061700"
+    "name":"Behongo",
+    "colour1":"#52c234",
+    "colour2":"#061700"
   },
   {
-    "name": "ServQuick",
-    "colour1": "#485563",
-    "colour2": "#29323c"
+    "name":"ServQuick",
+    "colour1":"#485563",
+    "colour2":"#29323c"
   },
   {
-    "name": "Friday",
-    "colour1": "#83a4d4",
-    "colour2": "#b6fbff"
+    "name":"Friday",
+    "colour1":"#83a4d4",
+    "colour2":"#b6fbff"
   },
   {
-    "name": "Martini",
-    "colour1": "#FDFC47",
-    "colour2": "#24FE41"
+    "name":"Martini",
+    "colour1":"#FDFC47",
+    "colour2":"#24FE41"
   },
   {
-    "name": "Metallic Toad",
-    "colour1": "#abbaab",
-    "colour2": "#ffffff"
+    "name":"Metallic Toad",
+    "colour1":"#abbaab",
+    "colour2":"#ffffff"
   },
   {
-    "name": "Between The Clouds",
-    "colour1": "#73C8A9",
-    "colour2": "#373B44"
+    "name":"Between The Clouds",
+    "colour1":"#73C8A9",
+    "colour2":"#373B44"
   },
   {
-    "name": "Crazy OrangeI",
-    "colour1": "#D38312",
-    "colour2": "#A83279"
+    "name":"Crazy Orange I",
+    "colour1":"#D38312",
+    "colour2":"#A83279"
   },
   {
     "name":"Hersheys",
-    "colour1":"#594a41",
+    "colour1":"#1e130c",
     "colour2":"#9a8478"
+  },
+  {
+    "name":"Talking To Mice Elf",
+    "colour1":"#948E99",
+    "colour2":"#2E1437"
+  },
+  {
+    "name":"Purple Bliss",
+    "colour1":"#360033",
+    "colour2":"#0b8793"
+  },
+  {
+    "name":"Predawn",
+    "colour1":"#FFA17F",
+    "colour2":"#00223E"
+  },
+  {
+    "name":"Endless River",
+    "colour1":"#43cea2",
+    "colour2":"#185a9d"
+  },
+  {
+    "name":"Pastel Orange at the Sun",
+    "colour1":"#ffb347",
+    "colour2":"#ffcc33"
   }
 ]
