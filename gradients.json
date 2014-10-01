@@ -425,7 +425,7 @@
     "colour2": "#373B44"
   },
   {
-    "name": "Crazy OrangeI",
+    "name": "Crazy Orange I",
     "colour1": "#D38312",
     "colour2": "#A83279"
   },
@@ -433,5 +433,10 @@
     "name":"Hersheys",
     "colour1":"#1e130c",
     "colour2":"#9a8478"
+  },
+  {
+    "name": "Talking To Mice Elf",
+    "colour1": "#948E99",
+    "colour2": "#2E1437"
   }
 ]
