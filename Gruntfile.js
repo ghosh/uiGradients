@@ -39,20 +39,16 @@ module.exports = function(grunt) {
     // -------------------------------------------------------
     // Cache Busting - Dynamically busts cache
     // -------------------------------------------------------
-    cacheBust: {
-
-      options: {
-        encoding: 'utf8',
-        algorithm: 'md5',
-        length: 16
-      },
-
-      assets: {
-          files: [{
-              src: ['index.html']
-          }]
-      }
-
+    cachebreaker: {
+        dev: {
+            options: {
+                match: ['site.js', 'site.css'],
+                replacement: 'time'
+            },
+            files: {
+                src: ['index.html']
+            }
+        }
     },
 
     // -------------------------------------------------------
