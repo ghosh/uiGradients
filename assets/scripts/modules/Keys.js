@@ -7,20 +7,37 @@ window.uiGradients = window.uiGradients || {};
   uiGradients.Keys = (function () {
 
     var canvas = $("#canvas");
+    var pallete = $("#pallete");
 
     function _bindEvents () {
 
       $(document).on('keydown', function(event) {
         switch(event.which) {
+
           case 37: // left
+            if (pallete.hasClass('is-active')) {
+              return;
+            }
             canvas.trigger('changeDown');
           break;
 
           case 39: // right
+            if (pallete.hasClass('is-active')) {
+              return;
+            }
             canvas.trigger('changeUp');
           break;
 
-          default: return; // exit this handler for other keys
+          case 16: // shift
+            pallete.trigger('toggle');
+          break;
+
+          case 27: // esc
+            pallete.trigger('close');
+            close();
+          break;
+
+          default: return; // exit this handler
         }
       });
     }

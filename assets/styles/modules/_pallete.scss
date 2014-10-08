@@ -1,0 +1,80 @@
+.pallete {
+  @include clearfix();
+  @include transition (all, 0.5s, cubic-bezier(0.68, -0.55, 0.265, 1.55));
+  @include translate(0, -100%, 0);
+
+  opacity: 0;
+
+  position: absolute;
+  z-index: 2;
+
+  margin-top: 100px;
+
+  height: calc(100% - 100px);
+  width: 100%;
+
+  background-color: #F8F8F8;
+  overflow: scroll;
+
+  &.is-active {
+    @include translate(0, 0, 0);
+    opacity: 1;
+  }
+
+  &__list {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    @include transition (all, 0.1s, ease-in-out);
+    @include clearfix();
+
+    height: 150px;
+    width: 100%;
+
+    float: left;
+    padding: 10px;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: #f8f8f8;
+    }
+
+    @include respond-to(medium) {
+      width: 50%;
+    }
+
+    @include respond-to(large) {
+      width: 33.33%;
+    }
+  }
+
+  &__gradient {
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    border-radius: 3px;
+  }
+
+  &__name {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 130px;
+  }
+
+  &__selected {
+    float: right;
+    span {
+      line-height: 40px;
+      margin-right: 20px;
+      color: #5BB457;
+    }
+  }
+}

@@ -209,6 +209,11 @@ module.exports = function(grunt) {
       scripts: {
         files: ['assets/scripts/**/*.js'],
         tasks: ['concat', 'notify:scripts']
+      },
+
+      markup: {
+        files: ['index.html'],
+        tasks: ['notify:markup']
       }
 
     },
@@ -244,6 +249,13 @@ module.exports = function(grunt) {
         options: {
           title: 'Styles Injected',
           message: 'Sass succesfully compiled',
+        }
+      },
+
+      scripts: {
+        options: {
+          title: 'Yo Dawg!',
+          message: 'Your scripts be injected',
         }
       }
     }

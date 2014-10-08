@@ -31,10 +31,14 @@ uiGradients.Popup = uiGradients.Popup || {};
    */
   uiGradients.Popup.Github = (function () {
 
+    var pallete = $("#pallete");
     var popup = $('#popup-github');
     var popupTrigger = $("#do-show-github-popup");
 
     function show() {
+      if ( pallete.hasClass('is-active') ) {
+        return;
+      };
       popup.addClass('is-active');
     }
 
@@ -98,10 +102,14 @@ uiGradients.Popup = uiGradients.Popup || {};
    */
     uiGradients.Popup.Code = (function () {
 
+    var pallete = $("#pallete");
     var popup = $('#popup--code');
     var popupTrigger = $("#do-show-code-popup");
 
     function show() {
+      if ( pallete.hasClass('is-active') ) {
+        return;
+      };
       popup.addClass('is-active');
     }
 

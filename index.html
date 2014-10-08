@@ -80,6 +80,48 @@ I'm @_ighosh on twitter.
 
   </header>
 
+
+  <section class="pallete" id="pallete">
+
+    <ul class="pallete__list" id="pallete-list">
+
+    <li class="pallete__item">
+      <div class="pallete__gradient"></div>
+      <div class="pallete__name">
+        <p>gradients.name</p>
+      </div>
+      <div class="pallete__selected">
+        <span class="icon icon-check"></span>
+      </div>
+    </li>
+      <script id="gradient-pallete-template" type="html/text">
+        {{ #gradients }}
+
+          <li class="pallete__item" data-id="{{ id }}">
+            <div class="pallete__gradient" style="
+              background: -webkit-linear-gradient(90deg, {{colour1}} 10%, {{colour2}} 90%); /* Chrome 10+, Saf5.1+ */
+              background:    -moz-linear-gradient(90deg, {{colour1}} 10%, {{colour2}} 90%); /* FF3.6+ */
+              background:     -ms-linear-gradient(90deg, {{colour1}} 10%, {{colour2}} 90%); /* IE10 */
+              background:      -o-linear-gradient(90deg, {{colour1}} 10%, {{colour2}} 90%); /* Opera 11.10+ */
+              background:         linear-gradient(90deg, {{colour1}} 10%, {{colour2}} 90%); /* W3C */
+            ">
+              <p class="pallete__name">{{ name }}</p>
+            </div>
+          </li>
+        {{ /gradients }}
+      </script>
+
+<!--             <div class="pallete__name">
+              <p>{{ name }}</p>
+            </div>
+            <div class="pallete__selected">
+
+            </div> -->
+
+    </ul>
+
+  </section>
+
   <section id="canvas" class="canvas"></section>
 
   <section class="infobox" id="infobox">
@@ -143,6 +185,11 @@ I'm @_ighosh on twitter.
 
 
   <footer class="footer">
+
+    <a href="#" class="footer__gradient-btn" id="do-show-pallete">
+      <span class="icon icon-pallete"></span>
+      <span class="text">See All Gradients (Shift)</span>
+    </a>
 
     <a href="#" class="footer__gradient-btn" id="do-show-github-popup">
       <span class="icon icon-plus"></span>

@@ -15,8 +15,10 @@ window.uiGradients = window.uiGradients || {};
     var gradients;
     var gradientIndex;
     var canvas = $("#canvas");
+    var pallete = $("#pallete-list");
     var infoTemplate = $('#gradient-info-template').html();
     var codeTemplate = $('#gradient-code-template').html();
+    var palleteTemplate = $('#gradient-pallete-template').html();
 
 
     function _loadGradients() {
@@ -75,11 +77,25 @@ window.uiGradients = window.uiGradients || {};
     }
 
 
+    function _loadGradientPallete() {
+
+
+      $.each(gradients, function(index, item) {
+        item["id"] = index;
+      });
+
+      Mustache.parse(palleteTemplate);
+      var palleteData = Mustache.render(palleteTemplate, {gradients: gradients});
+      pallete.html(palleteData);
+
+    }
+
+
     function _updateInfobox() {
 
       var newGradient = gradients[gradientIndex];
 
-      var gradientInfo = Mustache.to_html(infoTemplate, newGradient);
+      var gradientInfo = Mustache.render(infoTemplate, newGradient);
 
       $('#infobox').stop().animate( {opacity: 0.5}, 100, function(){
         $(this).html(gradientInfo).animate( {opacity: 1}, {duration:100} );
@@ -93,7 +109,7 @@ window.uiGradients = window.uiGradients || {};
 
       var newGradient = gradients[gradientIndex];
 
-      var gradientInfo = Mustache.to_html(codeTemplate, newGradient);
+      var gradientInfo = Mustache.render(codeTemplate, newGradient);
 
       $('#codebox').stop().animate( {opacity: 0.9}, 100, function(){
         $(this).html(gradientInfo).animate( {opacity: 1}, {duration:100} );
@@ -116,6 +132,8 @@ window.uiGradients = window.uiGradients || {};
       } else if(direction == "down") {
         gradientIndex--;
         gradientIndex = ( gradientIndex <= -1 ) ? gradients.length - 1 : gradientIndex;
+      } else if( direction === parseInt(direction) ) {
+        gradientIndex = direction;
       }
 
       _updateGradient();
@@ -134,13 +152,14 @@ window.uiGradients = window.uiGradients || {};
 
         _loadHash();
         _renderDisplay();
+        _loadGradientPallete();
 
       });
 
     }
 
 
-    function _bindEvents() {
+    function _bootEventHandlers() {
       canvas.on("changeUp", function() {
         _renderDisplay("up");
       });
@@ -148,12 +167,16 @@ window.uiGradients = window.uiGradients || {};
       canvas.on("changeDown", function() {
         _renderDisplay("down");
       });
+
+      canvas.on("showGradient", function(event, data) {
+        _renderDisplay(data.id);
+      });
     }
 
 
     function init() {
       _loadGradients();
-      _bindEvents();
+      _bootEventHandlers();
       _bootstrap();
     }
 
