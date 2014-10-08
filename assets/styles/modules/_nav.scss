@@ -1,0 +1,42 @@
+.nav {
+  position: absolute;
+  color: #fff;
+  display: block;
+  width: 100%;
+
+  top: 50%;
+
+
+  &__item {
+    @include transition(all, 0.2s, ease-in-out);
+    display: inline-block;
+    height: 60px;
+    width: 40px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.1);
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(255,255,255,0.5);
+    }
+
+    &:first-child {
+      float: left;
+    }
+
+    &:last-child {
+      float: right;
+    }
+  }
+
+  &__arrow {
+    margin: 0;
+    padding: 0;
+    opacity: 0.9;
+
+    &:before {
+      margin-top: 22px;
+      display: inline-block;
+    }
+  }
+}

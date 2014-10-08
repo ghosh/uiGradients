@@ -1,0 +1,26 @@
+{
+  "name": "uiGradients",
+  "title": "Beautiful colour gradients for designers and developers",
+  "version": "1.0.0",
+  "homepage": "http://www.uigradients.com",
+  "copyright": "2014",
+  "author": {
+    "name": "Indrashish Ghosh",
+    "email": "mail@indrashishghosh.com",
+    "url": "http://www.indrashishghosh.com/"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "matchdep": "~0.3.0",
+    "grunt-autoprefixer": "~0.3.0",
+    "grunt-contrib-sass": "~0.8.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-cssmin": "~0.7.0",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-notify": "~0.3.1",
+    "grunt-jsonlint": "~1.0.4",
+    "grunt-cache-breaker": "~1.0.1"
+  }
+}
