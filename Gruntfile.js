@@ -285,6 +285,7 @@ module.exports = function(grunt) {
     'uglify',
     'clean',
     'jsonlint:gradients',
+    'cachebreaker',
     'notify:build'
   ]);
 
