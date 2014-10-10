@@ -458,5 +458,10 @@
     "name":"Pastel Orange at the Sun",
     "colour1":"#ffb347",
     "colour2":"#ffcc33"
+  },
+  {
+    "name": "Twitch",
+    "colour1": "#6441A5",
+    "colour2": "#2a0845"
   }
 ]
