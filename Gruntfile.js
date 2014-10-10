@@ -289,4 +289,8 @@ module.exports = function(grunt) {
     'notify:build'
   ]);
 
+  grunt.registerTask('test', 'Json Lints the gradients file', [
+    'jsonlint',
+  ]);
+
 };
