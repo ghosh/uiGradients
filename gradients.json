@@ -463,5 +463,20 @@
     "name": "Twitch",
     "colour1": "#6441A5",
     "colour2": "#2a0845"
+  },
+  {
+    "name": "Instagram",
+    "colour1": "#517fa4",
+    "colour2": "#243949"
+  },
+  {
+    "name": "Flickr",
+    "colour1": "#ff0084",
+    "colour2": "#33001b"
+  },
+  {
+    "name": "Vine",
+    "colour1": "#00bf8f",
+    "colour2": "#001510"
   }
 ]
