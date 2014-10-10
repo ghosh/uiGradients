@@ -433,5 +433,10 @@
     "name":"Hersheys",
     "colour1":"#594a41",
     "colour2":"#9a8478"
+  },
+  {
+    "name": "Twitch",
+    "colour1": "#6441A5",
+    "colour2": "2a0845"
   }
 ]
