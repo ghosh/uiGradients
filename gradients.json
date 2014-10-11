@@ -478,5 +478,11 @@
     "name": "Vine",
     "colour1": "#00bf8f",
     "colour2": "#001510"
+  },
+  {
+    "name": "Turquoise flow",
+    "colour1": "#136a8a",
+    "colour2": "#267871"
+  }
   }
 ]
