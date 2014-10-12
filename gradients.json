@@ -478,5 +478,10 @@
     "name": "Vine",
     "colour1": "#00bf8f",
     "colour2": "#001510"
+  },
+  {
+    "name": "Portrait",
+    "colour1": "#8e9eab",
+    "colour2": "#eef2f3"
   }
 ]
