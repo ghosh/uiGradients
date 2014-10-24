@@ -1,5 +1,10 @@
 [
   {
+    "name":"Koko Caramel",
+    "colour1":"#D1913C",
+    "colour2":"#FFD194"
+  },
+  {
     "name":"Emerald Water",
     "colour1":"#348F50",
     "colour2":"#56B4D3"
