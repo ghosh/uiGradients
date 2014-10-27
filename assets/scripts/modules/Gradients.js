@@ -79,6 +79,8 @@ window.uiGradients = window.uiGradients || {};
 
     function _loadGradientPallete() {
 
+      // Reverse order to how the neweset gradients first
+      gradients.reverse();
 
       $.each(gradients, function(index, item) {
         item["id"] = index;
