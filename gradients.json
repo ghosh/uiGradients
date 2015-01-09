@@ -513,5 +513,10 @@
     "name":"Ukraine",
     "colour1":"#004FF9",
     "colour2":"#FFF94C"
+  },
+  {
+    "name":"Curiosity blue",
+    "colour1":"#525252",
+    "colour2":"#3d72b4"
   }
 ]
