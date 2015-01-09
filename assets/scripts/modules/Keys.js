@@ -34,7 +34,6 @@ window.uiGradients = window.uiGradients || {};
 
           case 27: // esc
             pallete.trigger('close');
-            close();
           break;
 
           default: return; // exit this handler
