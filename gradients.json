@@ -518,5 +518,10 @@
     "name":"Curiosity blue",
     "colour1":"#525252",
     "colour2":"#3d72b4"
+  },
+  {
+    "name":"Dark Knight",
+    "colour1":"#BA8B02",
+    "colour2":"#181818"
   }
 ]
