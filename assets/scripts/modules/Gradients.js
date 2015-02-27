@@ -33,8 +33,8 @@ window.uiGradients = window.uiGradients || {};
 
       var newGradient = gradients[gradientIndex];
 
-      var from = newGradient.colour1;
-      var to   = newGradient.colour2;
+      var from = newGradient.color[0];
+      var to   = newGradient.color[1];
 
       var gradientObject = {
           'background-color': '#fff',
