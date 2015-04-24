@@ -518,5 +518,10 @@
     "name":"Curiosity blue",
     "colour1":"#525252",
     "colour2":"#3d72b4"
+  },
+  {
+     "name":"Lizard",
+     "colour1":"#304352",
+     "colour2":"#d7d2cc"
   }
 ]
