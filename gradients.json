@@ -518,5 +518,10 @@
     "name":"Curiosity blue",
     "colour1":"#525252",
     "colour2":"#3d72b4"
+  },
+  {
+    "name":"Timber",
+    "colour1":"#fc00ff",
+    "colour2":"#00dbde"
   }
 ]
