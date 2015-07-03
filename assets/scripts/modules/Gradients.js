@@ -33,8 +33,8 @@ window.uiGradients = window.uiGradients || {};
 
       var newGradient = gradients[gradientIndex];
 
-      var from = newGradient.color[0];
-      var to   = newGradient.color[1];
+      var from = newGradient.colors[0]
+      var to   = newGradient.colors[1]
 
       var gradientObject = {
           'background-color': '#fff',
@@ -55,11 +55,8 @@ window.uiGradients = window.uiGradients || {};
 
 
     function _updateHash() {
-
       var newGradient = gradients[gradientIndex];
-
       window.location.hash = newGradient.name.replace(/\s/g, '');
-
     }
 
 
@@ -184,7 +181,18 @@ window.uiGradients = window.uiGradients || {};
 
 
     function getGradients() {
-      console.table(gradients);
+      var gradientsArray = [];
+
+      $.each(gradients, function(index, item) {
+        gradientsArray.push({ "name": item.name, "color1": item.colors[0], "color2": item.colors[1] });
+      });
+
+      if (window.console.table) {
+        console.table(gradientsArray);
+      } else {
+        console.log(gradientsArray);
+      }
+
     }
 
     return {

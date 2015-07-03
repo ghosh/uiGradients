@@ -96,11 +96,11 @@ I'm @_ighosh on twitter.
 
           <li class="pallete__item" data-id="{{ id }}">
             <div class="pallete__gradient" style="
-              background: -webkit-linear-gradient(90deg, {{colour1}} 10%, {{colour2}} 90%); /* Chrome 10+, Saf5.1+ */
-              background:    -moz-linear-gradient(90deg, {{colour1}} 10%, {{colour2}} 90%); /* FF3.6+ */
-              background:     -ms-linear-gradient(90deg, {{colour1}} 10%, {{colour2}} 90%); /* IE10 */
-              background:      -o-linear-gradient(90deg, {{colour1}} 10%, {{colour2}} 90%); /* Opera 11.10+ */
-              background:         linear-gradient(90deg, {{colour1}} 10%, {{colour2}} 90%); /* W3C */
+              background: -webkit-linear-gradient(90deg, {{colors.0}} 10%, {{colors.1}} 90%); /* Chrome 10+, Saf5.1+ */
+              background:    -moz-linear-gradient(90deg, {{colors.0}} 10%, {{colors.1}} 90%); /* FF3.6+ */
+              background:     -ms-linear-gradient(90deg, {{colors.0}} 10%, {{colors.1}} 90%); /* IE10 */
+              background:      -o-linear-gradient(90deg, {{colors.0}} 10%, {{colors.1}} 90%); /* Opera 11.10+ */
+              background:         linear-gradient(90deg, {{colors.0}} 10%, {{colors.1}} 90%); /* W3C */
             ">
               <p class="pallete__name">{{ name }}</p>
             </div>
@@ -117,8 +117,8 @@ I'm @_ighosh on twitter.
   <section class="infobox" id="infobox">
     <script id="gradient-info-template" type="text/template">
       <p id="gradient-name" class="infobox__heading">{{ name }}</p>
-      <p class="infobox__info">Colour 1: <span id="gradient-from">{{ colour1 }}</span></p>
-      <p class="infobox__info">Colour 2: <span id="gradient-to">{{ colour2 }}</span></p>
+      <p class="infobox__info">Colour 1: <span id="gradient-from">{{ colors.0 }}</span></p>
+      <p class="infobox__info">Colour 2: <span id="gradient-to">{{ colors.1 }}</span></p>
     </script>
   </section>
 
@@ -153,11 +153,11 @@ I'm @_ighosh on twitter.
 
       <pre class="popup__codeblock"><code id="codebox">
         <script id="gradient-code-template" type="text/template">
-  background: -webkit-linear-gradient(90deg, {{ colour1 }} 10%, {{ colour2 }} 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, {{ colour1 }} 10%, {{ colour2 }} 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, {{ colour1 }} 10%, {{ colour2 }} 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, {{ colour1 }} 10%, {{ colour2 }} 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, {{ colour1 }} 10%, {{ colour2 }} 90%); /* W3C */
+  background: -webkit-linear-gradient(90deg, {{ colors.0 }} 10%, {{ colors.1 }} 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, {{ colors.0 }} 10%, {{ colors.1 }} 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, {{ colors.0 }} 10%, {{ colors.1 }} 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, {{ colors.0 }} 10%, {{ colors.1 }} 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, {{ colors.0 }} 10%, {{ colors.1 }} 90%); /* W3C */
         </script>
       </code></pre>
 
