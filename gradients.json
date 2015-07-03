@@ -528,5 +528,10 @@
     "name":"Piglet",
     "colour1":"#ee9ca7",
     "colour2":"#ffdde1"
+  },
+  {
+     "name":"Lizard",
+     "colour1":"#304352",
+     "colour2":"#d7d2cc"
   }
 ]
