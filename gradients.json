@@ -518,5 +518,35 @@
     "name":"Curiosity blue",
     "colour1":"#525252",
     "colour2":"#3d72b4"
+  },
+  {
+    "name":"Dark Knight",
+    "colour1":"#BA8B02",
+    "colour2":"#181818"
+  },
+  {
+    "name":"Piglet",
+    "colour1":"#ee9ca7",
+    "colour2":"#ffdde1"
+  },
+  {
+     "name":"Lizard",
+     "colour1":"#304352",
+     "colour2":"#d7d2cc"
+  },
+  {
+    "name": "Sage Persuasion",
+    "colour1": "#CCCCB2",
+    "colour2": "#757519"
+  },
+  {
+    "name":"Between Night and Day",
+    "colour1":"#2c3e50",
+    "colour2":"#3498db"
+  },
+  {
+    "name":"Timber",
+    "colour1":"#fc00ff",
+    "colour2":"#00dbde"
   }
 ]
