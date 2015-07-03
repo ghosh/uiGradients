@@ -520,6 +520,7 @@
     "colour2":"#3d72b4"
   },
   {
+<<<<<<< HEAD
     "name":"Dark Knight",
     "colour1":"#BA8B02",
     "colour2":"#181818"
@@ -543,5 +544,10 @@
     "name":"Between Night and Day",
     "colour1":"#2c3e50",
     "colour2":"#3498db"
+  },
+  {
+    "name":"Timber",
+    "colour1":"#fc00ff",
+    "colour2":"#00dbde"
   }
 ]
