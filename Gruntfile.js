@@ -254,6 +254,15 @@ module.exports = function(grunt) {
           message: 'Your scripts be injected',
         }
       }
+    },
+
+    "jsbeautifier": {
+      files: ["gradients.json"],
+      options: {
+          js: {
+              braceStyle: "expand",
+          }
+      }
     }
 
 
@@ -285,6 +294,7 @@ module.exports = function(grunt) {
     'uglify',
     'clean',
     'jsonlint:gradients',
+    'jsbeautifier',
     'cachebreaker',
     'notify:build'
   ]);
