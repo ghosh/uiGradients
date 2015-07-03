@@ -533,5 +533,10 @@
      "name":"Lizard",
      "colour1":"#304352",
      "colour2":"#d7d2cc"
+  },
+  {
+    "name": "Sage Persuasion",
+    "colour1": "#CCCCB2",
+    "colour2": "#757519"
   }
 ]
