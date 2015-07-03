@@ -539,4 +539,9 @@
     "colour1": "#CCCCB2",
     "colour2": "#757519"
   }
+  {
+    "name":"Between Night and Day",
+    "colour1":"#2c3e50",
+    "colour2":"#3498db"
+  }
 ]
