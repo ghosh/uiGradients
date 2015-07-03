@@ -9,6 +9,9 @@
     "email": "mail@indrashishghosh.com",
     "url": "http://www.indrashishghosh.com/"
   },
+  "scripts": {
+    "test": "grunt test"
+  },
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-autoprefixer": "~0.3.0",
