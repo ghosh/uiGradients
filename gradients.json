@@ -523,5 +523,10 @@
     "name":"Dark Knight",
     "colour1":"#BA8B02",
     "colour2":"#181818"
+  },
+  {
+    "name":"Piglet",
+    "colour1":"#ee9ca7",
+    "colour2":"#ffdde1"
   }
 ]
