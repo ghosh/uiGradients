@@ -438,4 +438,8 @@
 {
     "name": "Timber",
     "colors": ["#fc00ff", "#00dbde"]
+},
+{
+    "name": "Passion",
+    "colors": ["#e53935", "#e35d5b"]
 }]
