@@ -442,4 +442,8 @@
 {
     "name": "Passion",
     "colors": ["#e53935", "#e35d5b"]
+},
+{
+    "name": "Clear Sky",
+    "colors": ["#005C97","#363795"]
 }]
