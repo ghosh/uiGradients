@@ -446,4 +446,8 @@
 {
     "name": "Clear Sky",
     "colors": ["#005C97", "#363795"]
+},
+{
+    "name": "Master Card",
+    "colors": ["#f46b45", "#eea849"]
 }]
