@@ -137,7 +137,7 @@ module.exports = function(grunt) {
       options: {
         separator: ';',
         nonull: true,
-        sourceMap: true
+        sourceMap: false
       },
 
       dist: {
