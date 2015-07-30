@@ -8,9 +8,9 @@
   position: absolute;
   z-index: 2;
 
-  margin-top: 100px;
+  margin-top: 80px;
 
-  height: calc(100% - 100px);
+  height: calc(100% - 80px);
   width: 100%;
 
   background-color: #F8F8F8;
@@ -66,6 +66,8 @@
     margin: 0;
     padding: 0;
     line-height: 130px;
+    font-family: "Source Code Pro", monospace;
+    font-size: 13px;
   }
 
   &__selected {

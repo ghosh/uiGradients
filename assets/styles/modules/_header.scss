@@ -4,7 +4,7 @@
   top: 0;
 
   width: 100%;
-  height: 100px;
+  height: 80px;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -28,7 +28,7 @@
 
   &__intro {
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 19px;
 
     @include respond-to(small) {
       float: left;
@@ -52,7 +52,7 @@
   &__share-btns {
     display: none;
     float: right;
-    margin-top: 40px;
+    margin-top: 30px;
 
     @include respond-to(small) {
       display: inline-block;
