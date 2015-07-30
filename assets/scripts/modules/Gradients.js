@@ -12,13 +12,13 @@ window.uiGradients = window.uiGradients || {};
 
   uiGradients.Gradients = (function () {
 
-    var gradients;
-    var gradientIndex;
-    var canvas = $("#canvas");
-    var pallete = $("#pallete-list");
-    var infoTemplate = $('#gradient-info-template').html();
-    var codeTemplate = $('#gradient-code-template').html();
-    var palleteTemplate = $('#gradient-pallete-template').html();
+    var gradients,
+        gradientIndex,
+        canvas = $("#canvas"),
+        pallete = $("#pallete-list"),
+        infoTemplate = $('#gradient-info-template').html(),
+        codeTemplate = $('#gradient-code-template').html(),
+        palleteTemplate = $('#gradient-pallete-template').html();
 
 
     function _loadGradients() {
@@ -98,11 +98,10 @@ window.uiGradients = window.uiGradients || {};
 
       $('#infobox').stop().animate( {opacity: 0.5}, 100, function(){
         $(this).html(gradientInfo).animate( {opacity: 1}, {duration:100} );
+        canvas.trigger('infobox-updated');
       });
 
     }
-
-
 
     function _updateCodeBox() {
 

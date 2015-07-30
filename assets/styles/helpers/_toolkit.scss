@@ -90,3 +90,41 @@
   -o-transition: $transition-property $transition-time $method;
   transition: $transition-property $transition-time $method;
 }
+
+
+
+@mixin tooltip($size: 5px, $dir: left, $bgcolor: #000) {
+  background-color: $bgcolor;
+  position: relative;
+  &:before {
+    border-style: solid;
+    content: "";
+    display: block;
+    position: absolute;
+    @if (($dir == top) or ($dir == bottom)) {
+      border-color: $bgcolor transparent;
+      left: 50%;
+      margin-left: -$size;
+    } @else {
+      border-color: transparent $bgcolor;
+      margin-top: -$size;
+      top: 50%;
+    }
+    @if ($dir == top) {
+      border-width: 0 $size $size $size;
+      top: -$size;
+    }
+    @if ($dir == right) {
+      border-width: $size 0 $size $size;
+      right: -$size;
+    }
+    @if ($dir == bottom) {
+      border-width: $size $size 0 $size;
+      bottom: -$size;
+    }
+    @if ($dir == left) {
+      border-width: $size $size $size 0;
+      left: -$size;
+    }
+  }
+}

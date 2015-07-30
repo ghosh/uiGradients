@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'icons';
-  src:url('assets/fonts/icons.eot?social');
-  src:url('assets/fonts/icons.eot?#iefixsocial') format('embedded-opentype'),
-    url('assets/fonts/icons.woff?social') format('woff'),
-    url('assets/fonts/icons.ttf?social') format('truetype'),
-    url('assets/fonts/icons.svg?social#icons') format('svg');
+  font-family: 'uigradicons';
+  src:url('assets/fonts/uigradicons.eot?social');
+  src:url('assets/fonts/uigradicons.eot?#iefixsocial') format('embedded-opentype'),
+    url('assets/fonts/uigradicons.woff?social') format('woff'),
+    url('assets/fonts/uigradicons.ttf?social') format('truetype'),
+    url('assets/fonts/uigradicons.svg?social#uigradicons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  font-family: 'icons';
+  font-family: 'uigradicons';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -33,3 +33,5 @@
 .icon-next:before { content: "f" };
 .icon-pallete:before { content: "i"; }
 .icon-check:before { content: "j"; }
+
+.icon-copy:after { content: "k"; }

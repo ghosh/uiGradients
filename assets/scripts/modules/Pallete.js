@@ -6,9 +6,9 @@ window.uiGradients = window.uiGradients || {};
 
   uiGradients.Pallete = (function () {
 
-    var canvas = $("#canvas");
-    var pallete = $("#pallete");
-    var palleteTrigger = $("#do-show-pallete");
+    var canvas = $("#canvas"),
+        pallete = $("#pallete"),
+        palleteTrigger = $("#do-show-pallete");
 
     function _show() {
       uiGradients.Popup.reset();

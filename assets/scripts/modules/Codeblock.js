@@ -6,9 +6,9 @@ window.uiGradients = window.uiGradients || {};
 
   uiGradients.Codeblock = (function () {
 
-    var canvas = $("#canvas");
-    var codebox = $('.popup__codeblock');
-    var success = $('.popup__success');
+    var canvas = $("#canvas"),
+        codebox = $('.popup__codeblock'),
+        success = $('.popup__success');
 
     function _resetCodebox() {
       codebox.show();

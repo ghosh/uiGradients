@@ -6,8 +6,8 @@ window.uiGradients = window.uiGradients || {};
 
   uiGradients.Nav = (function () {
 
-    var canvas = $("#canvas");
-    var nav    = $("#nav");
+    var canvas = $("#canvas"),
+        nav    = $("#nav");
 
     function _bindEvents () {
 

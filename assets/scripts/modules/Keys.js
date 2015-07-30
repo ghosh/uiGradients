@@ -6,8 +6,8 @@ window.uiGradients = window.uiGradients || {};
 
   uiGradients.Keys = (function () {
 
-    var canvas = $("#canvas");
-    var pallete = $("#pallete");
+    var canvas = $("#canvas"),
+        pallete = $("#pallete");
 
     function _bindEvents () {
 
