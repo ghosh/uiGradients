@@ -13,6 +13,15 @@
 
   text-align: center;
 
+  transition: all 1s ease-in-out;
+  transform: translate3d(0px,-100%,0);
+  // opacity: 0;
+
+  &.is-active {
+      transform: translate3d(0,0,0);
+      opacity: 1;
+  }
+
   @include respond-to(small) {
     text-align: none;
   }

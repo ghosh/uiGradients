@@ -22,9 +22,30 @@ window.uiGradients = window.uiGradients || {};
 
 
     function _loadGradients() {
-      $.getJSON("gradients.json", function(data) {
-        gradients = data;
-        canvas.trigger('gradientsLoaded');
+      // $.getJSON("gradients.json", function(data) {
+      //   gradients = data;
+      //   canvas.trigger('gradientsLoaded');
+      // });
+      $.ajax({
+          url: "gradients.json",
+          dataType: "json",
+          beforeSend: function(){
+              NProgress.start();
+          },
+          success: function(data) {
+            gradients = data;
+            canvas.trigger('gradientsLoaded');
+          },
+          complete: function() {
+            NProgress.done();
+
+              setTimeout(function(){
+
+                $('#js-preload').fadeOut();
+                $('#js-header').addClass('is-active');
+                $('#js-main').addClass('is-active');
+              }, 1000);
+          }
       });
     }
 
