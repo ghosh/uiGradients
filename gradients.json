@@ -454,4 +454,8 @@
 {
     "name": "Back To Earth",
     "colors": ["#00C9FF", "#92FE9D"]
+},
+{
+    "name": "Deep Purple",
+    "colors": ["#673AB7", "#512DA8"]
 }]
