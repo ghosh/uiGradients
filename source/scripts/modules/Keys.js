@@ -29,6 +29,7 @@ window.uiGradients = window.uiGradients || {};
           break;
 
           case 16: // shift
+            ga('send', 'event', 'footer-buttons', 'keydown', 'show pallete');
             pallete.trigger('toggle');
           break;
 
