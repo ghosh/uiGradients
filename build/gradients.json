@@ -458,4 +458,8 @@
 {
     "name": "Deep Purple",
     "colors": ["#673AB7", "#512DA8"]
+},
+{
+    "name": "Little Leaf",
+    "colors": ["#76b852", "#8DC26F"]
 }]
