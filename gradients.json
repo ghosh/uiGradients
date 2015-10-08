@@ -462,4 +462,8 @@
 {
     "name": "Little Leaf",
     "colors": ["#76b852", "#8DC26F"]
+},
+{
+    "name": "Netflix",
+    "colors": ["#8E0E00", "#1F1C18"]
 }]
