@@ -462,4 +462,8 @@
 {
     "name": "Little Leaf",
     "colors": ["#76b852", "#8DC26F"]
+},
+{
+    "name": "Light Orange",
+    "colors": ["#FFB75E", "#ED8F03"]
 }]
