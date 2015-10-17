@@ -469,4 +469,7 @@
 },
     "name": "Light Orange",
     "colors": ["#FFB75E", "#ED8F03"]
+},
+    "name": "Green and Blue",
+    "colors": ["#c2e59c", "#64b3f4"]
 }]
