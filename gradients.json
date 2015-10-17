@@ -467,9 +467,15 @@
     "name": "Netflix",
     "colors": ["#8E0E00", "#1F1C18"]
 },
+{
     "name": "Light Orange",
     "colors": ["#FFB75E", "#ED8F03"]
 },
+{
     "name": "Green and Blue",
     "colors": ["#c2e59c", "#64b3f4"]
+},
+{
+    "name": "Poncho",
+    "colors": ["#403A3E", "#BE5869"]
 }]
