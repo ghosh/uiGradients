@@ -466,4 +466,7 @@
 {
     "name": "Netflix",
     "colors": ["#8E0E00", "#1F1C18"]
+},
+    "name": "Light Orange",
+    "colors": ["#FFB75E", "#ED8F03"]
 }]
