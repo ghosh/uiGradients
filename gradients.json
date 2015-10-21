@@ -482,4 +482,8 @@
 {
     "name": "Back to the Future",
     "colors": ["#C02425", "#F0CB35"]
+},
+{
+    "name": "Blush",
+    "colors": ["#B24592", "#F15F79"]
 }]
