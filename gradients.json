@@ -486,4 +486,8 @@
 {
     "name": "Blush",
     "colors": ["#B24592", "#F15F79"]
+},
+{
+    "name": "Purplin",
+    "colors": ["#6a3093", "#a044ff"]
 }]
