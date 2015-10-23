@@ -494,4 +494,8 @@
 {
     "name": "Purplin",
     "colors": ["#6a3093", "#a044ff"]
+},
+{
+    "name": "Haikus",
+    "colors": ["#fd746c", "#ff9068"]
 }]
