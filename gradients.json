@@ -490,4 +490,8 @@
 {
     "name": "Inbox",
     "colors": ["#457fca", "#5691c8"]
+},
+{
+    "name": "Purplin",
+    "colors": ["#6a3093", "#a044ff"]
 }]
