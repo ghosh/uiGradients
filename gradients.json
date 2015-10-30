@@ -494,4 +494,9 @@
 {
     "name": "Purplin",
     "colors": ["#6a3093", "#a044ff"]
-}]
+},
+{
+    "name": "Pale Wood",
+    "colors": ["#eacda3", "#d6ae7b"]
+}
+]
