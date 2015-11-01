@@ -498,5 +498,8 @@
 {
     "name": "Pale Wood",
     "colors": ["#eacda3", "#d6ae7b"]
-}
-]
+},
+{
+    "name": "Haikus",
+    "colors": ["#fd746c", "#ff9068"]
+}]
