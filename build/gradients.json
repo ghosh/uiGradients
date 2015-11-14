@@ -506,4 +506,8 @@
 {
     "name": "Haikus",
     "colors": ["#fd746c", "#ff9068"]
+},
+{
+    "name": "Pizelex",
+    "colors": ["#114357", "#F29492"]
 }]
