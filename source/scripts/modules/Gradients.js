@@ -22,10 +22,6 @@ window.uiGradients = window.uiGradients || {};
 
 
     function _loadGradients() {
-      // $.getJSON("gradients.json", function(data) {
-      //   gradients = data;
-      //   canvas.trigger('gradientsLoaded');
-      // });
       $.ajax({
           url: "gradients.json",
           dataType: "json",
@@ -58,13 +54,10 @@ window.uiGradients = window.uiGradients || {};
       var to   = newGradient.colors[1]
 
       var gradientObject = {
-          'background-color': '#fff',
+          'background-color': '+from+',
           'background-image': [
-            '-webkit-linear-gradient(left,'+from+','+to+')',
-            '-moz-linear-gradient(left,'+from+','+to+')',
-            '-ms-linear-gradient(left,'+from+','+to+')',
-            '-o-linear-gradient(left,'+from+','+to+')',
-            'linear-gradient(left,'+from+','+to+')'
+            '-webkit-linear-gradient(to left,'+from+','+to+')',
+            'linear-gradient(to left,'+from+','+to+')'
           ]
       };
 

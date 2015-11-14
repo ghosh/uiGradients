@@ -18,7 +18,7 @@ I'm @_ighosh on twitter.
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <link rel="stylesheet" href="assets/styles/site.css?rel=1447482969477">
+  <link rel="stylesheet" href="assets/styles/site.css?rel=1447521424320">
 
   <title>uiGradients - Beautiful coloured gradients</title>
   <meta name="description" content="A handpicked collection of beautiful colour gradients for designers and developers">
@@ -114,11 +114,9 @@ I'm @_ighosh on twitter.
 
           <li class="pallete__item" data-id="{{ id }}">
             <div class="pallete__gradient" style="
-              background: -webkit-linear-gradient(90deg, {{colors.0}} 10%, {{colors.1}} 90%); /* Chrome 10+, Saf5.1+ */
-              background:    -moz-linear-gradient(90deg, {{colors.0}} 10%, {{colors.1}} 90%); /* FF3.6+ */
-              background:     -ms-linear-gradient(90deg, {{colors.0}} 10%, {{colors.1}} 90%); /* IE10 */
-              background:      -o-linear-gradient(90deg, {{colors.0}} 10%, {{colors.1}} 90%); /* Opera 11.10+ */
-              background:         linear-gradient(90deg, {{colors.0}} 10%, {{colors.1}} 90%); /* W3C */
+              background: {{colors.0}};
+              background: -webkit-linear-gradient(to left, {{colors.0}} , {{colors.1}} );
+              background: linear-gradient(to left, {{colors.0}} , {{colors.1}} );
             ">
               <p class="pallete__name">{{ name }}</p>
             </div>
@@ -186,11 +184,10 @@ I'm @_ighosh on twitter.
 
       <pre class="popup__codeblock"><code id="codebox">
         <script id="gradient-code-template" type="text/template">
-  background: -webkit-linear-gradient(90deg, {{ colors.0 }} 10%, {{ colors.1 }} 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, {{ colors.0 }} 10%, {{ colors.1 }} 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, {{ colors.0 }} 10%, {{ colors.1 }} 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, {{ colors.0 }} 10%, {{ colors.1 }} 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, {{ colors.0 }} 10%, {{ colors.1 }} 90%); /* W3C */
+
+background: {{ colors.0 }}
+background: -webkit-linear-gradient(to left, {{ colors.0 }} , {{ colors.1 }}); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, {{ colors.0 }} , {{ colors.1 }}); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         </script>
       </code></pre>
 
@@ -232,7 +229,7 @@ I'm @_ighosh on twitter.
 
   </footer>
 
-  <script type="text/javascript" src="assets/scripts/site.js?rel=1447482969474"></script>
+  <script type="text/javascript" src="assets/scripts/site.js?rel=1447521424318"></script>
 
 </body>
 
