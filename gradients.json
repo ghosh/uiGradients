@@ -513,6 +513,9 @@
 },
 {
     "name": "Joomla",
-    "colors":["#1e3c72", "#2a5298"]
-}
-]
+    "colors": ["#1e3c72", "#2a5298"]
+},
+{
+    "name": "Nighthawk",
+    "colors": ["#2980b9", "#2c3e50"]
+}]
