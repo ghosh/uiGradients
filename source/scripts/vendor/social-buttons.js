@@ -28,41 +28,6 @@ CSbuttons.socialSharing = function () {
       $pinLink = $('.share-pinterest'),
       $googleLink = $('.share-google');
 
-  if ( $fbLink.length ) {
-    $.getJSON('https://graph.facebook.com/?id=' + permalink + '&callback=?', function(data) {
-      if (data.shares) {
-        $fbLink.find('.share-count').text(data.shares).addClass('is-loaded');
-      } else {
-        $fbLink.find('.share-count').remove();
-      }
-    });
-  };
-
-  if ( $twitLink.length ) {
-    $.getJSON('https://cdn.api.twitter.com/1/urls/count.json?url=' + permalink + '&callback=?', function(data) {
-      if (data.count > 0) {
-        $twitLink.find('.share-count').text(data.count).addClass('is-loaded');
-      } else {
-        $twitLink.find('.share-count').remove();
-      }
-    });
-  };
-
-  if ( $pinLink.length ) {
-    $.getJSON('https://api.pinterest.com/v1/urls/count.json?url=' + permalink + '&callback=?', function(data) {
-      if (data.count > 0) {
-        $pinLink.find('.share-count').text(data.count).addClass('is-loaded');
-      } else {
-        $pinLink.find('.share-count').remove();
-      }
-    });
-  };
-
-  if ( $googleLink.length ) {
-    // Can't currently get Google+ count with JS, so just pretend it loaded
-    $googleLink.find('.share-count').addClass('is-loaded');
-  }
-
   // Share popups
   $shareLinks.on('click', function(e) {
     e.preventDefault();

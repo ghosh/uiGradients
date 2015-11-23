@@ -52,7 +52,7 @@
   &__share-btns {
     display: none;
     float: right;
-    margin-top: 30px;
+    margin-top: 24px;
 
     @include respond-to(small) {
       display: inline-block;
