@@ -10,6 +10,7 @@ window.uiGradients = window.uiGradients || {};
         copyColor2       = $("do-copy-colour2"),
         github           = $("#github-icon"),
         twitter          = $("#twiiter-link"),
+        shareTwitterMob  = $("#twitter-mobicon"),
         shareTwitter     = $("#share-twitter"),
         shareFacebook    = $("#share-facebook"),
         showAllGradients = $("#do-show-pallete"),
@@ -58,6 +59,10 @@ window.uiGradients = window.uiGradients || {};
 
 
       // Social Share Buttons --------------------------------------------------
+      shareTwitterMob.on('click', function(event) {
+        ga('send', 'social', 'twitter', 'share', 'http://uigradients.com/');
+      });
+
       shareTwitter.on('click', function() {
         ga('send', 'social', 'twitter', 'share', 'http://uigradients.com/');
       });

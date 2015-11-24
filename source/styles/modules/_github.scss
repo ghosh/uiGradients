@@ -1,3 +1,4 @@
+.link--twitter,
 .link--github {
   position: absolute;
   top: 100px;
@@ -5,4 +6,17 @@
   right: 30px;
   text-decoration: none;
   font-size: 30px;
+}
+
+.link--github {
+  display: none;
+  @include respond-to(small) {
+    display: inline-block;
+  }
+}
+
+.link--twitter {
+  @include respond-to(small) {
+    display: none;
+  }
 }
