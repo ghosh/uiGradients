@@ -11,11 +11,11 @@ window.uiGradients = window.uiGradients || {};
         github           = $("#github-icon"),
         twitter          = $("#twiiter-link"),
         shareTwitter     = $("#share-twitter"),
-        shareFacebook    = $("#share-fb"),
-        showPallete      = $("#share-fb"),
+        shareFacebook    = $("#share-facebook"),
         showAllGradients = $("#do-show-pallete"),
         addNewGradient   = $("#do-show-github-popup"),
-        copyGradientCode = $("#do-show-code-popup");
+        copyGradientCode = $("#do-show-code-popup"),
+        plug             = $("#plug");
 
     function _bindEvents () {
 
@@ -27,6 +27,11 @@ window.uiGradients = window.uiGradients || {};
       copyColor2.on('click', function() {
         ga('send', 'event', 'copy', 'click', 'color-2');
       });
+
+
+      plug.on('click', function() {
+        ga('send', 'event', 'plugs', 'click', 'cssFilters');
+      })
 
 
       // Social Icons ----------------------------------------------------------

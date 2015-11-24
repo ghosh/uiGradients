@@ -51,3 +51,48 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
+
+.plug {
+  background-color: aliceblue;
+  border-radius: 3px;
+  border: solid 1px #DCE8F3;
+
+  &__link {
+    display: block;
+    padding: 10px 15px;
+    @include clearfix();
+  }
+
+  &__img {
+    width: 26px;
+    height: 26px;
+    float: left;
+  }
+  &__text {
+    @include clearfix();
+    float: left;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 11px;
+  }
+  &__label {
+    float: left;
+    font-size: 9px;
+    background-color: slategray;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 4px 6px;
+    border-radius: 3px;
+  }
+  &__byline {
+    float: left;
+    font-size: 14px;
+    color: #758EA5;
+    margin-top: 1px;
+    margin-left: 6px;
+  }
+
+}
