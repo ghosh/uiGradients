@@ -12,6 +12,10 @@
     "colors": ["#3CA55C", "#B5AC49"]
 },
 {
+    "name": "nFLY",
+    "colors": ["#00A65A", "#222D32"]
+},
+{
     "name": "Horizon",
     "colors": ["#003973", "#E5E5BE"]
 },
