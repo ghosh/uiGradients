@@ -1,5 +1,10 @@
 [
 {
+      "name": "Green Beach",
+      "colors": ["#02AAB0", "#00CDAC"]
+},
+
+{
     "name": "Intuitive Purple",
     "colors": ["#DA22FF", "#9733EE"]
 },
