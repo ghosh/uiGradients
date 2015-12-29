@@ -1,4 +1,10 @@
 [
+
+{
+      "name": "Sunny Days",
+      "colors": ["#EDE574", "#E1F5C4"]
+},    
+    
 {
       "name": "Green Beach",
       "colors": ["#02AAB0", "#00CDAC"]
