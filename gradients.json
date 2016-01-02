@@ -516,6 +516,22 @@
     "colors": ["#1e3c72", "#2a5298"]
 },
 {
+    "name": "Christmas",
+    "colors": ["#2F7336", "#AA3A38"]
+},
+{
+    "name": "Minnesota Vikings",
+    "colors": ["#5614B0", "#DBD65C"]
+},
+{
+    "name": "Miami Dolphins",
+    "colors": ["#4DA0B0", "#D39D38"]
+},
+{
+    "name": "Forrest",
+    "colors": ["#5A3F37", "#2C7744"]
+},
+{
     "name": "Nighthawk",
     "colors": ["#2980b9", "#2c3e50"]
 }]
