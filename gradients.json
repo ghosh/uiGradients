@@ -533,4 +533,8 @@
 {
     "name": "Superman",
     "colors": ["#0099F7", "#F11712"]
+},
+{
+    "name": "Suzy",
+    "colors": ["#834d9b", "#d04ed6"]
 }]
