@@ -16,7 +16,7 @@ window.uiGradients = window.uiGradients || {};
         showAllGradients = $("#do-show-pallete"),
         addNewGradient   = $("#do-show-github-popup"),
         copyGradientCode = $("#do-show-code-popup"),
-        plugFilter       = $("#plug-filter");
+        plugFilter       = $("#plug-filter"),
         plugPodcast      = $("#plug-podcast");
 
     function _bindEvents () {
