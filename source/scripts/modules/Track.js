@@ -16,7 +16,8 @@ window.uiGradients = window.uiGradients || {};
         showAllGradients = $("#do-show-pallete"),
         addNewGradient   = $("#do-show-github-popup"),
         copyGradientCode = $("#do-show-code-popup"),
-        plug             = $("#plug");
+        plugFilter       = $("#plug-filter");
+        plugPodcast      = $("#plug-podcast");
 
     function _bindEvents () {
 
@@ -30,8 +31,13 @@ window.uiGradients = window.uiGradients || {};
       });
 
 
-      plug.on('click', function() {
+      // Plugs -----------------------------------------------------------------
+      plugFilter.on('click', function() {
         ga('send', 'event', 'plugs', 'click', 'cssFilters');
+      })
+      
+      plugPodcast.on('click', function() {
+        ga('send', 'event', 'plugs', 'click', 'awesomePodcasts');
       })
 
 
