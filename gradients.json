@@ -556,6 +556,6 @@
     },
     {
         "name": "Dark Skies",
-        "colors": ["4B79A1", "#283E51"]
+        "colors": ["#4B79A1", "#283E51"]
     }
 ]
