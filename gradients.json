@@ -553,5 +553,9 @@
     {
         "name": "Suzy",
         "colors": ["#834d9b", "#d04ed6"]
+    },
+    {
+        "name": "Dark Skies",
+        "colors": ["4B79A1", "#283E51"]
     }
 ]
