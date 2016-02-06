@@ -558,4 +558,8 @@
         "name": "Dark Skies",
         "colors": ["#4B79A1", "#283E51"]
     }
+    {
+        "name": "Deep Space",
+        "colors": ["#000000", "#434343"]
+    }
 ]
