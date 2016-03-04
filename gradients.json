@@ -1,6 +1,11 @@
 [
 
     {
+        "name": "Harmonic Energy",
+        "colors": ["#16A085", "#F4D03F"]
+    },
+
+    {
         "name": "Sunny Days",
         "colors": ["#EDE574", "#E1F5C4"]
     },
