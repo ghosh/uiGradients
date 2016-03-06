@@ -557,5 +557,9 @@
     {
         "name": "Dark Skies",
         "colors": ["#4B79A1", "#283E51"]
+    },
+    {
+        "name": "Purple White",
+        "colors": ["#4B79A1", "#283E51"]
     }
 ]
