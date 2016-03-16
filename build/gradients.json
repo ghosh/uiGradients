@@ -557,5 +557,17 @@
     {
         "name": "Dark Skies",
         "colors": ["#4B79A1", "#283E51"]
+    },
+    {
+        "name": "Ali",
+        "colors": ["#ff4b1f", "#1fddff"]
+    },
+    {
+        "name": "Alihossein",
+        "colors": ["#f7ff00", "#db36a4"]
+    },
+    {
+        "name": "Shahabi",
+        "colors": ["#a80077", "#66ff00"]
     }
 ]
