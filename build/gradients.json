@@ -1,6 +1,11 @@
 [
 
     {
+        "name": "Harmonic Energy",
+        "colors": ["#16A085", "#F4D03F"]
+    },
+
+    {
         "name": "Sunny Days",
         "colors": ["#EDE574", "#E1F5C4"]
     },
@@ -559,15 +564,19 @@
         "colors": ["#4B79A1", "#283E51"]
     },
     {
-        "name": "Ali",
-        "colors": ["#ff4b1f", "#1fddff"]
+        "name": "Deep Space",
+        "colors": ["#000000", "#434343"]
     },
     {
-        "name": "Alihossein",
-        "colors": ["#f7ff00", "#db36a4"]
+        "name": "Decent",
+        "colors": ["#4CA1AF", "#C4E0E5"]
     },
     {
-        "name": "Shahabi",
-        "colors": ["#a80077", "#66ff00"]
+        "name": "Colors Of Sky",
+    	  "colors": ["#E0EAFC", "#CFDEF3"]
+    },
+    {
+        "name": "Purple White",
+        "colors": ["#BA5370", "#F4E2D8"]
     }
 ]
