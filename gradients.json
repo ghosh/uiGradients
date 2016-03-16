@@ -562,4 +562,8 @@
         "name": "Deep Space",
         "colors": ["#000000", "#434343"]
     }
+    {
+        "name": "Decent",
+        "colors": ["#4CA1AF", "#C4E0E5"]
+    }
 ]
