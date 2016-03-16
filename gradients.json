@@ -572,7 +572,11 @@
         "colors": ["#4CA1AF", "#C4E0E5"]
     },
     {
-    	"name": "Colors Of Sky",
-    	"colors": ["#E0EAFC", "#CFDEF3"]
+        "name": "Colors Of Sky",
+    	  "colors": ["#E0EAFC", "#CFDEF3"]
+    },
+    {
+        "name": "Purple White",
+        "colors": ["#BA5370", "#F4E2D8"]
     }
 ]
