@@ -586,4 +586,8 @@
 {
     "name": "Shahabi",
     "colors": ["#a80077", "#66ff00"]
+},
+{
+    "name": "Red Ocean",
+    "colors": ["#1D4350", "#A43931"]
 }]
