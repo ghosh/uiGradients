@@ -49,10 +49,20 @@
     letter-spacing: 0.03rem;
   }
 
+  &__plug {
+    display: none;
+    float: left;
+    margin-top: 15px;
+    margin-left: 40px;
+    @include respond-to(large) {
+      display: inline-block;
+    }
+  }
+
   &__share-btns {
     display: none;
     float: right;
-    margin-top: 30px;
+    margin-top: 24px;
 
     @include respond-to(small) {
       display: inline-block;

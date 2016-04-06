@@ -42,11 +42,11 @@ module.exports = function(grunt) {
     cachebreaker: {
         dev: {
             options: {
-                match: ['site.js', 'site.css'],
+                match: ['assets/scripts/site.js', 'assets/styles/site.css'],
                 replacement: 'time'
             },
             files: {
-                src: ['index.html']
+                src: ['build/index.html']
             }
         }
     },
@@ -62,11 +62,11 @@ module.exports = function(grunt) {
           style: 'expanded',
           lineNumbers: true,
           trace: true,
-          cacheLocation: 'assets/styles/.sass-cache'
+          cacheLocation: 'source/styles/.sass-cache'
         },
 
         files: {
-          'site.css': 'assets/styles/inbox.scss'
+          'build/assets/styles/site.css': 'source/styles/inbox.scss'
         }
 
       },
@@ -81,7 +81,7 @@ module.exports = function(grunt) {
         },
 
         files: {
-          'site.css': 'assets/styles/inbox.scss'
+          'build/assets/styles/site.css': 'source/styles/inbox.scss'
         }
 
       }
@@ -106,8 +106,8 @@ module.exports = function(grunt) {
       },
 
       files: {
-        src: 'site.css',
-        dest: 'site.css'
+        src: 'build/assets/styles/site.css',
+        dest: 'build/assets/styles/site.css'
       }
 
     },
@@ -122,8 +122,8 @@ module.exports = function(grunt) {
       },
 
       files: {
-        src: 'site.css',
-        dest: 'site.css'
+        src: 'build/assets/styles/site.css',
+        dest: 'build/assets/styles/site.css'
       }
 
     },
@@ -143,12 +143,12 @@ module.exports = function(grunt) {
       dist: {
 
         src: [
-          'assets/scripts/vendor/jquery.js',
-          'assets/scripts/vendor/*.js',
-          'assets/scripts/modules/*.js',
-          'assets/scripts/inbox.js'
+          'source/scripts/vendor/jquery.js',
+          'source/scripts/vendor/*.js',
+          'source/scripts/modules/*.js',
+          'source/scripts/inbox.js'
         ],
-        dest: 'site.js'
+        dest: 'build/assets/scripts/site.js'
       }
 
     },
@@ -164,8 +164,8 @@ module.exports = function(grunt) {
       },
 
       files: {
-        src: 'site.js',
-        dest: 'site.js'
+        src: 'build/assets/scripts/site.js',
+        dest: 'build/assets/scripts/site.js'
       }
 
     },
@@ -184,7 +184,7 @@ module.exports = function(grunt) {
     // -------------------------------------------------------
     // Clean - Remove source maps
     // -------------------------------------------------------
-    clean: ["site.css.map", "site.js.map", "assets/styles/.sass-cache"],
+    clean: ["build/assets/styles/site.css.map", "build/assets/scripts/site.js.map", "assets/styles/.sass-cache"],
 
 
     // -------------------------------------------------------
@@ -198,20 +198,36 @@ module.exports = function(grunt) {
       },
 
       styles: {
-        files: ['assets/styles/**/*.scss'],
+        files: ['source/styles/**/*.scss'],
         tasks: ['sass:dev', 'autoprefixer', 'notify:styles']
       },
 
       scripts: {
-        files: ['assets/scripts/**/*.js'],
+        files: ['source/scripts/**/*.js'],
         tasks: ['concat', 'notify:scripts']
       },
 
       markup: {
-        files: ['index.html'],
+        files: ['build/index.html'],
         tasks: ['notify:markup']
       }
 
+    },
+
+
+    // -------------------------------------------------------
+    // Copy - Copy the gradient.json to build folder
+    // -------------------------------------------------------
+    copy: {
+      main: {
+        files: [{
+          expand: true,
+          flatten: true,
+          src: 'gradients.json',
+          dest: 'build/',
+          filter: 'isFile'
+        }],
+      },
     },
 
 
@@ -280,6 +296,7 @@ module.exports = function(grunt) {
   // REGISTERING TASKS
   // -------------------------------------------------------
   grunt.registerTask('dev', 'Boots up the development environment', [
+    'copy',
     'sass:dev',
     'autoprefixer',
     'concat',
@@ -287,6 +304,7 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('build', 'Readys files for deployment', [
+    'copy',
     'sass:build',
     'autoprefixer',
     'cssmin',

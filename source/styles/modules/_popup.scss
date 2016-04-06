@@ -63,6 +63,7 @@ $popup-width: 480px;
     border-radius: 3px;
     padding: 0 10px;
     margin-bottom: 25px;
+    text-align: left;
 
     code {
       color: #5982AF;
@@ -188,4 +189,3 @@ $popup-width: 480px;
   96.666667% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -0.01573, 0, 1); }
   100% { transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
 }
-

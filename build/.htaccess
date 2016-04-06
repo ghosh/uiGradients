@@ -130,29 +130,15 @@ AddDefaultCharset utf-8
                      .xml
 </IfModule>
 
-
-# ----------------------------------------------------------------------
-# | Rewrite engine                                                     |
-# ----------------------------------------------------------------------
-
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    Options +FollowSymlinks
-    RewriteCond %{HTTPS} =on
-    RewriteRule ^ - [env=proto:https]
-    RewriteCond %{HTTPS} !=on
-    RewriteRule ^ - [env=proto:http]
-</IfModule>
-
 # ----------------------------------------------------------------------
 # | Suppressing the `www.` at the beginning of URLs          |
 # ----------------------------------------------------------------------
 
 <IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteCond %{HTTPS} !=on
-    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-    RewriteRule ^ %{ENV:PROTO}://%1%{REQUEST_URI} [R=301,L]
+		RewriteEngine On
+		RewriteBase /
+		RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+		RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 </IfModule>
 
 # ----------------------------------------------------------------------

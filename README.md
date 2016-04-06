@@ -21,7 +21,7 @@ To add your gradient, fork this repository, add your two gradient colours in the
         },
         {
       		"name": "Emerald Water",
-      		"colors": ["#348F50", #56B4D3]
+      		"colors": ["#348F50", "#56B4D3"]
         }
     ]
 

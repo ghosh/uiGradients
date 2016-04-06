@@ -62,6 +62,7 @@ uiGradients.Popup = uiGradients.Popup || {};
 
             case 32: // space
               uiGradients.Popup.reset();
+              ga('send', 'event', 'footer-buttons', 'keydown', 'add new gradient');
               show();
             break;
 
@@ -133,6 +134,7 @@ uiGradients.Popup = uiGradients.Popup || {};
 
             case 13: // enter
               uiGradients.Popup.reset();
+              ga('send', 'event', 'footer-buttons', 'keydown', 'copy gradient code');
               show();
             break;
 

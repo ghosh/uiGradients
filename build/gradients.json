@@ -592,6 +592,6 @@
     "colors": ["#1D4350", "#A43931"]
 },
 {
-    "name": "Tranquil",
-    "colors": ["#EECDA3", "#EF629F"]
+	  "name": "Tranquil",
+	  "colors": ["#EECDA3", "#EF629F"]
 }]
