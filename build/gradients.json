@@ -4,6 +4,10 @@
     "colors": ["#16A085", "#F4D03F"]
 },
 {
+    "name": "Playing with Reds",
+    "colors": ["#D31027", "ea384d"]
+},
+{
     "name": "Sunny Days",
     "colors": ["#EDE574", "#E1F5C4"]
 },
@@ -592,6 +596,10 @@
     "colors": ["#1D4350", "#A43931"]
 },
 {
-	  "name": "Tranquil",
-	  "colors": ["#EECDA3", "#EF629F"]
+    "name": "Tranquil",
+    "colors": ["#EECDA3", "#EF629F"]
+},
+{
+    "name": "Transfile",
+    "colors": ["#16BFFD", "#CB3066"]
 }]
