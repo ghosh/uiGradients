@@ -598,4 +598,8 @@
 {
     "name": "Tranquil",
     "colors": ["#EECDA3", "#EF629F"]
+},
+{
+    "name": "Transfile",
+    "colors": ["#16BFFD", "#CB3066"]
 }]
