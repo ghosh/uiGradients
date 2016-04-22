@@ -607,5 +607,9 @@
     {
         "name": "Sylvia",
         "colors": ["#ff4b1f", "#ff9068"]
+    },
+    {
+        "name": "Sweet Morning",
+        "colors": ["#FF5F6D", "#FFC371"]
     }
 ]
