@@ -608,4 +608,8 @@
         "name": "Sylvia",
         "colors": ["#ff4b1f", "#ff9068"]
     }
+    {
+        "name": "Politics",
+        "colors": ["#2196f3", "#f44336"]
+    }
 ]
