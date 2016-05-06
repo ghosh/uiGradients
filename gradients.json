@@ -612,4 +612,8 @@
         "name": "Sweet Morning",
         "colors": ["#FF5F6D", "#FFC371"]
     }
+    {
+        "name": "Politics",
+        "colors": ["#2196f3", "#f44336"]
+    }
 ]
