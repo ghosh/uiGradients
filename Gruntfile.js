@@ -272,6 +272,9 @@ module.exports = function(grunt) {
       }
     },
 
+    // -------------------------------------------------------
+    // JS Beutifier - Pretty Formats gradients.json file
+    // -------------------------------------------------------
     "jsbeautifier": {
       files: ["gradients.json"],
       options: {
@@ -279,6 +282,17 @@ module.exports = function(grunt) {
               braceStyle: "expand",
           }
       }
+    },
+    
+    // -------------------------------------------------------
+    // GH Pages - Deploys code to github
+    // -------------------------------------------------------
+    'gh-pages': {
+      options: {
+        base: 'build',
+        dotfiles: true
+      },
+      src: ['**']
     }
 
 
@@ -319,6 +333,10 @@ module.exports = function(grunt) {
 
   grunt.registerTask('test', 'Json Lints the gradients file', [
     'jsonlint',
+  ]);
+  
+  grunt.registerTask('deploy', 'Deploys the site to github', [
+    'gh-pages',
   ]);
 
 };
