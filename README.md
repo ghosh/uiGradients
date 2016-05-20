@@ -18,9 +18,9 @@ To add your gradient, fork this repository, add your two gradient colours in the
     [
         {
             …
-        },
+        }, // <-- Don't forget this comma
         {
-      		"name": "Emerald Water",
+      		"name": "Emerald Water", // <-- and this comma too
       		"colors": ["#348F50", "#56B4D3"]
         }
     ]

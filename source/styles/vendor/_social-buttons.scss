@@ -44,7 +44,7 @@ $share-facebook-color: #455fa2;
 
 .share-title {
   @include font-smoothing();
-  font-family: 'Helvetica Neue';
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 12px;
   font-weight: 900;
   padding-right: 10px;
@@ -72,7 +72,7 @@ $share-facebook-color: #455fa2;
   border: 1px solid $share-border-color;
   border-radius: 0 2px 2px 0;
   color: $share-text-color;
-  font-family: 'Helvetica Neue';
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   font-size: 14px;
   line-height: $share-button-height - 2;
   margin-right: -2px;
