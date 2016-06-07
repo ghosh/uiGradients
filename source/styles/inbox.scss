@@ -12,92 +12,9 @@
 @import "modules/infobox";
 @import "modules/popup";
 @import "modules/footer";
+@import "modules/main";
+@import "modules/plug";
+@import "modules/preload";
 
 @import "vendor/social-buttons";
 @import "vendor/nprogress";
-
-
-.main {
-		position: absolute;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-
-	  transition: all 1s ease-in-out;
-	  transform: translate3d(0px,100px,0);
-	  opacity: 0;
-
-  &.is-active {
-      transform: translate3d(0,0,0);
-      opacity: 1;
-  }
-}
-
-
-.preload {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-#anilogo {
-  width: 15%;
-	fill: url(#logo-gradient);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-
-.plug {
-  display: none;
-  background-color: aliceblue;
-  border-radius: 3px;
-  border: solid 1px #DCE8F3;
-  
-  @media only screen and (min-width: 1180px) {
-    display: block;
-  }
-
-  &__link {
-    display: block;
-    padding: 10px 15px;
-    @include clearfix();
-  }
-
-  &__img {
-    width: 26px;
-    height: 26px;
-    float: left;
-  }
-  &__text {
-    @include clearfix();
-    float: left;
-    text-align: left;
-    margin-top: 5px;
-    margin-left: 11px;
-  }
-  &__label {
-    float: left;
-    font-size: 9px;
-    background-color: slategray;
-    color: white;
-    letter-spacing: 1px;
-    font-weight: bold;
-    padding: 4px 6px;
-    border-radius: 3px;
-  }
-  &__byline {
-    float: left;
-    font-size: 14px;
-    color: #758EA5;
-    margin-top: 1px;
-    margin-left: 6px;
-  }
-
-}
