@@ -1,6 +1,6 @@
 /**
  * The Main Gradients module. Handles the loading
- * and shwing of gradient data
+ * and showing of gradient data
  *
  * @author Indrashish Ghosh (@_ighosh)
  */
@@ -34,15 +34,17 @@ window.uiGradients = window.uiGradients || {};
           },
           complete: function() {
             NProgress.done();
-
-              setTimeout(function(){
-
-                $('#js-preload').fadeOut();
-                $('#js-header').addClass('is-active');
-                $('#js-main').addClass('is-active');
-              }, 1000);
+            _transitionInSite();
           }
       });
+    }
+    
+    function _transitionInSite() {
+      setTimeout(function(){
+        $('#js-preload').fadeOut();
+        $('#js-header').addClass('is-active');
+        $('#js-main').addClass('is-active');
+      }, 1000);
     }
 
 
