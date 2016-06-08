@@ -18,7 +18,7 @@ I'm @_ighosh on twitter.
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <link rel="stylesheet" href="assets/styles/site.css?rel=1465299654025">
+  <link rel="stylesheet" href="assets/styles/site.css?rel=1465387195094">
 
   <title>uiGradients - Beautiful coloured gradients</title>
   <meta name="description" content="A handpicked collection of beautiful colour gradients for designers and developers">
@@ -157,14 +157,16 @@ I'm @_ighosh on twitter.
 
     <section class="infobox" id="infobox">
       <script id="gradient-info-template" type="text/template">
-        <p id="gradient-name" class="infobox__heading">{{ name }}</p>
-        <p class="infobox__info">
-          Colour 1:
-          <span id="gradient-from">{{ colors.0 }}<i class="infobox__icon icon-copy" id="do-copy-colour1" data-clipboard-text="{{ colors.0 }}" title="Click to copy color 1"></i></span><span class="infobox__color1-success">Copied this color!</span>
+        <p id="gradient-name" class="infobox__heading" style="color:{{ contrastColor }}">
+          {{ gradient.name }}
         </p>
-        <p class="infobox__info">
+        <p class="infobox__info" style="color:{{ contrastColor }}">
+          Colour 1:
+          <span id="gradient-from">{{ gradient.colors.0 }}<i class="infobox__icon icon-copy" id="do-copy-colour1" data-clipboard-text="{{ gradient.colors.0 }}" title="Click to copy color 1"></i></span><span class="infobox__color1-success">Copied this color!</span>
+        </p>
+        <p class="infobox__info" style="color:{{ contrastColor }}">
           Colour 2:
-          <span id="gradient-to">{{ colors.1 }}<i class="infobox__icon icon-copy" id="do-copy-colour2" data-clipboard-text="{{ colors.1 }}" title="Click to copy color 2"></i></span><span class="infobox__color2-success">Copied this color!</span>
+          <span id="gradient-to">{{ gradient.colors.1 }}<i class="infobox__icon icon-copy" id="do-copy-colour2" data-clipboard-text="{{ gradient.colors.1 }}" title="Click to copy color 2"></i></span><span class="infobox__color2-success">Copied this color!</span>
         </p>
       </script>
     </section>
@@ -272,7 +274,7 @@ background: linear-gradient(to left, {{ colors.0 }} , {{ colors.1 }}); /* W3C, I
 
   </footer>
 
-  <script type="text/javascript" src="assets/scripts/site.js?rel=1465299654024"></script>
+  <script type="text/javascript" src="assets/scripts/site.js?rel=1465387195094"></script>
 
 </body>
 

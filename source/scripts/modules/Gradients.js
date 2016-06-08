@@ -21,6 +21,8 @@ window.uiGradients = window.uiGradients || {};
         palleteTemplate = $('#gradient-pallete-template').html();
 
 
+
+
     function _loadGradients() {
       $.ajax({
           url: "gradients.json",
@@ -56,7 +58,7 @@ window.uiGradients = window.uiGradients || {};
       var to   = newGradient.colors[1]
 
       var gradientObject = {
-          'background-color': '+from+',
+          'background-color': to, // <- To because the seond color renders on the left
           'background-image': [
             '-webkit-linear-gradient(to left,'+from+','+to+')',
             'linear-gradient(to left,'+from+','+to+')'
@@ -64,6 +66,7 @@ window.uiGradients = window.uiGradients || {};
       };
 
       canvas.stop().animate( {opacity: 0.5}, 100, function(){
+        // $('.infobox__heading').contrastingText();
         $(this).cssMap(gradientObject).animate( {opacity: 1}, {duration:100} );
       });
 
@@ -109,8 +112,14 @@ window.uiGradients = window.uiGradients || {};
     function _updateInfobox() {
 
       var newGradient = gradients[gradientIndex];
+      var contrastColor = $.fn.getContrastingText(newGradient.colors[1]);
+      
+      var data = {
+        gradient: newGradient,
+        contrastColor: contrastColor
+      }
 
-      var gradientInfo = Mustache.render(infoTemplate, newGradient);
+      var gradientInfo = Mustache.render(infoTemplate, data);
 
       $('#infobox').stop().animate( {opacity: 0.5}, 100, function(){
         $(this).html(gradientInfo).animate( {opacity: 1}, {duration:100} );
