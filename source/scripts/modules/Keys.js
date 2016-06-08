@@ -40,6 +40,14 @@ window.uiGradients = window.uiGradients || {};
           default: return; // exit this handler
         }
       });
+      
+      canvas.on('swipeleft', function(e) {
+        canvas.trigger('changeDown');
+      })
+      
+      canvas.on('swiperight', function(e) {
+        canvas.trigger('changeUp');
+      });
     }
 
     function init() {
