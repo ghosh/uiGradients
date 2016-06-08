@@ -145,6 +145,7 @@ module.exports = function(grunt) {
         src: [
           'source/scripts/vendor/jquery.js',
           'source/scripts/vendor/*.js',
+          'source/scripts/utils/*.js',
           'source/scripts/modules/*.js',
           'source/scripts/inbox.js'
         ],
