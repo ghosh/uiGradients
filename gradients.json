@@ -616,4 +616,8 @@
         "name": "Politics",
         "colors": ["#2196f3", "#f44336"]
     }
+      {
+        "name": "Vaulted",
+        "colors": ["#1F1C2C", "#16222A"]
+    }
 ]
