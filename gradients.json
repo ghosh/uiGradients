@@ -623,5 +623,13 @@
     {
         "name": "Solid Vault",
         "colors": ["#3a7bd5", "#3a6073"]
+    },
+    {
+        "name": "Blood Red",
+        "colors": ["#f85032", "#e73827"]
+    }
+    {
+        "name": "Sun on the Horizon",
+        "colors": ["#fceabb", "#f8b500"]
     }
 ]
