@@ -1,4 +1,7 @@
 [
+    { "name": "cool brown",
+        "colors": ["#603813", "#b29f94"]
+    },
     {
         "name": "Harmonic Energy",
         "colors": ["#16A085", "#F4D03F"]
