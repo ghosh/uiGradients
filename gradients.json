@@ -623,5 +623,9 @@
     {
         "name": "Solid Vault",
         "colors": ["#3a7bd5", "#3a6073"]
+    },
+    {
+        "name": "Sunset",
+        "colors": ["#0B486B", "#F56217"]
     }
 ]
