@@ -623,5 +623,10 @@
     {
         "name": "Solid Vault",
         "colors": ["#3a7bd5", "#3a6073"]
+    },
+    {
+        "name": "Deep Sea Space",
+        "colors": ["#2C3E50","#4CA1AF"]
+        
     }
 ]
