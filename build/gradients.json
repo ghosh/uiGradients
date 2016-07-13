@@ -1,5 +1,6 @@
 [
-    { "name": "cool brown",
+    {
+        "name": "Cool Brown",
         "colors": ["#603813", "#b29f94"]
     },
     {
@@ -637,10 +638,10 @@
     },
     {
         "name": "Deep Sea Space",
-        "colors": ["#2C3E50","#4CA1AF"]
+        "colors": ["#2C3E50", "#4CA1AF"]
     },
     {
-         "name": "Dusk",
+        "name": "Dusk",
         "colors": ["#2C3E50", "#FD746C"]
     }
 ]
