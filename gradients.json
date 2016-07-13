@@ -630,5 +630,9 @@
     {
         "name": "Sunset",
         "colors": ["#0B486B", "#F56217"]
+    },
+    {
+        "name": "Grapefruit Sunset",
+        "colors": ["#e96443", "#904e95"]
     }
 ]
