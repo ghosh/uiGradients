@@ -638,5 +638,9 @@
     {
         "name": "Deep Sea Space",
         "colors": ["#2C3E50","#4CA1AF"]
+    },
+    {
+         "name": "Dusk",
+        "colors": ["#2C3E50", "#FD746C"]
     }
 ]
