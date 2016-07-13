@@ -1,6 +1,6 @@
 /*
 |--------------------------------------------------------------------------
-| uiGradients Grunftfile
+| uiGradients Gruntfile
 |--------------------------------------------------------------------------
 |
 | @author Indrashish Ghosh @_ighosh
@@ -130,7 +130,7 @@ module.exports = function(grunt) {
 
 
     // -------------------------------------------------------
-    // Concatinate Jvascript
+    // Concatinate Javascript
     // -------------------------------------------------------
     concat: {
 
@@ -155,7 +155,7 @@ module.exports = function(grunt) {
     },
 
     // -------------------------------------------------------
-    // Minify Jvascript
+    // Minify Javascript
     // -------------------------------------------------------
     uglify: {
 
