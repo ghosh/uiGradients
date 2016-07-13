@@ -1,4 +1,7 @@
 [
+    { "name": "cool brown",
+        "colors": ["#603813", "#b29f94"]
+    },
     {
         "name": "Harmonic Energy",
         "colors": ["#16A085", "#F4D03F"]
@@ -623,5 +626,21 @@
     {
         "name": "Solid Vault",
         "colors": ["#3a7bd5", "#3a6073"]
+    },
+    {
+        "name": "Sunset",
+        "colors": ["#0B486B", "#F56217"]
+    },
+    {
+        "name": "Grapefruit Sunset",
+        "colors": ["#e96443", "#904e95"]
+    },
+    {
+        "name": "Deep Sea Space",
+        "colors": ["#2C3E50","#4CA1AF"]
+    },
+    {
+         "name": "Dusk",
+        "colors": ["#2C3E50", "#FD746C"]
     }
 ]
