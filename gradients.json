@@ -654,6 +654,8 @@
     },{
         "name": "Leaf",
         "colors": ["#33670E","#79550A"]
+    },{
+        "name": "Cynic Sky",
+        "colors" : ["#b2ebf2","#c5e1a5"]
     }
-    
 ]
