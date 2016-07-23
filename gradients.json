@@ -647,5 +647,10 @@
     {
         "name": "Blasting Blue",
         "colors": [ "#0d47a1","#01579b" ]
+    },
+    {
+        "name": "Panning Purple",
+        "colors": [ "#311b92","#8e24aa" ]
     }
+    
 ]
