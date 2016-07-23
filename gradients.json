@@ -651,6 +651,9 @@
     {
         "name": "Panning Purple",
         "colors": [ "#311b92","#8e24aa" ]
+    },{
+        "name": "Leaf",
+        "colors": ["#33670E","#79550A"]
     }
     
 ]
