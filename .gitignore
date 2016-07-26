@@ -1,3 +1,4 @@
 node_modules/
 .sass-cache/
 .grunt/grunt-gh-pages/gh-pages/
+.DS_Store
