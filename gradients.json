@@ -643,6 +643,20 @@
     {
         "name": "Dusk",
         "colors": ["#2C3E50", "#FD746C"]
+    },
+    {
+        "name": "Blasting Blue",
+        "colors": [ "#0d47a1","#01579b" ]
+    },
+    {
+        "name": "Panning Purple",
+        "colors": [ "#311b92","#8e24aa" ]
+    },{
+        "name": "Leaf",
+        "colors": ["#33670E","#79550A"]
+    },{
+        "name": "Cynic Sky",
+        "colors" : ["#b2ebf2","#c5e1a5"]
     }
     },
     {
