@@ -647,5 +647,9 @@
     {
         "name": "Minimal Red",
         "colors": ["#F00000", "#DC281E"]
+    },
+    {
+        "name": "Royal",
+        "colors": ["#141E30", "#243B55"]
     }
 ]
