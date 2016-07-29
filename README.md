@@ -25,6 +25,7 @@ To add your gradient, fork this repository, add your two gradient colours in the
         }
     ]
 
+**IMPORTANT** - Please keep gradient submissions and bug fixes in separate PRs.
 
 ### Improvements and Bugs
 
