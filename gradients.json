@@ -654,7 +654,7 @@
     },
     {
         "name": "Mauve",
-        "colors": ["#734b6d", "#42275a"]
+        "colors": ["#42275a", "#734b6d"]
     },
     {
         "name": "Frost",
@@ -662,6 +662,6 @@
     },
     {
         "name": "Lush",
-        "colors": ["#a8e063", "#56ab2f"]
+        "colors": ["#56ab2f", "#a8e063"]
     }
 ]
