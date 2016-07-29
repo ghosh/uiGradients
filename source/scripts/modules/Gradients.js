@@ -199,9 +199,24 @@ window.uiGradients = window.uiGradients || {};
       _bootEventHandlers();
       _bootstrap();
     }
+    
+    function getGradients() {
+      var gradientsArray = [];
+
+      $.each(gradients, function(index, item) {
+        gradientsArray.push({ "name": item.name, "color1": item.colors[0], "color2": item.colors[1] });
+      });
+
+      if (window.console.table) {
+        console.table(gradientsArray);
+      } else {
+        console.log(gradientsArray);
+      }
+    }
 
     return {
-      init: init                     // Loads the gradient data from gradients.json
+      init: init,                     // Loads the gradient data from gradients.json
+      getGradients: getGradients      // Logs the gradients on screen;
     };
 
   })();
