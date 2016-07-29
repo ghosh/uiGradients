@@ -651,5 +651,17 @@
     {
         "name": "Royal",
         "colors": ["#141E30", "#243B55"]
+    },
+    {
+        "name": "Mauve",
+        "colors": ["#734b6d", "#42275a"]
+    },
+    {
+        "name": "Frost",
+        "colors": ["#000428", "#004e92"]
+    },
+    {
+        "name": "Lush",
+        "colors": ["#a8e063", "#56ab2f"]
     }
 ]

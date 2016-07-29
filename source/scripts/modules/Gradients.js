@@ -21,14 +21,12 @@ window.uiGradients = window.uiGradients || {};
         palleteTemplate = $('#gradient-pallete-template').html();
 
 
-
-
     function _loadGradients() {
       $.ajax({
           url: "gradients.json",
           dataType: "json",
-          beforeSend: function(){
-              NProgress.start();
+          beforeSend: function() {
+            NProgress.start();
           },
           success: function(data) {
             gradients = data;
@@ -42,30 +40,29 @@ window.uiGradients = window.uiGradients || {};
     }
     
     function _transitionInSite() {
-      setTimeout(function(){
+      setTimeout(function() {
         $('#js-preload').fadeOut();
-        $('#js-header').addClass('is-active');
-        $('#js-main').addClass('is-active');
+        $('#js-header, #js-main').addClass('is-active');
       }, 1000);
     }
 
 
     function _updateGradient() {
-
       var newGradient = gradients[gradientIndex];
 
-      var from = newGradient.colors[0]
-      var to   = newGradient.colors[1]
+      var from = newGradient.colors[0];
+      var to   = newGradient.colors[1];
+      var gradientStr = 'to left, ' + from + ',' + to;
 
       var gradientObject = {
-          'background-color': to, // <- To because the seond color renders on the left
+          'background-color': to, // <- To because the second color renders on the left
           'background-image': [
-            '-webkit-linear-gradient(to left,'+from+','+to+')',
-            'linear-gradient(to left,'+from+','+to+')'
+            '-webkit-linear-gradient(' + gradientStr + ')',
+            'linear-gradient(' + gradientStr + ')'
           ]
       };
 
-      canvas.stop().animate( {opacity: 0.5}, 100, function(){
+      canvas.stop().animate( {opacity: 0.5}, 100, function() {
         // $('.infobox__heading').contrastingText();
         $(this).cssMap(gradientObject).animate( {opacity: 1}, {duration:100} );
       });
@@ -99,7 +96,7 @@ window.uiGradients = window.uiGradients || {};
       gradients.reverse();
 
       $.each(gradients, function(index, item) {
-        item["id"] = index;
+        item.id = index;
       });
 
       Mustache.parse(palleteTemplate);
@@ -117,7 +114,7 @@ window.uiGradients = window.uiGradients || {};
       var data = {
         gradient: newGradient,
         contrastColor: contrastColor
-      }
+      };
 
       var gradientInfo = Mustache.render(infoTemplate, data);
 
@@ -203,25 +200,8 @@ window.uiGradients = window.uiGradients || {};
       _bootstrap();
     }
 
-
-    function getGradients() {
-      var gradientsArray = [];
-
-      $.each(gradients, function(index, item) {
-        gradientsArray.push({ "name": item.name, "color1": item.colors[0], "color2": item.colors[1] });
-      });
-
-      if (window.console.table) {
-        console.table(gradientsArray);
-      } else {
-        console.log(gradientsArray);
-      }
-
-    }
-
     return {
-      init: init,                     // Loads the gradient data from gradients.json
-      getGradients: getGradients      // Logs the gradients on screen;
+      init: init                     // Loads the gradient data from gradients.json
     };
 
   })();
