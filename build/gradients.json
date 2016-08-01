@@ -663,5 +663,9 @@
     {
         "name": "Lush",
         "colors": ["#56ab2f", "#a8e063"]
+    },
+    {
+        "name": "Firewatch",
+        "colors": ["#cb2d3e", "#ef473a"]
     }
 ]
