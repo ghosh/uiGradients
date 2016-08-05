@@ -667,5 +667,9 @@
     {
         "name": "Firewatch",
         "colors": ["#cb2d3e", "#ef473a"]
+    },
+    {
+        "name": "Sherbert",
+        "colors": ["#f79d00", "#64f38c"]
     }
 ]
