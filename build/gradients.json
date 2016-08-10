@@ -679,5 +679,17 @@
     {
         "name": "Sun on the Horizon",
         "colors": ["#fceabb", "#f8b500"]
+    },
+    {
+        "name": "IIIT Delhi",
+        "colors": ["#808080", "#3fada8"]
+    },
+    {
+        "name": "Dusk",
+        "colors": ["#ffd89b", "#19547b"]
+    },
+    {
+        "name": "50 Shades of Grey",
+        "colors": ["#bdc3c7","#2c3e50"]
     }
 ]
