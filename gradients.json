@@ -695,5 +695,9 @@
     {
         "name": "Dania", 
         "colors": ["#BE93C5", "#7BC6CC"]
+    }, 
+    {
+        "name": "Limeade", 
+        "colors": ["#A1FFCE", "#FAFFD1"]
     }
 ]
