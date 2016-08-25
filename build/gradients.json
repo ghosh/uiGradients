@@ -690,6 +690,14 @@
     },
     {
         "name": "50 Shades of Grey",
-        "colors": ["#bdc3c7","#2c3e50"]
+        "colors": ["#bdc3c7", "#2c3e50"]
+    }, 
+    {
+        "name": "Dania", 
+        "colors": ["#BE93C5", "#7BC6CC"]
+    }, 
+    {
+        "name": "Limeade", 
+        "colors": ["#A1FFCE", "#FAFFD1"]
     }
 ]
