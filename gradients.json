@@ -699,5 +699,9 @@
     {
         "name": "Limeade",
         "colors": ["#A1FFCE", "#FAFFD1"]
+    },
+    {
+        "name": "Disco",
+        "colors": ["#4ECDC4", "#556270"]
     }
 ]
