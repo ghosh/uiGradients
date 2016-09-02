@@ -25,11 +25,13 @@ To add your gradient, fork this repository, add your two gradient colours in the
         }
     ]
 
-**IMPORTANT** - Please keep gradient submissions and bug fixes in separate PRs.
-
 ### Improvements and Bugs
 
 Please feel free to open a new issue [here](https://github.com/Ghosh/uiGradients/issues) with your suggestions or any bugs which you may have come across.
+
+```
+IMPORTANT - Please keep gradient submissions and bug fixes in separate PRs.
+```
 
 
 ### Inspiration
