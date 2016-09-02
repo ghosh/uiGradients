@@ -1,7 +1,11 @@
 (function ($) {
     $.fn.getContrastingText = function (hex) {
       
-      threshold = 130; /* about half of 256. Lower threshold equals more dark text on dark background  */
+      /* 
+       * Lower threshold equals more dark text on dark background
+       * When in doubt use 130 ~half of 256. 
+      */
+      threshold = 180;
 
       hRed = hexToR(hex);
       hGreen = hexToG(hex);
