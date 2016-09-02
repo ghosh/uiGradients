@@ -703,5 +703,9 @@
     {
         "name": "Disco",
         "colors": ["#4ECDC4", "#556270"]
+    },
+    {
+        "name": "Love Couple",
+        "colors": ["#3a6186", "#89253e"]
     }
 ]
