@@ -13,7 +13,9 @@
   height: calc(100% - 80px);
   width: 100%;
 
-  background-color: #F8F8F8;
+  background-color: #2f2f2f;
+  padding-top: 8px;
+  padding-bottom: 8px;
   overflow: scroll;
 
   &.is-active {
@@ -39,7 +41,11 @@
     padding: 10px;
 
     &:hover {
-      background-color: #f8f8f8;
+      background-color: #252525;
+      border-radius: 3px;
+      .pallete__name {
+        text-decoration: underline;
+      }
     }
 
     @include respond-to(medium) {
