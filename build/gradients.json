@@ -707,5 +707,9 @@
     {
         "name": "Love Couple",
         "colors": ["#3a6186", "#89253e"]
+    },
+    {
+        "name": "Azure Pop",
+        "colors": ["#ef32d9", "#89fffd"]
     }
 ]
