@@ -1,5 +1,9 @@
 [
     {
+        "name": "YouTube",
+        "colors": ["#e52d27", "#b31217"]
+    },
+    {
         "name": "Cool Brown",
         "colors": ["#603813", "#b29f94"]
     },
