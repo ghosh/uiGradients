@@ -1,5 +1,9 @@
 [
     {
+        "name": "Noon to Dusk",
+        "colors": ["#ff6e7f", "#bfe9ff"]
+    },
+    {
         "name": "YouTube",
         "colors": ["#e52d27", "#b31217"]
     },
