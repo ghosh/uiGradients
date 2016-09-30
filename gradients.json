@@ -719,5 +719,9 @@
     {
         "name": "Azure Pop",
         "colors": ["#ef32d9", "#89fffd"]
+    },
+    {
+        "name": "Nepal",
+        "colors": ["#de6161", "#2657eb"]
     }
 ]
