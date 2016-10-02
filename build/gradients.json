@@ -723,5 +723,9 @@
     {
         "name": "Nepal",
         "colors": ["#de6161", "#2657eb"]
+    },
+    {
+        "name": "Cosmic Fusion", 
+        "colors": ["#ff00cc", "#333399"]
     }
 ]
