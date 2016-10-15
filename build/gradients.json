@@ -725,7 +725,11 @@
         "colors": ["#de6161", "#2657eb"]
     },
     {
-        "name": "Cosmic Fusion", 
+        "name": "Cosmic Fusion",
         "colors": ["#ff00cc", "#333399"]
+    },
+    {
+        "name": "Brady Brady Fun Fun",
+        "colors": ["#00c3ff", "#ffff1c"]
     }
 ]
