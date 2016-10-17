@@ -731,5 +731,9 @@
     {
         "name": "Brady Brady Fun Fun",
         "colors": ["#00c3ff", "#ffff1c"]
+    },
+    {
+        "name": "Snapchat",
+        "colors": ["#fffc00", "#ffffff"]
     }
 ]
