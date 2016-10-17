@@ -731,5 +731,9 @@
     {
         "name": "Brady Brady Fun Fun",
         "colors": ["#00c3ff", "#ffff1c"]
+    },
+    {
+        "name": "Black Rosé",
+        "colors": ["#f4c4f3", "#fc67fa"]
     }
 ]
