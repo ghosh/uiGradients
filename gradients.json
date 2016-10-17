@@ -735,5 +735,9 @@
     {
         "name": "Snapchat",
         "colors": ["#fffc00", "#ffffff"]
+    },
+    {
+        "name": "Snapchat",
+        "colors": ["#ff7e5f", "#feb47b"]
     }
 ]
