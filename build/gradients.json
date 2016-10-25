@@ -729,6 +729,14 @@
         "colors": ["#ff00cc", "#333399"]
     },
     {
+        "name": "Snapchat",
+        "colors": ["#fffc00", "#ffffff"]
+    },
+    {
+        "name": "Ed's Sunset Gradient",
+        "colors": ["#ff7e5f", "#feb47b"]
+    },
+    {
         "name": "Brady Brady Fun Fun",
         "colors": ["#00c3ff", "#ffff1c"]
     },
@@ -741,11 +749,7 @@
         "colors": ["#41295a", "#2F0743"]
     },
     {
-        "name": "Snapchat",
-        "colors": ["#fffc00", "#ffffff"]
-    },
-    {
-        "name": "Ed's Sunset Gradient",
-        "colors": ["#ff7e5f", "#feb47b"]
+        "name": "Ibiza Sunset",
+        "colors": ["#ee0979","#ff6a00"]
     }
 ]
