@@ -735,5 +735,9 @@
     {
         "name": "Black Rosé",
         "colors": ["#f4c4f3", "#fc67fa"]
+    },
+    {
+        "name": "Ibiza Sunset",
+        "colors": ["#ee0979","#ff6a00"]
     }
 ]
