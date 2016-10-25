@@ -735,5 +735,17 @@
     {
         "name": "Black Rosé",
         "colors": ["#f4c4f3", "#fc67fa"]
+    },
+    {
+        "name": "80's Purple",
+        "colors": ["#41295a", "#2F0743"]
+    },
+    {
+        "name": "Snapchat",
+        "colors": ["#fffc00", "#ffffff"]
+    },
+    {
+        "name": "Ed's Sunset Gradient",
+        "colors": ["#ff7e5f", "#feb47b"]
     }
 ]
