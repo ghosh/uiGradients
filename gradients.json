@@ -751,5 +751,13 @@
     {
         "name": "Ibiza Sunset",
         "colors": ["#ee0979", "#ff6a00"]
+    },
+    {
+        "name": "Dawn",
+        "colors": ["#F3904F", "#3B4371"]
+    },
+    {
+        "name": "Mild",
+        "colors": ["#67B26F", "#4ca2cd"]
     }
 ]
