@@ -759,5 +759,13 @@
     {
         "name": "Mild",
         "colors": ["#67B26F", "#4ca2cd"]
+    },
+    {
+        "name": "Tequila Sunrise",
+        "colors": ["#EDCD2F", "#E87D7D"]
+    },
+    {
+        "name": "Early Morning Glow",
+        "colors": ["#FF91FF", "#FF9D14"]
     }
 ]
