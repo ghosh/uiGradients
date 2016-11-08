@@ -18,7 +18,7 @@ window.uiGradients = window.uiGradients || {};
           case 39: // right
             if (pallete.hasClass('is-active')) return;
 
-            (event.which === 37 )? canvas.trigger('changeDown') : canvas.trigger('changeUp');
+            (event.which === 37 ) ? canvas.trigger('changeDown') : canvas.trigger('changeUp');
           break;
 
           case 16: // shift
