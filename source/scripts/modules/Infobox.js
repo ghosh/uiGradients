@@ -14,16 +14,16 @@ window.uiGradients = window.uiGradients || {};
 
       canvas.on('infobox-updated', function () {
         color1 = new ZeroClipboard( $('#do-copy-colour1'), {
-            moviePath: "ZeroClipboard.swf",
-            debug: false
-          });
+          moviePath: "ZeroClipboard.swf",
+          debug: false
+        });
 
-          color2 = new ZeroClipboard( $('#do-copy-colour2'), {
-            moviePath: "ZeroClipboard.swf",
-            debug: false
-          });
+        color2 = new ZeroClipboard( $('#do-copy-colour2'), {
+          moviePath: "ZeroClipboard.swf",
+          debug: false
+        });
 
-          _bindEvents();
+        _bindEvents();
       })
 
     }
