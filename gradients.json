@@ -767,5 +767,9 @@
     {
         "name": "Emerald Water",
         "colors": ["#348F50", "#56B4D3"]
+    },
+    {
+        "name": "Vice City",
+        "colors": [ "#3494E6", "#EC6EAD" ]
     }
 ]
