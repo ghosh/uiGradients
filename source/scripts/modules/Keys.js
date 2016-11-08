@@ -15,13 +15,13 @@ window.uiGradients = window.uiGradients || {};
         switch(event.which) {
 
           case 37: // left
-            ga('send', 'event', 'keyboard navigation', 'left', 'next gradient');
+            ga('send', 'event', 'keyboard navigation', 'left', 'prev gradient');
             if (pallete.hasClass('is-active')) return;
             canvas.trigger('changeDown');
           break;
 
           case 39: // right
-            ga('send', 'event', 'keyboard navigation', 'right', 'prev gradient');
+            ga('send', 'event', 'keyboard navigation', 'right', 'next gradient');
             if (pallete.hasClass('is-active')) return;
             canvas.trigger('changeUp');
           break;
