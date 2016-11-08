@@ -759,5 +759,9 @@
     {
         "name": "Mild",
         "colors": ["#67B26F", "#4ca2cd"]
+    }, 
+    {
+        "name": "Emerald Water",
+        "colors": ["#348F50", "#56B4D3"]
     }
 ]
