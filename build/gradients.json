@@ -1,5 +1,9 @@
 [
     {
+        "name": "Nimvelo",
+        "colors": ["#314755", "#26a0da"]
+    },
+    {
         "name": "Noon to Dusk",
         "colors": ["#ff6e7f", "#bfe9ff"]
     },
@@ -759,13 +763,13 @@
     {
         "name": "Mild",
         "colors": ["#67B26F", "#4ca2cd"]
+    }, 
+    {
+        "name": "Emerald Water",
+        "colors": ["#348F50", "#56B4D3"]
     },
     {
-        "name": "Tequila Sunrise",
-        "colors": ["#EDCD2F", "#E87D7D"]
-    },
-    {
-        "name": "Early Morning Glow",
-        "colors": ["#FF91FF", "#FF9D14"]
+        "name": "Vice City",
+        "colors": [ "#3494E6", "#EC6EAD" ]
     }
 ]
