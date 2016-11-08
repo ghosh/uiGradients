@@ -13,19 +13,12 @@ window.uiGradients = window.uiGradients || {};
 
       $(document).on('keydown', function(event) {
         switch(event.which) {
+          
+          case 37:
+          case 39:
+            if (pallete.hasClass('is-active')) return;
 
-          case 37: // left
-            if (pallete.hasClass('is-active')) {
-              return;
-            }
-            canvas.trigger('changeDown');
-          break;
-
-          case 39: // right
-            if (pallete.hasClass('is-active')) {
-              return;
-            }
-            canvas.trigger('changeUp');
+            (event.which === 37 )? canvas.trigger('changeDown') : canvas.trigger('changeUp');
           break;
 
           case 16: // shift
