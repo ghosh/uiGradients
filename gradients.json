@@ -767,5 +767,9 @@
     {
         "name": "Vice City",
         "colors": ["#3494E6", "#EC6EAD"]
+    },
+    {
+        "name": "EasyMed - Yellow/Green",
+        "colors": ["#DCE35B", "#45B649"]
     }
 ]
