@@ -332,7 +332,7 @@ module.exports = function(grunt) {
     'notify:build'
   ]);
 
-  grunt.registerTask('test', 'Json Lints the gradients file', [
+  grunt.registerTask('lint', 'Json Lints the gradients file', [
     'jsonlint',
   ]);
 

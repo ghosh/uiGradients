@@ -767,5 +767,13 @@
     {
         "name": "Vice City",
         "colors": ["#3494E6", "#EC6EAD"]
+    },
+    {
+        "name": "Cocoaa Ice",
+        "colors": ["#c0c0aa", "#1ce"]
+    },
+    {
+        "name": "EasyMed",
+        "colors": ["#DCE35B", "#45B649"]
     }
 ]

@@ -771,5 +771,9 @@
     {
         "name": "Cocoaa Ice",
         "colors": ["#c0c0aa", "#1ce"]
+    },
+    {
+        "name": "EasyMed",
+        "colors": ["#DCE35B", "#45B649"]
     }
 ]
