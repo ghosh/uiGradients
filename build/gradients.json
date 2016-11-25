@@ -775,5 +775,66 @@
     {
         "name": "EasyMed",
         "colors": ["#DCE35B", "#45B649"]
+    },
+    {
+        "name": "Rose Colored Lenses",
+        "colors": ["#E8CBC0", "#636FA4"]
+    },
+    {
+        "name": "Dust Bowl",
+        "colors": ["#98A4B3", "#D3A28B"]
+    },
+    {
+        "name": "Twilight",
+        "colors": ["#F9FCC0", "#191654"]
+    },
+    {
+        "name": "Pegasus",
+        "colors": ["#A01985", "#419FC3"]
+    },
+    {
+        "name": "10 am",
+        "colors": ["#3498db", "#F9FCC0"]
+    },
+    {
+        "name": "Burst",
+        "colors": ["#FCEC77", "#3089FA"]
+    },
+    {
+        "name": "What lies Beyond",
+        "colors": ["#F0F2F0", "#000C40"]
+    },
+    {
+      "name": "Sleepy Hollow",
+      "colors": ["#232239", "#9D7C71"]
+    },
+    {
+        "name": "Roseanna",
+        "colors": ["#FFAFBD", "#ffc3a0"]
+    },
+    {
+        "name": "Honey Dew",
+        "colors": ["#43C6AC", "#F8FFAE"]
+    },
+    {
+        "name": "Under the Lake",
+        "colors": ["#093028", "#237A57"]
+    },
+    {
+        "name": "The Blue Lagoon",
+        "colors": ["#43C6AC", "#191654"]
+    },
+
+    {
+      "name": "Can You Feel The Love Tonight",
+      "colors": ["#4568DC", "#B06AB3"]
+    },
+    {
+        "name": "Tropical Drink",
+        "colors": ["#E13D42", "#EFD453"]
+    },
+    {
+      "name": "Very Blue",
+      "colors": ["#0575E6", "#021B79"]
     }
-]
+  ]
