@@ -775,5 +775,9 @@
     {
         "name": "EasyMed",
         "colors": ["#DCE35B", "#45B649"]
+    },
+    {
+        "name": "Out There",
+        "colors": ["#F0F2F0", "#000C40"]
     }
 ]
