@@ -808,5 +808,9 @@
     {
         "name": "Very Blue",
         "colors": ["#0575E6", "#021B79"]
+    },
+    {
+        "name": "Orca",
+        "colors": ["#44A08D", "#093637"]
     }
 ]
