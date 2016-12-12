@@ -811,8 +811,11 @@
         "colors": ["#0575E6", "#021B79"]
     },
     {
-
         "name": "Love and Liberty",
         "colors":["#200122", "#6f0000"]
-    }    
+    },
+    {
+        "name": "Orca",
+        "colors": ["#44A08D", "#093637"]
+    }
 ]
