@@ -769,6 +769,7 @@
         "colors": ["#3494E6", "#EC6EAD"]
     },
     {
+<<<<<<< HEAD
         "name": "Cocoaa Ice",
         "colors": ["#c0c0aa", "#1ce"]
     },
@@ -808,5 +809,10 @@
     {
         "name": "Very Blue",
         "colors": ["#0575E6", "#021B79"]
-    }
+    },
+    {
+
+        "name": "Love and Liberty",
+        "colors":["#200122", "#6f0000"]
+    }    
 ]
