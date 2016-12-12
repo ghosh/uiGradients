@@ -777,36 +777,48 @@
         "colors": ["#DCE35B", "#45B649"]
     },
     {
-         "name": "Rose Colored Lenses",
-         "colors": ["#E8CBC0", "#636FA4"]
-     },
-     {
-         "name": "What lies Beyond",
-         "colors": ["#F0F2F0", "#000C40"]
-     },
-     {
-         "name": "Roseanna",
-         "colors": ["#FFAFBD", "#ffc3a0"]
-     },
-     {
-         "name": "Honey Dew",
-         "colors": ["#43C6AC", "#F8FFAE"]
-     },
-     {
-         "name": "Under the Lake",
-         "colors": ["#093028", "#237A57"]
-     },
-     {
-         "name": "The Blue Lagoon",
-         "colors": ["#43C6AC", "#191654"]
-     },
- 
-     {
-       "name": "Can You Feel The Love Tonight",
-       "colors": ["#4568DC", "#B06AB3"]
-     },
-     {
-       "name": "Very Blue",
-       "colors": ["#0575E6", "#021B79"]
+        "name": "Rose Colored Lenses",
+        "colors": ["#E8CBC0", "#636FA4"]
+    },
+    {
+        "name": "What lies Beyond",
+        "colors": ["#F0F2F0", "#000C40"]
+    },
+    {
+        "name": "Roseanna",
+        "colors": ["#FFAFBD", "#ffc3a0"]
+    },
+    {
+        "name": "Honey Dew",
+        "colors": ["#43C6AC", "#F8FFAE"]
+    },
+    {
+        "name": "Under the Lake",
+        "colors": ["#093028", "#237A57"]
+    },
+    {
+        "name": "The Blue Lagoon",
+        "colors": ["#43C6AC", "#191654"]
+    },
+
+    {
+        "name": "Can You Feel The Love Tonight",
+        "colors": ["#4568DC", "#B06AB3"]
+    },
+    {
+        "name": "Very Blue",
+        "colors": ["#0575E6", "#021B79"]
+    },
+    {
+        "name": "Love and Liberty",
+        "colors":["#200122", "#6f0000"]
+    },
+    {
+        "name": "Orca",
+        "colors": ["#44A08D", "#093637"]
+    },
+    {
+        "name": "Venice",
+        "colors": ["#6190E8", "#A7BFE8"]
     }
 ]

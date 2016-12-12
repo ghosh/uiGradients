@@ -769,7 +769,6 @@
         "colors": ["#3494E6", "#EC6EAD"]
     },
     {
-<<<<<<< HEAD
         "name": "Cocoaa Ice",
         "colors": ["#c0c0aa", "#1ce"]
     },
@@ -812,10 +811,14 @@
     },
     {
         "name": "Love and Liberty",
-        "colors":["#200122", "#6f0000"]
+        "colors": ["#200122", "#6f0000"]
     },
     {
         "name": "Orca",
         "colors": ["#44A08D", "#093637"]
+    },
+    {
+        "name": "Venice",
+        "colors": ["#6190E8", "#A7BFE8"]
     }
 ]
