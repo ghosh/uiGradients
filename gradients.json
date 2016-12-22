@@ -820,5 +820,9 @@
     {
         "name": "Venice",
         "colors": ["#6190E8", "#A7BFE8"]
-    }
+    },
+    {
+        "name": "Pacific Dream",
+        "colors": ["#34e89e", "#0f3443"]
+    },
 ]
