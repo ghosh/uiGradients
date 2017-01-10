@@ -824,5 +824,9 @@
     {
         "name": "Pacific Dream",
         "colors": ["#34e89e", "#0f3443"]
+    },
+    {
+        "name": "Learning and Leading",
+        "colors": ["#F7971E", "#FFD200"]
     }
 ]
