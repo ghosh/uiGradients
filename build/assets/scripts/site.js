@@ -5,7 +5,7 @@
 | Version 1.0.0
 | http://www.uigradients.com
 | 
-| Copyright (c) 2016 - Indrashish Ghosh
+| Copyright (c) 2017 - Indrashish Ghosh
 | http://www.indrashishghosh.com/
 | 
 */

@@ -1,5 +1,9 @@
 [
     {
+        "name": "Sea Blue",
+        "colors": ["#2b5876", "#4e4376"]
+    },
+    {
         "name": "Nimvelo",
         "colors": ["#314755", "#26a0da"]
     },
@@ -824,5 +828,9 @@
     {
         "name": "Pacific Dream",
         "colors": ["#34e89e", "#0f3443"]
+    },
+    {
+        "name": "Learning and Leading",
+        "colors": ["#F7971E", "#FFD200"]
     }
 ]
