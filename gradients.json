@@ -832,5 +832,9 @@
     {
         "name": "Learning and Leading",
         "colors": ["#F7971E", "#FFD200"]
-    }
+    },
+     {
+        "name": "aubergine",
+        "colors": ["#c5a3e2", "#8b46c5"]
+    },
 ]
