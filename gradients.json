@@ -839,5 +839,13 @@
     {
         "name": "Aubergine",
         "colors": ["#20002c", "#cbb4d4"]
+    },
+    {
+        "name": "Sha la la",
+        "colors": ["#D66D75", "#E29587"]
+    },
+		{
+				"name": "Mini",
+				"colors": ["#30E8BF", "#FF8235"]
     }
 ]
