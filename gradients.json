@@ -804,7 +804,6 @@
         "name": "The Blue Lagoon",
         "colors": ["#43C6AC", "#191654"]
     },
-
     {
         "name": "Can You Feel The Love Tonight",
         "colors": ["#4568DC", "#B06AB3"]
@@ -836,5 +835,9 @@
     {
         "name": "Celestial",
         "colors": ["#C33764", "#1D2671"]
+    },
+    {
+        "name": "Aubergine",
+        "colors": ["#20002c", "#cbb4d4"]
     }
 ]
