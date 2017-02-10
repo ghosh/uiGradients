@@ -804,7 +804,6 @@
         "name": "The Blue Lagoon",
         "colors": ["#43C6AC", "#191654"]
     },
-
     {
         "name": "Can You Feel The Love Tonight",
         "colors": ["#4568DC", "#B06AB3"]
@@ -834,7 +833,19 @@
         "colors": ["#F7971E", "#FFD200"]
     },
     {
-        "name": "Mini",
-        "colors": ["#30E8BF", "#FF8235"]
+        "name": "Celestial",
+        "colors": ["#C33764", "#1D2671"]
+    },
+    {
+        "name": "Aubergine",
+        "colors": ["#20002c", "#cbb4d4"]
+    },
+    {
+        "name": "Sha la la",
+        "colors": ["#D66D75", "#E29587"]
+    },
+		{
+				"name": "Mini",
+				"colors": ["#30E8BF", "#FF8235"]
     }
 ]
