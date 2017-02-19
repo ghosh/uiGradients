@@ -847,5 +847,9 @@
     {
         "name": "Mini",
         "colors": ["#30E8BF", "#FF8235"]
+    },
+    {
+        "name": "Maldives",
+        "colors": ["#B2FEFA", "#0ED2F7"]
     }
 ]
