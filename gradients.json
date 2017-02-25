@@ -847,5 +847,9 @@
     {
         "name": "Mini",
         "colors": ["#30E8BF", "#FF8235"]
+    },
+    {
+        "name": "Html",
+        "colors": ["#E44D26", "#F16529"]
     }
 ]
