@@ -851,5 +851,9 @@
     {
         "name": "Maldives",
         "colors": ["#B2FEFA", "#0ED2F7"]
+    },
+    {
+        "name": "Cinnamint",
+        "colors": ["#4AC29A", "#BDFFF3"]
     }
 ]
