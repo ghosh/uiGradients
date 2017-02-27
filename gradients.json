@@ -855,5 +855,9 @@
     {
         "name": "Cinnamint",
         "colors": ["#4AC29A", "#BDFFF3"]
+    },
+    {
+        "name": "Html",
+        "colors": ["#E44D26", "#F16529"]
     }
 ]

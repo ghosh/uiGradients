@@ -844,8 +844,20 @@
         "name": "Sha la la",
         "colors": ["#D66D75", "#E29587"]
     },
-		{
-				"name": "Mini",
-				"colors": ["#30E8BF", "#FF8235"]
+    {
+        "name": "Mini",
+        "colors": ["#30E8BF", "#FF8235"]
+    },
+    {
+        "name": "Maldives",
+        "colors": ["#B2FEFA", "#0ED2F7"]
+    },
+    {
+        "name": "Cinnamint",
+        "colors": ["#4AC29A", "#BDFFF3"]
+    },
+    {
+      "name": "Html",
+      "colors": ["#E44D26", "#F16529"]
     }
 ]
