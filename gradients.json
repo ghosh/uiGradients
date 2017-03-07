@@ -859,5 +859,8 @@
     {
         "name": "Html",
         "colors": ["#E44D26", "#F16529"]
-    }
-]
+    },
+    {
+        "name": "Chitty Chitty Bang Bang",
+        "colors": ["#007991","#78FFD6"]
+    }]
