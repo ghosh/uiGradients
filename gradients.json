@@ -859,5 +859,17 @@
     {
         "name": "Html",
         "colors": ["#E44D26", "#F16529"]
+    },
+    {
+        "name": "Coal",
+        "colors": ["#EB5757", "#000000"]
+    },
+    {
+        "name": "Sunkist",
+        "colors": ["#F2994A", "#F2C94C"]
+    },
+    {
+        "name": "Blue Skies",
+        "colors": ["#56CCF2", "#2F80ED"]
     }
 ]
