@@ -873,6 +873,7 @@
         "colors": ["#56CCF2", "#2F80ED"]
     },
     {
-        "name":"Chitty Chitty Bang Bang",
-        "colors": ["#007991", "##78ffd6"]
-    }]
+        "name": "Chitty Chitty Bang Bang",
+        "colors": ["#007991", "#78ffd6"]
+    }
+]
