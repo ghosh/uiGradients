@@ -875,5 +875,9 @@
     {
         "name": "Chitty Chitty Bang Bang",
         "colors": ["#007991", "#78ffd6"]
+    },
+    {
+        "name": "Visions of Grandeur",
+        "colors": ["#000046", "#1CB5E0"]
     }
 ]
