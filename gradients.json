@@ -879,5 +879,9 @@
     {
         "name": "Visions of Grandeur",
         "colors": ["#000046", "#1CB5E0"]
+    },
+    {
+        "name": "Crystal Clear",
+        "colors": ["#159957", "#155799"]
     }
 ]
