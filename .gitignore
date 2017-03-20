@@ -1,5 +1,6 @@
 node_modules/
 dist/
+test/
 .sass-cache/
 .grunt/grunt-gh-pages/gh-pages/
 .DS_Store
