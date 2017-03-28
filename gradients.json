@@ -883,5 +883,9 @@
     {
         "name": "Crystal Clear",
         "colors": ["#159957", "#155799"]
+    },
+    {
+        "name": "Compare Now",
+        "colors": ["#EF3B36", "#FFFFFF"]
     }
 ]
