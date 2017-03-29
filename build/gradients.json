@@ -1,5 +1,13 @@
 [
     {
+        "name": "Sea Blue",
+        "colors": ["#2b5876", "#4e4376"]
+    },
+    {
+        "name": "Nimvelo",
+        "colors": ["#314755", "#26a0da"]
+    },
+    {
         "name": "Noon to Dusk",
         "colors": ["#ff6e7f", "#bfe9ff"]
     },
@@ -759,5 +767,117 @@
     {
         "name": "Mild",
         "colors": ["#67B26F", "#4ca2cd"]
+    },
+    {
+        "name": "Vice City",
+        "colors": ["#3494E6", "#EC6EAD"]
+    },
+    {
+        "name": "Cocoaa Ice",
+        "colors": ["#c0c0aa", "#1ce"]
+    },
+    {
+        "name": "EasyMed",
+        "colors": ["#DCE35B", "#45B649"]
+    },
+    {
+        "name": "Rose Colored Lenses",
+        "colors": ["#E8CBC0", "#636FA4"]
+    },
+    {
+        "name": "What lies Beyond",
+        "colors": ["#F0F2F0", "#000C40"]
+    },
+    {
+        "name": "Roseanna",
+        "colors": ["#FFAFBD", "#ffc3a0"]
+    },
+    {
+        "name": "Honey Dew",
+        "colors": ["#43C6AC", "#F8FFAE"]
+    },
+    {
+        "name": "Under the Lake",
+        "colors": ["#093028", "#237A57"]
+    },
+    {
+        "name": "The Blue Lagoon",
+        "colors": ["#43C6AC", "#191654"]
+    },
+    {
+        "name": "Can You Feel The Love Tonight",
+        "colors": ["#4568DC", "#B06AB3"]
+    },
+    {
+        "name": "Very Blue",
+        "colors": ["#0575E6", "#021B79"]
+    },
+    {
+        "name": "Love and Liberty",
+        "colors": ["#200122", "#6f0000"]
+    },
+    {
+        "name": "Orca",
+        "colors": ["#44A08D", "#093637"]
+    },
+    {
+        "name": "Venice",
+        "colors": ["#6190E8", "#A7BFE8"]
+    },
+    {
+        "name": "Pacific Dream",
+        "colors": ["#34e89e", "#0f3443"]
+    },
+    {
+        "name": "Learning and Leading",
+        "colors": ["#F7971E", "#FFD200"]
+    },
+    {
+        "name": "Celestial",
+        "colors": ["#C33764", "#1D2671"]
+    },
+    {
+        "name": "Aubergine",
+        "colors": ["#20002c", "#cbb4d4"]
+    },
+    {
+        "name": "Sha la la",
+        "colors": ["#D66D75", "#E29587"]
+    },
+    {
+        "name": "Mini",
+        "colors": ["#30E8BF", "#FF8235"]
+    },
+    {
+        "name": "Maldives",
+        "colors": ["#B2FEFA", "#0ED2F7"]
+    },
+    {
+        "name": "Cinnamint",
+        "colors": ["#4AC29A", "#BDFFF3"]
+    },
+    {
+        "name": "Html",
+        "colors": ["#E44D26", "#F16529"]
+    },
+    {
+        "name": "Coal",
+        "colors": ["#EB5757", "#000000"]
+    },
+    {
+        "name": "Sunkist",
+        "colors": ["#F2994A", "#F2C94C"]
+    },
+    {
+        "name": "Blue Skies",
+        "colors": ["#56CCF2", "#2F80ED"]
+    },
+    {
+        "name": "Chitty Chitty Bang Bang",
+        "colors": ["#007991", "#78ffd6"]
+    },
+    {
+        "name": "Visions of Grandeur",
+        "colors": ["#000046", "#1CB5E0"]
     }
 ]

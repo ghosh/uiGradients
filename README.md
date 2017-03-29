@@ -11,7 +11,7 @@ A huge thank you to all the contributors. A complete list can be found [here](ht
 
 ### Contributing
 
-Adding a gradient to the library is super simple. All the gradients are loaded and rendered from a single `gradients.json` file.
+Adding a gradient to the library is super simple. All the gradients are loaded and rendered from a single `gradients.json` file in the root.
 
 To add your gradient, fork this repository, add your two gradient colours in the HEX format along with a name to the end of the json file and submit a pull request. Don't forget the commas!
 
