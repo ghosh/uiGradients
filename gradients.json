@@ -763,5 +763,9 @@
     {
       "name": "Vice City",
       "colors": [ "#3494E6", "#EC6EAD" ]
+        },
+    {
+      "name": "Jaipur",
+      "colors": [ "#DBE6F6", "#C5796D" ]
     }
 ]
