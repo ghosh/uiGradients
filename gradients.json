@@ -883,5 +883,9 @@
     {
         "name": "Crystal Clear",
         "colors": ["#159957", "#155799"]
+    },
+    {
+        "name": "Mello",
+        "colors": ["#c0392b", "#8e44ad"]
     }
 ]
