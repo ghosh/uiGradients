@@ -883,5 +883,9 @@
     {
         "name": "Crystal Clear",
         "colors": ["#159957", "#155799"]
+    },
+        {
+        "name": "Meridian",
+        "colors": ["#283c86", "#45a247"]
     }
 ]
