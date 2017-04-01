@@ -883,5 +883,10 @@
     {
         "name": "Crystal Clear",
         "colors": ["#159957", "#155799"]
+    },
+    {
+  		"name": "Alive", 
+  		"colors": ["#CB356B", "#BD3F32"]
     }
+
 ]
