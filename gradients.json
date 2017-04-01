@@ -770,14 +770,14 @@
     },
     {
 
-      "name": "Vice City",
-      "colors": [ "#3494E6", "#EC6EAD" ]
-        },
+        "name": "Vice City",
+        "colors": ["#3494E6", "#EC6EAD"]
+    },
     {
-      "name": "Jaipur",
-      "colors": [ "#DBE6F6", "#C5796D" ]
+        "name": "Jaipur",
+        "colors": ["#DBE6F6", "#C5796D"]
 
-       },
+    },
     {
         "name": "Cocoaa Ice",
         "colors": ["#c0c0aa", "#1ce"]
@@ -903,8 +903,8 @@
         "colors": ["#283c86", "#45a247"]
     },
     {
-  		"name": "Alive", 
-  		"colors": ["#CB356B", "#BD3F32"]
+        "name": "Alive",
+        "colors": ["#CB356B", "#BD3F32"]
     }
 
 ]
