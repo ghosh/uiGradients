@@ -887,5 +887,9 @@
     {
         "name": "Mello",
         "colors": ["#c0392b", "#8e44ad"]
+    },
+    {
+        "name": "Compare Now",
+        "colors": ["#EF3B36", "#FFFFFF"]
     }
 ]
