@@ -897,5 +897,9 @@
     {
         "name": "Compare Now",
         "colors": ["#EF3B36", "#FFFFFF"]
+    },
+    {
+        "name": "Meridian",
+        "colors": ["#283c86", "#45a247"]
     }
 ]
