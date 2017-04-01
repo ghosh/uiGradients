@@ -901,5 +901,10 @@
     {
         "name": "Meridian",
         "colors": ["#283c86", "#45a247"]
+    },
+    {
+  		"name": "Alive", 
+  		"colors": ["#CB356B", "#BD3F32"]
     }
+
 ]
