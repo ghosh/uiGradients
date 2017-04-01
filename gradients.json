@@ -769,9 +769,15 @@
         "colors": ["#67B26F", "#4ca2cd"]
     },
     {
-        "name": "Vice City",
-        "colors": ["#3494E6", "#EC6EAD"]
-    },
+
+      "name": "Vice City",
+      "colors": [ "#3494E6", "#EC6EAD" ]
+        },
+    {
+      "name": "Jaipur",
+      "colors": [ "#DBE6F6", "#C5796D" ]
+
+       },
     {
         "name": "Cocoaa Ice",
         "colors": ["#c0c0aa", "#1ce"]
