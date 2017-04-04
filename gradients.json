@@ -8,6 +8,10 @@
         "colors": ["#314755", "#26a0da"]
     },
     {
+        "name": "Hazel",
+        "colors": ["#77A1D3", "#79CBCA", "#E684AE"]
+    },
+    {
         "name": "Noon to Dusk",
         "colors": ["#ff6e7f", "#bfe9ff"]
     },
@@ -48,6 +52,10 @@
         "colors": ["#3CA55C", "#B5AC49"]
     },
     {
+        "name": "Monte Carlo",
+        "colors": ["#CC95C0", "#DBD4B4", "#7AA1D2"]
+    },
+    {
         "name": "Horizon",
         "colors": ["#003973", "#E5E5BE"]
     },
@@ -82,6 +90,10 @@
     {
         "name": "Purple Paradise",
         "colors": ["#1D2B64", "#F8CDDA"]
+    },
+    {
+        "name": "Stripe",
+        "colors": ["#1FA2FF", "#12D8FA", "#A6FFCB"]
     },
     {
         "name": "Sea Weed",
@@ -410,6 +422,10 @@
     {
         "name": "Twitch",
         "colors": ["#6441A5", "#2a0845"]
+    },
+    {
+        "name": "Atlas",
+        "colors": ["#FEAC5E", "#C779D0", "#4BC0C8"]
     },
     {
         "name": "Instagram",
@@ -757,6 +773,10 @@
         "colors": ["#41295a", "#2F0743"]
     },
     {
+        "name": "Radar",
+        "colors": ["#A770EF", "#CF8BF3", "#FDB99B"]
+    },
+    {
         "name": "Ibiza Sunset",
         "colors": ["#ee0979", "#ff6a00"]
     },
@@ -901,6 +921,10 @@
     {
         "name": "Meridian",
         "colors": ["#283c86", "#45a247"]
+    },
+    {
+        "name": "Relay",
+        "colors": ["#3A1C71", "#D76D77", "#FFAF7B"]
     },
     {
         "name": "Alive",

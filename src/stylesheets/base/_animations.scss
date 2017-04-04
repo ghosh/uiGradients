@@ -1,0 +1,17 @@
+/**
+ * Used to show copied status on hex code
+ */
+@keyframes fadeOutUp {
+  from { opacity: 1; }
+  to { opacity: 0; transform: translate3d(0, -100%, 0); }
+}
+.fadeup-leave { opacity: 1; }
+.fadeup-leave-active { animation: fadeOutUp .5s; }
+.fadeup-leave-to { opacity: 0; }
+
+
+/**
+ * Used to fade-out the preloader
+ */
+.fade-enter-active, .fade-leave-active { transition: opacity .5s }
+.fade-enter, .fade-leave-to { opacity: 0 }

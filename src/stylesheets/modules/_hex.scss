@@ -1,0 +1,34 @@
+  .hex {
+    display: inline-block;
+    font-family: "SF Mono Regular", "Source Code Pro", Consolas, monospace;
+    font-size: 15px;
+
+    &__block {
+      position: relative;
+      float: left;
+      cursor: pointer;
+      margin-top: 3px;
+      margin-right: 3px;
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      background-color: #69D8E7;
+    }
+
+    &__copied {
+      position: absolute;
+      background-color: #eaeaea;
+      padding: 3px 5px;
+      font-size: 12px;
+      border-radius: 3px;
+      margin-left: -27px;
+      bottom: 0;
+      opacity: 0;
+    }
+
+    .hex__arrow { font-style: 16px !important; }
+
+    &.last {
+      .hex__arrow { display: none; }
+    }
+  }

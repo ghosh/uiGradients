@@ -1,6 +1,9 @@
+.DS_Store
+.grunt/
 node_modules/
 dist/
-test/
-.sass-cache/
-.grunt/grunt-gh-pages/gh-pages/
-.DS_Store
+npm-debug.log
+yarn-error.log
+test/unit/coverage
+test/e2e/reports
+selenium-debug.log
