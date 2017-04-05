@@ -929,6 +929,9 @@
     {
         "name": "Alive",
         "colors": ["#CB356B", "#BD3F32"]
+    },
+    {
+        "name": "Scooter",
+        "colors": ["#36D1DC", "#5B86E5"]
     }
-
 ]
