@@ -15,6 +15,7 @@
           :class="{'last' : index === (gradient.colors.length - 1)}" 
           :key="{index}"
           />
+          <span class="hex__arrow">→&nbsp;</span>
       </template>
     </div>
 

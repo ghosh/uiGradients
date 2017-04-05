@@ -1,17 +1,16 @@
 <template>
-  <li class="hex mono">
+  <li class="hex mono" @click="copy">
     <span 
       class="hex__block"
       :id="colorID"
       :style="{ background: color }" 
-      @click="copy"
       >
-        <transition name="fadeup">
-          <span v-if="copied" class="hex__copied">copied</span>
-        </transition>
     </span>
     <span class="hex__name">{{color | lowercase}}</span>
-    <span class="hex__arrow">→&nbsp;</span>
+
+    <transition name="fadeup">
+      <span v-if="copied" class="hex__copied">copied</span>
+    </transition>
   </li>
 </template>
 
