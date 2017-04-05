@@ -63,6 +63,7 @@ var webpackConfig = merge(baseWebpackConfig, {
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'dependency'
     }),
+    // Commenting the lines below, because we want to compile the js into one file
     // split vendor js into its own file
         // new webpack.optimize.CommonsChunkPlugin({
         //   name: 'vendor',
