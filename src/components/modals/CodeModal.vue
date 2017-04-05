@@ -25,7 +25,7 @@
         v-clipboard="copyData" 
         @success="handleSuccess"
       >
-          Copy Code
+          Click to copy
       </button>
 
   </Modal>
