@@ -1,5 +1,6 @@
 .DS_Store
 .grunt/
+.gulp/
 node_modules/
 dist/
 npm-debug.log
@@ -7,3 +8,4 @@ yarn-error.log
 test/unit/coverage
 test/e2e/reports
 selenium-debug.log
+npm-debug.log
