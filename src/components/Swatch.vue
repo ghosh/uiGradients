@@ -1,9 +1,8 @@
 <template>
-  <li class="hex mono" @click="copy">
+  <li class="hex mono" @click="copy" :id="colorID">
     <span 
       class="hex__block"
-      :id="colorID"
-      :style="{ background: color }" 
+      :style="{ background: color }"
       >
     </span>
     <span class="hex__name">{{color | lowercase}}</span>
