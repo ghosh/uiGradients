@@ -933,5 +933,13 @@
     {
         "name": "Scooter",
         "colors": ["#36D1DC", "#5B86E5"]
+    },
+        {
+        "name": "Terminal",
+        "colors": ["#000000", "#0f9b0f"]
+    },
+    {
+        "name": "Telegram",
+        "colors": ["#1c92d2", "#0f9b0f"]
     }
 ]
