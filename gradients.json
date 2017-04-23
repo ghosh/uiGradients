@@ -941,5 +941,9 @@
     {
         "name": "Telegram",
         "colors": ["#1c92d2", "#0f9b0f"]
+    },
+    {
+        "name": "Crimson Tide",
+        "colors": ["#642B73", "#C6426E"]
     }
 ]

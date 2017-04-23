@@ -23,8 +23,12 @@ uiGradients is a community contributed collection of beautiful multi-color gradi
 
 ---
 
+&nbsp;
+
 ## About
 This is an effort to give back to the community, by the community. Hopefully this will help you draw inspiration and serve as a resource for picking gradients for your own projects.
+
+&nbsp;
 
 ## Contributing
 Adding a gradient to the library is super simple. All the gradients are loaded and rendered from a single `gradients.json` file in the root.
@@ -45,12 +49,12 @@ To add your gradient, fork this repository, add your gradient colors in the HEX 
 
 *NOTE* - Please keep gradient submissions and bug fixes in separate PRs.
 
-
+&nbsp;
 
 ### Improvements and Bugs
-Please feel free to open a new issue [here](https://github.com/Ghosh/uiGradients/issues) with your suggestions or any bugs which you may have come across. 
+Please feel free to open a new issue [here](https://github.com/Ghosh/uiGradients/issues) with your suggestions or any bugs which you may have come across.
 
-
+&nbsp;
 
 ## Data
 While there is no official api, all the gradients are present in the `gradients.json` file. The code below is an example of fetching the data via a CURL request
@@ -58,6 +62,7 @@ While there is no official api, all the gradients are present in the `gradients.
 curl -i https://raw.githubusercontent.com/ghosh/uiGradients/master/gradients.json
 ```
 
+&nbsp;
 
 ## Built with uiGradients
 A few open source projects built with uiGradients
