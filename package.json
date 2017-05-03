@@ -1,7 +1,7 @@
 {
   "name": "uigradients",
   "version": "2.0.0",
-  "description": "Beautiful, community contributed, color gradients for design and code",
+  "description": "Community contributed collection of beautiful multi-color gradients",
   "author": "Indrashish Ghosh <mail@indrashishghosh.com>",
   "private": true,
   "scripts": {
