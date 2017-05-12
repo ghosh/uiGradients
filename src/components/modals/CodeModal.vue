@@ -19,10 +19,10 @@
 
 </div>
 
-      <button 
+      <button
         class="btn"
         id="js-copy"
-        v-clipboard="copyData" 
+        v-clipboard="copyData"
         @success="handleSuccess"
       >
           Click to copy
@@ -78,7 +78,7 @@ background: linear-gradient(${this.direction}, ${[...this.gradient.colors].rever
     },
     handleSuccess() {
       const self = this;
-      this.$ga.trackEvent('copy css', 'click', this.gradient.name);
+      this.$ga.event('copy css', 'click', this.gradient.name);
       this.copied = true;
       setTimeout(() => { self.copied = false; }, 1000);
     },

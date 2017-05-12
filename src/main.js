@@ -9,7 +9,9 @@ require('./stylesheets/app.scss');
 Vue.use(VueClipboards);
 Vue.use(VueAnalytics, {
   id: 'UA-49604576-2',
-  autoTracking: false,
+  autoTracking: {
+    exception: true,
+  },
 });
 
 Vue.config.productionTip = false;

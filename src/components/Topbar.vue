@@ -40,17 +40,17 @@ export default {
   },
   methods: {
     goToGithub() {
-      this.$ga.trackEvent('social', 'click', 'github');
+      this.$ga.event('social', 'click', 'github');
     },
     shareOnTwitter() {
-      this.$ga.query('send', 'social', 'twitter', 'share', 'http://uigradients.com/');
+      this.$ga.social('twitter', 'share', 'http://uigradients.com/');
       window.open(
         'http://twitter.com/share?url=https://uigradients.com&amp;text=Beautiful%20color%20gradients%20for%20designers%20and%20developers&amp;via=_ighosh',
         'twitter-share',
         'width=700,height=300');
     },
     shareOnFacebook() {
-      this.$ga.query('send', 'social', 'facebook', 'share', 'http://uigradients.com/');
+      this.$ga.social('facebook', 'share', 'http://uigradients.com/');
       window.open(
         'http://www.facebook.com/sharer.php?u=https://uigradients.com',
         'facebook-share',

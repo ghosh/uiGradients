@@ -9,10 +9,10 @@
 
     <div class="actionbar__section actionbar__section--swatch tac">
       <template v-for="(color, index) in gradient.colors">
-        <Swatch 
-          :color="color" 
+        <Swatch
+          :color="color"
           :gradient="gradient"
-          :class="{'last' : index === (gradient.colors.length - 1)}" 
+          :class="{'last' : index === (gradient.colors.length - 1)}"
           :key="{index}"
           />
           <span class="hex__arrow">→&nbsp;</span>
@@ -22,7 +22,7 @@
     <div class="actionbar__section tar">
       <ul class="actionbar__nav">
         <li class="actionbar__nav-item">
-          <a 
+          <a
             href="#changeGradientDirection"
             class="actionbar__nav-link"
             id="js-direction"
@@ -32,9 +32,9 @@
           </a>
         </li>
         <li class="actionbar__nav-item">
-          <a 
-          href="#openCodeModal" 
-          class="actionbar__nav-link" 
+          <a
+          href="#openCodeModal"
+          class="actionbar__nav-link"
           id="js-code"
           @click.prevent="openModal('code')"
           data-tooltip="Get css">
@@ -42,9 +42,9 @@
           </a>
         </li>
         <li class="actionbar__nav-item">
-          <a 
-            href="#OpenGradientModal" 
-            class="actionbar__nav-link" 
+          <a
+            href="#OpenGradientModal"
+            class="actionbar__nav-link"
             id="js-gradient"
             @click.prevent="openModal('gradient')"
             data-tooltip="Add gradient">
@@ -52,8 +52,8 @@
           </a>
         </li>
         <li class="actionbar__nav-item">
-          <a 
-            href="#downloadGradient" 
+          <a
+            href="#downloadGradient"
             class="actionbar__nav-link"
             id="js-download"
             @click.prevent="download()"
@@ -84,20 +84,20 @@ export default {
   },
   methods: {
     togglePalette() {
-      this.$ga.trackEvent('toggle gradient palette', 'click');
+      this.$ga.event('toggle gradient palette', 'click');
       this.$emit('togglePalette');
     },
     openModal(type) {
-      if (type === 'gradient') this.$ga.trackEvent('add modal display', 'click');
-      if (type === 'code') this.$ga.trackEvent('css modal display', 'click');
+      if (type === 'gradient') this.$ga.event('add modal display', 'click');
+      if (type === 'code') this.$ga.event('css modal display', 'click');
       this.showModal(type);
     },
     changeDirection() {
-      this.$ga.trackEvent('gradient rotation', 'click', 'to-right');
+      this.$ga.event('gradient rotation', 'click', 'to-right');
       this.updateDirection('down');
     },
     download() {
-      this.$ga.trackEvent('download gradient image', 'click');
+      this.$ga.event('download gradient image', 'click');
       this.downloadGradient();
     },
   },

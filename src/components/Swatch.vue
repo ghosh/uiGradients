@@ -1,6 +1,6 @@
 <template>
   <li class="hex mono" @click="copy" :id="colorID">
-    <span 
+    <span
       class="hex__block"
       :style="{ background: color }"
       >
@@ -43,7 +43,7 @@ export default {
       this.copied = false;
     },
     copy() {
-      this.$ga.trackEvent('copy hex', 'click', this.gradient.name);
+      this.$ga.event('copy hex', 'click', this.gradient.name);
       this.copied = true;
       setTimeout(this.uncopy, 10);
     },
