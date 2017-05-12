@@ -54,6 +54,9 @@ export default {
       this.$emit('closePalette');
     },
     handleKeyboardEvents(event) {
+      // Disables change event on keypress and hold
+      if (event.repeat) return;
+
       switch (event.which) {
         case 37: // left
           this.$ga.event('gradient navigation', 'keypress', 'next');
@@ -100,7 +103,7 @@ export default {
     },
   },
   created() {
-    window.addEventListener('keyup', this.handleKeyboardEvents);
+    window.addEventListener('keydown', this.handleKeyboardEvents);
   },
 };
 </script>
