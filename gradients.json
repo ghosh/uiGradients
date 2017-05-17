@@ -4,6 +4,10 @@
         "colors": ["#2b5876", "#4e4376"]
     },
     {
+        "name": "Lavender",
+        "colors": ["#9B51E0", "#BB6BD9"]
+    },
+    {
         "name": "Nimvelo",
         "colors": ["#314755", "#26a0da"]
     },
