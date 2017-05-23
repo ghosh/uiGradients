@@ -1,5 +1,9 @@
 [
     {
+        "name": "Blooker20",
+        "colors": ["#e65c00", "#F9D423"]
+    },
+    {
         "name": "Sea Blue",
         "colors": ["#2b5876", "#4e4376"]
     },
