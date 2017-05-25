@@ -953,5 +953,9 @@
     {
       "name": "Subu",
       "colors": ["#0cebeb", "#20e3b2", "#29ffc6"]
+    },
+    {
+      "name": "Kimoby is the new blue",
+      "colors": ["#396afc", "#2948ff"]
     }
 ]
