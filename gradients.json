@@ -953,5 +953,9 @@
     {
       "name": "Subu",
       "colors": ["#0cebeb", "#20e3b2", "#29ffc6"]
+    },
+    {
+      "name": "Broken Hearts",
+      "colors": ["#d9a7c7", "#fffcdc"]
     }
 ]
