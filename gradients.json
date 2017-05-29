@@ -959,7 +959,6 @@
       "colors": ["#0cebeb", "#20e3b2", "#29ffc6"]
     },
     {
-<<<<<<< HEAD
       "name": "Holy",
       "colors": ["#EF00DF", "#E8FF59", "#73C105"]
     },
@@ -974,5 +973,9 @@
     {
       "name": "Broken Hearts",
       "colors": ["#d9a7c7", "#fffcdc"]
+    },
+    {
+      "name": "Kimoby Is The New Blue",
+      "colors": ["#396afc", "#2948ff"]
     }
 ]
