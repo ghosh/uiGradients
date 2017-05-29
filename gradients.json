@@ -959,6 +959,7 @@
       "colors": ["#0cebeb", "#20e3b2", "#29ffc6"]
     },
     {
+<<<<<<< HEAD
       "name": "Holy",
       "colors": ["#EF00DF", "#E8FF59", "#73C105"]
     },
@@ -969,5 +970,9 @@
     {
       "name": "clot",
       "colors": ["#070000", "#4C0001", "#070000"]
+    },
+    {
+      "name": "Broken Hearts",
+      "colors": ["#d9a7c7", "#fffcdc"]
     }
 ]
