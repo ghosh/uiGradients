@@ -957,5 +957,17 @@
     {
       "name": "Subu",
       "colors": ["#0cebeb", "#20e3b2", "#29ffc6"]
+    },
+    {
+      "name": "Holy",
+      "colors": ["#EF00DF", "#E8FF59", "#73C105"]
+    },
+    {
+      "name": "shift",
+      "colors": ["#000000", "#E5008D", "#FF070B"]
+    },
+    {
+      "name": "clot",
+      "colors": ["#070000", "#4C0001", "#070000"]
     }
 ]
