@@ -1,5 +1,13 @@
 [
     {
+        "name": "Purple Love",
+        "colors": ["#cc2b5e", "#753a88"]
+    },
+    {
+        "name": "Sexy Blue",
+        "colors": ["#2193b0", "#6dd5ed"]
+    },
+    {
         "name": "Blooker20",
         "colors": ["#e65c00", "#F9D423"]
     },
