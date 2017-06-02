@@ -977,5 +977,9 @@
     {
       "name": "Kimoby Is The New Blue",
       "colors": ["#396afc", "#2948ff"]
+    },
+    {
+      "name": "Indian at Heart",
+      "colors": ["#FF9933", "#FFFFFF", "#138808"]
     }
 ]
