@@ -919,6 +919,10 @@
         "colors": ["#000046", "#1CB5E0"]
     },
     {
+      "name": "Indian at Heart",
+      "colors": ["#FF9933", "#FFFFFF", "#138808"]
+    }
+    {
         "name": "Crystal Clear",
         "colors": ["#159957", "#155799"]
     },
@@ -990,8 +994,8 @@
       "name": "Dull",
       "colors": ["#C9D6FF", "#E2E2E2"]
     },
-     {
-      "name": "purpink",
+    {
+      "name": "Purpink",
       "colors": ["#7F00FF", "#E100FF"]
     }
 ]
