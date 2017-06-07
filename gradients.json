@@ -977,5 +977,13 @@
     {
       "name": "Kimoby Is The New Blue",
       "colors": ["#396afc", "#2948ff"]
+    },
+    {
+      "name": "Dull",
+      "colors": ["#C9D6FF", "#E2E2E2"]
+    },
+     {
+      "name": "purpink",
+      "colors": ["#7F00FF", "#E100FF"]
     }
 ]
