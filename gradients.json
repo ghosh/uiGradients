@@ -997,5 +997,17 @@
     {
       "name": "Purpink",
       "colors": ["#7F00FF", "#E100FF"]
+    },
+    {
+      "name": "Alchemy - Zinc",
+      "colors": ["#ADA996", "#F2F2F2", "#DBDBDB", "#EAEAEA"]
+    },
+    {
+      "name": "Alchemy - Hydrogen",
+      "colors": ["#667db6", "#0082c8", "#0082c8", "#667db6"]
+    },
+    {
+      "name": "Alchemy - Argon",
+      "colors": ["#03001e", "#3c008e", "#7303c0", "#a71293", "#ec38bc", "#ff71de", "#ffb4f5", "#fdeff9"]
     }
 ]
