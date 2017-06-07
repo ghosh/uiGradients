@@ -46,4 +46,21 @@ module.exports = {
       .end();
   },
 
+  'Gradient Rotation test': function test(browser) {
+    const devServer = browser.globals.devServerURL;
+    browser
+      .url(`${devServer}/#CanYouFeelTheLoveTonight`)
+      .waitForElementVisible('#app', 5000)
+      .pause(3000) // wait for preloader to fade
+      .assert.attributeContains('.display', 'style', 'background: linear-gradient(to right, rgb(69, 104, 220), rgb(176, 106, 179));', 'Assert gradient rotation to right')
+      .click('#js-direction')
+      .assert.attributeContains('.display', 'style', 'background: linear-gradient(rgb(69, 104, 220), rgb(176, 106, 179));', 'Assert gradient rotation to bottom')
+      .click('#js-direction')
+      .assert.attributeContains('.display', 'style', 'background: linear-gradient(to left, rgb(69, 104, 220), rgb(176, 106, 179));', 'Assert gradient rotation to left')
+      .click('#js-direction')
+      .assert.attributeContains('.display', 'style', 'background: linear-gradient(to top, rgb(69, 104, 220), rgb(176, 106, 179));', 'Assert gradient rotation to top')
+      .click('#js-direction')
+      .assert.attributeContains('.display', 'style', 'background: linear-gradient(to right, rgb(69, 104, 220), rgb(176, 106, 179));', 'Assert gradient rotation to right')
+      .end();
+  },
 };
