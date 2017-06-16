@@ -1,5 +1,9 @@
 [
     {
+        "name": "Test",
+        "colors": ["#00467F", "#A5CC82"]
+    },
+    {
         "name": "Purple Love",
         "colors": ["#cc2b5e", "#753a88"]
     },
