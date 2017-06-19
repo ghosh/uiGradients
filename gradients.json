@@ -997,5 +997,9 @@
     {
       "name": "Purpink",
       "colors": ["#7F00FF", "#E100FF"]
+    },
+    {
+      "name": "Summer",
+      "colors": ["#22c1c3", "#fdbb2d"]
     }
 ]
