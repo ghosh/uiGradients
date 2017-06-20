@@ -1,5 +1,4 @@
-[
-    {
+[{
         "name": "Purple Love",
         "colors": ["#cc2b5e", "#753a88"]
     },
@@ -919,8 +918,8 @@
         "colors": ["#000046", "#1CB5E0"]
     },
     {
-      "name": "Indian at Heart",
-      "colors": ["#FF9933", "#FFFFFF", "#138808"]
+        "name": "Indian at Heart",
+        "colors": ["#FF9933", "#FFFFFF", "#138808"]
     },
     {
         "name": "Crystal Clear",
@@ -950,7 +949,7 @@
         "name": "Scooter",
         "colors": ["#36D1DC", "#5B86E5"]
     },
-        {
+    {
         "name": "Terminal",
         "colors": ["#000000", "#0f9b0f"]
     },
@@ -967,35 +966,39 @@
         "colors": ["#06beb6", "#48b1bf"]
     },
     {
-      "name": "Subu",
-      "colors": ["#0cebeb", "#20e3b2", "#29ffc6"]
+        "name": "Subu",
+        "colors": ["#0cebeb", "#20e3b2", "#29ffc6"]
     },
     {
-      "name": "Holy",
-      "colors": ["#EF00DF", "#E8FF59", "#73C105"]
+        "name": "Holy",
+        "colors": ["#EF00DF", "#E8FF59", "#73C105"]
     },
     {
-      "name": "Shift",
-      "colors": ["#000000", "#E5008D", "#FF070B"]
+        "name": "Shift",
+        "colors": ["#000000", "#E5008D", "#FF070B"]
     },
     {
-      "name": "Clot",
-      "colors": ["#070000", "#4C0001", "#070000"]
+        "name": "Clot",
+        "colors": ["#070000", "#4C0001", "#070000"]
     },
     {
-      "name": "Broken Hearts",
-      "colors": ["#d9a7c7", "#fffcdc"]
+        "name": "Broken Hearts",
+        "colors": ["#d9a7c7", "#fffcdc"]
     },
     {
-      "name": "Kimoby Is The New Blue",
-      "colors": ["#396afc", "#2948ff"]
+        "name": "Kimoby Is The New Blue",
+        "colors": ["#396afc", "#2948ff"]
     },
     {
-      "name": "Dull",
-      "colors": ["#C9D6FF", "#E2E2E2"]
+        "name": "Dull",
+        "colors": ["#C9D6FF", "#E2E2E2"]
     },
     {
-      "name": "Purpink",
-      "colors": ["#7F00FF", "#E100FF"]
+        "name": "Purpink",
+        "colors": ["#7F00FF", "#E100FF"]
+    },
+    {
+        "name": "Velvet Sun",
+        "colors": ["#e1eec3", "#f05053"]
     }
 ]
