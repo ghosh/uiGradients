@@ -1,5 +1,9 @@
 [
     {
+        "name": "DIMIGO",
+        "colors": ["#ec008c", "#fc6767"]
+    },
+    {
         "name": "Purple Love",
         "colors": ["#cc2b5e", "#753a88"]
     },
