@@ -1009,5 +1009,10 @@
     {
       "name": "Summer",
       "colors": ["#22c1c3", "#fdbb2d"]
+    },
+    {
+      "name": "King Yna",
+      "colors": ["#1a2a6c", "#b21f1f", "#fdbb2d"]
     }
+    
 ]
