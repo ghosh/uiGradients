@@ -927,10 +927,6 @@
         "colors": ["#000046", "#1CB5E0"]
     },
     {
-        "name": "Indian at Heart",
-        "colors": ["#FF9933", "#FFFFFF", "#138808"]
-    },
-    {
         "name": "Crystal Clear",
         "colors": ["#159957", "#155799"]
     },
@@ -977,10 +973,6 @@
     {
         "name": "Subu",
         "colors": ["#0cebeb", "#20e3b2", "#29ffc6"]
-    },
-    {
-        "name": "Holy",
-        "colors": ["#EF00DF", "#E8FF59", "#73C105"]
     },
     {
         "name": "Shift",
