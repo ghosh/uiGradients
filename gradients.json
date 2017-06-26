@@ -1005,5 +1005,9 @@
     {
       "name": "Orange Coral",
       "colors": ["#ff9966", "#ff5e62"]
+    },
+    {
+      "name": "Summer",
+      "colors": ["#22c1c3", "#fdbb2d"]
     }
 ]
