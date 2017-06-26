@@ -39,6 +39,7 @@ export default {
       currentFilter: false,
       shortlists: [
         { name: 'reds', color: '#cb2d3e' },
+        { name: 'oranges', color: '#d76b26' },
         { name: 'yellows', color: '#ffd200' },
         { name: 'greens', color: '#159957' },
         { name: 'cyans', color: '#1cb5e0' },
@@ -71,6 +72,8 @@ export default {
         switch (this.currentFilter) {
           case 'reds':
             return this.redPalettes;
+          case 'oranges':
+            return this.orangePalettes;
           case 'yellows':
             return this.yellowPalettes;
           case 'greens':
@@ -112,6 +115,9 @@ export default {
     },
     redPalettes() {
       return this.filterPalettes('Reds');
+    },
+    orangePalettes() {
+      return this.filterPalettes('Oranges');
     },
     yellowPalettes() {
       return this.filterPalettes('Yellows');

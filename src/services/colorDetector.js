@@ -9,6 +9,7 @@ export default function (hexColor) {
   if ((sat / 100) < 0.20) return 'Grays';
 
   if (hue < 30) return 'Reds';
+  if (hue < 60) return 'Oranges';
   if (hue < 90) return 'Yellows';
   if (hue < 150) return 'Greens';
   if (hue < 210) return 'Cyans';
