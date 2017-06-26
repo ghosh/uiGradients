@@ -1001,5 +1001,9 @@
     {
       "name": "Purpink",
       "colors": ["#7F00FF", "#E100FF"]
+    },
+    {
+      "name": "Orange Coral",
+      "colors": ["#ff9966", "#ff5e62"]
     }
 ]
