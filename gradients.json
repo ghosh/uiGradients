@@ -1014,4 +1014,8 @@
         "name": "Velvet Sun",
         "colors": ["#e1eec3", "#f05053"]
     }
+        {
+        "name": "Lithium",
+        "colors": ["#6D6027", "#D3CBB8"]
+    }
 ]
