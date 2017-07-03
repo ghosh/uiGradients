@@ -1015,7 +1015,7 @@
         "colors": ["#e1eec3", "#f05053"]
     }
     {
-        "Digital Water",
+        "name":"Digital Water",
         "color":["#74ebd5","#ACB6E5"]
     }
 ]
