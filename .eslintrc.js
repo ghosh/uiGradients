@@ -10,7 +10,8 @@ module.exports = {
   extends: 'airbnb-base',
   // required to lint *.vue files
   plugins: [
-    'html'
+    'html',
+    'json'
   ],
   // check if imports actually resolve
   'settings': {

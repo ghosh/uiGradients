@@ -8,14 +8,16 @@
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
     "deploy": "gh-pages-deploy",
-    "test": "npm run unit && npm run e2e",
+    "test": "npm run unit && npm run e2e && npm run lintjson",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "watchunit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
+    "lintjson": "eslint gradients.json",
     "bustcache": "cfcli purge"
   },
   "dependencies": {
+    "eslint-plugin-json": "^1.2.0",
     "vue": "^2.2.2"
   },
   "devDependencies": {
