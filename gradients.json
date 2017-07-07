@@ -1013,5 +1013,9 @@
     {
         "name": "Velvet Sun",
         "colors": ["#e1eec3", "#f05053"]
+    },
+    {
+        "name": "Orange Fun",
+        "colors": ["#fc4a1a", "#f7b733"]
     }
 ]
