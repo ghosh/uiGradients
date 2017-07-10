@@ -1011,7 +1011,19 @@
       "colors": ["#1a2a6c", "#b21f1f", "#fdbb2d"]
     },
     {
-        "name": "Velvet Sun",
-        "colors": ["#e1eec3", "#f05053"]
+      "name": "Velvet Sun",
+      "colors": ["#e1eec3", "#f05053"]
+    },
+    {
+      "name": "Zinc",
+      "colors": ["#ADA996", "#F2F2F2", "#DBDBDB", "#EAEAEA"]
+    },
+    {
+      "name": "Hydrogen",
+      "colors": ["#667db6", "#0082c8", "#0082c8", "#667db6"]
+    },
+    {
+      "name": "Argon",
+      "colors": ["#03001e", "#7303c0", "#ec38bc", "#fdeff9"]
     }
 ]
