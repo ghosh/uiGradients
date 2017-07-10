@@ -5,6 +5,7 @@
   "author": "Indrashish Ghosh <mail@indrashishghosh.com>",
   "private": true,
   "scripts": {
+    "start": "npm run dev",
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
     "deploy": "gh-pages-deploy",
