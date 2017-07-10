@@ -5,7 +5,7 @@
         <Preload />
       </template>
     </transition>
-    
+
     <Topbar />
     <Actionbar
       :gradient="currentGradient"
@@ -50,6 +50,7 @@ import GradientModal from './components/modals/GradientModal';
 import CodeModal from './components/modals/CodeModal';
 
 import Download from './services/gradientDownloader';
+import Favicon from './services/faviconUpdater';
 
 import Gradients from '../gradients.json';
 
@@ -141,6 +142,10 @@ export default {
       );
     },
 
+    updateFavicon() {
+      Favicon(this.currentDirection, ...this.currentGradient.colors);
+    },
+
     fetchGradients() {
       this.gradients = Gradients.reverse();
     },
@@ -172,9 +177,11 @@ export default {
     index(val) {
       this.currentGradient = this.gradients[val];
       window.location.hash = this.currentGradient.name.replace(/\s/g, '');
+      this.updateFavicon();
     },
     directionIndex(id) {
       this.currentDirection = this.directions[id];
+      this.updateFavicon();
     },
   },
   mounted() {
