@@ -1026,4 +1026,8 @@
       "name": "Argon",
       "colors": ["#03001e", "#7303c0", "#ec38bc", "#fdeff9"]
     }
+        {
+        "name": "Lithium",
+        "colors": ["#6D6027", "#D3CBB8"]
+    }
 ]
