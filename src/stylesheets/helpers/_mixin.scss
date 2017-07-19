@@ -1,0 +1,98 @@
+@import '../base/breakpoints';
+
+/**
+ * Uses $breakpoints from _breakpoints.scss
+ */
+@mixin respond-to($breakpoint) {
+  $value: map-get($breakpoints, $breakpoint);
+  @if $value != null {
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+}
+
+@mixin clearfix() {
+  &::before,
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+
+@mixin burger($width: 30px, $height: 5px, $gutter: 3px, $color: #000, $border-radius: 0, $transition-duration: .3s) {
+  $burger-height: $height !global;
+  $burger-gutter: $gutter !global;
+
+  position: relative;
+  margin-top: $height + $gutter;
+  margin-bottom: $height + $gutter;
+
+  &, &:before, &:after {
+    display: block;
+    width: $width;
+    height: $height;
+    background-color: $color;
+    @if $border-radius != 0 {
+      border-radius: $border-radius;
+    }
+
+    transition-property: background-color, transform;
+    transition-duration: $transition-duration;
+  }
+
+  &:before, &:after {
+    position: absolute;
+    content: "";
+  }
+
+  &:before { top: -($height + $gutter); }
+  &:after { top: $height + $gutter; }
+}
+
+
+/**
+ * Select parts of the burger
+ */
+
+@mixin burger-parts {
+  &, &:before, &:after {
+    @content;
+  }
+}
+
+@mixin burger-top {
+  &:before { @content; }
+}
+
+@mixin burger-middle {
+  & { @content; }
+}
+
+@mixin burger-bottom {
+  &:after { @content; }
+}
+
+
+/**
+ * Burger animations
+ */
+
+ @mixin burger-to-cross {
+  & { background-color: transparent !important; }
+  &:before { transform: translateY($burger-gutter + $burger-height) rotate(45deg); }
+  &:after { transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg); }
+}

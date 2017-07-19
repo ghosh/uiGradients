@@ -1,0 +1,40 @@
+.shortlist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  height: 70px;
+  padding: 0 20px;
+
+  &__item {
+    height: 40px;
+    border-radius: 3px;
+    flex-basis: 9.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &.active {
+      border: solid 2px #fafafa;
+    }
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: #fafafa;
+    font-family: "Source Code Pro", monospace;
+    font-size: 12px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+}

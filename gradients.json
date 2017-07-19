@@ -1,11 +1,35 @@
 [
     {
+        "name": "Sel",
+        "colors": ["#00467F", "#A5CC82"]
+    },
+    {
+        "name": "DIMIGO",
+        "colors": ["#ec008c", "#fc6767"]
+    },
+    {
+        "name": "Purple Love",
+        "colors": ["#cc2b5e", "#753a88"]
+    },
+    {
+        "name": "Sexy Blue",
+        "colors": ["#2193b0", "#6dd5ed"]
+    },
+    {
+        "name": "Blooker20",
+        "colors": ["#e65c00", "#F9D423"]
+    },
+    {
         "name": "Sea Blue",
         "colors": ["#2b5876", "#4e4376"]
     },
     {
         "name": "Nimvelo",
         "colors": ["#314755", "#26a0da"]
+    },
+    {
+        "name": "Hazel",
+        "colors": ["#77A1D3", "#79CBCA", "#E684AE"]
     },
     {
         "name": "Noon to Dusk",
@@ -48,6 +72,10 @@
         "colors": ["#3CA55C", "#B5AC49"]
     },
     {
+        "name": "Monte Carlo",
+        "colors": ["#CC95C0", "#DBD4B4", "#7AA1D2"]
+    },
+    {
         "name": "Horizon",
         "colors": ["#003973", "#E5E5BE"]
     },
@@ -82,6 +110,10 @@
     {
         "name": "Purple Paradise",
         "colors": ["#1D2B64", "#F8CDDA"]
+    },
+    {
+        "name": "Stripe",
+        "colors": ["#1FA2FF", "#12D8FA", "#A6FFCB"]
     },
     {
         "name": "Sea Weed",
@@ -412,8 +444,12 @@
         "colors": ["#6441A5", "#2a0845"]
     },
     {
+        "name": "Atlas",
+        "colors": ["#FEAC5E", "#C779D0", "#4BC0C8"]
+    },
+    {
         "name": "Instagram",
-        "colors": ["#517fa4", "#243949"]
+        "colors": ["#833ab4", "#fd1d1d", "#fcb045"]
     },
     {
         "name": "Flickr",
@@ -757,6 +793,10 @@
         "colors": ["#41295a", "#2F0743"]
     },
     {
+        "name": "Radar",
+        "colors": ["#A770EF", "#CF8BF3", "#FDB99B"]
+    },
+    {
         "name": "Ibiza Sunset",
         "colors": ["#ee0979", "#ff6a00"]
     },
@@ -780,7 +820,7 @@
     },
     {
         "name": "Cocoaa Ice",
-        "colors": ["#c0c0aa", "#1ce"]
+        "colors": ["#c0c0aa", "#1cefff"]
     },
     {
         "name": "EasyMed",
@@ -843,7 +883,7 @@
         "colors": ["#C33764", "#1D2671"]
     },
     {
-        "name": "Aubergine",
+        "name": "Purplepine",
         "colors": ["#20002c", "#cbb4d4"]
     },
     {
@@ -903,8 +943,83 @@
         "colors": ["#283c86", "#45a247"]
     },
     {
+        "name": "Relay",
+        "colors": ["#3A1C71", "#D76D77", "#FFAF7B"]
+    },
+    {
         "name": "Alive",
         "colors": ["#CB356B", "#BD3F32"]
-    }
-
+    },
+    {
+        "name": "Scooter",
+        "colors": ["#36D1DC", "#5B86E5"]
+    },
+    {
+        "name": "Terminal",
+        "colors": ["#000000", "#0f9b0f"]
+    },
+    {
+        "name": "Telegram",
+        "colors": ["#1c92d2", "#f2fcfe"]
+    },
+    {
+        "name": "Crimson Tide",
+        "colors": ["#642B73", "#C6426E"]
+    },
+    {
+        "name": "Socialive",
+        "colors": ["#06beb6", "#48b1bf"]
+    },
+    {
+        "name": "Subu",
+        "colors": ["#0cebeb", "#20e3b2", "#29ffc6"]
+    },
+    {
+        "name": "Shift",
+        "colors": ["#000000", "#E5008D", "#FF070B"]
+    },
+    {
+        "name": "Clot",
+        "colors": ["#070000", "#4C0001", "#070000"]
+    },
+    {
+        "name": "Broken Hearts",
+        "colors": ["#d9a7c7", "#fffcdc"]
+    },
+    {
+        "name": "Kimoby Is The New Blue",
+        "colors": ["#396afc", "#2948ff"]
+    },
+    {
+        "name": "Dull",
+        "colors": ["#C9D6FF", "#E2E2E2"]
+    },
+    {
+      "name": "Purpink",
+      "colors": ["#7F00FF", "#E100FF"]
+    },
+    {
+      "name": "Orange Coral",
+      "colors": ["#ff9966", "#ff5e62"]
+    },
+    {
+      "name": "Summer",
+      "colors": ["#22c1c3", "#fdbb2d"]
+    },
+    {
+      "name": "King Yna",
+      "colors": ["#1a2a6c", "#b21f1f", "#fdbb2d"]
+    },
+    {
+        "name": "Velvet Sun",
+        "colors": ["#e1eec3", "#f05053"]
+    },
+    {
+        "name": "Orange Fun",
+        "colors": ["#fc4a1a", "#f7b733"]
+    },
+    {
+        "name": "Pink Flavour",
+        "colors": ["#800080", "#ffc0cb"]
+    },
 ]
