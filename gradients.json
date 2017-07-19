@@ -1017,5 +1017,9 @@
     {
         "name": "Orange Fun",
         "colors": ["#fc4a1a", "#f7b733"]
-    }
+    },
+    {
+        "name": "Pink Flavour",
+        "colors": ["#800080", "#ffc0cb"]
+    },
 ]
