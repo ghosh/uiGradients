@@ -1041,5 +1041,13 @@
     {
         "name": "Orange Fun",
         "colors": ["#fc4a1a", "#f7b733"]
+    },
+    {
+        "name": "Sulphur",
+        "colors": ["#CAC531", "#F3F9A7"]
+    },
+    {
+        "name": "Selenium",
+        "colors": ["#3C3B3F", "#605C3C"]
     }
 ]
