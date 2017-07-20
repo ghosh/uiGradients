@@ -1050,4 +1050,12 @@
         "name": "Pink Flavour",
         "colors": ["#800080", "#ffc0cb"]
     },
+    {
+        "name": "Sulphur",
+        "colors": ["#CAC531", "#F3F9A7"]
+    },
+    {
+        "name": "Selenium",
+        "colors": ["#3C3B3F", "#605C3C"]
+    }
 ]
