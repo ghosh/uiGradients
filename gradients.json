@@ -4,6 +4,10 @@
         "colors": ["#00467F", "#A5CC82"]
     },
     {
+        "name": "Skyline",
+        "colors": ["#1488CC", "#2B32B2"]
+    },
+    {
         "name": "DIMIGO",
         "colors": ["#ec008c", "#fc6767"]
     },
