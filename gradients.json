@@ -1057,5 +1057,9 @@
     {
         "name": "Selenium",
         "colors": ["#3C3B3F", "#605C3C"]
+    },
+    {
+        "name": "Delicate",
+        "colors": ["#D3CCE3", "#E9E4F0"]
     }
 ]
