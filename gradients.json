@@ -1057,5 +1057,9 @@
     {
         "name": "Selenium",
         "colors": ["#3C3B3F", "#605C3C"]
+    },
+  {
+        "name": "Ohhappiness",
+        "colors": ["#00b09b", "#96c93d"]
     }
 ]
