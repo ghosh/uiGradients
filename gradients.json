@@ -1057,5 +1057,9 @@
     {
         "name": "Selenium",
         "colors": ["#3C3B3F", "#605C3C"]
+    },
+    {
+        "name": "lawrencium",
+        "colors": ["#0f0c29", "#302b63", "#24243e"]
     }
 ]
