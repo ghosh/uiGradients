@@ -1057,5 +1057,9 @@
     {
         "name": "Selenium",
         "colors": ["#3C3B3F", "#605C3C"]
-    }
+    },
+    {
+        "name": "Relaxing red",
+        "colors": ["#fffbd5", "#b20a2c"]
+    },
 ]
