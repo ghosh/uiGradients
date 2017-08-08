@@ -1057,5 +1057,9 @@
     {
         "name": "Selenium",
         "colors": ["#3C3B3F", "#605C3C"]
+    },
+    {
+      "name": "Taran Tado",
+      "colors": ["#23074d", "#cc5333"]
     }
 ]
