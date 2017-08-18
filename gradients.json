@@ -1068,7 +1068,11 @@
         "colors": ["#00b09b", "#96c93d"]
     },
     {
-        "name": "lawrencium",
+        "name": "Rawrencium",
         "colors": ["#0f0c29", "#302b63", "#24243e"]
+    },
+    {
+        "name": "Relaxing red",
+        "colors": ["#fffbd5", "#b20a2c"]
     }
 ]
