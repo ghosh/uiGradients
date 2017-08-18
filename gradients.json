@@ -1074,5 +1074,9 @@
     {
         "name": "Relaxing red",
         "colors": ["#fffbd5", "#b20a2c"]
+    },
+    {
+        "name": "Taran Tado",
+        "colors": ["#23074d", "#cc5333"]
     }
 ]
