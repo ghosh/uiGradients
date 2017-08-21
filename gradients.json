@@ -1079,4 +1079,12 @@
         "name": "Taran Tado",
         "colors": ["#23074d", "#cc5333"]
     }
+    {
+        "name": "Sublime Vivid"
+        "colors": ["#FC466B", "#3F5EFB"]
+    },
+    {
+        "name": "Sublime Light"
+        "colors": ["#FC5C7D", "#6A82FB"]
+    },
 ]
