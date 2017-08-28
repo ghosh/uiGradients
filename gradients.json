@@ -1078,5 +1078,9 @@
     {
         "name": "Taran Tado",
         "colors": ["#23074d", "#cc5333"]
+    },
+    {
+        "name": "Deluxe Purple",
+        "colors": ["#813E97", "#3E4752"]
     }
 ]
