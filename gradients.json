@@ -1082,13 +1082,13 @@
     {
         "name": "Bighead",
         "colors": ["#c94b4b", "#4b134f"]
-    }
+    },
     {
-        "name": "Sublime Vivid"
+        "name": "Sublime Vivid",
         "colors": ["#FC466B", "#3F5EFB"]
     },
     {
-        "name": "Sublime Light"
+        "name": "Sublime Light",
         "colors": ["#FC5C7D", "#6A82FB"]
-    },
+    }
 ]
