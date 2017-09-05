@@ -71,6 +71,7 @@ A few open source projects built with uiGradients
 - [uigradients](https://github.com/JSBros/uigradients) - Styled components for uiGradients
 - [uigradients-scss](https://github.com/subinsebastian/uigradients-scss) - uiGradients ported to scss
 - [helper-uigradient](https://github.com/helpers/helper-uigradient) - Handlebar helper for uiGradients
+- [Uigradients iOS Viewer](https://github.com/thexande/uiGradients-Viewer-iOS) - Open source iOS app for viewing gradients
 
 &nbsp;
 
