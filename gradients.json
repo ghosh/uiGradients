@@ -1,5 +1,21 @@
 [
     {
+        "name": "Royal Blue",
+        "colors": ["#536976", "#292E49"]
+    },
+    {
+        "name": "Royal Blue + Petrol",
+        "colors": ["#BBD2C5", "#536976", "#292E49"]
+    },
+    {
+        "name": "Copper",
+        "colors": ["#B79891", "#94716B"]
+    },
+    {
+        "name": "Petrol",
+        "colors": ["#BBD2C5", "#536976"]
+    },
+    {
         "name": "Sel",
         "colors": ["#00467F", "#A5CC82"]
     },
