@@ -1,5 +1,9 @@
 [
     {
+      "name": "sky",
+      "colors": ["#076585", "#fff"]
+    },
+    {
         "name": "Sel",
         "colors": ["#00467F", "#A5CC82"]
     },
