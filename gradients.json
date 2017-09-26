@@ -1091,4 +1091,8 @@
         "name": "Sublime Light",
         "colors": ["#FC5C7D", "#6A82FB"]
     }
+    {
+        "name": "Wedding Day Blues",
+        "colors": ["#40E0D0", "#FF8C00", "#FF0080"]
+    }
 ]
