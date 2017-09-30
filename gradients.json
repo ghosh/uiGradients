@@ -1,4 +1,9 @@
 [
+  
+    {
+        "name": "Windy",
+        "colors": ["#acb6e5", "#86fde8"]
+    },
     {
         "name": "Sel",
         "colors": ["#00467F", "#A5CC82"]
