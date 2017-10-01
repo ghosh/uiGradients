@@ -1079,7 +1079,7 @@
         "colors": ["#D3CCE3", "#E9E4F0"]
     },
     {
-  
+
         "name": "Ohhappiness",
         "colors": ["#00b09b", "#96c93d"]
     },
@@ -1114,6 +1114,10 @@
     {
         "name": "Quepal",
         "colors": ["#11998e", "#38ef7d"]
+    },
+    {
+        "name": "Sand to Blue",
+        "colors": ["#3E5151", "#DECBA4"]
     }
     
 ]
