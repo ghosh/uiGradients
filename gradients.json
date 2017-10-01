@@ -1,4 +1,12 @@
-[
+[ 
+     {
+        "name": "Mango",
+        "colors": ["#ffe259", "#ffa751"]
+    },
+    {
+        "name": "Windy",
+        "colors": ["#acb6e5", "#86fde8"]
+    },
     {
         "name": "Royal Blue",
         "colors": ["#536976", "#292E49"]
