@@ -16,6 +16,10 @@
         "colors": ["#BBD2C5", "#536976"]
     },
     {
+        "name": "Sky",
+        "colors": ["#076585", "#fff"]
+    },
+    {
         "name": "Sel",
         "colors": ["#00467F", "#A5CC82"]
     },
