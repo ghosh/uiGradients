@@ -1041,5 +1041,11 @@
     {
         "name": "Orange Fun",
         "colors": ["#fc4a1a", "#f7b733"]
-    }
+    },
+  {
+        "name": "Rainbow Blue",
+        "colors": ["#00F260", "#0575E6"]
+  }
+  
+  
 ]
