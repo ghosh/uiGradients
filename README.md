@@ -76,6 +76,12 @@ A few open source projects built with uiGradients
 &nbsp;
 
 
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/U7SKSneQBRgvgkE68HFbqR1q/ghosh/uiGradients'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/U7SKSneQBRgvgkE68HFbqR1q/ghosh/uiGradients.svg' />
+</a>
+
+&nbsp;
+
 <p align="center">✌️</p>
 <p align="center">
 <sub><sup>A little project by <a href="https://twitter.com/_ighosh">@i_ghosh</a></sup></sub>
