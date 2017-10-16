@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^7.1.5",
-    "avoriaz": "^1.14.0",
+    "avoriaz": "^6.0.0",
     "babel-core": "^6.22.1",
     "babel-eslint": "^7.1.1",
     "babel-loader": "^7.0.0",
