@@ -25,6 +25,12 @@ uiGradients is a community contributed collection of beautiful multi-color gradi
 
 &nbsp;
 
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/U7SKSneQBRgvgkE68HFbqR1q/ghosh/uiGradients'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/U7SKSneQBRgvgkE68HFbqR1q/ghosh/uiGradients.svg' />
+</a>
+
+&nbsp;
+
 ## About
 This is an effort to give back to the community, by the community. Hopefully this will help you draw inspiration and serve as a resource for picking gradients for your own projects.
 
@@ -72,13 +78,6 @@ A few open source projects built with uiGradients
 - [uigradients-scss](https://github.com/subinsebastian/uigradients-scss) - uiGradients ported to scss
 - [helper-uigradient](https://github.com/helpers/helper-uigradient) - Handlebar helper for uiGradients
 - [Uigradients iOS Viewer](https://github.com/thexande/uiGradients-Viewer-iOS) - Open source iOS app for viewing gradients
-
-&nbsp;
-
-
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/U7SKSneQBRgvgkE68HFbqR1q/ghosh/uiGradients'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/U7SKSneQBRgvgkE68HFbqR1q/ghosh/uiGradients.svg' />
-</a>
 
 &nbsp;
 
