@@ -43,7 +43,7 @@
     "cross-spawn": "^5.0.1",
     "css-loader": "^0.28.7",
     "eslint": "^3.19.0",
-    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-config-airbnb-base": "^12.1.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-import-resolver-webpack": "^0.8.1",
     "eslint-loader": "^1.6.1",
