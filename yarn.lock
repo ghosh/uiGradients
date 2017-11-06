@@ -5733,9 +5733,9 @@ select@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/select/-/select-1.1.2.tgz#0e7350acdec80b1108528786ec1d4418d11b396d"
 
-selenium-server@^3.0.1:
-  version "3.5.0"
-  resolved "https://registry.yarnpkg.com/selenium-server/-/selenium-server-3.5.0.tgz#e93a878a449ab1379cf295dcb4b47727168b2764"
+selenium-server@^3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/selenium-server/-/selenium-server-3.7.0.tgz#6d3347e4dd56ec92bb525d4e8632cbd4c34fc930"
 
 "semver@2 || 3 || 4 || 5", semver@^5.1.0, semver@^5.3.0:
   version "5.4.1"
