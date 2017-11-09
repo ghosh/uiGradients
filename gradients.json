@@ -1075,6 +1075,10 @@
         "colors": ["#fc4a1a", "#f7b733"]
     },
     {
+        "name": "Rainbow Blue",
+        "colors": ["#00F260", "#0575E6"]
+    },
+    {
         "name": "Pink Flavour",
         "colors": ["#800080", "#ffc0cb"]
     },
@@ -1138,5 +1142,9 @@
     {
         "name": "Shifter",
         "colors": ["#bc4e9c", "#f80759"]
+    },
+    {
+        "name": "Red Sunset",
+        "colors": ["#355C7D", "#6C5B7B", "#C06C84"]
     }
 ]
