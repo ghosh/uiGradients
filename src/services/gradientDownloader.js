@@ -10,8 +10,8 @@ export default function (direction, name, ...colors) {
   const canvas = document.createElement('canvas');
 
   canvas.id = 'canva';
-  canvas.width = screen.width;
-  canvas.height = screen.height;
+  canvas.width = screen.width; // eslint-disable-line
+  canvas.height = screen.height; // eslint-disable-line
   canvas.style.zIndex = 1;
   canvas.style.position = 'absolute';
   document.body.appendChild(canvas);

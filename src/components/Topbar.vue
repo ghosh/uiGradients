@@ -47,14 +47,16 @@ export default {
       window.open(
         'http://twitter.com/share?url=https://uigradients.com&amp;text=Beautiful%20color%20gradients%20for%20designers%20and%20developers&amp;via=_ighosh',
         'twitter-share',
-        'width=700,height=300');
+        'width=700,height=300',
+      );
     },
     shareOnFacebook() {
       this.$ga.social('facebook', 'share', 'http://uigradients.com/');
       window.open(
         'http://www.facebook.com/sharer.php?u=https://uigradients.com',
         'facebook-share',
-        'width=700,height=400');
+        'width=700,height=400',
+      );
     },
   },
 };

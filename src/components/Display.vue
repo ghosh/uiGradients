@@ -35,7 +35,7 @@ export default {
   computed: {
     backgroundStyle() {
       const colors = [...this.gradient.colors].join(', ');
-      const direction = this.direction;
+      const { direction } = this;
       return {
         background: `linear-gradient(${direction}, ${colors})`,
       };

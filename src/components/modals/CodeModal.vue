@@ -1,11 +1,11 @@
 <template>
   <Modal :show.sync="show" :on-close="closeModal">
 
-      <h3 class="modal__title">
-        Copy CSS code
-      </h3>
+  <h3 class="modal__title">
+    Copy CSS code
+  </h3>
 
-<div class="modal__content">
+  <div class="modal__content">
 
     <div class="modal__success" v-if="copied">
       <p>{{this.showSuccessMessage()}}</p>
@@ -72,7 +72,7 @@ background: linear-gradient(${this.direction}, ${[...this.gradient.colors].rever
         '👍 Done. Go for it.',
         '✌️ Nice one! You have good tase.',
       ];
-      const length = messages.length;
+      const { length } = messages;
       const randomMessage = Math.round(Math.random() * (length - 1));
       return messages[randomMessage];
     },

@@ -55,7 +55,7 @@ export default {
   updated() {
     let c = this.color;
     c = c.substring(1);
-     /* eslint-disable no-new */
+    /* eslint-disable no-new */
     new Clipboard(`#c-${c}`, {
       text() {
         return `#${c}`;

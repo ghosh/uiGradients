@@ -98,7 +98,7 @@ export default {
     },
     // Identitifies a color range for each color in gradient
     classifiedColors() {
-      const gradients = this.gradients;
+      const { gradients } = this;
       gradients.forEach((gradient) => {
         const tags = [];
         gradient.colors.forEach(color => tags.push(detect(color)));
