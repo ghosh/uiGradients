@@ -1,4 +1,4 @@
-[ 
+[
      {
         "name": "Mango",
         "colors": ["#ffe259", "#ffa751"]
@@ -1138,6 +1138,10 @@
     {
         "name": "Wedding Day Blues",
         "colors": ["#40E0D0", "#FF8C00", "#FF0080"]
+    },
+    {
+        "name": "Shifter",
+        "colors": ["#bc4e9c", "#f80759"]
     },
     {
         "name": "Red Sunset",
