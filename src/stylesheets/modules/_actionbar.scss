@@ -27,9 +27,9 @@
       justify-content: center;
       flex-basis: 100%;
 
-    @include respond-to(medium) {
-      flex-basis: 33.33%;
-    }
+    // @include respond-to(medium) {
+    //   flex-basis: 33.33%;
+    // }
 
     }
   }

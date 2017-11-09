@@ -1,7 +1,39 @@
-[
+[ 
+     {
+        "name": "Mango",
+        "colors": ["#ffe259", "#ffa751"]
+    },
+    {
+        "name": "Windy",
+        "colors": ["#acb6e5", "#86fde8"]
+    },
+    {
+        "name": "Royal Blue",
+        "colors": ["#536976", "#292E49"]
+    },
+    {
+        "name": "Royal Blue + Petrol",
+        "colors": ["#BBD2C5", "#536976", "#292E49"]
+    },
+    {
+        "name": "Copper",
+        "colors": ["#B79891", "#94716B"]
+    },
+    {
+        "name": "Petrol",
+        "colors": ["#BBD2C5", "#536976"]
+    },
+    {
+        "name": "Sky",
+        "colors": ["#076585", "#fff"]
+    },
     {
         "name": "Sel",
         "colors": ["#00467F", "#A5CC82"]
+    },
+    {
+        "name": "Skyline",
+        "colors": ["#1488CC", "#2B32B2"]
     },
     {
         "name": "DIMIGO",
@@ -1042,10 +1074,69 @@
         "name": "Orange Fun",
         "colors": ["#fc4a1a", "#f7b733"]
     },
-  {
+    {
         "name": "Rainbow Blue",
         "colors": ["#00F260", "#0575E6"]
-  }
-  
-  
+    },
+    {
+        "name": "Pink Flavour",
+        "colors": ["#800080", "#ffc0cb"]
+    },
+    {
+        "name": "Sulphur",
+        "colors": ["#CAC531", "#F3F9A7"]
+    },
+    {
+        "name": "Selenium",
+        "colors": ["#3C3B3F", "#605C3C"]
+    },
+    {
+        "name": "Delicate",
+        "colors": ["#D3CCE3", "#E9E4F0"]
+    },
+    {
+
+        "name": "Ohhappiness",
+        "colors": ["#00b09b", "#96c93d"]
+    },
+    {
+        "name": "Lawrencium",
+        "colors": ["#0f0c29", "#302b63", "#24243e"]
+    },
+    {
+        "name": "Relaxing red",
+        "colors": ["#fffbd5", "#b20a2c"]
+    },
+    {
+        "name": "Taran Tado",
+        "colors": ["#23074d", "#cc5333"]
+    },
+    {
+        "name": "Bighead",
+        "colors": ["#c94b4b", "#4b134f"]
+    },
+    {
+        "name": "Sublime Vivid",
+        "colors": ["#FC466B", "#3F5EFB"]
+    },
+    {
+        "name": "Sublime Light",
+        "colors": ["#FC5C7D", "#6A82FB"]
+    },
+    {
+        "name": "Pun Yeta",
+        "colors": ["#108dc7", "#ef8e38"]
+    },
+    {
+        "name": "Quepal",
+        "colors": ["#11998e", "#38ef7d"]
+    },
+    {
+        "name": "Sand to Blue",
+        "colors": ["#3E5151", "#DECBA4"]
+    },
+    {
+        "name": "Wedding Day Blues",
+        "colors": ["#40E0D0", "#FF8C00", "#FF0080"]
+    }
 ]
