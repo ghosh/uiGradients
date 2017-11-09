@@ -10,18 +10,18 @@ const wrapper = mount(Swatch, {
 describe('Swatch.vue', () => {
   it('should render a color box', () => {
     expect(wrapper.contains('.hex__block'))
-    .to.equal(true);
+      .to.equal(true);
   });
 
   it('should color the swatch box correctly', () => {
     const div = wrapper.find('.hex__name')[0];
     expect(div.text())
-    .to.equal('#2d2d2d');
+      .to.equal('#2d2d2d');
   });
 
   it('should make the hex value lowercase', () => {
     const div = wrapper.find('.hex__name')[0];
     expect(div.text())
-    .to.equal('#2d2d2d'.toLowerCase());
+      .to.equal('#2d2d2d'.toLowerCase());
   });
 });

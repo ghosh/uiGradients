@@ -19,7 +19,7 @@ const wrapper = mount(Palette, {
 describe('Palette.vue', () => {
   it('should have a class name of .palette__gradient', () => {
     expect(wrapper.is('.palette__gradient'))
-    .to.equal(true);
+      .to.equal(true);
   });
 
   it('should render the gradient name', () => {
@@ -29,11 +29,11 @@ describe('Palette.vue', () => {
 
   it('should have a gradient as background style', () => {
     expect(wrapper.hasStyle('background', 'linear-gradient(to left, #1FA2FF,#21DCF6,#A6FFCB)'))
-    .to.equal(true);
+      .to.equal(true);
   });
 
   it('should call updateGradient method when clicked', () => {
-    wrapper.simulate('click');
+    wrapper.trigger('click');
     expect(clickHandler.called).to.equal(true);
   });
 });

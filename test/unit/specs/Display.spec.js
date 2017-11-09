@@ -18,6 +18,6 @@ describe('Display.vue', () => {
 
   it('should have a gradient as background style', () => {
     expect(wrapper.hasStyle('background', 'linear-gradient(to left, #1FA2FF,#21DCF6,#A6FFCB)'))
-    .to.equal(true);
+      .to.equal(true);
   });
 });
