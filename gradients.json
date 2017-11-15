@@ -1146,5 +1146,9 @@
     {
         "name": "Red Sunset",
         "colors": ["#355C7D", "#6C5B7B", "#C06C84"]
+    },
+    {
+      "name": "Wild Violet",
+      "colors": ["#463460", "#7e3945"]
     }
 ]
