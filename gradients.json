@@ -1147,4 +1147,8 @@
         "name": "Red Sunset",
         "colors": ["#355C7D", "#6C5B7B", "#C06C84"]
     }
+    {
+      "name": "eXpresso",
+      "colors": ["#ad5389", "#3c1053"]
+     }
 ]
