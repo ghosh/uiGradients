@@ -25,12 +25,6 @@ uiGradients is a community contributed collection of beautiful multi-color gradi
 
 &nbsp;
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/U7SKSneQBRgvgkE68HFbqR1q/ghosh/uiGradients'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/U7SKSneQBRgvgkE68HFbqR1q/ghosh/uiGradients.svg' />
-</a>
-
-&nbsp;
-
 ## About
 This is an effort to give back to the community, by the community. Hopefully this will help you draw inspiration and serve as a resource for picking gradients for your own projects.
 
