@@ -1,4 +1,7 @@
 [
+  {
+    "name": "Sunset Orange",
+    "colors": ["#c64a62","#ec6425", "#ff9900", "#f9e300"]
      {
         "name": "Mango",
         "colors": ["#ffe259", "#ffa751"]
