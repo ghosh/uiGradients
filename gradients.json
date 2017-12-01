@@ -1147,4 +1147,8 @@
         "name": "Red Sunset",
         "colors": ["#355C7D", "#6C5B7B", "#C06C84"]
     }
+    {
+      "name": "Slight Ocean View",
+      "colors": ["#a8c0ff", "#3f2b96"]
+    }
 ]
