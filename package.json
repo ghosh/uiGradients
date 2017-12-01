@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "eslint-plugin-json": "^1.2.0",
-    "vue": "^2.5.3"
+    "vue": "^2.5.9"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.6",
