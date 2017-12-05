@@ -1146,5 +1146,9 @@
     {
         "name": "Red Sunset",
         "colors": ["#355C7D", "#6C5B7B", "#C06C84"]
+    },
+    {
+        "name": "pvl",
+        "colors": ["#3e0448", "#d94860"]
     }
 ]
