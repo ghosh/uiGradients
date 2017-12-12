@@ -70,7 +70,7 @@ background: linear-gradient(${this.direction}, ${[...this.gradient.colors].rever
         '👌 Excellent Choice! It\'ll look amazing.',
         '🙌 Very well, master.',
         '👍 Done. Go for it.',
-        '✌️ Nice one! You have good tase.',
+        '✌️ Nice one! You have good taste.',
       ];
       const { length } = messages;
       const randomMessage = Math.round(Math.random() * (length - 1));
