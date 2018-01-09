@@ -1,5 +1,5 @@
 [
-     {
+    {
         "name": "Mango",
         "colors": ["#ffe259", "#ffa751"]
     },
@@ -1147,9 +1147,8 @@
         "name": "Red Sunset",
         "colors": ["#355C7D", "#6C5B7B", "#C06C84"]
     },
-  
-  {
-    "name": "Pure Lust",
-    "colors": ["#000000", "#dd1818"]
-  }
+    {
+        "name": "Pure Lust",
+        "colors": ["#333333", "#dd1818"]
+    }
 ]
