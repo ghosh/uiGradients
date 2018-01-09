@@ -1169,7 +1169,12 @@
         "colors": ["#a8c0ff", "#3f2b96"]
     },
     {
-      "name": "eXpresso",
-      "colors": ["#ad5389", "#3c1053"]
+        "name": "eXpresso",
+        "colors": ["#ad5389", "#3c1053"]
+    },
+    {
+        "name": "Shifty",
+        "colors": ["#636363", "#a2ab58"]
     }
+  
 ]
