@@ -1167,5 +1167,9 @@
     { 
         "name": "Slight Ocean View",
         "colors": ["#a8c0ff", "#3f2b96"]
+    },
+    {
+      "name": "eXpresso",
+      "colors": ["#ad5389", "#3c1053"]
     }
 ]
