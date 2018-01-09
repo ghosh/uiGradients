@@ -1174,7 +1174,11 @@
     },
     {
         "name": "Shifty",
-        "colors": ["#636363", "#a2ab58"]
+        "colors": ["#636363", "#a2ab58"
+    },
+    {
+        "name": "Vanusa",
+        "colors": ["#DA4453", "#89216B"]
     }
   
 ]
