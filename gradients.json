@@ -1157,12 +1157,15 @@
         "colors": ["#355C7D", "#6C5B7B", "#C06C84"]
     },
     {
-<<<<<<< HEAD
         "name": "Moon Purple",
         "colors": ["#4e54c8", "#8f94fb"]
-=======
+    },
+    {
         "name": "Pure Lust",
         "colors": ["#333333", "#dd1818"]
->>>>>>> 51b5fe631666a035bee0e41aa5f7d646e1761e14
+    },
+    { 
+        "name": "Slight Ocean View",
+        "colors": ["#a8c0ff", "#3f2b96"]
     }
 ]
