@@ -851,6 +851,11 @@
 
     },
     {
+        "name": "Jodhpur",
+        "colors": ["#9CECFB", "#65C7F7", "#0052D4"]
+
+    },
+    {
         "name": "Cocoaa Ice",
         "colors": ["#c0c0aa", "#1cefff"]
     },
