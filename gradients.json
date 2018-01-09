@@ -1179,6 +1179,9 @@
     {
         "name": "Vanusa",
         "colors": ["#DA4453", "#89216B"]
-    }
-  
+    },
+    {
+        "name": "Evening Night",
+        "colors": ["#005AA7", "#FFFDE4"]
+    }  
 ]
