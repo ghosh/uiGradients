@@ -1036,40 +1036,40 @@
         "colors": ["#C9D6FF", "#E2E2E2"]
     },
     {
-      "name": "Purpink",
-      "colors": ["#7F00FF", "#E100FF"]
+        "name": "Purpink",
+        "colors": ["#7F00FF", "#E100FF"]
     },
     {
-      "name": "Orange Coral",
-      "colors": ["#ff9966", "#ff5e62"]
+        "name": "Orange Coral",
+        "colors": ["#ff9966", "#ff5e62"]
     },
     {
-      "name": "Summer",
-      "colors": ["#22c1c3", "#fdbb2d"]
+        "name": "Summer",
+        "colors": ["#22c1c3", "#fdbb2d"]
     },
     {
-      "name": "King Yna",
-      "colors": ["#1a2a6c", "#b21f1f", "#fdbb2d"]
+        "name": "King Yna",
+        "colors": ["#1a2a6c", "#b21f1f", "#fdbb2d"]
     },
     {
-      "name": "Velvet Sun",
-      "colors": ["#e1eec3", "#f05053"]
+        "name": "Velvet Sun",
+        "colors": ["#e1eec3", "#f05053"]
     },
     {
-      "name": "Zinc",
-      "colors": ["#ADA996", "#F2F2F2", "#DBDBDB", "#EAEAEA"]
+        "name": "Zinc",
+        "colors": ["#ADA996", "#F2F2F2", "#DBDBDB", "#EAEAEA"]
     },
     {
-      "name": "Hydrogen",
-      "colors": ["#667db6", "#0082c8", "#0082c8", "#667db6"]
+        "name": "Hydrogen",
+        "colors": ["#667db6", "#0082c8", "#0082c8", "#667db6"]
     },
     {
-      "name": "Argon",
-      "colors": ["#03001e", "#7303c0", "#ec38bc", "#fdeff9"]
+        "name": "Argon",
+        "colors": ["#03001e", "#7303c0", "#ec38bc", "#fdeff9"]
     },
     {
-      "name": "Lithium",
-      "colors": ["#6D6027", "#D3CBB8"]
+        "name": "Lithium",
+        "colors": ["#6D6027", "#D3CBB8"]
     },
     {
         "name": "Digital Water",
@@ -1164,7 +1164,7 @@
         "name": "Pure Lust",
         "colors": ["#333333", "#dd1818"]
     },
-    { 
+    {
         "name": "Slight Ocean View",
         "colors": ["#a8c0ff", "#3f2b96"]
     },
@@ -1174,7 +1174,7 @@
     },
     {
         "name": "Shifty",
-        "colors": ["#636363", "#a2ab58"
+        "colors": ["#636363", "#a2ab58"]
     },
     {
         "name": "Vanusa",
@@ -1183,5 +1183,5 @@
     {
         "name": "Evening Night",
         "colors": ["#005AA7", "#FFFDE4"]
-    }  
+    }
 ]
