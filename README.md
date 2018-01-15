@@ -1,81 +1,234 @@
-<p align="center">
-  <img src="https://www.dropbox.com/s/8e17cyl1xlg74e5/logo.svg?raw=1" width="180px">
-</p>
+This project was bootstrapped with [Create Next App](https://github.com/segmentio/create-next-app).
 
-<p align="center">
-  <a href="#">
-    <img src="https://img.shields.io/badge/made%20with-love-E760A4.svg" alt="Made with love">
-  </a>
-  <a href="https://opensource.org/licenses/MIT" target="_blank">
-    <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
-  </a>
-  <a href="https://github.com/ghosh/uiGradients/graphs/contributors" target="_blank">
-    <img src="https://img.shields.io/github/contributors/ghosh/uigradients.svg" alt="Contributors">
-  </a>
-  <a href="https://api.travis-ci.org/ghosh/uiGradients" target="_blank">
-    <img src="https://api.travis-ci.org/ghosh/uiGradients.svg" alt="Build Status">
-  </a>
-</p>
+Find the most recent version of this guide at [here](https://github.com/segmentio/create-next-app/blob/master/lib/templates/default/README.md). And check out [Next.js repo](https://github.com/zeit/next.js) for the most up-to-date info.
 
-<p align="center">
-uiGradients is a community contributed collection of beautiful multi-color gradients
-</p>
+## Table of Contents
 
----
+- [Questions? Feedback?](#questions-feedback)
+- [Folder Structure](#folder-structure)
+- [Available Scripts](#available-scripts)
+  - [npm run dev](#npm-run-dev)
+  - [npm run build](#npm-run-build)
+  - [npm run start](#npm-run-start)
+- [Using CSS](#using-css)
+- [Adding Components](#adding-components)
+- [Fetching Data](#fetching-data)
+- [Custom Server](#custom-server)
+- [Syntax Highlighting](#syntax-highlighting)
+- [Using the `static` Folder](#using-the-static-folder)
+- [Deploy to Now](#deploy-to-now)
+- [Something Missing?](#something-missing)
 
-&nbsp;
+## Questions? Feedback?
 
-## About
-This is an effort to give back to the community, by the community. Hopefully this will help you draw inspiration and serve as a resource for picking gradients for your own projects.
+Check out [Next.js FAQ & docs](https://github.com/zeit/next.js#faq) or [let us know](https://github.com/segmentio/create-next-app/issues) your feedback.
 
-&nbsp;
+## Folder Structure
 
-## Contributing
-Adding a gradient to the library is super simple. All the gradients are loaded and rendered from a single `gradients.json` file in the root.
-
-To add your gradient, fork this repository, add your gradient colors in the HEX format along with a name to the end of the json file and submit a pull request. Don't forget the commas!
+After creating an app, it should look something like:
 
 ```
-[
-    {
-        …
-    },
-    {
-      "name": "Career",
-      "colors": ["#cb202d", "#dc1e28", "#3366cc"]
+my-app/
+  README.md
+  package.json
+  next.config.js
+  components/
+    head.js
+    nav.js
+  pages/
+    index.js
+  static/
+    favicon.ico
+```
+
+Routing in Next.js is based on the file system, so `./pages/index.js` maps to the `/` route and
+`./pages/about.js` would map to `/about`.
+
+The `./static` directory maps to `/static` in the `next` server, so you can put all your
+other static resources like images or compiled CSS in there.
+
+Out of the box, we get:
+
+- Automatic transpilation and bundling (with webpack and babel)
+- Hot code reloading
+- Server rendering and indexing of `./pages`
+- Static file serving. `./static/` is mapped to `/static/`
+
+Read more about [Next's Routing](https://github.com/zeit/next.js#routing)
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm run dev`
+
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br>
+You will also see any errors in the console.
+
+### `npm run build`
+
+Builds the app for production to the `.next` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+### `npm run start`
+
+Starts the application in production mode.
+The application should be compiled with \`next build\` first.
+
+See the section in Next docs about [deployment](https://github.com/zeit/next.js/wiki/Deployment) for more information.
+
+## Using CSS
+
+[`styled-jsx`](https://github.com/zeit/styled-jsx) is bundled with next to provide support for isolated scoped CSS. The aim is to support "shadow CSS" resembling of Web Components, which unfortunately [do not support server-rendering and are JS-only](https://github.com/w3c/webcomponents/issues/71).
+
+```jsx
+export default () => (
+  <div>
+    Hello world
+    <p>scoped!</p>
+    <style jsx>{`
+      p {
+        color: blue;
+      }
+      div {
+        background: red;
+      }
+      @media (max-width: 600px) {
+        div {
+          background: blue;
+        }
+      }
+    `}</style>
+  </div>
+)
+```
+
+Read more about [Next's CSS features](https://github.com/zeit/next.js#css).
+
+## Adding Components
+
+We recommend keeping React components in `./components` and they should look like:
+
+### `./components/simple.js`
+
+```jsx
+const Simple = () => (
+  <div>Simple Component</div>
+)
+
+export default Simple // don't forget to export default!
+```
+
+### `./components/complex.js`
+
+```jsx
+import { Component } from 'react'
+
+class Complex extends Component {
+  state = {
+    text: 'World'
+  }
+
+  render () {
+    const { text } = this.state
+    return <div>Hello {text}</div>
+  }
+}
+
+export default Complex // don't forget to export default!
+```
+
+## Fetching Data
+
+You can fetch data in `pages` components using `getInitialProps` like this:
+
+### `./pages/stars.js`
+
+```jsx
+const Page = (props) => <div>Next stars: {props.stars}</div>
+
+Page.getInitialProps = async ({ req }) => {
+  const res = await fetch('https://api.github.com/repos/zeit/next.js')
+  const json = await res.json()
+  const stars = json.stargazers_count
+  return { stars }
+}
+
+export default Page
+```
+
+For the initial page load, `getInitialProps` will execute on the server only. `getInitialProps` will only be executed on the client when navigating to a different route via the `Link` component or using the routing APIs.
+
+_Note: `getInitialProps` can **not** be used in children components. Only in `pages`._
+
+Read more about [fetching data and the component lifecycle](https://github.com/zeit/next.js#fetching-data-and-component-lifecycle)
+
+## Custom Server
+
+Want to start a new app with a custom server? Run `create-next-app --example customer-server custom-app`
+
+Typically you start your next server with `next start`. It's possible, however, to start a server 100% programmatically in order to customize routes, use route patterns, etc
+
+This example makes `/a` resolve to `./pages/b`, and `/b` resolve to `./pages/a`:
+
+```jsx
+const { createServer } = require('http')
+const { parse } = require('url')
+const next = require('next')
+
+const dev = process.env.NODE_ENV !== 'production'
+const app = next({ dev })
+const handle = app.getRequestHandler()
+
+app.prepare().then(() => {
+  createServer((req, res) => {
+    // Be sure to pass `true` as the second argument to `url.parse`.
+    // This tells it to parse the query portion of the URL.
+    const parsedUrl = parse(req.url, true)
+    const { pathname, query } = parsedUrl
+
+    if (pathname === '/a') {
+      app.render(req, res, '/b', query)
+    } else if (pathname === '/b') {
+      app.render(req, res, '/a', query)
+    } else {
+      handle(req, res, parsedUrl)
     }
-]
+  })
+  .listen(3000, (err) => {
+    if (err) throw err
+    console.log('> Ready on http://localhost:3000')
+  })
+})
 ```
 
-*NOTE* - Please keep gradient submissions and bug fixes in separate PRs.
+Then, change your `start` script to `NODE_ENV=production node server.js`.
 
-&nbsp;
+Read more about [custom server and routing](https://github.com/zeit/next.js#custom-server-and-routing)
 
-### Improvements and Bugs
-Please feel free to open a new issue [here](https://github.com/Ghosh/uiGradients/issues) with your suggestions or any bugs which you may have come across.
+## Syntax Highlighting
 
-&nbsp;
+To configure the syntax highlighting in your favorite text editor, head to the [relevant Babel documentation page](https://babeljs.io/docs/editors) and follow the instructions. Some of the most popular editors are covered.
 
-## Data
-While there is no official api, all the gradients are present in the `gradients.json` file. The code below is an example of fetching the data via a CURL request
-```
-curl -i https://raw.githubusercontent.com/ghosh/uiGradients/master/gradients.json
-```
+## Deploy to Now
 
-&nbsp;
+[now](https://zeit.co/now) offers a zero-configuration single-command deployment.
 
-## Built with uiGradients
-A few open source projects built with uiGradients
-- [UIColor-uiGradientsAdditions](https://github.com/kaiinui/UIColor-uiGradientsAdditions) - uiGradients for iOS
-- [NilColorKit](https://github.com/NilStack/NilColorKit) - uiGradients made for swift
-- [uigradients](https://github.com/JSBros/uigradients) - Styled components for uiGradients
-- [uigradients-scss](https://github.com/subinsebastian/uigradients-scss) - uiGradients ported to scss
-- [helper-uigradient](https://github.com/helpers/helper-uigradient) - Handlebar helper for uiGradients
-- [Uigradients iOS Viewer](https://github.com/thexande/uiGradients-Viewer-iOS) - Open source iOS app for viewing gradients
+1. Install the `now` command-line tool either via the recommended [desktop tool](https://zeit.co/download) or via node with `npm install -g now`.
 
-&nbsp;
+2. Run `now` from your project directory. You will see a **now.sh** URL in your output like this:
 
-<p align="center">✌️</p>
-<p align="center">
-<sub><sup>A little project by <a href="https://twitter.com/_ighosh">@i_ghosh</a></sup></sub>
-</p>
+    ```
+    > Ready! https://your-project-dirname-tpspyhtdtk.now.sh (copied to clipboard)
+    ```
+
+    Paste that URL into your browser when the build is complete, and you will see your deployed app.
+
+You can find more details about [`now` here](https://zeit.co/now).
+
+## Something Missing?
+
+If you have ideas for how we could improve this readme or the project in general, [let us know](https://github.com/segmentio/create-next-app/issues) or [contribute some!](https://github.com/segmentio/create-next-app/edit/master/lib/templates/default/README.md)

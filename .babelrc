@@ -1,14 +1,16 @@
 {
   "presets": [
-    ["env", { "modules": false }],
-    "stage-2"
+    "next/babel"
   ],
-  "plugins": ["transform-runtime"],
-  "comments": false,
-  "env": {
-    "test": {
-      "presets": ["env", "stage-2"],
-      "plugins": [ "istanbul" ]
-    }
-  }
+  "plugins": [
+    [
+      "inline-react-svg",
+      "styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "preprocess": false
+      }
+    ]
+  ]
 }
