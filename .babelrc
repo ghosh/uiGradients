@@ -5,6 +5,23 @@
   "plugins": [
     [
       "inline-react-svg",
+      {
+        "removeAttrs": {
+          "attrs": "(data-name)"
+        }
+      },
+      {
+        "cleanupIDs": true
+      },
+      {
+        "removeUselessStrokeAndFill": true
+      },
+      {
+        "removeMetadata": true
+      },
+      {
+        "removeTitle": true
+      },
       "styled-components",
       {
         "ssr": true,

@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
-import Button from '../Button';
-import Spacing from '../../lib/Spacing';
+import Button from '../Button'
+import Spacing from '../../lib/Spacing'
 
-import Logo from './icons/logo.svg';
+import Logo from './icons/logo.svg'
 
 const HeaderBar = styled.header`
   padding: 0 20px;
@@ -12,30 +12,38 @@ const HeaderBar = styled.header`
   justify-content: space-between;
   align-items: center;
   border-bottom: solid 1px #eaeaea;
-`;
 
-const Flex = styled.div`
+  > * {
+    flex: 1;
+  }
+`
+
+const ShareContainer = styled.div`
   display: flex;
   align-items: center;
   flex: 1;
-`;
+`
 
 const Header = () => {
   return (
     <HeaderBar>
-      <Flex>
+
+      <ShareContainer>
         <Spacing right={5}>
-          <Button social="twitter" label="Twitter" />
+          <Button social='twitter' label='Share on Twitter' />
         </Spacing>
-        <Button social="facebook" label="Facebook" />
-      </Flex>
+        <Button social='facebook' label='Share on Facebook' />
+      </ShareContainer>
+
       <Logo />
-      <Flex>
+
+      <div>
         <p>all gradients</p>
         <p>saved gradients</p>
-      </Flex>
+      </div>
+
     </HeaderBar>
   )
 }
 
-export default Header;
+export default Header
