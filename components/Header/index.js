@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 import Button from '../Button';
+import Spacing from '../../lib/Spacing';
 
 import Logo from './icons/logo.svg';
 
-const HeaderBar = styled.div`
+const HeaderBar = styled.header`
   padding: 0 20px;
   height: 50px;
   display: flex;
@@ -16,14 +17,17 @@ const HeaderBar = styled.div`
 const Flex = styled.div`
   display: flex;
   align-items: center;
+  flex: 1;
 `;
 
 const Header = () => {
   return (
     <HeaderBar>
       <Flex>
-        <Button social="twitter"/>
-        <Button social="facebook"/>
+        <Spacing right={5}>
+          <Button social="twitter" label="Twitter" />
+        </Spacing>
+        <Button social="facebook" label="Facebook" />
       </Flex>
       <Logo />
       <Flex>
@@ -33,5 +37,5 @@ const Header = () => {
     </HeaderBar>
   )
 }
- 
+
 export default Header;

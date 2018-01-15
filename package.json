@@ -1,7 +1,7 @@
 {
-  "name": "create-next-example-app",
+  "name": "uiGradients",
   "scripts": {
-    "dev": "next",
+    "dev": "next -p 5000",
     "build": "next build",
     "start": "next start"
   },
@@ -12,5 +12,13 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "styled-components": "^2.4.0"
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-plugin-standard": "^3.0.1"
   }
 }
