@@ -1,3 +1,4 @@
+import React from 'react'
 import NextHead from 'next/head'
 import { string } from 'prop-types'
 
@@ -7,7 +8,7 @@ const defaultOGImage = ''
 
 const Head = (props) => (
   <NextHead>
-    <meta charset='UTF-8' />
+    <meta charSet='UTF-8' />
     <title>{props.title || ''}</title>
     <meta name='description' content={props.description || defaultDescription} />
     <meta name='viewport' content='width=device-width, initial-scale=1' />
