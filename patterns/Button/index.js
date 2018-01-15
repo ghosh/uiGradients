@@ -1,3 +1,5 @@
+import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { darken } from 'polished'
 
@@ -22,17 +24,17 @@ const BaseButton = styled.button`
 
   /* Adapt the colours based on prop */
   background-color: ${props =>
-  ((props.social === 'twitter') && '#0d95e8') ||
+    ((props.social === 'twitter') && '#0d95e8') ||
     ((props.social === 'facebook') && '#344e86') ||
     '#333'
-  };
+};
 
   &:hover {
     background-color: ${props =>
-  ((props.social === 'twitter') && darken(0.08, '#0d95e8')) ||
+    ((props.social === 'twitter') && darken(0.08, '#0d95e8')) ||
     ((props.social === 'facebook') && darken(0.08, '#344e86')) ||
     darken(0.08, '#333')
-    };
+};
   }
 `
 
@@ -48,6 +50,15 @@ const Button = (props) => {
       <BaseSpan>{props.label}</BaseSpan>
     </BaseButton>
   )
+}
+
+Button.propTypes = {
+  social: PropTypes.string,
+  label: PropTypes.string.isRequired
+}
+
+Button.defaultProps = {
+  social: ''
 }
 
 export default Button

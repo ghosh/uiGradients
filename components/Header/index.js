@@ -1,7 +1,8 @@
+import React from 'react'
 import styled from 'styled-components'
 
-import Button from '../Button'
-import Spacing from '../../lib/Spacing'
+import Button from 'Patterns/Button'
+import Spacing from 'Patterns/Spacing'
 
 import Logo from './icons/logo.svg'
 
