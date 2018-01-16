@@ -1,5 +1,6 @@
 {
-  "name": "uiGradients",
+  "name": "uigradients",
+  "version": "3.0.0",
   "scripts": {
     "dev": "next -p 5000",
     "build": "next build",

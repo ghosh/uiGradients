@@ -6,21 +6,28 @@
     [
       "inline-react-svg",
       {
-        "removeAttrs": {
-          "attrs": "(data-name)"
+        "ignorePattern": ".js",
+        "svgo": {
+          "plugins": [
+            {
+              "removeAttrs": {
+                "attrs": "(data-name)"
+              }
+            },
+            {
+              "cleanupIDs": true
+            },
+            {
+              "removeUselessStrokeAndFill": true
+            },
+            {
+              "removeMetadata": true
+            },
+            {
+              "removeTitle": true
+            }
+          ]
         }
-      },
-      {
-        "cleanupIDs": true
-      },
-      {
-        "removeUselessStrokeAndFill": true
-      },
-      {
-        "removeMetadata": true
-      },
-      {
-        "removeTitle": true
       },
       "styled-components",
       {
