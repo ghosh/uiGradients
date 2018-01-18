@@ -23,7 +23,7 @@ const HeaderBar = styled.header`
   }
 `
 
-const FlexContainer = styled.div`
+const FlexContainer = styled.section`
   display: flex;
   align-items: center;
   flex: 1;
