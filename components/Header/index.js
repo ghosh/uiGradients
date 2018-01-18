@@ -5,6 +5,7 @@ import Button from '../../patterns/Button'
 import Spacing from '../../patterns/Spacing'
 import Divider from '../../patterns/Divider'
 import Avatar from '../../patterns/Avatar'
+import Burger from '../../patterns/Burger'
 import { List, ListItem } from '../../patterns/List'
 
 import Logo from './icons/logo.svg'
@@ -55,6 +56,8 @@ const Header = () => {
         <Divider />
         <Spacing left={10} />
         <Avatar />
+        <Spacing left={10} />
+        <Burger />
       </FlexContainer>
 
     </HeaderBar>
