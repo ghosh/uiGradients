@@ -3,6 +3,8 @@ import styled from 'styled-components'
 
 import Button from '../../patterns/Button'
 import Spacing from '../../patterns/Spacing'
+import Divider from '../../patterns/Divider'
+import Avatar from '../../patterns/Avatar'
 import { List, ListItem } from '../../patterns/List'
 
 import Logo from './icons/logo.svg'
@@ -32,25 +34,27 @@ const Header = () => {
     <HeaderBar>
 
       <FlexContainer>
-        <Spacing right={5}>
-          <Button social='twitter' label='Share on Twitter' />
-        </Spacing>
+        <Button social='twitter' label='Share on Twitter' />
+        <Spacing right={5} />
         <Button social='facebook' label='Share on Facebook' />
       </FlexContainer>
 
-      <Logo />
+      <Logo height='28' />
 
       <FlexContainer justify='end'>
         <List>
-          <Spacing right={5}>
-            <ListItem>
-              All gradients
-            </ListItem>
-          </Spacing>
+          <ListItem>
+            All gradients
+          </ListItem>
+          <Spacing left={10} />
           <ListItem>
             Saved gradients
           </ListItem>
         </List>
+        <Spacing left={10} />
+        <Divider />
+        <Spacing left={10} />
+        <Avatar />
       </FlexContainer>
 
     </HeaderBar>

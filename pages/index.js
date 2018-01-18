@@ -6,7 +6,7 @@ import Canvas from '../components/Canvas'
 
 export default () => (
   <div>
-    <Head title='Home' />
+    <Head title='uiGradients - Beautiful gradients for designers and developers' />
     <Header />
     <Canvas />
   </div>
