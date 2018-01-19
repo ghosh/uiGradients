@@ -1150,5 +1150,9 @@
     {
         "name": "Evening Night",
         "colors": ["#005AA7", "#FFFDE4"]
+    },
+    {
+        "name": "Evening Sunshine",
+        "colors": ["#b92b27", "#1565C0"]
     }  
 ]
