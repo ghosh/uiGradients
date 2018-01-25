@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Swatches from '../Swatches'
+
 const BumperBase = styled.section`
   padding: 0 20px;
   height: 40px;
@@ -18,7 +20,7 @@ const Bumper = () => {
   return (
     <BumperBase>
       <div />
-      <p>Hello</p>
+      <Swatches />
       <div />
     </BumperBase>
   )
