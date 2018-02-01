@@ -1,15 +1,7 @@
 import React from 'react'
+import { reduxPage } from '../store'
+import Canvas from '../containers/Canvas'
 
-import Head from '../components/Head'
-import Header from '../components/Header'
-import Bumper from '../components/Bumper'
-import Canvas from '../components/Canvas'
+const Home = () => <Canvas />
 
-export default () => (
-  <div>
-    <Head title='uiGradients - Beautiful gradients for designers and developers' />
-    <Header />
-    <Bumper />
-    <Canvas />
-  </div>
-)
+export default reduxPage(Home)
