@@ -7484,9 +7484,9 @@ vue-analytics@^5.3.0:
   dependencies:
     load-script "^1.0.0"
 
-vue-clipboards@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/vue-clipboards/-/vue-clipboards-1.1.0.tgz#708d95b64e64f83e565f7fc464e7213fb6ef2d8a"
+vue-clipboards@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/vue-clipboards/-/vue-clipboards-1.2.1.tgz#da594b05d950e567540a639933c813fdefcce78f"
   dependencies:
     clipboard "^1.7.1"
 
