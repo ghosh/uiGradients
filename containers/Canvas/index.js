@@ -17,6 +17,12 @@ class CanvasContainer extends Component {
     this.setActiveGradient()
   }
 
+  // componentDidUpdate () {
+  //   const { activeGradient } = this.props
+  //   const obj = { Page: activeGradient.name, Url: `/g/${activeGradient.slug}` }
+  //   history.pushState(obj, obj.Page, obj.Url)
+  // }
+
   setActiveGradient () {
     const { gradients, count } = this.props
     const randomIndex = Math.floor(Math.random() * count)
