@@ -29,7 +29,7 @@ class CanvasContainer extends Component {
         <Head title='uiGradients - Beautiful gradients for designers and developers' />
         <Header />
         <Bumper />
-        <Canvas />
+        <Canvas gradient={this.props.activeGradient} />
       </div>
     )
   }
@@ -38,15 +38,18 @@ class CanvasContainer extends Component {
 CanvasContainer.propTypes = {
   gradients: PropTypes.array.isRequired,
   count: PropTypes.number.isRequired,
+  activeGradient: PropTypes.object,
   setActiveGradient: PropTypes.func
 }
 
 CanvasContainer.defaultProps = {
+  activeGradient: {},
   setActiveGradient: () => {}
 }
 
 const mapStateToProps = (state, ownProps) => {
   return {
+    activeGradient: state.canvas.activeGradient,
     gradients: state.gradients.list,
     count: state.gradients.count
   }

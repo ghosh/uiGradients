@@ -1,5 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
+
+import { exists } from '@/utils'
 
 import LeftChev from './icons/leftchev.svg'
 import RightChev from './icons/rightchev.svg'
@@ -7,9 +10,13 @@ import RightChev from './icons/rightchev.svg'
 const GradientCanvas = styled.div`
   width: 100%;
   height: calc(100vh - 90px);
-  background-image: linear-gradient(90deg, #24C6DC 0%, #514A9D 100%);
   position: relative;
-`
+
+  background-image: ${props =>
+    (exists(props.gradient) && `linear-gradient(90deg, ${[...props.gradient.colors].join(', ')})`) ||
+    'linear-gradient(90deg, #eaeaea, #eaeaea)'
+};
+  `
 
 const GradientNav = styled.ul`
   margin: 0;
@@ -46,9 +53,9 @@ const GradientNavItem = styled.li`
   }
 `
 
-const Canvas = () => {
+const Canvas = (props) => {
   return (
-    <GradientCanvas>
+    <GradientCanvas gradient={props.gradient} >
 
       <GradientNav>
 
@@ -65,5 +72,12 @@ const Canvas = () => {
     </GradientCanvas>
   )
 }
+
+Canvas.propTypes = {
+  gradient: PropTypes.object.isRequired
+}
+
+// Canvas.defaultProps = {
+// }
 
 export default Canvas

@@ -2,6 +2,11 @@ export const getRandomNumber = () => {
   return Math.floor(Math.random() * 100) + 1
 }
 
+// Checks if object exists and is not empty
+export const exists = (obj) => {
+  return obj && Object.keys(obj).length > 0
+}
+
 // Returns a slug from a string
 export const slugify = (string) => {
   return string.toString().toLowerCase()
