@@ -2,7 +2,7 @@ export const getPlaceholderGradient = () => {
   const gradient = {
     id: 99999999,
     name: 'White Wash',
-    colors: ['#fff', '#fff'],
+    colors: ['#fff', '#fafafa'],
     slug: 'white-wash'
   }
   return gradient

@@ -55,7 +55,7 @@ const Swatches = (props) => {
     <SwatchesContainer>
       {props.colors.map((color, index) => {
         return (
-          <Fragment>
+          <Fragment key={color}>
             <Swatch>
               <SwatchPallete color={color} />
               <SwatchColor>
