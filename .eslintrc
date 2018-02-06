@@ -67,7 +67,7 @@
     "sourceType": "module"
   },
   "globals": {
-    "If": true,
-    "For": true
+    "window": true,
+    "history": true
   }
 }

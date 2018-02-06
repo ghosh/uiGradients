@@ -3,6 +3,6 @@ import { reduxPage } from '../store'
 
 import Canvas from '../containers/Canvas'
 
-const Home = () => <Canvas />
+const Home = (props) => <Canvas url={props.url} />
 
 export default reduxPage(Home)

@@ -17,17 +17,21 @@ class CanvasContainer extends Component {
     this.setActiveGradient()
   }
 
-  // componentDidUpdate () {
-  //   const { activeGradient } = this.props
-  //   const obj = { Page: activeGradient.name, Url: `/g/${activeGradient.slug}` }
-  //   history.pushState(obj, obj.Page, obj.Url)
-  // }
+  componentDidUpdate () {
+    const { activeGradient } = this.props
+    const obj = { Page: activeGradient.name, Url: `/g/${activeGradient.slug}` }
+    history.pushState(obj, obj.Page, obj.Url)
+  }
 
   setActiveGradient () {
-    const { gradients, count } = this.props
-    const randomIndex = Math.floor(Math.random() * count)
-    const activeGradient = gradients[randomIndex]
-
+    const { gradients, count, url } = this.props
+    let gradientIndex = null
+    if (url.query.slug) {
+      gradientIndex = gradients.findIndex(gradient => gradient.slug === url.query.slug)
+    } else {
+      gradientIndex = Math.floor(Math.random() * count)
+    }
+    const activeGradient = gradients[gradientIndex]
     this.props.setActiveGradient(activeGradient)
   }
 
@@ -50,6 +54,7 @@ class CanvasContainer extends Component {
 CanvasContainer.propTypes = {
   gradients: PropTypes.array.isRequired,
   count: PropTypes.number.isRequired,
+  url: PropTypes.object.isRequired,
   activeGradient: PropTypes.object,
   setActiveGradient: PropTypes.func,
   changeGradient: PropTypes.func
