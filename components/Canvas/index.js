@@ -20,6 +20,17 @@ const GradientCanvas = styled.div`
   background-image: ${props => `linear-gradient(90deg, ${[...props.gradient.colors].join(', ')})`}
   `
 
+const GradientName = styled.h2`
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translate3d(-50%,0,0);
+  color: #fff;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+`
+
 const GradientNav = styled.ul`
   margin: 0;
   padding: 0;
@@ -58,6 +69,10 @@ const GradientNavItem = styled.li`
 const Canvas = (props) => {
   return (
     <GradientCanvas gradient={props.gradient} >
+
+      <GradientName>
+        {props.gradient.name}
+      </GradientName>
 
       <GradientNav>
 
