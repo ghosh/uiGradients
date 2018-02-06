@@ -415,20 +415,23 @@ babel-plugin-check-es2015-constants@^6.22.0:
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-plugin-inline-react-svg@^0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/babel-plugin-inline-react-svg/-/babel-plugin-inline-react-svg-0.5.2.tgz#f4c9ea5384e8d08a7a4f96a19f22a5eab0ddf3a9"
+babel-plugin-module-resolver@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-module-resolver/-/babel-plugin-module-resolver-3.0.0.tgz#a2fe5b97f7b809a8bbac18beada0a94d45987c63"
   dependencies:
-    babel-template "^6.15.0"
-    babel-traverse "^6.15.0"
-    babylon "^6.10.0"
-    lodash.isplainobject "^4.0.6"
-    resolve-from "^2.0.0"
-    svgo "^0.7.0"
+    find-babel-config "^1.1.0"
+    glob "^7.1.2"
+    pkg-up "^2.0.0"
+    reselect "^3.0.1"
+    resolve "^1.4.0"
 
 babel-plugin-react-require@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-react-require/-/babel-plugin-react-require-3.0.0.tgz#2e4e7b4496b93a654a1c80042276de4e4eeb20e3"
+
+babel-plugin-react-svg@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-react-svg/-/babel-plugin-react-svg-2.1.0.tgz#169eeba1a20fa2dee3a71ff38eedd63d08e69487"
 
 babel-plugin-styled-components@^1.4.0:
   version "1.5.0"
@@ -458,7 +461,7 @@ babel-plugin-syntax-flow@^6.18.0:
   version "6.18.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-flow/-/babel-plugin-syntax-flow-6.18.0.tgz#4c3ab20a2af26aa20cd25995c398c4eb70310c8d"
 
-babel-plugin-syntax-jsx@6.18.0, babel-plugin-syntax-jsx@^6.3.13, babel-plugin-syntax-jsx@^6.8.0:
+babel-plugin-syntax-jsx@6.18.0, babel-plugin-syntax-jsx@^6.18.0, babel-plugin-syntax-jsx@^6.3.13, babel-plugin-syntax-jsx@^6.8.0:
   version "6.18.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-jsx/-/babel-plugin-syntax-jsx-6.18.0.tgz#0af32a9a6e13ca7a3fd5069e62d7b0f58d0d8946"
 
@@ -670,7 +673,7 @@ babel-plugin-transform-flow-strip-types@^6.22.0:
     babel-plugin-syntax-flow "^6.18.0"
     babel-runtime "^6.22.0"
 
-babel-plugin-transform-object-rest-spread@6.26.0:
+babel-plugin-transform-object-rest-spread@6.26.0, babel-plugin-transform-object-rest-spread@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-object-rest-spread/-/babel-plugin-transform-object-rest-spread-6.26.0.tgz#0f36692d50fef6b7e2d4b3ac1478137a963b7b06"
   dependencies:
@@ -771,7 +774,7 @@ babel-preset-flow@^6.23.0:
   dependencies:
     babel-plugin-transform-flow-strip-types "^6.22.0"
 
-babel-preset-react@6.24.1:
+babel-preset-react@6.24.1, babel-preset-react@^6.24.1:
   version "6.24.1"
   resolved "https://registry.yarnpkg.com/babel-preset-react/-/babel-preset-react-6.24.1.tgz#ba69dfaea45fc3ec639b6a4ecea6e17702c91380"
   dependencies:
@@ -801,7 +804,7 @@ babel-runtime@6.26.0, babel-runtime@^6.18.0, babel-runtime@^6.22.0, babel-runtim
     core-js "^2.4.0"
     regenerator-runtime "^0.11.0"
 
-babel-template@6.26.0, babel-template@^6.15.0, babel-template@^6.24.1, babel-template@^6.26.0:
+babel-template@6.26.0, babel-template@^6.24.1, babel-template@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-template/-/babel-template-6.26.0.tgz#de03e2d16396b069f46dd9fff8521fb1a0e35e02"
   dependencies:
@@ -811,7 +814,7 @@ babel-template@6.26.0, babel-template@^6.15.0, babel-template@^6.24.1, babel-tem
     babylon "^6.18.0"
     lodash "^4.17.4"
 
-babel-traverse@^6.15.0, babel-traverse@^6.24.1, babel-traverse@^6.25.0, babel-traverse@^6.26.0:
+babel-traverse@^6.24.1, babel-traverse@^6.25.0, babel-traverse@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-traverse/-/babel-traverse-6.26.0.tgz#46a9cbd7edcc62c8e5c064e2d2d8d0f4035766ee"
   dependencies:
@@ -834,7 +837,7 @@ babel-types@6.26.0, babel-types@^6.19.0, babel-types@^6.24.1, babel-types@^6.26.
     lodash "^4.17.4"
     to-fast-properties "^1.0.3"
 
-babylon@^6.10.0, babylon@^6.18.0:
+babylon@^6.18.0:
   version "6.18.0"
   resolved "https://registry.yarnpkg.com/babylon/-/babylon-6.18.0.tgz#af2f3b88fa6f5c1e4c634d1a0f8eac4f55b395e3"
 
@@ -1952,6 +1955,13 @@ fill-range@^2.1.0:
     randomatic "^1.1.3"
     repeat-element "^1.1.2"
     repeat-string "^1.5.2"
+
+find-babel-config@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/find-babel-config/-/find-babel-config-1.1.0.tgz#acc01043a6749fec34429be6b64f542ebb5d6355"
+  dependencies:
+    json5 "^0.5.1"
+    path-exists "^3.0.0"
 
 find-cache-dir@^1.0.0:
   version "1.0.0"
@@ -3401,7 +3411,7 @@ pkg-dir@^2.0.0:
   dependencies:
     find-up "^2.1.0"
 
-pkg-up@2.0.0:
+pkg-up@2.0.0, pkg-up@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/pkg-up/-/pkg-up-2.0.0.tgz#c819ac728059a461cab1c3889a2be3c49a004d7f"
   dependencies:
@@ -3608,6 +3618,25 @@ react-stand-in@^4.0.0-beta.18:
   dependencies:
     shallowequal "^1.0.2"
 
+react-svg-core@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-svg-core/-/react-svg-core-2.1.0.tgz#3700322af70117c91f83f18febb481128de3cfbb"
+  dependencies:
+    babel-core "^6.26.0"
+    babel-plugin-react-svg "^2.1.0"
+    babel-plugin-syntax-jsx "^6.18.0"
+    babel-plugin-transform-object-rest-spread "^6.26.0"
+    babel-preset-react "^6.24.1"
+    lodash.isplainobject "^4.0.6"
+    svgo "^0.7.2"
+
+react-svg-loader@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-svg-loader/-/react-svg-loader-2.1.0.tgz#ba15019413b9b11e2012e86580aea1eecc93677e"
+  dependencies:
+    loader-utils "^1.1.0"
+    react-svg-core "^2.1.0"
+
 react@^16.2.0:
   version "16.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.2.0.tgz#a31bd2dab89bff65d42134fa187f24d054c273ba"
@@ -3794,15 +3823,15 @@ require-uncached@^1.0.3:
     caller-path "^0.1.0"
     resolve-from "^1.0.0"
 
+reselect@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/reselect/-/reselect-3.0.1.tgz#efdaa98ea7451324d092b2b2163a6a1d7a9a2147"
+
 resolve-from@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-1.0.1.tgz#26cbfe935d1aeeeabb29bc3fe5aeb01e93d44226"
 
-resolve-from@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/resolve-from/-/resolve-from-2.0.0.tgz#9480ab20e94ffa1d9e80a804c7ea147611966b57"
-
-resolve@1.5.0, resolve@^1.3.3, resolve@^1.5.0:
+resolve@1.5.0, resolve@^1.3.3, resolve@^1.4.0, resolve@^1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.5.0.tgz#1f09acce796c9a762579f31b2c1cc4c3cddf9f36"
   dependencies:
@@ -4175,7 +4204,7 @@ supports-color@^4.0.0, supports-color@^4.2.1:
   dependencies:
     has-flag "^2.0.0"
 
-svgo@^0.7.0:
+svgo@^0.7.2:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/svgo/-/svgo-0.7.2.tgz#9f5772413952135c6fefbf40afe6a4faa88b4bb5"
   dependencies:

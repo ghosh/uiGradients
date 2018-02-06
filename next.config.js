@@ -5,6 +5,11 @@ module.exports = {
       fs: 'empty'
     }
 
+    config.module.rules.push({
+      test: /\.svg$/,
+      loader: 'react-svg-loader'
+    })
+
     return config
   }
 }

@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Button from '../../patterns/Button'
-import Spacing from '../../patterns/Spacing'
-import Divider from '../../patterns/Divider'
-import Avatar from '../../patterns/Avatar'
-import Burger from '../../patterns/Burger'
-import { List, ListItem } from '../../patterns/List'
+import Button from '@/patterns/Button'
+import Spacing from '@/patterns/Spacing'
+import Divider from '@/patterns/Divider'
+import Avatar from '@/patterns/Avatar'
+import Burger from '@/patterns/Burger'
+import { List, ListItem } from '@/patterns/List'
 
 import Logo from './icons/logo.svg'
 

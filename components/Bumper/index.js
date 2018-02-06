@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Swatches from '../Swatches'
+import Swatches from '@/components/Swatches'
 
 const BumperBase = styled.section`
   padding: 0 20px;

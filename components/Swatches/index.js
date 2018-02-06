@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Spacing from '../../patterns/Spacing'
+import Spacing from '@/patterns/Spacing'
 import Arrow from './icons/arrow.svg'
 
 const SwatchesContainer = styled.ul`
