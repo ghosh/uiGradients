@@ -30,6 +30,7 @@ const uniqueGradients = removeDuplicatesBy(gradient => gradient.id, slugifiedGra
 const hydratedState = {
   gradients: {
     activeGradient: {},
+    count: uniqueGradients.length,
     list: uniqueGradients
   }
 }
