@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -60,32 +60,56 @@ const GradientNavItem = styled.li`
   }
 `
 
-const Canvas = (props) => {
-  return (
-    <GradientCanvas gradient={props.gradient} >
+class Canvas extends PureComponent {
+  componentDidMount () {
+    document.addEventListener('keyup', this.handleKeyboardEvents.bind(this))
+  }
 
-      <GradientName>
-        {props.gradient.name}
-      </GradientName>
+  componentWillUnmount () {
+    document.removeEventListener('keyup', this.handleKeyboardEvents.bind(this))
+  }
 
-      <GradientNav>
+  handleKeyboardEvents (event) {
+    switch (event.keyCode) {
+      case 37: // left
+        this.props.handleGradientChange('down')
+        break
+      case 39: // left
+        this.props.handleGradientChange('up')
+        break
+      default:
+        break
+    }
+  }
 
-        <GradientNavItem>
-          <LeftChev width='14' height='18' fill='#fff' />
-        </GradientNavItem>
+  render () {
+    return (
+      <GradientCanvas gradient={this.props.gradient} >
 
-        <GradientNavItem>
-          <RightChev width='14' height='18' fill='#fff' />
-        </GradientNavItem>
+        <GradientName>
+          {this.props.gradient.name}
+        </GradientName>
 
-      </GradientNav>
+        <GradientNav>
 
-    </GradientCanvas>
-  )
+          <GradientNavItem onClick={() => this.props.handleGradientChange('down')}>
+            <LeftChev width='14' height='18' fill='#fff' />
+          </GradientNavItem>
+
+          <GradientNavItem onClick={() => this.props.handleGradientChange('up')}>
+            <RightChev width='14' height='18' fill='#fff' />
+          </GradientNavItem>
+
+        </GradientNav>
+
+      </GradientCanvas>
+    )
+  }
 }
 
 Canvas.propTypes = {
-  gradient: PropTypes.object.isRequired
+  gradient: PropTypes.object.isRequired,
+  handleGradientChange: PropTypes.func.isRequired
 }
 
 export default Canvas

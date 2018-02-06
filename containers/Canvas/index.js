@@ -10,7 +10,7 @@ import Header from '@/components/Header'
 import Bumper from '@/components/Bumper'
 import Canvas from '@/components/Canvas'
 
-import { setActiveGradient } from './actions'
+import { setActiveGradient, changeGradient } from './actions'
 
 class CanvasContainer extends Component {
   componentDidMount () {
@@ -26,13 +26,16 @@ class CanvasContainer extends Component {
   }
 
   render () {
-    const { activeGradient } = this.props
+    const { activeGradient, changeGradient } = this.props
     return (
       <div>
         <Head title='uiGradients - Beautiful gradients for designers and developers' />
         <Header />
         <Bumper gradient={activeGradient} />
-        <Canvas gradient={activeGradient} />
+        <Canvas
+          gradient={activeGradient}
+          handleGradientChange={changeGradient}
+        />
       </div>
     )
   }
@@ -42,17 +45,19 @@ CanvasContainer.propTypes = {
   gradients: PropTypes.array.isRequired,
   count: PropTypes.number.isRequired,
   activeGradient: PropTypes.object,
-  setActiveGradient: PropTypes.func
+  setActiveGradient: PropTypes.func,
+  changeGradient: PropTypes.func
 }
 
 CanvasContainer.defaultProps = {
   activeGradient: getPlaceholderGradient(),
-  setActiveGradient: () => {}
+  setActiveGradient: () => {},
+  changeGradient: () => {}
 }
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    activeGradient: state.canvas.activeGradient,
+    activeGradient: state.gradients.activeGradient,
     gradients: state.gradients.list,
     count: state.gradients.count
   }
@@ -60,7 +65,8 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = dispatch => {
   return bindActionCreators({
-    setActiveGradient
+    setActiveGradient,
+    changeGradient
   }, dispatch)
 }
 

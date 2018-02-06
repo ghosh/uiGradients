@@ -7,10 +7,9 @@ export function setActiveGradient (gradient) {
   }
 }
 
-export function showModal (modalType, modalProps) {
+export function changeGradient (direction) {
   return {
-    type: constants.DEMO_GRADIENT,
-    modalType: modalType,
-    modalProps: modalProps
+    type: constants.CHANGE_GRADIENT,
+    direction: direction
   }
 }
