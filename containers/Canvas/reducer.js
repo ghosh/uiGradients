@@ -1,9 +1,8 @@
 function canvasReducer (state = {}, action) {
   switch (action.type) {
-    case 'SHOW_NEXT_GRADIENT':
+    case 'SET_ACTIVE_GRADIENT':
       return {
-        modalType: action.modalType,
-        modalProps: action.modalProps
+        activeGradient: action.gradient
       }
 
     default:
