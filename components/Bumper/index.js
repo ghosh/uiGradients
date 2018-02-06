@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import Swatches from '@/components/Swatches'
@@ -16,14 +17,18 @@ const BumperBase = styled.section`
   }
 `
 
-const Bumper = () => {
+const Bumper = (props) => {
   return (
     <BumperBase>
       <div />
-      <Swatches />
+      <Swatches colors={props.gradient.colors} />
       <div />
     </BumperBase>
   )
+}
+
+Bumper.propTypes = {
+  gradient: PropTypes.object.isRequired
 }
 
 export default Bumper

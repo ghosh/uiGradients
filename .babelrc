@@ -10,6 +10,7 @@
           "@": "./"
         }
       },
+      "jsx-control-statements",
       "styled-components",
       {
         "ssr": true,

@@ -65,5 +65,9 @@
       "jsx": true
     },
     "sourceType": "module"
+  },
+  "globals": {
+    "If": true,
+    "For": true
   }
 }

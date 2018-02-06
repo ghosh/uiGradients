@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import Spacing from '@/patterns/Spacing'
@@ -10,6 +11,7 @@ const SwatchesContainer = styled.ul`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1;
 `
 
 const Swatch = styled.li`
@@ -33,6 +35,10 @@ const SwatchPallete = styled.span`
   height: 14px;
   background-color: #32c4da;
   margin-right: 5px;
+
+  /* Adapt the colours based on prop */
+  background-color: ${props => props.color};
+
 `
 
 const SwatchColor = styled.span`
@@ -44,34 +50,38 @@ const ArrowContainer = styled.span`
   margin-top: 1px;
 `
 
-const Swatches = () => {
+const Swatches = (props) => {
   return (
     <SwatchesContainer>
+      {props.colors.map((color, index) => {
+        return (
+          <Fragment>
+            <Swatch>
+              <SwatchPallete color={color} />
+              <SwatchColor>
+                {color}
+              </SwatchColor>
+            </Swatch>
 
-      <Swatch>
-        <SwatchPallete />
-        <SwatchColor>
-          #eaeaea
-        </SwatchColor>
-      </Swatch>
-
-      <Spacing left={3} />
-
-      <ArrowContainer>
-        <Arrow height='11' width='14' />
-      </ArrowContainer>
-
-      <Spacing left={3} />
-
-      <Swatch>
-        <SwatchPallete />
-        <SwatchColor>
-          #eaeaea
-        </SwatchColor>
-      </Swatch>
+            {index !== props.colors.length - 1 && (
+              <Fragment>
+                <Spacing left={3} />
+                <ArrowContainer>
+                  <Arrow height='11' width='14' />
+                </ArrowContainer>
+                <Spacing left={3} />
+              </Fragment>
+            )}
+          </Fragment>
+        )
+      })}
 
     </SwatchesContainer>
   )
+}
+
+Swatches.propTypes = {
+  colors: PropTypes.array.isRequired
 }
 
 export default Swatches

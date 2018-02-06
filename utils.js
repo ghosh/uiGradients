@@ -1,3 +1,13 @@
+export const getPlaceholderGradient = () => {
+  const gradient = {
+    id: 99999999,
+    name: 'White Wash',
+    colors: ['#fff', '#fff'],
+    slug: 'white-wash'
+  }
+  return gradient
+}
+
 export const getRandomNumber = () => {
   return Math.floor(Math.random() * 100) + 1
 }

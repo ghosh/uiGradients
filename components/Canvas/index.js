@@ -12,10 +12,12 @@ const GradientCanvas = styled.div`
   height: calc(100vh - 90px);
   position: relative;
 
-  background-image: ${props =>
+  /* background-image: ${props =>
     (exists(props.gradient) && `linear-gradient(90deg, ${[...props.gradient.colors].join(', ')})`) ||
     'linear-gradient(90deg, #eaeaea, #eaeaea)'
-};
+}; */
+
+  background-image: ${props => `linear-gradient(90deg, ${[...props.gradient.colors].join(', ')})`}
   `
 
 const GradientNav = styled.ul`

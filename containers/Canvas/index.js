@@ -3,12 +3,14 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import PropTypes from 'prop-types'
 
-import { setActiveGradient } from './actions'
+import { getPlaceholderGradient } from '@/utils'
 
 import Head from '@/components/Head'
 import Header from '@/components/Header'
 import Bumper from '@/components/Bumper'
 import Canvas from '@/components/Canvas'
+
+import { setActiveGradient } from './actions'
 
 class CanvasContainer extends Component {
   componentDidMount () {
@@ -24,12 +26,13 @@ class CanvasContainer extends Component {
   }
 
   render () {
+    const { activeGradient } = this.props
     return (
       <div>
         <Head title='uiGradients - Beautiful gradients for designers and developers' />
         <Header />
-        <Bumper />
-        <Canvas gradient={this.props.activeGradient} />
+        <Bumper gradient={activeGradient} />
+        <Canvas gradient={activeGradient} />
       </div>
     )
   }
@@ -43,7 +46,7 @@ CanvasContainer.propTypes = {
 }
 
 CanvasContainer.defaultProps = {
-  activeGradient: {},
+  activeGradient: getPlaceholderGradient(),
   setActiveGradient: () => {}
 }
 
