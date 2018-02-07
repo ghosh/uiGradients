@@ -13,3 +13,10 @@ export function changeGradient (direction) {
     direction: direction
   }
 }
+
+export function rotateGradient (direction) {
+  return {
+    type: constants.ROTATE_GRADIENT,
+    direction: direction
+  }
+}

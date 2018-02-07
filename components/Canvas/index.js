@@ -13,7 +13,7 @@ const GradientCanvas = styled.div`
   position: relative;
 
   background-image: ${ props =>
-    (exists(props.gradient) && `linear-gradient(90deg, ${ [...props.gradient.colors].join(', ') })`) ||
+    (exists(props.gradient) && `linear-gradient(${ props.direction }, ${ [...props.gradient.colors].join(', ') })`) ||
     'linear-gradient(90deg, #eaeaea, #eaeaea)'
 };
   `
@@ -88,7 +88,7 @@ class Canvas extends PureComponent {
 
   render () {
     return (
-      <GradientCanvas gradient={ this.props.gradient } >
+      <GradientCanvas gradient={ this.props.gradient } direction={ this.props.direction } >
 
         <GradientName>
           {this.props.gradient.name}
@@ -112,6 +112,7 @@ class Canvas extends PureComponent {
 }
 
 Canvas.propTypes = {
+  direction: PropTypes.string.isRequired,
   gradient: PropTypes.object.isRequired,
   handleGradientChange: PropTypes.func.isRequired
 }

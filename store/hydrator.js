@@ -14,7 +14,10 @@ export const uniqueGradients = removeDuplicatesBy(gradient => gradient.id, slugi
 const hydratedState = {
   gradients: {
     count: uniqueGradients.length,
-    list: uniqueGradients
+    list: uniqueGradients,
+    directionIndex: 2,
+    activeDirection: 'to right',
+    directions: ['to left', 'to bottom', 'to right', 'to top']
   }
 }
 

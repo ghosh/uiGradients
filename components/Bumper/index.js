@@ -23,13 +23,16 @@ const Bumper = (props) => {
     <BumperBase>
       <div />
       {props.gradient.colors && <Swatches colors={ props.gradient.colors } />}
-      <Actionbar />
+      <Actionbar
+        handleGradientRotation={ props.handleGradientRotation }
+      />
     </BumperBase>
   )
 }
 
 Bumper.propTypes = {
-  gradient: PropTypes.object.isRequired
+  gradient: PropTypes.object.isRequired,
+  handleGradientRotation: PropTypes.func.isRequired
 }
 
 export default Bumper

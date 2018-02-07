@@ -10,7 +10,7 @@ import Header from '@/components/Header'
 import Bumper from '@/components/Bumper'
 import Canvas from '@/components/Canvas'
 
-import { setActiveGradient, changeGradient } from './actions'
+import { setActiveGradient, changeGradient, rotateGradient } from './actions'
 
 class CanvasContainer extends Component {
   componentDidMount () {
@@ -41,13 +41,17 @@ class CanvasContainer extends Component {
   }
 
   render () {
-    const { activeGradient, gradient, changeGradient } = this.props
+    const { activeGradient, activeDirection, gradient, changeGradient, rotateGradient } = this.props
     return (
       <div>
         <Head title='uiGradients - Beautiful gradients for designers and developers' />
         <Header />
-        <Bumper gradient={ activeGradient || gradient } />
+        <Bumper
+          gradient={ activeGradient || gradient }
+          handleGradientRotation={ rotateGradient }
+        />
         <Canvas
+          direction={ activeDirection }
           gradient={ activeGradient || gradient }
           handleGradientChange={ changeGradient }
         />
@@ -62,19 +66,24 @@ CanvasContainer.propTypes = {
   url: PropTypes.object.isRequired,
   gradient: PropTypes.object,
   activeGradient: PropTypes.object,
+  activeDirection: PropTypes.string,
   setActiveGradient: PropTypes.func,
-  changeGradient: PropTypes.func
+  changeGradient: PropTypes.func,
+  rotateGradient: PropTypes.func
 }
 
 CanvasContainer.defaultProps = {
   activeGradient: null,
+  activeDirection: 'to-left',
   setActiveGradient: () => {},
-  changeGradient: () => {}
+  changeGradient: () => {},
+  rotateGradient: () => {}
 }
 
 const mapStateToProps = (state, ownProps) => {
   return {
     activeGradient: state.gradients.activeGradient,
+    activeDirection: state.gradients.activeDirection,
     gradients: state.gradients.list,
     count: state.gradients.count
   }
@@ -83,7 +92,8 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = dispatch => {
   return bindActionCreators({
     setActiveGradient,
-    changeGradient
+    changeGradient,
+    rotateGradient
   }, dispatch)
 }
 

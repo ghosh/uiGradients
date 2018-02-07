@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import RotateIcon from './icons/rotate.svg'
@@ -47,23 +48,49 @@ const ActionItem = styled.li`
   }
 `
 
-const Actionbar = (props) => {
-  return (
-    <ActionbarContainer>
-      <ActionItem>
-        <RotateIcon width='16' height='16' />
-      </ActionItem>
-      <ActionItem>
-        <CodeIcon width='16' height='16' />
-      </ActionItem>
-      <ActionItem>
-        <AddIcon width='16' height='16' />
-      </ActionItem>
-      <ActionItem>
-        <DownloadIcon width='16' height='16' />
-      </ActionItem>
-    </ActionbarContainer>
-  )
+class Actionbar extends PureComponent {
+  componentDidMount () {
+    document.addEventListener('keyup', this.handleKeyboardEvents.bind(this))
+  }
+
+  componentWillUnmount () {
+    document.removeEventListener('keyup', this.handleKeyboardEvents.bind(this))
+  }
+
+  handleKeyboardEvents (event) {
+    switch (event.keyCode) {
+      case 38: // up
+        this.props.handleGradientRotation('up')
+        break
+      case 40: // down
+        this.props.handleGradientRotation('down')
+        break
+      default:
+        break
+    }
+  }
+  render () {
+    return (
+      <ActionbarContainer>
+        <ActionItem onClick={ () => this.props.handleGradientRotation('up') }>
+          <RotateIcon width='16' height='16' />
+        </ActionItem>
+        <ActionItem>
+          <CodeIcon width='16' height='16' />
+        </ActionItem>
+        <ActionItem>
+          <AddIcon width='16' height='16' />
+        </ActionItem>
+        <ActionItem>
+          <DownloadIcon width='16' height='16' />
+        </ActionItem>
+      </ActionbarContainer>
+    )
+  }
+}
+
+Actionbar.propTypes = {
+  handleGradientRotation: PropTypes.func.isRequired
 }
 
 export default Actionbar
