@@ -47,7 +47,7 @@ const SwatchColor = styled.span`
 `
 
 const ArrowContainer = styled.span`
-  margin-top: 1px;
+  margin-top: 4px;
 `
 
 const Swatches = (props) => {
@@ -67,7 +67,7 @@ const Swatches = (props) => {
               <Fragment>
                 <Spacing left={3} />
                 <ArrowContainer>
-                  <Arrow height='11' width='14' />
+                  <Arrow height='16' width='16' />
                 </ArrowContainer>
                 <Spacing left={3} />
               </Fragment>

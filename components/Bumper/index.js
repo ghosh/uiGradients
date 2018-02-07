@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import Swatches from '@/components/Swatches'
+import Actionbar from '@/components/Actionbar'
 
 const BumperBase = styled.section`
   padding: 0 20px;
@@ -22,7 +23,7 @@ const Bumper = (props) => {
     <BumperBase>
       <div />
       {props.gradient.colors && <Swatches colors={props.gradient.colors} />}
-      <div />
+      <Actionbar />
     </BumperBase>
   )
 }
