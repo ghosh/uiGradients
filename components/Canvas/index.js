@@ -27,6 +27,7 @@ const GradientName = styled.h2`
   font-size: 20px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-shadow: 0px 1px 1px #5d5d5d;
 `
 
 const GradientNav = styled.ul`
