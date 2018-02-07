@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import PropTypes from 'prop-types'
 
-import { getPlaceholderGradient } from '@/utils'
+import { exists } from '@/utils'
 
 import Head from '@/components/Head'
 import Header from '@/components/Header'
@@ -24,26 +24,31 @@ class CanvasContainer extends Component {
   }
 
   setActiveGradient () {
-    const { gradients, count, url } = this.props
-    let gradientIndex = null
-    if (url.query.slug) {
-      gradientIndex = gradients.findIndex(gradient => gradient.slug === url.query.slug)
+    let activeGradient = null
+    if (exists(this.props.gradient)) {
+      activeGradient = this.props.gradient
     } else {
-      gradientIndex = Math.floor(Math.random() * count)
+      const { gradients, count, url } = this.props
+      let gradientIndex = null
+      if (url.query.slug) {
+        gradientIndex = gradients.findIndex(gradient => gradient.slug === url.query.slug)
+      } else {
+        gradientIndex = Math.floor(Math.random() * count)
+      }
+      activeGradient = gradients[gradientIndex]
     }
-    const activeGradient = gradients[gradientIndex]
     this.props.setActiveGradient(activeGradient)
   }
 
   render () {
-    const { activeGradient, changeGradient } = this.props
+    const { activeGradient, gradient, changeGradient } = this.props
     return (
       <div>
         <Head title='uiGradients - Beautiful gradients for designers and developers' />
         <Header />
-        <Bumper gradient={activeGradient} />
+        <Bumper gradient={activeGradient || gradient} />
         <Canvas
-          gradient={activeGradient}
+          gradient={activeGradient || gradient}
           handleGradientChange={changeGradient}
         />
       </div>
@@ -55,13 +60,14 @@ CanvasContainer.propTypes = {
   gradients: PropTypes.array.isRequired,
   count: PropTypes.number.isRequired,
   url: PropTypes.object.isRequired,
+  gradient: PropTypes.object,
   activeGradient: PropTypes.object,
   setActiveGradient: PropTypes.func,
   changeGradient: PropTypes.func
 }
 
 CanvasContainer.defaultProps = {
-  activeGradient: getPlaceholderGradient(),
+  activeGradient: null,
   setActiveGradient: () => {},
   changeGradient: () => {}
 }

@@ -9,7 +9,7 @@ const slugifiedGradients = Gradients.map((gradient, index) => ({
   slug: slugify(gradient.name)
 }))
 
-const uniqueGradients = removeDuplicatesBy(gradient => gradient.id, slugifiedGradients)
+export const uniqueGradients = removeDuplicatesBy(gradient => gradient.id, slugifiedGradients)
 
 const hydratedState = {
   gradients: {
