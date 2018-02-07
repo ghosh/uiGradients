@@ -3,7 +3,7 @@ import withRedux from 'next-redux-wrapper'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import rootReducer from './reducer'
 
-import hydratedState from './hydrate.js'
+import hydratedState from './hydrator.js'
 
 export const initStore = (initialState = hydratedState) => {
   return createStore(
