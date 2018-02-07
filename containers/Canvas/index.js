@@ -19,7 +19,7 @@ class CanvasContainer extends Component {
 
   componentDidUpdate () {
     const { activeGradient } = this.props
-    const obj = { Page: activeGradient.name, Url: `/g/${activeGradient.slug}` }
+    const obj = { Page: activeGradient.name, Url: `/g/${ activeGradient.slug }` }
     history.pushState(obj, obj.Page, obj.Url)
   }
 
@@ -46,10 +46,10 @@ class CanvasContainer extends Component {
       <div>
         <Head title='uiGradients - Beautiful gradients for designers and developers' />
         <Header />
-        <Bumper gradient={activeGradient || gradient} />
+        <Bumper gradient={ activeGradient || gradient } />
         <Canvas
-          gradient={activeGradient || gradient}
-          handleGradientChange={changeGradient}
+          gradient={ activeGradient || gradient }
+          handleGradientChange={ changeGradient }
         />
       </div>
     )

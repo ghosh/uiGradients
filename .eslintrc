@@ -6,6 +6,10 @@
     "react"
   ],
   "rules": {
+    "template-curly-spacing": [
+      "error",
+      "always"
+    ],
     "react/display-name": [
       "off",
       {
@@ -32,7 +36,12 @@
     "react/jsx-boolean-value": "error",
     "react/jsx-curly-spacing": [
       "error",
-      "never"
+      {
+        "when": "always",
+        "children": {
+          "when": "never"
+        }
+      }
     ],
     "react/jsx-equals-spacing": [
       "error",

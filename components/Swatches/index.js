@@ -37,7 +37,7 @@ const SwatchPallete = styled.span`
   margin-right: 5px;
 
   /* Adapt the colours based on prop */
-  background-color: ${props => props.color};
+  background-color: ${ props => props.color };
 
 `
 
@@ -55,9 +55,9 @@ const Swatches = (props) => {
     <SwatchesContainer>
       {props.colors.map((color, index) => {
         return (
-          <Fragment key={color + index}>
+          <Fragment key={ color + index }>
             <Swatch>
-              <SwatchPallete color={color} />
+              <SwatchPallete color={ color } />
               <SwatchColor>
                 {color}
               </SwatchColor>
@@ -65,11 +65,11 @@ const Swatches = (props) => {
 
             {index !== props.colors.length - 1 && (
               <Fragment>
-                <Spacing left={3} />
+                <Spacing left={ 3 } />
                 <ArrowContainer>
                   <Arrow height='16' width='16' />
                 </ArrowContainer>
-                <Spacing left={3} />
+                <Spacing left={ 3 } />
               </Fragment>
             )}
           </Fragment>

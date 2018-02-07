@@ -27,7 +27,7 @@ const FlexContainer = styled.section`
   display: flex;
   align-items: center;
   flex: 1;
-  justify-content: ${props => (props.justify === 'end') ? 'flex-end' : 'flex-start'};
+  justify-content: ${ props => (props.justify === 'end') ? 'flex-end' : 'flex-start' };
 `
 
 const Header = () => {
@@ -36,7 +36,7 @@ const Header = () => {
 
       <FlexContainer>
         <Button social='twitter' label='Share on Twitter' />
-        <Spacing right={5} />
+        <Spacing right={ 5 } />
         <Button social='facebook' label='Share on Facebook' />
       </FlexContainer>
 
@@ -47,16 +47,16 @@ const Header = () => {
           <ListItem>
             All gradients
           </ListItem>
-          <Spacing left={10} />
+          <Spacing left={ 10 } />
           <ListItem>
             Saved gradients
           </ListItem>
         </List>
-        <Spacing left={10} />
+        <Spacing left={ 10 } />
         <Divider />
-        <Spacing left={10} />
+        <Spacing left={ 10 } />
         <Avatar />
-        <Spacing left={10} />
+        <Spacing left={ 10 } />
         <Burger />
       </FlexContainer>
 

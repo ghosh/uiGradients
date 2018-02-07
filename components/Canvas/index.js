@@ -12,8 +12,8 @@ const GradientCanvas = styled.div`
   height: calc(100vh - 90px);
   position: relative;
 
-  background-image: ${props =>
-    (exists(props.gradient) && `linear-gradient(90deg, ${[...props.gradient.colors].join(', ')})`) ||
+  background-image: ${ props =>
+    (exists(props.gradient) && `linear-gradient(90deg, ${ [...props.gradient.colors].join(', ') })`) ||
     'linear-gradient(90deg, #eaeaea, #eaeaea)'
 };
   `
@@ -88,7 +88,7 @@ class Canvas extends PureComponent {
 
   render () {
     return (
-      <GradientCanvas gradient={this.props.gradient} >
+      <GradientCanvas gradient={ this.props.gradient } >
 
         <GradientName>
           {this.props.gradient.name}
@@ -96,11 +96,11 @@ class Canvas extends PureComponent {
 
         <GradientNav>
 
-          <GradientNavItem onClick={() => this.props.handleGradientChange('down')}>
+          <GradientNavItem onClick={ () => this.props.handleGradientChange('down') }>
             <LeftChev width='14' height='18' fill='#fff' />
           </GradientNavItem>
 
-          <GradientNavItem onClick={() => this.props.handleGradientChange('up')}>
+          <GradientNavItem onClick={ () => this.props.handleGradientChange('up') }>
             <RightChev width='14' height='18' fill='#fff' />
           </GradientNavItem>
 
