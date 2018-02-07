@@ -7543,9 +7543,9 @@ vue-svg-loader@^0.3.0:
     loader-utils "^1.1.0"
     svgo "^0.7.2"
 
-vue-template-compiler@^2.5.3:
-  version "2.5.3"
-  resolved "https://registry.yarnpkg.com/vue-template-compiler/-/vue-template-compiler-2.5.3.tgz#ab631b0694e211a6aaf0d800102b37836aae36a4"
+vue-template-compiler@^2.5.13:
+  version "2.5.13"
+  resolved "https://registry.yarnpkg.com/vue-template-compiler/-/vue-template-compiler-2.5.13.tgz#12a2aa0ecd6158ac5e5f14d294b0993f399c3d38"
   dependencies:
     de-indent "^1.0.2"
     he "^1.1.0"
