@@ -21,7 +21,7 @@ const Bumper = (props) => {
   return (
     <BumperBase>
       <div />
-      <Swatches colors={props.gradient.colors} />
+      {props.gradient.colors && <Swatches colors={props.gradient.colors} />}
       <div />
     </BumperBase>
   )

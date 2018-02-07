@@ -2,6 +2,8 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
+import { exists } from '@/utils'
+
 import LeftChev from './icons/leftchev.svg'
 import RightChev from './icons/rightchev.svg'
 
@@ -9,9 +11,11 @@ const GradientCanvas = styled.div`
   width: 100%;
   height: calc(100vh - 90px);
   position: relative;
+
   background-image: ${props =>
-    `linear-gradient(90deg, ${[...props.gradient.colors].join(', ')})`
-}
+    (exists(props.gradient) && `linear-gradient(90deg, ${[...props.gradient.colors].join(', ')})`) ||
+    'linear-gradient(90deg, #eaeaea, #eaeaea)'
+};
   `
 
 const GradientName = styled.h2`
