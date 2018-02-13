@@ -1,4 +1,20 @@
 [
+  {
+        "name": "Blu",
+        "colors": ["#00416A", "#E4E5E6"]
+    },
+    {
+        "name": "Ver",
+        "colors": ["#FFE000", "#799F0C"]
+    },
+    {
+        "name": "Ver Black",
+        "colors": ["#F7F8F8", "ACBB78"]
+    },
+  {
+        "name": "Combi",
+        "colors": ["#00416A", "#799F0C", "#FFE000"]
+    },
     {
         "name": "Berimbolo",
         "colors": ["#02111D", "#037BB5", "#02111D"]
