@@ -61,12 +61,12 @@ class CanvasContainer extends Component {
 }
 
 CanvasContainer.propTypes = {
-  gradients: PropTypes.array.isRequired,
-  count: PropTypes.number.isRequired,
-  url: PropTypes.object.isRequired,
-  gradient: PropTypes.object,
-  activeGradient: PropTypes.object,
-  activeDirection: PropTypes.string,
+  gradients: PropTypes.array.isRequired, // list of gradients
+  count: PropTypes.number.isRequired, // total num of gradients
+  url: PropTypes.object.isRequired, // url object
+  gradient: PropTypes.object, // any gradient loaded from server
+  activeGradient: PropTypes.object, // gradient being set from clinet
+  activeDirection: PropTypes.string, // direction of gradient
   setActiveGradient: PropTypes.func,
   changeGradient: PropTypes.func,
   rotateGradient: PropTypes.func

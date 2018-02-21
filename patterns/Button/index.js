@@ -10,7 +10,6 @@ const BaseButton = styled.button`
   cursor: pointer;
   border-radius: 2px;
   color: #fff;
-  font-weight: 600;
   padding: 0 10px;
   text-decoration: none;
   height: 30px;
