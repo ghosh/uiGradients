@@ -7,7 +7,7 @@ import { exists } from '@/utils'
 
 import Canvas from '@/containers/Canvas'
 
-const Home = (props) => <Canvas url={props.url} gradient={props.activeGradient} />
+const Home = (props) => <Canvas url={ props.url } gradient={ props.activeGradient } />
 
 Home.getInitialProps = ({ store, pathname, query }) => {
   if (!exists(query)) {

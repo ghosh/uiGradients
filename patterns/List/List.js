@@ -12,7 +12,7 @@ const BaseList = styled.ul`
 const List = (props) => {
   return (
     <BaseList>
-      { props.children }
+      {props.children}
     </BaseList>
   )
 }

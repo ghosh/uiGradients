@@ -46,5 +46,8 @@ injectGlobal`
   footer, header, menu, nav, section, small {
     display: block;
   }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto ,sans-serif; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto ,sans-serif;
+    color: #2c3e50;
+  }
 `

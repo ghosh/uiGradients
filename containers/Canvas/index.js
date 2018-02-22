@@ -9,10 +9,20 @@ import Head from '@/components/Head'
 import Header from '@/components/Header'
 import Bumper from '@/components/Bumper'
 import Canvas from '@/components/Canvas'
+import AddModal from '@/components/Modals/AddModal'
 
 import { setActiveGradient, changeGradient, rotateGradient } from './actions'
 
 class CanvasContainer extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      showAddModal: false
+    }
+    this.onAddGradientClick = this.onAddGradientClick.bind(this)
+    this.onModalClose = this.onModalClose.bind(this)
+  }
+
   componentDidMount () {
     this.setActiveGradient()
   }
@@ -40,6 +50,19 @@ class CanvasContainer extends Component {
     this.props.setActiveGradient(activeGradient)
   }
 
+  onAddGradientClick () {
+    this.setState({
+      showAddModal: true
+    })
+  }
+
+  onModalClose () {
+    console.log('fire')
+    this.setState({
+      showAddModal: false
+    })
+  }
+
   render () {
     const { activeGradient, activeDirection, gradient, changeGradient, rotateGradient } = this.props
     return (
@@ -49,12 +72,16 @@ class CanvasContainer extends Component {
         <Bumper
           gradient={ activeGradient || gradient }
           handleGradientRotation={ rotateGradient }
+          handleAddGradientClick={ this.onAddGradientClick }
         />
         <Canvas
           direction={ activeDirection }
           gradient={ activeGradient || gradient }
           handleGradientChange={ changeGradient }
         />
+
+        <AddModal in={ this.state.showAddModal } handleClose={ this.onModalClose } />
+
       </div>
     )
   }

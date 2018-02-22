@@ -25,6 +25,7 @@ const Bumper = (props) => {
       {props.gradient.colors && <Swatches colors={ props.gradient.colors } />}
       <Actionbar
         handleGradientRotation={ props.handleGradientRotation }
+        handleAddGradientClick={ props.handleAddGradientClick }
       />
     </BumperBase>
   )
@@ -32,7 +33,8 @@ const Bumper = (props) => {
 
 Bumper.propTypes = {
   gradient: PropTypes.object.isRequired,
-  handleGradientRotation: PropTypes.func.isRequired
+  handleGradientRotation: PropTypes.func.isRequired,
+  handleAddGradientClick: PropTypes.func.isRequired
 }
 
 export default Bumper
