@@ -2,24 +2,37 @@
   <div :class="{ 'active': palette, 'palette': true }">
 
     <ul class="shortlist">
-      <template v-for="item in shortlists">
-        <li class="shortlist__item" :style="`backgroundColor: ${item.color}`" @click="filterGradients(item.name)" :class="{ active: isActiveShortlist(item.name)}">
-          <a href="#" class="shortlist__link" v-if="currentFilter === item.name" @click.prevent.stop="clearFilter()">
-            clear
-          </a>
-        </li>
-      </template>
+      <li 
+        class="shortlist__item"
+        v-for="(item, index) in shortlists"
+        :key="index"
+        :class="{ active: isActiveShortlist(item.name)}"
+        :style="`backgroundColor: ${item.color}`"
+        @click="filterGradients(item.name)"
+        >
+        <a 
+          href="#"
+          class="shortlist__link"
+          v-if="currentFilter === item.name"
+          @click.prevent.stop="clearFilter()"
+          >
+          clear
+        </a>
+      </li>
     </ul>
 
     <ul class="palette__list">
-
-      <li class="palette__item" v-for="gradient in filteredGradients">
+      <li
+        class="palette__item"
+        v-for="(gradient, index) in filteredGradients"
+        :key="index"
+        >
         <Palette
           :gradient="gradient"
           :direction="direction"
-          :updateGradient="changeGradient" />
+          :updateGradient="changeGradient"
+          />
       </li>
-
     </ul>
   </div>
 </template>

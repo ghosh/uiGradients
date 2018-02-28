@@ -8,15 +8,17 @@
     </div>
 
     <div class="actionbar__section actionbar__section--swatch tac">
-      <template v-for="(color, index) in gradient.colors">
+      <div 
+        v-for="(color, index) in gradient.colors" 
+        :key="index"
+      >
         <Swatch
           :color="color"
           :gradient="gradient"
           :class="{'last' : index === (gradient.colors.length - 1)}"
-          :key="{index}"
           />
-          <span class="hex__arrow">→&nbsp;</span>
-      </template>
+        <span class="hex__arrow">→&nbsp;</span>
+      </div>
     </div>
 
     <div class="actionbar__section tar">
