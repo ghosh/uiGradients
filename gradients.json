@@ -1183,5 +1183,13 @@
     {
         "name": "Evening Night",
         "colors": ["#005AA7", "#FFFDE4"]
-    }
+    },
+  {
+    "name": "Amin",
+    "colors": ["#8E2DE2", "#4A00E0"]
+  },
+  {
+    "name": "Memariani",
+    "colors": ["#aa4b6b", "#6b6b83" , "3b8d99"]
+  }
 ]
