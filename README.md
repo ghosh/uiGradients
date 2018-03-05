@@ -66,6 +66,7 @@ curl -i https://raw.githubusercontent.com/ghosh/uiGradients/master/gradients.jso
 
 ## Built with uiGradients
 A few open source projects built with uiGradients
+- [Potion](http://numberpicture.com/build) - React components for declaratively composing animated, interactive visualizations
 - [UIColor-uiGradientsAdditions](https://github.com/kaiinui/UIColor-uiGradientsAdditions) - uiGradients for iOS
 - [NilColorKit](https://github.com/NilStack/NilColorKit) - uiGradients made for swift
 - [uigradients](https://github.com/JSBros/uigradients) - Styled components for uiGradients
