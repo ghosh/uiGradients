@@ -10,7 +10,7 @@ const BaseListItem = styled.li`
 const ListItem = (props) => {
   return (
     <BaseListItem>
-      { props.children }
+      {props.children}
     </BaseListItem>
   )
 }

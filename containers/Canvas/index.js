@@ -57,7 +57,6 @@ class CanvasContainer extends Component {
   }
 
   onModalClose () {
-    console.log('fire')
     this.setState({
       showAddModal: false
     })

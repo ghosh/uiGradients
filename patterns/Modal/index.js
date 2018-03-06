@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import transition from 'styled-transition-group'
@@ -25,6 +25,14 @@ const Slide = transition.div.attrs({
   unmountOnExit: true,
   timeout: 300
 })`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   &:enter {
     opacity: 0;
     transform: scale(1.15)
@@ -56,19 +64,6 @@ const ModalMask = styled.div`
   transition: opacity .3s ease;
 `
 
-const ModalBase = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  pointer-events: none;
-`
-
 const ModalContainer = styled.div`
   width: 540px;
   padding: 40px 30px;
@@ -77,33 +72,33 @@ const ModalContainer = styled.div`
   box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
   transition: all .3s ease;
   text-align: center;
+  z-index: 10;
 `
 
 const ModalTitle = styled.h3`
   font-size: 18px;
   font-weight: 600;
   margin-top: 0;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 `
 
 const Modal = (props) => {
-  return [
-    <ModalBase>
+  return (
+    <Fragment>
+      <Fade in={ props.in }>
+        <ModalMask onClick={ props.handleClose } />
+      </Fade>
+
       <Slide in={ props.in }>
         <ModalContainer>
           <ModalTitle>
             {props.title}
           </ModalTitle>
-
           {props.children}
         </ModalContainer>
       </Slide>
-    </ModalBase>,
-
-    <Fade in={ props.in }>
-      <ModalMask onClick={ props.handleClose } />
-    </Fade>
-  ]
+    </Fragment>
+  )
 }
 
 Modal.propTypes = {
