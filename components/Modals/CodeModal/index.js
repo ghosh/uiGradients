@@ -3,11 +3,12 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 import Modal from '@/patterns/Modal'
+import CodeBlock from '@/patterns/CodeBlock'
 
-const ModalText = styled.p`
-  font-size: 15px;
-  line-height: 1.5;
-  margin-bottom: 22px;
+const ModalContent = styled.div`
+  height: 105px;
+  background-color: #F9FAFC;
+  margin-bottom: 20px;
 `
 
 const ModalButton = styled.a`
@@ -36,11 +37,11 @@ const ModalButton = styled.a`
 const CodeModal = (props) => {
   return (
     <Modal title='Copy CSS' in={ props.in } handleClose={ props.handleClose }>
-      <ModalText>
-        Adding a gradient is easy. All gradients are read from a gradients.json file which is available in this project's repo. Simply add your gradient details to it and submit a pull request.
-      </ModalText>
+      <ModalContent>
+        <CodeBlock gradient={ props.gradient } direction={ props.direction } />
+      </ModalContent>
       <ModalButton>
-        Tell me more
+        Click to copy
       </ModalButton>
     </Modal>
   )
@@ -48,12 +49,14 @@ const CodeModal = (props) => {
 
 CodeModal.propTypes = {
   in: PropTypes.bool,
-  handleClose: PropTypes.func
+  handleClose: PropTypes.func,
+  gradient: PropTypes.object.isRequired,
+  direction: PropTypes.string.isRequired
 }
 
 CodeModal.defaultProps = {
   in: 'false',
-  handleClose: () => {}
+  handleClose: () => { }
 }
 
 export default CodeModal

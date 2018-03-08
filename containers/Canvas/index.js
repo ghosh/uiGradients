@@ -90,8 +90,16 @@ class CanvasContainer extends Component {
           handleGradientChange={ changeGradient }
         />
 
-        <AddModal in={ this.state.showAddModal } handleClose={ this.onModalClose } />
-        <CodeModal in={ this.state.showCodeModal } handleClose={ this.onModalClose } />
+        <AddModal
+          in={ this.state.showAddModal }
+          handleClose={ this.onModalClose }
+        />
+        <CodeModal
+          in={ this.state.showCodeModal }
+          handleClose={ this.onModalClose }
+          gradient={ activeGradient || gradient }
+          direction={ activeDirection }
+        />
 
       </div>
     )
