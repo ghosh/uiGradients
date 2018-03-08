@@ -75,7 +75,7 @@ class Actionbar extends PureComponent {
         <ActionItem onClick={ () => this.props.handleGradientRotation('up') }>
           <RotateIcon width='16' height='16' />
         </ActionItem>
-        <ActionItem>
+        <ActionItem onClick={ () => this.props.handeGetCssClick() }>
           <CodeIcon width='16' height='16' />
         </ActionItem>
         <ActionItem onClick={ () => this.props.handleAddGradientClick() }>
@@ -91,7 +91,8 @@ class Actionbar extends PureComponent {
 
 Actionbar.propTypes = {
   handleGradientRotation: PropTypes.func.isRequired,
-  handleAddGradientClick: PropTypes.func.isRequired
+  handleAddGradientClick: PropTypes.func.isRequired,
+  handeGetCssClick: PropTypes.func.isRequired
 }
 
 export default Actionbar

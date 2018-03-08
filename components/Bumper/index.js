@@ -26,6 +26,7 @@ const Bumper = (props) => {
       <Actionbar
         handleGradientRotation={ props.handleGradientRotation }
         handleAddGradientClick={ props.handleAddGradientClick }
+        handeGetCssClick={ props.handeGetCssClick }
       />
     </BumperBase>
   )
@@ -34,7 +35,8 @@ const Bumper = (props) => {
 Bumper.propTypes = {
   gradient: PropTypes.object.isRequired,
   handleGradientRotation: PropTypes.func.isRequired,
-  handleAddGradientClick: PropTypes.func.isRequired
+  handleAddGradientClick: PropTypes.func.isRequired,
+  handeGetCssClick: PropTypes.func.isRequired
 }
 
 export default Bumper

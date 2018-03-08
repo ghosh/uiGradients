@@ -10,6 +10,7 @@ import Header from '@/components/Header'
 import Bumper from '@/components/Bumper'
 import Canvas from '@/components/Canvas'
 import AddModal from '@/components/Modals/AddModal'
+import CodeModal from '@/components/Modals/CodeModal'
 
 import { setActiveGradient, changeGradient, rotateGradient } from './actions'
 
@@ -17,9 +18,11 @@ class CanvasContainer extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      showAddModal: false
+      showAddModal: false,
+      showCodeModal: false
     }
     this.onAddGradientClick = this.onAddGradientClick.bind(this)
+    this.onGetCssClick = this.onGetCssClick.bind(this)
     this.onModalClose = this.onModalClose.bind(this)
   }
 
@@ -56,9 +59,16 @@ class CanvasContainer extends Component {
     })
   }
 
+  onGetCssClick () {
+    this.setState({
+      showCodeModal: true
+    })
+  }
+
   onModalClose () {
     this.setState({
-      showAddModal: false
+      showAddModal: false,
+      showCodeModal: false
     })
   }
 
@@ -72,6 +82,7 @@ class CanvasContainer extends Component {
           gradient={ activeGradient || gradient }
           handleGradientRotation={ rotateGradient }
           handleAddGradientClick={ this.onAddGradientClick }
+          handeGetCssClick={ this.onGetCssClick }
         />
         <Canvas
           direction={ activeDirection }
@@ -80,6 +91,7 @@ class CanvasContainer extends Component {
         />
 
         <AddModal in={ this.state.showAddModal } handleClose={ this.onModalClose } />
+        <CodeModal in={ this.state.showCodeModal } handleClose={ this.onModalClose } />
 
       </div>
     )
