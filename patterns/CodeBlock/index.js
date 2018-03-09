@@ -36,14 +36,15 @@ const CodeBlock = (props) => {
   const colorFallback = props.gradient.colors[0]
   const colorList = [...props.gradient.colors].join(', ')
   const direction = props.direction
+
   return (
     <Pre>
       <Code>
         <Property>background</Property>: <Spec>{colorFallback}</Spec>; <Comment>/* fallback for old browsers */</Comment>
         <br />
-        <Property>background</Property>: -webkit-linear-gradient({direction}, <Spec>{colorList}</Spec>); <Comment>/* Chrome 10-25, Safari 5.1-6 */</Comment>
+        <Property>background</Property>: -webkit-linear-gradient({direction}<Spec>, {colorList}</Spec>); <Comment>/* Chrome 10-25, Safari 5.1-6 */</Comment>
         <br />
-        <Property>background</Property>: linear-gradient({direction}, <Spec>{colorList}</Spec>); <Comment>/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */</Comment>
+        <Property>background</Property>: linear-gradient({direction}<Spec>, {colorList}</Spec>); <Comment>/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */</Comment>
       </Code>
     </Pre>
   )
