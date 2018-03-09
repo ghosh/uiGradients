@@ -74,6 +74,7 @@ class CanvasContainer extends Component {
 
   render () {
     const { activeGradient, activeDirection, gradient, changeGradient, rotateGradient } = this.props
+
     return (
       <div>
         <Head title='uiGradients - Beautiful gradients for designers and developers' />
