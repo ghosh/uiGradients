@@ -2,6 +2,8 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
+import { Dropdown, DropdownTarget, DropdownContent } from '@/patterns/Dropdown'
+
 import RotateIcon from './icons/rotate.svg'
 import CodeIcon from './icons/code.svg'
 import AddIcon from './icons/add.svg'
@@ -82,7 +84,14 @@ class Actionbar extends PureComponent {
           <AddIcon width='16' height='16' />
         </ActionItem>
         <ActionItem>
-          <DownloadIcon width='16' height='16' />
+          <Dropdown>
+            <DropdownTarget>
+              <DownloadIcon width='16' height='16' />
+            </DropdownTarget>
+            <DropdownContent>
+              Hello
+            </DropdownContent>
+          </Dropdown>
         </ActionItem>
       </ActionbarContainer>
     )
