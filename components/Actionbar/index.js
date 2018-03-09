@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { Dropdown, DropdownTarget, DropdownContent } from '@/patterns/Dropdown'
+import { Menu, MenuItem } from '@/patterns/Menu'
 
 import RotateIcon from './icons/rotate.svg'
 import CodeIcon from './icons/code.svg'
@@ -50,6 +51,15 @@ const ActionItem = styled.li`
   }
 `
 
+const DownloadTarget = styled.div`
+  width: 32px;
+  height: 32px;
+  margin-left: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
 class Actionbar extends PureComponent {
   componentDidMount () {
     document.addEventListener('keyup', this.handleKeyboardEvents.bind(this))
@@ -86,10 +96,19 @@ class Actionbar extends PureComponent {
         <ActionItem>
           <Dropdown>
             <DropdownTarget>
-              <DownloadIcon width='16' height='16' />
+              <DownloadTarget>
+                <DownloadIcon width='16' height='16' />
+              </DownloadTarget>
             </DropdownTarget>
             <DropdownContent>
-              Hello
+              <Menu>
+                <MenuItem>
+                  Download gradient as jpg
+                </MenuItem>
+                <MenuItem>
+                  Download sketch file
+                </MenuItem>
+              </Menu>
             </DropdownContent>
           </Dropdown>
         </ActionItem>

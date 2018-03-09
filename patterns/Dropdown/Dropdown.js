@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import enhanceWithClickOutside from 'react-click-outside'
 
 const DropdownBase = styled.div`
   position: relative;
@@ -15,6 +16,10 @@ class Dropdown extends PureComponent {
 
   toggleDropdown () {
     this.setState({ visible: !this.state.visible })
+  }
+
+  handleClickOutside () {
+    this.setState({ visible: false })
   }
 
   render () {
@@ -42,4 +47,4 @@ Dropdown.defaultProps = {
   children: null
 }
 
-export default Dropdown
+export default enhanceWithClickOutside(Dropdown)
