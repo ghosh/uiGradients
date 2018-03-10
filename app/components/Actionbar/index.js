@@ -2,6 +2,8 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
+import GradientDownloader from '@/services/gradientDownloader'
+
 import { TooltipBase } from '@/patterns/Tooltip'
 
 import RotateIcon from './icons/rotate.svg'
@@ -58,6 +60,11 @@ const ActionTooltip = TooltipBase.extend`
 `
 
 class Actionbar extends PureComponent {
+  constructor (props) {
+    super(props)
+    this.downloadGradient = this.downloadGradient.bind(this)
+  }
+
   componentDidMount () {
     document.addEventListener('keyup', this.handleKeyboardEvents.bind(this))
   }
@@ -78,6 +85,15 @@ class Actionbar extends PureComponent {
         break
     }
   }
+
+  downloadGradient () {
+    GradientDownloader(
+      this.props.direction,
+      this.props.gradient.name,
+      ...this.props.gradient.colors
+    )
+  }
+
   render () {
     return (
       <ActionbarContainer>
@@ -100,7 +116,7 @@ class Actionbar extends PureComponent {
           </ActionTooltip>
         </ActionItem>
 
-        <ActionItem>
+        <ActionItem onClick={ this.downloadGradient }>
           <ActionTooltip label='Download'>
             <DownloadIcon width='16' height='16' />
           </ActionTooltip>
@@ -113,7 +129,14 @@ class Actionbar extends PureComponent {
 Actionbar.propTypes = {
   handleGradientRotation: PropTypes.func.isRequired,
   handleAddGradientClick: PropTypes.func.isRequired,
-  handeGetCssClick: PropTypes.func.isRequired
+  handeGetCssClick: PropTypes.func.isRequired,
+  direction: PropTypes.string,
+  gradient: PropTypes.obj
+}
+
+Actionbar.defaultProps = {
+  direction: 'to-left',
+  gradient: {}
 }
 
 export default Actionbar

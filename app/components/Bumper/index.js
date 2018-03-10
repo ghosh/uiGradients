@@ -24,6 +24,8 @@ const Bumper = (props) => {
       <div />
       {props.gradient.colors && <Swatches colors={ props.gradient.colors } />}
       <Actionbar
+        direction={ props.direction }
+        gradient={ props.gradient }
         handleGradientRotation={ props.handleGradientRotation }
         handleAddGradientClick={ props.handleAddGradientClick }
         handeGetCssClick={ props.handeGetCssClick }
@@ -33,6 +35,7 @@ const Bumper = (props) => {
 }
 
 Bumper.propTypes = {
+  direction: PropTypes.string.isRequired,
   gradient: PropTypes.object.isRequired,
   handleGradientRotation: PropTypes.func.isRequired,
   handleAddGradientClick: PropTypes.func.isRequired,

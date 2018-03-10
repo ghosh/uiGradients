@@ -7,8 +7,8 @@
       "module-resolver",
       {
         "alias": {
-          "@": "./app",
-          "@@": "./"
+          "@@": "./",
+          "@": "./app"
         }
       },
       "jsx-control-statements",

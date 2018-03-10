@@ -80,6 +80,7 @@ class CanvasContainer extends Component {
         <Head title='uiGradients - Beautiful gradients for designers and developers' />
         <Header />
         <Bumper
+          direction={ activeDirection }
           gradient={ activeGradient || gradient }
           handleGradientRotation={ rotateGradient }
           handleAddGradientClick={ this.onAddGradientClick }
