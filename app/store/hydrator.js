@@ -1,6 +1,6 @@
-import Gradients from '../gradients.json'
+import Gradients from '@@/gradients.json'
 
-import { slugify, removeDuplicatesBy } from '@/utils'
+import { slugify, removeDuplicatesBy } from '@@/utils'
 
 const slugifiedGradients = Gradients.map((gradient, index) => ({
   id: index,

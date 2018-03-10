@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import { reduxPage } from '@/store'
 import { uniqueGradients } from '@/store/hydrator'
-import { exists } from '@/utils'
+import { exists } from '@@/utils'
 
 import Canvas from '@/containers/Canvas'
 

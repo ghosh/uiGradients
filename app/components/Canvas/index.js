@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { exists } from '@/utils'
+import { exists } from '@@/utils'
 
 import LeftChev from './icons/leftchev.svg'
 import RightChev from './icons/rightchev.svg'

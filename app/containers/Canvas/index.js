@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import PropTypes from 'prop-types'
 
-import { exists } from '@/utils'
+import { exists } from '@@/utils'
 
 import Head from '@/components/Head'
 import Header from '@/components/Header'
