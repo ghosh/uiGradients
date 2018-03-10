@@ -2,8 +2,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { Dropdown, DropdownTarget, DropdownContent } from '@/patterns/Dropdown'
-import { Menu, MenuItem } from '@/patterns/Menu'
+import { TooltipBase } from '@/patterns/Tooltip'
 
 import RotateIcon from './icons/rotate.svg'
 import CodeIcon from './icons/code.svg'
@@ -20,7 +19,7 @@ const ActionbarContainer = styled.ul`
 `
 
 const ActionItem = styled.li`
-  margin: 0 10px;
+  margin: 0 10px !important;
   padding: 0;
   width: 32px;
   height: 32px;
@@ -28,7 +27,6 @@ const ActionItem = styled.li`
   align-items: center;
   cursor: pointer;
   box-sizing: border-box;
-  padding: 8px;
   border-radius: 3px;
   position: relative;
   transition: background 0.2s ease-in-out;
@@ -51,13 +49,12 @@ const ActionItem = styled.li`
   }
 `
 
-const DownloadTarget = styled.div`
-  width: 32px;
+const ActionTooltip = TooltipBase.extend`
+  width: 100%;
   height: 32px;
-  margin-left: -8px;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  display: flex;
 `
 
 class Actionbar extends PureComponent {
@@ -84,33 +81,29 @@ class Actionbar extends PureComponent {
   render () {
     return (
       <ActionbarContainer>
+
         <ActionItem onClick={ () => this.props.handleGradientRotation('up') }>
-          <RotateIcon width='16' height='16' />
+          <ActionTooltip label='Rotate gradient'>
+            <RotateIcon width='16' height='16' />
+          </ActionTooltip>
         </ActionItem>
+
         <ActionItem onClick={ () => this.props.handeGetCssClick() }>
-          <CodeIcon width='16' height='16' />
+          <ActionTooltip label='Get CSS'>
+            <CodeIcon width='16' height='16' />
+          </ActionTooltip>
         </ActionItem>
+
         <ActionItem onClick={ () => this.props.handleAddGradientClick() }>
-          <AddIcon width='16' height='16' />
+          <ActionTooltip label='Add gradient'>
+            <AddIcon width='16' height='16' />
+          </ActionTooltip>
         </ActionItem>
+
         <ActionItem>
-          <Dropdown>
-            <DropdownTarget>
-              <DownloadTarget>
-                <DownloadIcon width='16' height='16' />
-              </DownloadTarget>
-            </DropdownTarget>
-            <DropdownContent>
-              <Menu>
-                <MenuItem>
-                  Download gradient as jpg
-                </MenuItem>
-                <MenuItem>
-                  Download sketch file
-                </MenuItem>
-              </Menu>
-            </DropdownContent>
-          </Dropdown>
+          <ActionTooltip label='Download'>
+            <DownloadIcon width='16' height='16' />
+          </ActionTooltip>
         </ActionItem>
       </ActionbarContainer>
     )
