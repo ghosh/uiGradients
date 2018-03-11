@@ -50,4 +50,5 @@ injectGlobal`
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto ,sans-serif;
     color: #2c3e50;
   }
+  a { cursor: pointer; }
 `

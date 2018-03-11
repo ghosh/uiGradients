@@ -5,8 +5,6 @@ import PropTypes from 'prop-types'
 
 import { exists } from '@@/utils'
 
-import Head from '@/components/Head'
-import Header from '@/components/Header'
 import Bumper from '@/components/Bumper'
 import Canvas from '@/components/Canvas'
 import AddModal from '@/components/Modals/AddModal'
@@ -77,8 +75,6 @@ class CanvasContainer extends Component {
 
     return (
       <div>
-        <Head title='uiGradients - Beautiful gradients for designers and developers' />
-        <Header />
         <Bumper
           direction={ activeDirection }
           gradient={ activeGradient || gradient }

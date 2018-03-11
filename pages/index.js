@@ -5,9 +5,15 @@ import { reduxPage } from '@/store'
 import { uniqueGradients } from '@/store/hydrator'
 import { exists } from '@@/utils'
 
+import Header from '@/containers/Header'
 import Canvas from '@/containers/Canvas'
 
-const Home = (props) => <Canvas url={ props.url } gradient={ props.activeGradient } />
+const Home = (props) => {
+  return [
+    <Header />,
+    <Canvas url={ props.url } gradient={ props.activeGradient } />
+  ]
+}
 
 Home.getInitialProps = ({ store, pathname, query }) => {
   if (!exists(query)) {

@@ -1,15 +1,43 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 
-import Head from '../../components/Head'
-import Header from '../../components/Header'
-import Bumper from '../../components/Bumper'
-import Canvas from '../../components/Canvas'
+import { PaletteContainer, PaletteList, PaletteItem, Palette } from '@/components/Palettes'
 
-export default () => (
-  <div>
-    <Head title='uiGradients - Beautiful gradients for designers and developers' />
-    <Header />
-    <Bumper />
-    <Canvas />
-  </div>
-)
+class GradientController extends Component {
+  render () {
+    const { gradients } = this.props
+    return (
+      <PaletteContainer>
+        <PaletteList>
+          {gradients.slice(0).reverse().map(function (gradient) {
+            return (
+              <PaletteItem key={ gradient.id }>
+                <Palette gradient={ gradient } />
+              </PaletteItem>
+            )
+          })}
+        </PaletteList>
+      </PaletteContainer>
+    )
+  }
+}
+
+GradientController.propTypes = {
+  gradients: PropTypes.array,
+  count: PropTypes.number
+}
+
+GradientController.defaultProps = {
+  gradients: {},
+  count: null
+}
+
+const mapStateToProps = (state, ownProps) => {
+  return {
+    gradients: state.gradients.list,
+    count: state.gradients.count
+  }
+}
+
+export default connect(mapStateToProps, null)(GradientController)

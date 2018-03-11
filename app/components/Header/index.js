@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Link from 'next/link'
 
 import Button from '@/patterns/Button'
 import Spacing from '@/patterns/Spacing'
@@ -40,16 +41,22 @@ const Header = () => {
         <Button social='facebook' label='Share on Facebook' />
       </FlexContainer>
 
-      <Logo height='28' />
+      <Link href='/'>
+        <Logo height='28' />
+      </Link>
 
       <FlexContainer justify='end'>
         <List>
           <ListItem>
-            All gradients
+            <Link href='/gradients'>
+              <a>All gradients</a>
+            </Link>
           </ListItem>
           <Spacing left={ 10 } />
           <ListItem>
-            Saved gradients
+            <Link href='/g/vanusa'>
+              <a>Saved gradients</a>
+            </Link>
           </ListItem>
         </List>
         <Spacing left={ 10 } />
