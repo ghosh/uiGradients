@@ -1,10 +1,5 @@
 import { saveAs } from 'file-saver'
-// import toBlob from 'canvas-to-blob'
-
 import Canvas from './canvasHelpers'
-
-// Adds toBlob polyfill (for safari)
-// toBlob.init()
 
 export default function (direction, name, ...colors) {
   const canvas = document.createElement('canvas')
