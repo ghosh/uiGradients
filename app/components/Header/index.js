@@ -31,6 +31,14 @@ const FlexContainer = styled.section`
   justify-content: ${ props => (props.justify === 'end') ? 'flex-end' : 'flex-start' };
 `
 
+const A = styled.a`
+  text-decoration: none;
+  &:hover {
+    color: #36c;
+    border-bottom: dotted 1px #333;
+  }
+`
+
 const Header = () => {
   return (
     <HeaderBar>
@@ -48,14 +56,14 @@ const Header = () => {
       <FlexContainer justify='end'>
         <List>
           <ListItem>
-            <Link href='/gradients'>
-              <a>All gradients</a>
+            <Link href='/gradients' prefetch>
+              <A>All gradients</A>
             </Link>
           </ListItem>
           <Spacing left={ 10 } />
           <ListItem>
             <Link href='/g/vanusa'>
-              <a>Saved gradients</a>
+              <A>Saved gradients</A>
             </Link>
           </ListItem>
         </List>

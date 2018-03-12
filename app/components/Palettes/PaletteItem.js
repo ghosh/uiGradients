@@ -13,6 +13,10 @@ const Palette = styled.li`
     background-color: #222;
     border-radius: 3px;
     transform: scale(1.02);
+
+    p {
+      border-bottom: 1px solid hsla(0,0%,92%,.49);
+    }
   }
 `
 
