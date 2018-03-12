@@ -1041,5 +1041,9 @@
     {
         "name": "Orange Fun",
         "colors": ["#fc4a1a", "#f7b733"]
+    },
+    {
+      "name": "Neuromancer",
+      "colors": ["#f953c6", "#b91d73"]
     }
 ]
