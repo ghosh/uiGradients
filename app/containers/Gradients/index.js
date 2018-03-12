@@ -14,7 +14,7 @@ const Container = styled.div`
 
 class GradientController extends Component {
   render () {
-    const { gradients, count } = this.props
+    const { gradients } = this.props
     return (
       <Fragment>
         <Container>
@@ -22,7 +22,7 @@ class GradientController extends Component {
             <Swatch color='#c93041' />
             <Swatch color='#d56b31' />
             <Swatch color='#fed130' />
-            <Swatch color='#219859' selected />
+            <Swatch color='#219859' />
             <Swatch color='#2bb6de' />
             <Swatch color='#1b5897' />
             <Swatch color='#ed3dd7' />
@@ -48,8 +48,7 @@ class GradientController extends Component {
 }
 
 GradientController.propTypes = {
-  gradients: PropTypes.array,
-  count: PropTypes.number
+  gradients: PropTypes.array
 }
 
 GradientController.defaultProps = {
@@ -59,8 +58,7 @@ GradientController.defaultProps = {
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    gradients: state.gradients.list,
-    count: state.gradients.count
+    gradients: state.gradients.list
   }
 }
 

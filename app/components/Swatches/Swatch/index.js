@@ -8,6 +8,9 @@ const SwatchItem = styled.li`
   height: 30px;
   border-radius: 100%;
   margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background-color: ${ props => props.color };
 
@@ -19,18 +22,24 @@ const SwatchItem = styled.li`
 class Swatch extends PureComponent {
   render () {
     return (
-      <SwatchItem color={ this.props.color } selected={ this.props.selected } />
+      <SwatchItem
+        color={ this.props.color }
+        selected={ (this.props.color === this.props.activeColor) }
+        onClick={ () => this.props.handleClick(this.props.color) }
+      />
     )
   }
 }
 
 Swatch.propTypes = {
   color: PropTypes.string.isRequired,
-  selected: PropTypes.bool
+  handleClick: PropTypes.func,
+  activeColor: PropTypes.string
 }
 
 Swatch.defaultProps = {
-  selected: false
+  handleClick: () => {},
+  activeColor: null
 }
 
 export default Swatch
