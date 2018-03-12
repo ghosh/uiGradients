@@ -33,7 +33,7 @@ const PaletteName = styled.p`
 
 const Palette = ({ gradient, direction }) => {
   return (
-    <Link href={ `/g/${ gradient.slug }` }>
+    <Link as={ `/g/${ gradient.slug }` } href={ `/?slug=${ gradient.slug }` }>
       <a>
         <PaletteContainer gradient={ gradient }>
           <PaletteName>
