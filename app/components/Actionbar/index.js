@@ -63,14 +63,15 @@ class Actionbar extends PureComponent {
   constructor (props) {
     super(props)
     this.downloadGradient = this.downloadGradient.bind(this)
+    this.handleKeyboardEvents = this.handleKeyboardEvents.bind(this)
   }
 
   componentDidMount () {
-    document.addEventListener('keyup', this.handleKeyboardEvents.bind(this))
+    document.addEventListener('keyup', this.handleKeyboardEvents)
   }
 
   componentWillUnmount () {
-    document.removeEventListener('keyup', this.handleKeyboardEvents.bind(this))
+    document.removeEventListener('keyup', this.handleKeyboardEvents)
   }
 
   handleKeyboardEvents (event) {

@@ -66,12 +66,17 @@ const GradientNavItem = styled.li`
 `
 
 class Canvas extends PureComponent {
+  constructor (props) {
+    super(props)
+    this.handleKeyboardEvents = this.handleKeyboardEvents.bind(this)
+  }
+
   componentDidMount () {
-    document.addEventListener('keyup', this.handleKeyboardEvents.bind(this))
+    document.addEventListener('keyup', this.handleKeyboardEvents)
   }
 
   componentWillUnmount () {
-    document.removeEventListener('keyup', this.handleKeyboardEvents.bind(this))
+    document.removeEventListener('keyup', this.handleKeyboardEvents)
   }
 
   handleKeyboardEvents (event) {
