@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import Filter from '@/components/Filter'
+import { SwatchList, Swatch } from '@/components/Swatches'
 import { PaletteContainer, PaletteList, PaletteItem, Palette } from '@/components/Palettes'
 
 const Container = styled.div`
@@ -18,7 +18,18 @@ class GradientController extends Component {
     return (
       <Fragment>
         <Container>
-          <Filter />
+          <SwatchList>
+            <Swatch color='#c93041' />
+            <Swatch color='#d56b31' />
+            <Swatch color='#fed130' />
+            <Swatch color='#219859' selected />
+            <Swatch color='#2bb6de' />
+            <Swatch color='#1b5897' />
+            <Swatch color='#ed3dd7' />
+            <Swatch color='#eaeaea' />
+            <Swatch color='#c0c0cb' />
+            <Swatch color='#333333' />
+          </SwatchList>
         </Container>
         <PaletteContainer>
           <PaletteList>

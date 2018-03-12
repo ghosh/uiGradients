@@ -2,8 +2,9 @@ import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import Swatch from '@/components/Swatch'
 import Spacing from '@/patterns/Spacing'
+
+import HexItem from '../HexItem'
 import Arrow from './icons/arrow.svg'
 
 const HexContainer = styled.ul`
@@ -25,7 +26,7 @@ const HexList = (props) => {
       {props.colors.map((color, index) => {
         return (
           <Fragment key={ color + index }>
-            <Swatch color={ color } />
+            <HexItem color={ color } />
 
             {index !== props.colors.length - 1 && (
               <Fragment>
