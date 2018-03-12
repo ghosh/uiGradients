@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const Container = styled.div`
   display: block;
   background-color: #333;
-  height: calc(100vh - 50px);
+  height: calc(100vh - (50px + 86px));
   overflow: scroll;
   box-sizing: border-box;
   /* padding: 0 20px; */

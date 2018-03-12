@@ -1,51 +1,52 @@
-import React, { Fragment } from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import React, { Component } from 'react'
+import styled, { css } from 'styled-components'
 
-import Swatch from '@/components/Swatch'
-import Spacing from '@/patterns/Spacing'
-import Arrow from './icons/arrow.svg'
-
-const SwatchesContainer = styled.ul`
-  margin: 0;
-  padding: 0;
+const Swatches = styled.ul`
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex: 1;
+  font-size: 15px;
 `
 
-const ArrowContainer = styled.span`
-  margin-top: 4px;
+const Swatch = styled.li`
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: aqua;
+  margin-right: 8px;
+
+  background-color: ${ props => props.color };
+
+  ${ props => props.selected && css`
+    border: solid 4px #fff;
+  ` }
 `
 
-const Swatches = (props) => {
-  return (
-    <SwatchesContainer>
-      {props.colors.map((color, index) => {
-        return (
-          <Fragment key={ color + index }>
-            <Swatch color={ color } />
+const Label = styled.li`
+  color: #fff;
+  margin-right: 8px;
+  -webkit-font-smoothing: antialiased;
+`
 
-            {index !== props.colors.length - 1 && (
-              <Fragment>
-                <Spacing left={ 3 } />
-                <ArrowContainer>
-                  <Arrow height='16' width='16' />
-                </ArrowContainer>
-                <Spacing left={ 3 } />
-              </Fragment>
-            )}
-          </Fragment>
-        )
-      })}
+class Filter extends Component {
+  render () {
+    return (
+      <Swatches>
+        <Label>Filter by color:</Label>
+        <Swatch color='#cb2d3e' />
+        <Swatch color='#d76b26' />
+        <Swatch color='#fed130' />
+        <Swatch color='#219859' selected />
+        <Swatch color='#2bb6de' />
 
-    </SwatchesContainer>
-  )
+        <Swatch color='#1b5897' />
+        <Swatch color='#ed3dd7' />
+        <Swatch color='#eaeaea' />
+        <Swatch color='#c0c0cb' />
+        <Swatch color='#333333' />
+      </Swatches>
+    )
+  }
 }
 
-Swatches.propTypes = {
-  colors: PropTypes.array.isRequired
-}
-
-export default Swatches
+export default Filter

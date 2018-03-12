@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import Swatches from '@/components/Swatches'
+import { HexList } from '@/components/Hex'
 import Actionbar from '@/components/Actionbar'
 
 const BumperBase = styled.section`
@@ -22,7 +22,7 @@ const Bumper = (props) => {
   return (
     <BumperBase>
       <div />
-      {props.gradient.colors && <Swatches colors={ props.gradient.colors } />}
+      {props.gradient.colors && <HexList colors={ props.gradient.colors } />}
       <Actionbar
         direction={ props.direction }
         gradient={ props.gradient }

@@ -37,7 +37,7 @@ const FadeUp = transition.span.attrs({
   }
 `
 
-const SwatchBase = styled.li`
+const HexBase = styled.li`
   position: relative;
   margin: 0;
   padding: 0;
@@ -53,7 +53,7 @@ const SwatchBase = styled.li`
   }
 `
 
-const SwatchPallete = styled.span`
+const HexPallete = styled.span`
   display: inline-block;
   width: 14px;
   height: 14px;
@@ -64,12 +64,12 @@ const SwatchPallete = styled.span`
   background-color: ${ props => props.color };
 `
 
-const SwatchColor = styled.span`
+const HexColor = styled.span`
   font-family: "SF Mono Regular", "Source Code Pro", Consolas, monospace;
   font-size: 15px;
 `
 
-class Swatch extends PureComponent {
+class Hex extends PureComponent {
   constructor (props) {
     super(props)
     this.state = {
@@ -89,22 +89,22 @@ class Swatch extends PureComponent {
     const { color } = this.props
     return (
       <CopyToClipboard text={ color } onCopy={ this.onCopy }>
-        <SwatchBase>
-          <SwatchPallete color={ color } />
-          <SwatchColor>
+        <HexBase>
+          <HexPallete color={ color } />
+          <HexColor>
             {color}
-          </SwatchColor>
+          </HexColor>
           <FadeUp in={ this.state.copied }>
             copied!
           </FadeUp>
-        </SwatchBase>
+        </HexBase>
       </CopyToClipboard>
     )
   }
 }
 
-Swatch.propTypes = {
+Hex.propTypes = {
   color: PropTypes.string.isRequired
 }
 
-export default Swatch
+export default Hex
