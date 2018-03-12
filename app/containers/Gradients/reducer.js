@@ -9,11 +9,11 @@ function gradientReducer (state = {}, action) {
     case 'CHANGE_GRADIENT':
       let newIndex = 0
       if (action.direction === 'up') {
-        const updatedIndex = state.activeIndex + 1
-        newIndex = (updatedIndex > state.list.length - 1) ? 0 : updatedIndex
-      } else if (action.direction === 'down') {
         const updatedIndex = state.activeIndex - 1
         newIndex = (updatedIndex < 0) ? state.list.length - 1 : updatedIndex
+      } else if (action.direction === 'down') {
+        const updatedIndex = state.activeIndex + 1
+        newIndex = (updatedIndex > state.list.length - 1) ? 0 : updatedIndex
       }
       return Object.assign({}, state, {
         activeIndex: newIndex,

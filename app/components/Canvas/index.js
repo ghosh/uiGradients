@@ -79,7 +79,7 @@ class Canvas extends PureComponent {
       case 37: // left
         this.props.handleGradientChange('down')
         break
-      case 39: // left
+      case 39: // right
         this.props.handleGradientChange('up')
         break
       default:

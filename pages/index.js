@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { reduxPage } from '@/store'
-import { uniqueGradients } from '@/store/hydrator'
+import { gradients } from '@/store/hydrator'
 import { exists } from '@@/utils'
 
 import Header from '@/containers/Header'
@@ -20,8 +20,8 @@ Home.getInitialProps = ({ store, pathname, query }) => {
     const activeGradient = {}
     return { activeGradient }
   } else {
-    const gradientIndex = uniqueGradients.findIndex(gradient => gradient.slug === query.slug)
-    const activeGradient = uniqueGradients[gradientIndex]
+    const gradientIndex = gradients.findIndex(gradient => gradient.slug === query.slug)
+    const activeGradient = gradients[gradientIndex]
     return { activeGradient }
   }
 }
