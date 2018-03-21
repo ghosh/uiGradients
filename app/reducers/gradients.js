@@ -1,12 +1,14 @@
+import * as type from './types'
+
 function gradientReducer (state = {}, action) {
   switch (action.type) {
-    case 'SET_ACTIVE_GRADIENT':
+    case type.SET_ACTIVE_GRADIENT:
       return Object.assign({}, state, {
         activeIndex: action.gradient.id,
         activeGradient: action.gradient
       })
 
-    case 'CHANGE_GRADIENT':
+    case type.CHANGE_GRADIENT:
       let newIndex = 0
       if (action.direction === 'up') {
         const updatedIndex = state.activeIndex - 1
@@ -20,7 +22,7 @@ function gradientReducer (state = {}, action) {
         activeGradient: state.list[newIndex]
       })
 
-    case 'ROTATE_GRADIENT':
+    case type.ROTATE_GRADIENT:
       let directionIndex
       if (action.direction === 'down') {
         directionIndex = state.directionIndex + 1
