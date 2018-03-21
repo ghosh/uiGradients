@@ -33,7 +33,7 @@ class GradientController extends Component {
         </Container>
         <PaletteContainer>
           <PaletteList>
-            {gradients.slice(0).reverse().map(function (gradient) {
+            {gradients.map(function (gradient) {
               return (
                 <PaletteItem key={ gradient.id }>
                   <Palette gradient={ gradient } />
@@ -58,7 +58,7 @@ GradientController.defaultProps = {
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    gradients: state.gradients.list
+    gradients: state.gradients.list.slice(0).reverse()
   }
 }
 
