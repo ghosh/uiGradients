@@ -9,6 +9,7 @@ import { SwatchList, Swatch } from '@/components/Swatches'
 import { PaletteContainer, PaletteList, PaletteItem, Palette } from '@/components/Palettes'
 
 import { setActivePalette } from './actions'
+import { getGradientsByPalette } from '@/selectors'
 
 const Container = styled.div`
   display: flex;
@@ -19,6 +20,7 @@ const Container = styled.div`
 class GradientController extends Component {
   render () {
     const { gradients } = this.props
+
     return (
       <Fragment>
         <Container>
@@ -63,9 +65,8 @@ GradientController.defaultProps = {
 }
 
 const mapStateToProps = (state, ownProps) => {
-  const gradients = state.gradients.list.slice(0).reverse()
   return {
-    gradients: gradients
+    gradients: getGradientsByPalette(state.palette, state.gradients.list)
   }
 }
 
