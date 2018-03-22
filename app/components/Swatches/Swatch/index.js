@@ -25,13 +25,14 @@ class Swatch extends PureComponent {
       <SwatchItem
         color={ this.props.color }
         selected={ (this.props.color === this.props.activeColor) }
-        onClick={ () => this.props.handleClick(this.props.color) }
+        onClick={ () => this.props.handleClick(this.props.color, this.props.palette) }
       />
     )
   }
 }
 
 Swatch.propTypes = {
+  palette: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   handleClick: PropTypes.func,
   activeColor: PropTypes.string

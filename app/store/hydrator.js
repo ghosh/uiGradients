@@ -19,6 +19,7 @@ const allGradients = uniqueGradients.map((gradient, index) => ({
 export const gradients = allGradients
 
 const hydratedState = {
+  palette: null,
   gradients: {
     count: gradients.length,
     list: gradients,

@@ -23,13 +23,15 @@ class SwatchList extends PureComponent {
     this.handleClick = this.handleClick.bind(this)
   }
 
-  handleClick (color) {
+  handleClick (color, palette) {
     if (color === this.state.activeColor) {
       this.setState({activeColor: null})
+      this.props.handleClick(null)
       return
     }
 
     this.setState({ activeColor: color })
+    this.props.handleClick(palette)
   }
 
   render () {
@@ -52,6 +54,7 @@ class SwatchList extends PureComponent {
 }
 
 SwatchList.propTypes = {
+  handleClick: PropTypes.func.isRequired,
   children: PropTypes.node.isRequired
 }
 
