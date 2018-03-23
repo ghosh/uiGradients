@@ -66,7 +66,7 @@ GradientController.defaultProps = {
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    gradients: getGradientsByPalette(state.palette, state.gradients.list)
+    gradients: getGradientsByPalette(state)
   }
 }
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -18,20 +18,28 @@ const BumperBase = styled.section`
   }
 `
 
-const Bumper = (props) => {
-  return (
-    <BumperBase>
-      <div />
-      {props.gradient.colors && <HexList colors={ props.gradient.colors } />}
-      <Actionbar
-        direction={ props.direction }
-        gradient={ props.gradient }
-        handleGradientRotation={ props.handleGradientRotation }
-        handleAddGradientClick={ props.handleAddGradientClick }
-        handeGetCssClick={ props.handeGetCssClick }
-      />
-    </BumperBase>
-  )
+class Bumper extends PureComponent {
+  shouldComponentUpdate (nextProps, nextState) {
+    if (this.props.direction !== nextProps.direction) return true
+    if (this.props.gradient !== nextProps.gradient) return true
+    return false
+  }
+
+  render () {
+    return (
+      <BumperBase>
+        <div />
+        {this.props.gradient.colors && <HexList colors={ this.props.gradient.colors } />}
+        <Actionbar
+          direction={ this.props.direction }
+          gradient={ this.props.gradient }
+          handleGradientRotation={ this.props.handleGradientRotation }
+          handleAddGradientClick={ this.props.handleAddGradientClick }
+          handeGetCssClick={ this.props.handeGetCssClick }
+        />
+      </BumperBase>
+    )
+  }
 }
 
 Bumper.propTypes = {
