@@ -1,7 +1,7 @@
 import { createStore } from 'redux'
 import withRedux from 'next-redux-wrapper'
 import { composeWithDevTools } from 'redux-devtools-extension'
-import rootReducer from './reducer'
+import rootReducer from '@/reducers'
 
 import hydratedState from './hydrator.js'
 

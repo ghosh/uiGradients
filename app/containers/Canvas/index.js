@@ -11,6 +11,7 @@ import AddModal from '@/components/Modals/AddModal'
 import CodeModal from '@/components/Modals/CodeModal'
 
 import { setActiveGradient, changeGradient, rotateGradient } from './actions'
+import { getGradientsByPalette, getGradientCount } from '@/selectors'
 
 class CanvasContainer extends Component {
   constructor (props) {
@@ -128,8 +129,8 @@ const mapStateToProps = (state, ownProps) => {
   return {
     activeGradient: state.gradients.activeGradient,
     activeDirection: state.gradients.activeDirection,
-    gradients: state.gradients.list,
-    count: state.gradients.count
+    gradients: getGradientsByPalette(state),
+    count: getGradientCount(state)
   }
 }
 

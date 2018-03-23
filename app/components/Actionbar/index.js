@@ -66,6 +66,12 @@ class Actionbar extends PureComponent {
     this.handleKeyboardEvents = this.handleKeyboardEvents.bind(this)
   }
 
+  shouldComponentUpdate (nextProps, nextState) {
+    if (this.props.direction !== nextProps.direction) return true
+    if (this.props.gradient !== nextProps.gradient) return true
+    return false
+  }
+
   componentDidMount () {
     document.addEventListener('keyup', this.handleKeyboardEvents)
   }

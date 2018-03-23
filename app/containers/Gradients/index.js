@@ -1,10 +1,15 @@
 import React, { Component, Fragment } from 'react'
 import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { SwatchList, Swatch } from '@/components/Swatches'
 import { PaletteContainer, PaletteList, PaletteItem, Palette } from '@/components/Palettes'
+
+import { setActivePalette } from './actions'
+import { getGradientsByPalette } from '@/selectors'
 
 const Container = styled.div`
   display: flex;
@@ -15,25 +20,26 @@ const Container = styled.div`
 class GradientController extends Component {
   render () {
     const { gradients } = this.props
+
     return (
       <Fragment>
         <Container>
-          <SwatchList>
-            <Swatch color='#c93041' />
-            <Swatch color='#d56b31' />
-            <Swatch color='#fed130' />
-            <Swatch color='#219859' />
-            <Swatch color='#2bb6de' />
-            <Swatch color='#1b5897' />
-            <Swatch color='#ed3dd7' />
-            <Swatch color='#eaeaea' />
-            <Swatch color='#c0c0cb' />
-            <Swatch color='#333333' />
+          <SwatchList handleClick={ this.props.setActivePalette }>
+            <Swatch color='#c93041' palette='Reds' />
+            <Swatch color='#d56b31' palette='Oranges' />
+            <Swatch color='#fed130' palette='Yellows' />
+            <Swatch color='#219859' palette='Greens' />
+            <Swatch color='#2bb6de' palette='Cyans' />
+            <Swatch color='#1b5897' palette='Blues' />
+            <Swatch color='#ed3dd7' palette='Magentas' />
+            <Swatch color='#eaeaea' palette='Whites' />
+            <Swatch color='#c0c0cb' palette='Grays' />
+            <Swatch color='#333333' palette='Blacks' />
           </SwatchList>
         </Container>
         <PaletteContainer>
           <PaletteList>
-            {gradients.slice(0).reverse().map(function (gradient) {
+            {gradients.map(function (gradient) {
               return (
                 <PaletteItem key={ gradient.id }>
                   <Palette gradient={ gradient } />
@@ -48,18 +54,26 @@ class GradientController extends Component {
 }
 
 GradientController.propTypes = {
-  gradients: PropTypes.array
+  gradients: PropTypes.array,
+  setActivePalette: PropTypes.func
 }
 
 GradientController.defaultProps = {
   gradients: {},
-  count: null
+  count: null,
+  setActivePalette: () => {}
 }
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    gradients: state.gradients.list
+    gradients: getGradientsByPalette(state)
   }
 }
 
-export default connect(mapStateToProps, null)(GradientController)
+const mapDispatchToProps = dispatch => {
+  return bindActionCreators({
+    setActivePalette
+  }, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(GradientController)
