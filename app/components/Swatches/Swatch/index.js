@@ -2,6 +2,8 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
+import Close from '../icons/close.svg'
+
 const SwatchItem = styled.li`
   cursor: pointer;
   width: 30px;
@@ -21,12 +23,15 @@ const SwatchItem = styled.li`
 
 class Swatch extends PureComponent {
   render () {
+    const activeSwatch = this.props.color === this.props.activeColor
     return (
       <SwatchItem
         color={ this.props.color }
-        selected={ (this.props.color === this.props.activeColor) }
+        selected={ activeSwatch }
         onClick={ () => this.props.handleClick(this.props.color, this.props.palette) }
-      />
+      >
+        {activeSwatch && <Close width='16' height='16' stroke='#ffffff' />}
+      </SwatchItem>
     )
   }
 }
