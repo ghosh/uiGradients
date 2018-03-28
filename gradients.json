@@ -1183,5 +1183,9 @@
     {
         "name": "Evening Night",
         "colors": ["#005AA7", "#FFFDE4"]
-    }
+    },
+    {
+      "name": "Azur Lane",
+      "colors": ["#7F7FD5", "#86A8E7", "#91EAE4"]
+    {
 ]
