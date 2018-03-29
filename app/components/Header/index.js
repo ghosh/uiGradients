@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PureComponent } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
 
@@ -39,44 +39,75 @@ const A = styled.a`
   }
 `
 
-const Header = () => {
-  return (
-    <HeaderBar>
+class Header extends PureComponent {
+  constructor (props) {
+    super(props)
 
-      <FlexContainer>
-        <Button social='twitter' label='Share on Twitter' />
-        <Spacing right={ 5 } />
-        <Button social='facebook' label='Share on Facebook' />
-      </FlexContainer>
+    this.handleShareClick = this.handleShareClick.bind(this)
+  }
 
-      <Link href='/'>
-        <Logo height='28' />
-      </Link>
+  handleShareClick (media) {
+    switch (media) {
+      case 'Twitter':
+        window.open(
+          'http://twitter.com/share?url=https://uigradients.com&amp;text=Beautiful%20color%20gradients%20for%20designers%20and%20developers&amp;via=_ighosh',
+          'twitter-share',
+          'width=700,height=300'
+        )
+        break
 
-      <FlexContainer justify='end'>
-        <List>
-          <ListItem>
-            <Link href='/gradients' prefetch>
-              <A>All gradients</A>
-            </Link>
-          </ListItem>
+      case 'Facebook':
+        window.open(
+          'http://www.facebook.com/sharer.php?u=https://uigradients.com',
+          'facebook-share',
+          'width=700,height=400'
+        )
+        break
+
+      default:
+        break
+    }
+  }
+
+  render () {
+    return (
+      <HeaderBar>
+
+        <FlexContainer>
+          <Button social='twitter' label='Share on Twitter' onClick={ () => this.handleShareClick('Twitter') } />
+          <Spacing right={ 5 } />
+          <Button social='facebook' label='Share on Facebook' onClick={ () => this.handleShareClick('Facebook') } />
+        </FlexContainer>
+
+        <Link href='/'>
+          <Logo height='28' />
+        </Link>
+
+        <FlexContainer justify='end'>
+          <List>
+            <ListItem>
+              <Link href='/gradients' prefetch>
+                <A>All gradients</A>
+              </Link>
+            </ListItem>
+            <Spacing left={ 10 } />
+            <ListItem>
+              <Link href='/g/vanusa'>
+                <A>Saved gradients</A>
+              </Link>
+            </ListItem>
+          </List>
           <Spacing left={ 10 } />
-          <ListItem>
-            <Link href='/g/vanusa'>
-              <A>Saved gradients</A>
-            </Link>
-          </ListItem>
-        </List>
-        <Spacing left={ 10 } />
-        <Divider />
-        <Spacing left={ 10 } />
-        <Avatar />
-        <Spacing left={ 10 } />
-        <Burger />
-      </FlexContainer>
+          <Divider />
+          <Spacing left={ 10 } />
+          <Avatar />
+          <Spacing left={ 10 } />
+          <Burger />
+        </FlexContainer>
 
-    </HeaderBar>
-  )
+      </HeaderBar>
+    )
+  }
 }
 
 export default Header
