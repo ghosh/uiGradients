@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -18,7 +18,7 @@ const BumperBase = styled.section`
   }
 `
 
-class Bumper extends PureComponent {
+class Bumper extends Component {
   shouldComponentUpdate (nextProps, nextState) {
     if (this.props.direction !== nextProps.direction) return true
     if (this.props.gradient !== nextProps.gradient) return true

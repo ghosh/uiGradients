@@ -13,7 +13,7 @@ import { getGradientsByPalette } from '@/selectors'
 
 const Container = styled.div`
   display: flex;
-  background-color: #222;
+  background-color: #292929;
   padding: 20px;
 `
 

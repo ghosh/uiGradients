@@ -1,35 +1,23 @@
-import React from 'react'
+import React, {PureComponent, Fragment} from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Link from 'next/link'
+
+import Heart from '@/components/Heart'
 
 const PaletteContainer = styled.div.attrs({
   style: (props) => ({
     backgroundImage: `linear-gradient(to left, ${ [...props.gradient.colors].join(', ') })`
   })
 })`
-  height: 150px;
-  border-radius: 3px;
+  height: 180px;
+  border-radius: 8px 8px 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
 `
 
-// const PaletteContainer = styled.div`
-//   height: 150px;
-//   border-radius: 3px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-
-//   background-image: ${ props =>
-//     (exists(props.gradient) && `linear-gradient(to left, ${ [...props.gradient.colors].join(', ') })`) ||
-//     'linear-gradient(90deg, #eaeaea, #eaeaea)'
-// };
-// `
-
 const PaletteName = styled.p`
-  text-align: center;
   color: #fff;
   margin: 0;
   padding: 0;
@@ -41,27 +29,68 @@ const A = styled.a`
   text-decoration: none;
 `
 
-const Palette = ({ gradient, direction }) => {
-  return (
-    <Link as={ `/g/${ gradient.slug }` } href={ `/?slug=${ gradient.slug }` }>
-      <A>
-        <PaletteContainer gradient={ gradient }>
+const PaletteInfo = styled.div`
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #292929;
+  border-radius: 0 0 8px 8px;
+  padding: 0 0 0 15px;
+`
+
+const PaletteHeartCount = styled.div`
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: Source Code Pro,monospace;
+  font-size: 15px;
+  margin-top: 2px;
+`
+
+class Palette extends PureComponent {
+  constructor (props) {
+    super(props)
+    this.state = {
+      hearted: false
+    }
+
+    this.onHeart = this.onHeart.bind(this)
+  }
+
+  onHeart () {
+    this.setState({
+      hearted: !this.state.hearted
+    })
+  }
+
+  render () {
+    const { gradient } = this.props
+    return (
+      <Fragment>
+        <Link as={ `/g/${ gradient.slug }` } href={ `/?slug=${ gradient.slug }` }>
+          <A>
+            <PaletteContainer gradient={ gradient } />
+          </A>
+        </Link>
+        <PaletteInfo>
           <PaletteName>
             {gradient.name}
           </PaletteName>
-        </PaletteContainer>
-      </A>
-    </Link>
-  )
+          <PaletteHeartCount>
+            <Heart hearted={ this.state.hearted } onClick={ this.onHeart } />
+          </PaletteHeartCount>
+        </PaletteInfo>
+      </Fragment>
+    )
+  }
 }
 
 Palette.propTypes = {
-  direction: PropTypes.string,
   gradient: PropTypes.object
 }
 
 Palette.defaultProps = {
-  direction: 'to left',
   gradient: {}
 }
 

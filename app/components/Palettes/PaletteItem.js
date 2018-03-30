@@ -9,7 +9,7 @@ const Palette = styled.li`
   transition: all .1s ease-in-out;
   cursor: pointer;
 
-  &:hover {
+  /* &:hover {
     background-color: #222;
     border-radius: 3px;
     transform: scale(1.02);
@@ -17,7 +17,7 @@ const Palette = styled.li`
     p {
       border-bottom: 1px solid hsla(0,0%,92%,.49);
     }
-  }
+  } */
 `
 
 const PaletteList = (props) => {
