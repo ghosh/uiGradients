@@ -100,6 +100,14 @@ class Header extends PureComponent {
           <Spacing left={ 10 } />
           <Divider />
           <Spacing left={ 10 } />
+          <List>
+            <ListItem>
+              <Link href='/login'>
+                <A>Login</A>
+              </Link>
+            </ListItem>
+          </List>
+          <Spacing left={ 10 } />
           <Avatar />
           <Spacing left={ 10 } />
           <Burger />
