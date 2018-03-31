@@ -1,8 +1,14 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import LoginForm from '@/components/Auth/LoginForm'
 import { auth, googleAuthProvider } from '@/firebase'
+
+import { LoginUser, LogoutUser } from './actions'
 
 const PageContainer = styled.div`
   width: 100vw;
@@ -35,10 +41,18 @@ class LoginContainer extends Component {
   }
 
   componentDidMount () {
-    auth.onAuthStateChanged(function (user) {
+    auth.onAuthStateChanged(user => {
       if (user) {
-        console.log('Logged in users emails is:', user.email)
+        const U = {}
+        U.name = user.displayName
+        U.email = user.email
+        U.photoUrl = user.photoURL
+        U.emailVerified = user.emailVerified
+        U.uid = user.uid
+        console.log('Logged in user is:', U)
+        this.props.LoginUser(U)
       } else {
+        this.props.LogoutUser()
         console.log('No user logged in')
       }
     })
@@ -83,4 +97,21 @@ class LoginContainer extends Component {
   }
 }
 
-export default LoginContainer
+LoginContainer.propTypes = {
+  LoginUser: PropTypes.func,
+  LogoutUser: PropTypes.func
+}
+
+LoginContainer.defaultProps = {
+  LoginUser: () => {},
+  LogoutUser: () => {}
+}
+
+const mapDispatchToProps = dispatch => {
+  return bindActionCreators({
+    LoginUser,
+    LogoutUser
+  }, dispatch)
+}
+
+export default connect(null, mapDispatchToProps)(LoginContainer)

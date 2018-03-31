@@ -3,7 +3,12 @@ require('firebase/firestore')
 
 // Initialize Firebase
 var config = {
-
+  apiKey: 'AIzaSyD9rDbsPHfG24SN99hQtJfE7Lfw-H-WeSQ',
+  authDomain: 'uigradients.firebaseapp.com',
+  databaseURL: 'https://uigradients.firebaseio.com',
+  projectId: 'uigradients',
+  storageBucket: 'uigradients.appspot.com',
+  messagingSenderId: '504222998838'
 }
 
 if (!firebase.apps.length) {
