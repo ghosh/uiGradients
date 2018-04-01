@@ -34,7 +34,7 @@
     "babel-register": "^6.22.0",
     "canvas-to-blob": "0.0.0",
     "chai": "^4.1.2",
-    "chalk": "^2.3.0",
+    "chalk": "^2.3.2",
     "chromedriver": "^2.35.0",
     "clipboard": "^1.7.1",
     "connect-history-api-fallback": "^1.5.0",
