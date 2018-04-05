@@ -7,12 +7,17 @@ import { exists } from '@@/utils'
 
 import Header from '@/containers/Header'
 import Canvas from '@/containers/Canvas'
+import AuthListener from '@/containers/Auth/Listener'
 
 const Home = (props) => {
-  return [
-    <Header />,
-    <Canvas url={ props.url } gradient={ props.activeGradient } />
-  ]
+  return (
+    <AuthListener>
+      {(user, isAuthenticated) => [
+        <Header user={ user } isAuthenticated={ isAuthenticated } />,
+        <Canvas url={ props.url } gradient={ props.activeGradient } />
+      ]}
+    </AuthListener>
+  )
 }
 
 Home.getInitialProps = ({ store, pathname, query }) => {

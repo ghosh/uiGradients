@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 const BaseAvatar = styled.img`
   width: 28px;
@@ -10,8 +11,16 @@ const BaseAvatar = styled.img`
 
 const Avatar = (props) => {
   return (
-    <BaseAvatar src='/static/avatar.jpg' />
+    <BaseAvatar src={ props.imageUrl } />
   )
+}
+
+Avatar.propTypes = {
+  imageUrl: PropTypes.string
+}
+
+Avatar.defaultProps = {
+  imageUrl: ''
 }
 
 export default Avatar

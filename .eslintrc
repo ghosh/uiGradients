@@ -1,9 +1,11 @@
 {
   "extends": [
-    "standard"
+    "standard",
+    "plugin:jsx-control-statements/recommended"
   ],
   "plugins": [
-    "react"
+    "react",
+    "jsx-control-statements"
   ],
   "rules": {
     "template-curly-spacing": [
@@ -56,7 +58,12 @@
       2
     ],
     "react/jsx-no-duplicate-props": "error",
-    "react/jsx-no-undef": "error",
+    "react/jsx-no-undef": [
+      "error",
+      {
+        "allowGlobals": true
+      }
+    ],
     "react/jsx-tag-spacing": [
       "error",
       {

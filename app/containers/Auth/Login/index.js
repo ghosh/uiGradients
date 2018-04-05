@@ -1,14 +1,9 @@
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
-
-import PropTypes from 'prop-types'
+import Router from 'next/router'
 import styled from 'styled-components'
 
 import LoginForm from '@/components/Auth/LoginForm'
 import { auth, googleAuthProvider } from '@/firebase'
-
-import { LoginUser, LogoutUser } from './actions'
 
 const PageContainer = styled.div`
   width: 100vw;
@@ -40,29 +35,9 @@ class LoginContainer extends Component {
     this.handleSignOut = this.handleSignOut.bind(this)
   }
 
-  componentDidMount () {
-    auth.onAuthStateChanged(user => {
-      if (user) {
-        const U = {}
-        U.name = user.displayName
-        U.email = user.email
-        U.photoUrl = user.photoURL
-        U.emailVerified = user.emailVerified
-        U.uid = user.uid
-        console.log('Logged in user is:', U)
-        this.props.LoginUser(U)
-      } else {
-        this.props.LogoutUser()
-        console.log('No user logged in')
-      }
-    })
-  }
-
   handeGoogleLogin () {
     auth.signInWithPopup(googleAuthProvider).then(result => {
-      const token = result.credential.accessToken
-      const user = result.user
-      console.log(user, token)
+      Router.push('/')
     }).catch(error => {
       console.log(error)
     })
@@ -79,6 +54,7 @@ class LoginContainer extends Component {
 
   handleSignOut () {
     auth.signOut()
+    Router.push('/')
   }
 
   render () {
@@ -97,21 +73,4 @@ class LoginContainer extends Component {
   }
 }
 
-LoginContainer.propTypes = {
-  LoginUser: PropTypes.func,
-  LogoutUser: PropTypes.func
-}
-
-LoginContainer.defaultProps = {
-  LoginUser: () => {},
-  LogoutUser: () => {}
-}
-
-const mapDispatchToProps = dispatch => {
-  return bindActionCreators({
-    LoginUser,
-    LogoutUser
-  }, dispatch)
-}
-
-export default connect(null, mapDispatchToProps)(LoginContainer)
+export default LoginContainer

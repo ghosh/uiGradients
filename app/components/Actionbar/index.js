@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -59,7 +59,7 @@ const ActionTooltip = TooltipBase.extend`
   display: flex;
 `
 
-class Actionbar extends PureComponent {
+class Actionbar extends Component {
   constructor (props) {
     super(props)
     this.downloadGradient = this.downloadGradient.bind(this)
@@ -138,7 +138,7 @@ Actionbar.propTypes = {
   handleAddGradientClick: PropTypes.func.isRequired,
   handeGetCssClick: PropTypes.func.isRequired,
   direction: PropTypes.string,
-  gradient: PropTypes.obj
+  gradient: PropTypes.object
 }
 
 Actionbar.defaultProps = {

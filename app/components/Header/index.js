@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 import Link from 'next/link'
 
 import Button from '@/patterns/Button'
@@ -102,20 +103,29 @@ class Header extends PureComponent {
           <Spacing left={ 10 } />
           <List>
             <ListItem>
-              <Link href='/login'>
-                <A>Login</A>
-              </Link>
+              {this.props.isAuthenticated && <Link href='/logout'><A>Logout</A></Link>}
+              {!this.props.isAuthenticated && <Link href='/login'><A>Login</A></Link>}
             </ListItem>
           </List>
           <Spacing left={ 10 } />
-          <Avatar />
-          <Spacing left={ 10 } />
+          {this.props.isAuthenticated && <Avatar imageUrl={ this.props.user.photoUrl } />}
+          {this.props.isAuthenticated && <Spacing left={ 10 } />}
           <Burger />
         </FlexContainer>
 
       </HeaderBar>
     )
   }
+}
+
+Header.propTypes = {
+  user: PropTypes.object,
+  isAuthenticated: PropTypes.bool
+}
+
+Header.defaultProps = {
+  user: {},
+  isAuthenticated: false
 }
 
 export default Header
