@@ -1183,5 +1183,9 @@
     {
         "name": "Evening Night",
         "colors": ["#005AA7", "#FFFDE4"]
+    },
+    {
+        "name": "Witching Hour",
+        "colors": ["#c31432", "#240b36"]
     }
 ]
