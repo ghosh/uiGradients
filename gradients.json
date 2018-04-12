@@ -1183,5 +1183,10 @@
     {
         "name": "Evening Night",
         "colors": ["#005AA7", "#FFFDE4"]
+    },
+  
+    {
+      "name": "By Design",
+      "colors": ["#009FFF", "#ec2F4B"]
     }
 ]
