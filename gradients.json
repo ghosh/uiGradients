@@ -1183,5 +1183,8 @@
     {
         "name": "Evening Night",
         "colors": ["#005AA7", "#FFFDE4"]
-    }
-]
+    },
+    {
+        "name": "Ultra Voilet",
+        "colors": ["#654ea3, "#eaafc8"]
+  ]
