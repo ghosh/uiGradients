@@ -11,7 +11,7 @@ import AuthListener from '@/containers/Auth/Listener'
 
 const Home = (props) => {
   return (
-    <AuthListener>
+    <AuthListener serverUser={ props.user }>
       {(user, isAuthenticated) => [
         <Header user={ user } isAuthenticated={ isAuthenticated } />,
         <Canvas url={ props.url } gradient={ props.activeGradient } />
@@ -20,24 +20,38 @@ const Home = (props) => {
   )
 }
 
-Home.getInitialProps = ({ store, pathname, query }) => {
+Home.getInitialProps = ({ store, pathname, query, req }) => {
+  let activeGradient = null
+  let user = null
+
   if (!exists(query)) {
-    const activeGradient = {}
-    return { activeGradient }
+    const gradient = {}
+    activeGradient = gradient
   } else {
     const gradientIndex = gradients.findIndex(gradient => gradient.slug === query.slug)
-    const activeGradient = gradients[gradientIndex]
-    return { activeGradient }
+    const gradient = gradients[gradientIndex]
+    activeGradient = gradient
   }
+
+  if (exists(req)) {
+    user = req.cookies.user
+  }
+
+  return { activeGradient, user }
 }
 
 Home.propTypes = {
   url: PropTypes.object.isRequired,
+  user: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object
+  ]),
   activeGradient: PropTypes.object.isRequired
 }
 
 Home.defaultProps = {
   url: {},
+  user: {},
   activeGradient: {}
 }
 

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import PropTypes from 'prop-types'
+import Cookies from 'js-cookie'
 
 import { auth } from '@/firebase'
 
@@ -20,18 +21,26 @@ class listenForAuth extends Component {
           'emailVerified': user.emailVerified,
           'uid': user.uid
         }
+        Cookies.set('user', U)
         this.props.LoginUser(U)
       } else {
+        Cookies.remove('user')
         this.props.LogoutUser()
       }
     })
   }
 
   render () {
-    const isAuthenticated = exists(this.props.user)
+    const serverUser = exists(this.props.serverUser) ? JSON.parse(this.props.serverUser) : null
+    const clientUser = this.props.clientUser
+
+    const isAuthenticated = exists(serverUser || clientUser)
+
+    const user = exists(serverUser) ? serverUser : clientUser
+
     return (
       <div>
-        {this.props.children(this.props.user, isAuthenticated)}
+        {this.props.children(user, isAuthenticated)}
       </div>
     )
   }
@@ -39,21 +48,23 @@ class listenForAuth extends Component {
 
 listenForAuth.propTypes = {
   children: PropTypes.node,
-  user: PropTypes.object,
+  clientUser: PropTypes.object,
+  serverUser: PropTypes.object,
   LoginUser: PropTypes.func,
   LogoutUser: PropTypes.func
 }
 
 listenForAuth.defaultProps = {
   children: null,
-  user: {},
+  clientUser: {},
+  serverUser: {},
   LoginUser: () => { },
   LogoutUser: () => { }
 }
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    user: state.user
+    clientUser: state.user
   }
 }
 

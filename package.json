@@ -7,6 +7,7 @@
     "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
+    "cookie-parser": "^1.4.3",
     "dotenv": "^5.0.1",
     "dotenv-webpack": "^1.5.5",
     "eslint-plugin-jsx-control-statements": "^2.2.0",
