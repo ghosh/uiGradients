@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux'
 import PropTypes from 'prop-types'
 import Cookies from 'js-cookie'
 
-import { auth } from '@/firebase'
+import { firebase } from '@/firebase'
 
 import { exists } from '@@/utils'
 
@@ -12,7 +12,7 @@ import { LoginUser, LogoutUser } from './actions'
 
 class listenForAuth extends Component {
   componentDidMount () {
-    auth.onAuthStateChanged(user => {
+    firebase.auth.onAuthStateChanged(user => {
       if (user) {
         const U = {
           'name': user.displayName,

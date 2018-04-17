@@ -3,7 +3,7 @@ import Router from 'next/router'
 import styled from 'styled-components'
 
 import LoginForm from '@/components/Auth/LoginForm'
-import { auth, googleAuthProvider } from '@/firebase'
+import { auth, firebase } from '@/firebase'
 
 const PageContainer = styled.div`
   width: 100vw;
@@ -36,7 +36,7 @@ class LoginContainer extends Component {
   }
 
   handeGoogleLogin () {
-    auth.signInWithPopup(googleAuthProvider).then(result => {
+    auth.signInWithGoogle().then(result => {
       Router.push('/')
     }).catch(error => {
       console.log(error)
@@ -44,7 +44,7 @@ class LoginContainer extends Component {
   }
 
   handeEmailLogin ({ email, password }) {
-    auth.createUserWithEmailAndPassword(email, password)
+    firebase.auth.createUserWithEmailAndPassword(email, password)
       .catch(error => {
         const errorCode = error.code
         const errorMessage = error.message

@@ -103,8 +103,8 @@ class Header extends PureComponent {
           <Spacing left={ 10 } />
           <List>
             <ListItem>
-              {this.props.isAuthenticated && <Link href='/logout'><A>Logout</A></Link>}
-              {!this.props.isAuthenticated && <Link href='/login'><A>Login</A></Link>}
+              {this.props.isAuthenticated && <Link href='/logout' prefetch><A>Logout</A></Link>}
+              {!this.props.isAuthenticated && <Link href='/login' prefetch><A>Login</A></Link>}
             </ListItem>
           </List>
           <Spacing left={ 10 } />
