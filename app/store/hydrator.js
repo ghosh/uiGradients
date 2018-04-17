@@ -20,12 +20,13 @@ export const gradients = allGradients
 
 const hydratedState = {
   palette: null,
+  canvas: {
+    directionIndex: 2,
+    directions: ['to left', 'to bottom', 'to right', 'to top']
+  },
   gradients: {
     count: gradients.length,
-    list: gradients,
-    directionIndex: 2,
-    activeDirection: 'to right',
-    directions: ['to left', 'to bottom', 'to right', 'to top']
+    list: gradients
   }
 }
 
