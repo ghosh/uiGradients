@@ -47,7 +47,7 @@ class listenForAuth extends Component {
 }
 
 listenForAuth.propTypes = {
-  children: PropTypes.node,
+  children: PropTypes.func,
   clientUser: PropTypes.object,
   serverUser: PropTypes.string,
   LoginUser: PropTypes.func,

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 
 import { reduxPage } from '@/store'
@@ -12,10 +12,12 @@ import AuthListener from '@/containers/Auth/Listener'
 const Home = (props) => {
   return (
     <AuthListener serverUser={ props.user }>
-      {(user, isAuthenticated) => [
-        <Header user={ user } isAuthenticated={ isAuthenticated } />,
-        <Canvas url={ props.url } gradient={ props.activeGradient } />
-      ]}
+      {(user, isAuthenticated) => (
+        <Fragment>
+          <Header user={ user } isAuthenticated={ isAuthenticated } />
+          <Canvas url={ props.url } gradient={ props.activeGradient } />
+        </Fragment>
+      )}
     </AuthListener>
   )
 }
