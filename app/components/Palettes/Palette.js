@@ -59,6 +59,7 @@ class Palette extends PureComponent {
   }
 
   onHeart () {
+    this.props.onFav(this.props.gradient.slug)
     this.setState({
       hearted: !this.state.hearted
     })
@@ -87,10 +88,12 @@ class Palette extends PureComponent {
 }
 
 Palette.propTypes = {
+  onFav: PropTypes.func,
   gradient: PropTypes.object
 }
 
 Palette.defaultProps = {
+  onFav: () => {},
   gradient: {}
 }
 

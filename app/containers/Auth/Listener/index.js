@@ -49,7 +49,7 @@ class listenForAuth extends Component {
 listenForAuth.propTypes = {
   children: PropTypes.node,
   clientUser: PropTypes.object,
-  serverUser: PropTypes.object,
+  serverUser: PropTypes.string,
   LoginUser: PropTypes.func,
   LogoutUser: PropTypes.func
 }
@@ -57,7 +57,7 @@ listenForAuth.propTypes = {
 listenForAuth.defaultProps = {
   children: null,
   clientUser: {},
-  serverUser: {},
+  serverUser: null,
   LoginUser: () => { },
   LogoutUser: () => { }
 }
