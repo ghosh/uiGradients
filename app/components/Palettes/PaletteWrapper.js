@@ -11,7 +11,7 @@ const Container = styled.div`
   /* padding: 0 20px; */
 `
 
-const PaletteContainer = (props) => {
+const PaletteWrapper = (props) => {
   return (
     <Container>
       {props.children}
@@ -19,12 +19,12 @@ const PaletteContainer = (props) => {
   )
 }
 
-PaletteContainer.propTypes = {
+PaletteWrapper.propTypes = {
   children: PropTypes.node
 }
 
-PaletteContainer.defaultProps = {
+PaletteWrapper.defaultProps = {
   children: null
 }
 
-export default PaletteContainer
+export default PaletteWrapper

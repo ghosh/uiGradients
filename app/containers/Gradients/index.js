@@ -5,13 +5,12 @@ import { bindActionCreators } from 'redux'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { db } from '@/firebase'
+import PaletteContainer from '@/containers/Palette'
 
 import { SwatchList, Swatch } from '@/components/Swatches'
-import { PaletteContainer, PaletteList, PaletteItem, Palette } from '@/components/Palettes'
 
 import { setActivePalette } from './actions'
-import { getGradientsByPalette, getActiveUser } from '@/selectors'
+import { getGradientsByPalette } from '@/selectors'
 
 const Container = styled.div`
   display: flex;
@@ -20,19 +19,8 @@ const Container = styled.div`
 `
 
 class GradientController extends Component {
-  constructor (props) {
-    super(props)
-
-    this.handleFavClick = this.handleFavClick.bind(this)
-  }
-
-  handleFavClick (gradientSlug) {
-    db.favGradient(gradientSlug, this.props.user.uid)
-  }
-
   render () {
     const { gradients } = this.props
-    const handleFavClick = this.handleFavClick
 
     return (
       <Fragment>
@@ -50,39 +38,26 @@ class GradientController extends Component {
             <Swatch color='#333333' palette='Blacks' />
           </SwatchList>
         </Container>
-        <PaletteContainer>
-          <PaletteList>
-            {gradients.map(function (gradient) {
-              return (
-                <PaletteItem key={ gradient.id }>
-                  <Palette gradient={ gradient } onFav={ handleFavClick } />
-                </PaletteItem>
-              )
-            })}
-          </PaletteList>
-        </PaletteContainer>
+        <PaletteContainer gradients={ gradients } />
       </Fragment>
     )
   }
 }
 
 GradientController.propTypes = {
-  user: PropTypes.object,
   gradients: PropTypes.array,
   setActivePalette: PropTypes.func
 }
 
 GradientController.defaultProps = {
-  user: {},
-  gradients: {},
+  gradients: [],
   count: null,
   setActivePalette: () => {}
 }
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    gradients: getGradientsByPalette(state),
-    user: getActiveUser(state)
+    gradients: getGradientsByPalette(state)
   }
 }
 
