@@ -5,6 +5,8 @@ import { bindActionCreators } from 'redux'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
+import { mergeArraysByKey } from '@@/utils'
+
 import PaletteContainer from '@/containers/Palette'
 
 import { SwatchList, Swatch } from '@/components/Swatches'
@@ -20,7 +22,8 @@ const Container = styled.div`
 
 class GradientController extends Component {
   render () {
-    const { gradients } = this.props
+    const { gradients, fireGrads } = this.props
+    const mergedGradients = mergeArraysByKey(gradients, fireGrads, 'slug')
 
     return (
       <Fragment>
@@ -38,18 +41,20 @@ class GradientController extends Component {
             <Swatch color='#333333' palette='Blacks' />
           </SwatchList>
         </Container>
-        <PaletteContainer gradients={ gradients } />
+        <PaletteContainer gradients={ mergedGradients } />
       </Fragment>
     )
   }
 }
 
 GradientController.propTypes = {
+  fireGrads: PropTypes.array,
   gradients: PropTypes.array,
   setActivePalette: PropTypes.func
 }
 
 GradientController.defaultProps = {
+  fireGrads: [],
   gradients: [],
   count: null,
   setActivePalette: () => {}

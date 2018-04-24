@@ -1,6 +1,5 @@
 import { db } from './firebase'
 
-// User API
 export const favGradient = (gradientSlug, userID) => {
   db
     .collection('gradients')
@@ -14,4 +13,17 @@ export const favGradient = (gradientSlug, userID) => {
     .catch(error => {
       console.log(error)
     })
+}
+
+export async function getGradients () {
+  const querySnapshot = await db.collection('gradients').get()
+  const data = []
+  // querySnapshot.forEach(doc => { data[doc.id] = doc.data() })
+  querySnapshot.forEach(doc => {
+    data.push({
+      slug: doc.id,
+      favs: doc.data().favs
+    })
+  })
+  return data
 }

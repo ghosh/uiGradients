@@ -16,6 +16,12 @@ class PaletteContainer extends Component {
     this.handleFavClick = this.handleFavClick.bind(this)
   }
 
+  // async componentDidMount () {
+  //   console.log('data')
+  //   const grads = await db.getGradients()
+  //   console.log(grads)
+  // }
+
   handleFavClick (gradientSlug) {
     db.favGradient(gradientSlug, this.props.user.uid)
   }
