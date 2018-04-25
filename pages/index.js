@@ -23,18 +23,21 @@ const Home = (props) => {
 }
 
 Home.getInitialProps = async ({ store, pathname, query, req }) => {
-  const fireGradients = await db.getGradients()
-  // console.log(fireGradients)
+  const gradients = await db.getGradients()
+  store.dispatch({
+    type: 'SET_FIREBASE_GRADIENTS',
+    payload: gradients
+  })
 
   let activeGradient = null
   let user = null
 
   if (!exists(query)) {
-    const randomGradient = fireGradients[Math.floor(Math.random() * fireGradients.length)]
+    const randomGradient = gradients[Math.floor(Math.random() * gradients.length)]
     activeGradient = randomGradient
   } else {
-    const gradientIndex = fireGradients.findIndex(gradient => gradient.slug === query.slug)
-    const gradient = fireGradients[gradientIndex]
+    const gradientIndex = gradients.findIndex(gradient => gradient.slug === query.slug)
+    const gradient = gradients[gradientIndex]
     activeGradient = gradient
   }
 

@@ -9,10 +9,12 @@ export async function favGradient (gradientSlug, userID) {
 export async function getGradients () {
   const querySnapshot = await db.collection('gradients').get()
   const data = []
+
   // querySnapshot.forEach(doc => { data[doc.id] = doc.data() })
   querySnapshot.forEach(doc => {
     data.push(doc.data())
   })
+
   return data
 }
 

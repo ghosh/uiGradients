@@ -2,6 +2,12 @@ import * as type from './types'
 
 function gradientReducer (state = {}, action) {
   switch (action.type) {
+    case type.SET_FIREBASE_GRADIENTS:
+      return Object.assign({}, state, {
+        list: action.payload,
+        count: action.payload.length
+      })
+
     case type.SET_ACTIVE_GRADIENT:
       return Object.assign({}, state, {
         activeIndex: action.gradient.id,

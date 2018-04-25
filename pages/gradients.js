@@ -16,25 +16,30 @@ const Gradients = (props) => {
       {(user, isAuthenticated) => (
         <Fragment>
           <Header user={ user } isAuthenticated={ isAuthenticated } key='header' />
-          <GradientsContainer key='GradientsContainer' fireGrads={ props.grads } />
+          <GradientsContainer key='GradientsContainer' />
         </Fragment>
       )}
     </AuthListener>
   )
 }
 
-Gradients.getInitialProps = async ({ req }) => {
+Gradients.getInitialProps = async ({ store, req }) => {
   const grads = await db.getGradients()
+
+  store.dispatch({
+    type: 'SET_FIREBASE_GRADIENTS',
+    payload: grads
+  })
+
   let user = exists(req) ? req.cookies.user : null
-  return { user, grads }
+  return { user }
 }
 
 Gradients.propTypes = {
   user: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.object
-  ]),
-  grads: PropTypes.array
+  ])
 }
 
 Gradients.defaultProps = {
