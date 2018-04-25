@@ -11,10 +11,7 @@ export async function getGradients () {
   const data = []
   // querySnapshot.forEach(doc => { data[doc.id] = doc.data() })
   querySnapshot.forEach(doc => {
-    data.push({
-      slug: doc.id,
-      favs: doc.data().favs
-    })
+    data.push(doc.data())
   })
   return data
 }
@@ -26,7 +23,7 @@ export const uploadGradients = (gradients) => {
       .doc(gradient.slug)
       .set(gradient)
       .then(() => {
-        console.log('Added gradient:', gradient.name)
+        console.log('Uploaded gradient:', gradient.name)
       })
       .catch(error => {
         console.log(error)
