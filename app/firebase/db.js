@@ -1,18 +1,9 @@
 import { db } from './firebase'
 
-export const favGradient = (gradientSlug, userID) => {
-  db
-    .collection('gradients')
-    .doc(gradientSlug)
-    .set({
-      favs: { [userID]: true }
-    })
-    .then(() => {
-      console.log('Added as Fav')
-    })
-    .catch(error => {
-      console.log(error)
-    })
+export async function favGradient (gradientSlug, userID) {
+  const querySnapshot = await db.collection('gradients').doc(gradientSlug)
+  await querySnapshot.update('favs', { [userID]: true })
+  console.log('done')
 }
 
 export async function getGradients () {
