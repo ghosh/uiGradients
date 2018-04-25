@@ -27,3 +27,18 @@ export async function getGradients () {
   })
   return data
 }
+
+export const uploadGradients = (gradients) => {
+  gradients.forEach(gradient => {
+    db
+      .collection('gradients')
+      .doc(gradient.slug)
+      .set(gradient)
+      .then(() => {
+        console.log('Added gradient:', gradient.name)
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  })
+}

@@ -5,6 +5,8 @@ import styled from 'styled-components'
 import { HexList } from '@/components/Hex'
 import Actionbar from '@/components/Actionbar'
 
+import GradientUploader from '@/services/gradientUploader'
+
 const BumperBase = styled.section`
   padding: 0 20px;
   height: 40px;
@@ -19,16 +21,27 @@ const BumperBase = styled.section`
 `
 
 class Bumper extends Component {
+  constructor (props) {
+    super(props)
+    this.handleGradientUpload = this.handleGradientUpload.bind(this)
+  }
+
   shouldComponentUpdate (nextProps, nextState) {
     if (this.props.direction !== nextProps.direction) return true
     if (this.props.gradient !== nextProps.gradient) return true
     return false
   }
 
+  handleGradientUpload () {
+    GradientUploader()
+  }
+
   render () {
     return (
       <BumperBase>
-        <div />
+        <div>
+          <button onClick={ this.handleGradientUpload }>Upload Gradients</button>
+        </div>
         {this.props.gradient.colors && <HexList colors={ this.props.gradient.colors } />}
         <Actionbar
           direction={ this.props.direction }
