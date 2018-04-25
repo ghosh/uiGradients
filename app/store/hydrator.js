@@ -4,7 +4,10 @@ const hydratedState = {
     directionIndex: 2,
     directions: ['to left', 'to bottom', 'to right', 'to top']
   },
-  gradients: {}
+  gradients: {
+    count: null,
+    list: []
+  }
 }
 
 export default hydratedState

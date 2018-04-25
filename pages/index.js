@@ -23,11 +23,17 @@ const Home = (props) => {
 }
 
 Home.getInitialProps = async ({ store, pathname, query, req }) => {
-  const gradients = await db.getGradients()
-  store.dispatch({
-    type: 'SET_FIREBASE_GRADIENTS',
-    payload: gradients
-  })
+  const state = await store.getState()
+  let gradients = []
+  if (state.gradients.list.length <= 0) {
+    gradients = await db.getGradients()
+    store.dispatch({
+      type: 'SET_FIREBASE_GRADIENTS',
+      payload: gradients
+    })
+  } else {
+    gradients = state.gradients.list
+  }
 
   let activeGradient = null
   let user = null

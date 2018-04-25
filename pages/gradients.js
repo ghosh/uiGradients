@@ -24,12 +24,15 @@ const Gradients = (props) => {
 }
 
 Gradients.getInitialProps = async ({ store, req }) => {
-  const grads = await db.getGradients()
+  const state = await store.getState()
 
-  store.dispatch({
-    type: 'SET_FIREBASE_GRADIENTS',
-    payload: grads
-  })
+  if (state.gradients.list.length <= 0) {
+    const grads = await db.getGradients()
+    store.dispatch({
+      type: 'SET_FIREBASE_GRADIENTS',
+      payload: grads
+    })
+  }
 
   let user = exists(req) ? req.cookies.user : null
   return { user }
@@ -43,8 +46,7 @@ Gradients.propTypes = {
 }
 
 Gradients.defaultProps = {
-  user: {},
-  grads: []
+  user: {}
 }
 
 export default reduxPage(Gradients)
