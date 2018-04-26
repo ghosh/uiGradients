@@ -13,17 +13,16 @@ class PaletteContainer extends Component {
   constructor (props) {
     super(props)
 
-    this.handleFavClick = this.handleFavClick.bind(this)
+    this.handleGradientFav = this.handleGradientFav.bind(this)
+    this.handleGradientUnfav = this.handleGradientUnfav.bind(this)
   }
 
-  // async componentDidMount () {
-  //   console.log('data')
-  //   const grads = await db.getGradients()
-  //   console.log(grads)
-  // }
-
-  handleFavClick (gradientSlug) {
+  handleGradientFav (gradientSlug) {
     db.favGradient(gradientSlug, this.props.user.uid)
+  }
+
+  handleGradientUnfav (gradientSlug) {
+    db.unfavGradient(gradientSlug, this.props.user.uid)
   }
 
   render () {
@@ -31,9 +30,18 @@ class PaletteContainer extends Component {
       <PaletteWrapper>
         <PaletteList>
           {this.props.gradients.map(gradient => {
+            let isFaved = false
+            if (gradient.favs && this.props.user) {
+              isFaved = Object.keys(gradient.favs).includes(this.props.user.uid)
+            }
             return (
               <PaletteItem key={ gradient.id }>
-                <Palette gradient={ gradient } onFav={ this.handleFavClick } />
+                <Palette
+                  gradient={ gradient }
+                  onFav={ this.handleGradientFav }
+                  onUnfav={ this.handleGradientUnfav }
+                  isFaved={ isFaved }
+                />
               </PaletteItem>
             )
           })}

@@ -1,8 +1,15 @@
+import firebase from 'firebase'
 import { db } from './firebase'
 
 export async function favGradient (gradientSlug, userID) {
   const querySnapshot = await db.collection('gradients').doc(gradientSlug)
   await querySnapshot.update('favs', { [userID]: true })
+  console.log('done')
+}
+
+export async function unfavGradient (gradientSlug, userID) {
+  const querySnapshot = await db.collection('gradients').doc(gradientSlug)
+  await querySnapshot.update(`favs.${ userID }`, firebase.firestore.FieldValue.delete())
   console.log('done')
 }
 

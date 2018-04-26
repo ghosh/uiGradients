@@ -52,14 +52,18 @@ class Palette extends PureComponent {
   constructor (props) {
     super(props)
     this.state = {
-      hearted: false
+      hearted: this.props.isFaved
     }
 
     this.onHeart = this.onHeart.bind(this)
   }
 
   onHeart () {
-    this.props.onFav(this.props.gradient.slug)
+    if (this.state.hearted) {
+      this.props.onUnfav(this.props.gradient.slug)
+    } else {
+      this.props.onFav(this.props.gradient.slug)
+    }
     this.setState({
       hearted: !this.state.hearted
     })
@@ -67,6 +71,8 @@ class Palette extends PureComponent {
 
   render () {
     const { gradient } = this.props
+    const heartCount = (gradient.favs) ? Object.keys(gradient.favs).length : 0
+
     return (
       <Fragment>
         <Link as={ `/g/${ gradient.slug }` } href={ `/?slug=${ gradient.slug }` }>
@@ -79,7 +85,7 @@ class Palette extends PureComponent {
             {gradient.name}
           </PaletteName>
           <PaletteHeartCount>
-            <Heart hearted={ this.state.hearted } onClick={ this.onHeart } />
+            <Heart hearted={ this.state.hearted } onClick={ this.onHeart } count={ heartCount } />
           </PaletteHeartCount>
         </PaletteInfo>
       </Fragment>
@@ -88,11 +94,15 @@ class Palette extends PureComponent {
 }
 
 Palette.propTypes = {
+  isFaved: PropTypes.bool,
+  onUnfav: PropTypes.func,
   onFav: PropTypes.func,
   gradient: PropTypes.object
 }
 
 Palette.defaultProps = {
+  isFaved: false,
+  onUnfav: () => {},
   onFav: () => {},
   gradient: {}
 }

@@ -154,8 +154,8 @@ class Heart extends PureComponent {
 
           <CountContainer>
             <CountReel hearted={ this.props.hearted }>
-              <Count>24</Count>
-              <Count red>25</Count>
+              <Count>{(this.props.hearted) ? this.props.count - 1 : this.props.count}</Count>
+              <Count red>{(this.props.hearted) ? this.props.count : this.props.count + 1}</Count>
             </CountReel>
           </CountContainer>
         </Container>
@@ -165,11 +165,13 @@ class Heart extends PureComponent {
 }
 
 Heart.propTypes = {
+  count: PropTypes.number,
   hearted: PropTypes.bool,
   onClick: PropTypes.func
 }
 
 Heart.defaultProps = {
+  count: 0,
   hearted: false,
   onClick: () => { }
 }
