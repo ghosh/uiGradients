@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import Link from 'next/link'
 
+import GradientUploader from '@/services/gradientUploader'
+
 import Button from '@/patterns/Button'
 import Spacing from '@/patterns/Spacing'
 import Divider from '@/patterns/Divider'
@@ -43,8 +45,12 @@ const A = styled.a`
 class Header extends PureComponent {
   constructor (props) {
     super(props)
-
+    this.handleGradientUpload = this.handleGradientUpload.bind(this)
     this.handleShareClick = this.handleShareClick.bind(this)
+  }
+
+  handleGradientUpload () {
+    GradientUploader()
   }
 
   handleShareClick (media) {
@@ -78,6 +84,8 @@ class Header extends PureComponent {
           <Button social='twitter' label='Share on Twitter' onClick={ () => this.handleShareClick('Twitter') } />
           <Spacing right={ 5 } />
           <Button social='facebook' label='Share on Facebook' onClick={ () => this.handleShareClick('Facebook') } />
+          <Spacing right={ 5 } />
+          <Button label='Upload Gradients' onClick={ this.handleGradientUpload } />
         </FlexContainer>
 
         <Link href='/'>
