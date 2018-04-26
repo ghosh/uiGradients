@@ -22,7 +22,10 @@ class listenForAuth extends Component {
           'uid': user.uid
         }
         Cookies.set('user', U)
-        this.props.LoginUser(U)
+
+        if (!exists(this.props.user)) {
+          this.props.LoginUser(U)
+        }
       } else {
         Cookies.remove('user')
         this.props.LogoutUser()
@@ -31,12 +34,8 @@ class listenForAuth extends Component {
   }
 
   render () {
-    const serverUser = exists(this.props.serverUser) ? JSON.parse(this.props.serverUser) : null
-    const clientUser = this.props.clientUser
-
-    const isAuthenticated = exists(serverUser || clientUser)
-
-    const user = exists(serverUser) ? serverUser : clientUser
+    const user = this.props.user
+    const isAuthenticated = exists(user)
 
     return (
       <div>
@@ -48,23 +47,21 @@ class listenForAuth extends Component {
 
 listenForAuth.propTypes = {
   children: PropTypes.func,
-  clientUser: PropTypes.object,
-  serverUser: PropTypes.string,
+  user: PropTypes.object,
   LoginUser: PropTypes.func,
   LogoutUser: PropTypes.func
 }
 
 listenForAuth.defaultProps = {
   children: null,
-  clientUser: {},
-  serverUser: null,
+  user: {},
   LoginUser: () => { },
   LogoutUser: () => { }
 }
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    clientUser: state.user
+    user: state.user
   }
 }
 

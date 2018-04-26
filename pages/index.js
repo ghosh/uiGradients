@@ -49,6 +49,10 @@ Home.getInitialProps = async ({ store, pathname, query, req }) => {
 
   if (exists(req)) {
     user = req.cookies.user
+    store.dispatch({
+      type: 'USER_DID_LOGIN',
+      user: JSON.parse(user)
+    })
   }
 
   return { activeGradient, user }

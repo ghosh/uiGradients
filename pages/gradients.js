@@ -34,7 +34,14 @@ Gradients.getInitialProps = async ({ store, req }) => {
     })
   }
 
-  let user = exists(req) ? req.cookies.user : null
+  let user = null
+  if (exists(req)) {
+    user = req.cookies.user
+    store.dispatch({
+      type: 'USER_DID_LOGIN',
+      user: JSON.parse(user)
+    })
+  }
   return { user }
 }
 
