@@ -2,8 +2,9 @@ import firebase from 'firebase'
 import { db } from './firebase'
 
 export async function favGradient (gradientSlug, userID) {
-  const querySnapshot = await db.collection('gradients').doc(gradientSlug)
-  await querySnapshot.update('favs', { [userID]: true })
+  const gradientSnapshot = await db.collection('gradients').doc(gradientSlug)
+  const gradientFavs = gradientSnapshot.get('favs').push(userID)
+  await gradientSnapshot.update('favs', gradientFavs)
   console.log('done')
 }
 
@@ -15,14 +16,9 @@ export async function unfavGradient (gradientSlug, userID) {
 
 export async function getGradients () {
   const querySnapshot = await db.collection('gradients').get()
-  const data = []
-
-  // querySnapshot.forEach(doc => { data[doc.id] = doc.data() })
-  querySnapshot.forEach(doc => {
-    data.push(doc.data())
-  })
-
-  return data
+  const gradients = []
+  querySnapshot.forEach(doc => gradients.push(doc.data()))
+  return gradients
 }
 
 export const uploadGradients = (gradients) => {
@@ -30,7 +26,7 @@ export const uploadGradients = (gradients) => {
     db
       .collection('gradients')
       .doc(gradient.slug)
-      .set(gradient)
+      .set(gradient, { merge: true })
       .then(() => {
         console.log('Uploaded gradient:', gradient.name)
       })
