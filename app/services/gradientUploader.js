@@ -15,7 +15,8 @@ export default function () {
 
   const allGradients = uniqueGradients.map((gradient, index) => ({
     ...gradient,
-    id: index,
+    id: index, // Add index for navigation
+    favs: {}, // Add favs for storing user ids
     palettes: colorDetector(...gradient.colors)
   }))
 

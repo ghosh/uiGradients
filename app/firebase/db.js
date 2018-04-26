@@ -3,15 +3,12 @@ import { db } from './firebase'
 
 export async function favGradient (gradientSlug, userID) {
   const gradientSnapshot = await db.collection('gradients').doc(gradientSlug)
-  const gradientFavs = gradientSnapshot.get('favs').push(userID)
-  await gradientSnapshot.update('favs', gradientFavs)
-  console.log('done')
+  await gradientSnapshot.update('favs', { [userID]: true })
 }
 
 export async function unfavGradient (gradientSlug, userID) {
   const querySnapshot = await db.collection('gradients').doc(gradientSlug)
   await querySnapshot.update(`favs.${ userID }`, firebase.firestore.FieldValue.delete())
-  console.log('done')
 }
 
 export async function getGradients () {
