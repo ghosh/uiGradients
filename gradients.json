@@ -1184,4 +1184,9 @@
         "name": "Evening Night",
         "colors": ["#005AA7", "#FFFDE4"]
     }
+  {
+      "name": "first001",
+      "colors": ["#ffffff", "#E74C3C"]
+    }
+  
 ]
