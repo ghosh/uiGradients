@@ -1184,4 +1184,16 @@
         "name": "Evening Night",
         "colors": ["#005AA7", "#FFFDE4"]
     }
+    {
+        "name": "Blue Raspberry",
+        "colors": ["#00B4DB", "#0083B0"]
+    },
+    {
+        "name": "Citrus Peel",
+        "colors": ["#FDC830", "#F37335"]
+    },
+    {
+        "name": "Sin City Red",
+        "colors": ["#ED213A", "#93291E"]
+    }
 ]
