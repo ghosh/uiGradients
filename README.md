@@ -73,6 +73,10 @@ A few open source projects built with uiGradients
 - [helper-uigradient](https://github.com/helpers/helper-uigradient) - Handlebar helper for uiGradients
 - [Uigradients iOS Viewer](https://github.com/thexande/uiGradients-Viewer-iOS) - Open source iOS app for viewing gradients
 
+## License
+
+[MIT](https://github.com/ghosh/uiGradients/blob/master/LICENSE.md)
+
 &nbsp;
 
 <p align="center">✌️</p>
