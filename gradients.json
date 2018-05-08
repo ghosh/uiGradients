@@ -1,5 +1,9 @@
 [
     {
+        "name": "Bluelagoo",
+        "colors": ["#0052D4", "#4364F7", "#6FB1FC"]
+    },  
+    {
         "name": "Berimbolo",
         "colors": ["#02111D", "#037BB5", "#02111D"]
     },
