@@ -1227,5 +1227,9 @@
     {
         "name": "Wiretap",
         "colors": ["#8A2387", "#E94057", "#F27121"]
+    },
+    {
+        "name": "Burning Orange",
+        "colors": ["#FF416C", "#FF4B2B"]
     }
 ]
