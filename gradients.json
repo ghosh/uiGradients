@@ -1267,5 +1267,9 @@
     {
         "name": "Sunset In Your Eyes",
         "colors": ["#000000", "#e74c3c","#000000"]
+    },
+    {
+        "name": "Witching Hour",
+        "colors": ["#c31432", "#240b36"]
     }
   ]
