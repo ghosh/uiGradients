@@ -1199,5 +1199,9 @@
     {
         "name": "Magic",
         "colors": ["#59C173", "#a17fe0", "#5D26C1"]
+    },
+    {
+        "name": "Margo",
+        "colors": ["#FFEFBA", "#FFFFFF"]
     }
 ]
