@@ -356,6 +356,10 @@
         "colors": ["#E6DADA", "#274046"]
     },
     {
+            "name": "nelson",
+            "colors": ["#f2709c", "#ff9472"]
+    },
+    {
         "name": "Autumn",
         "colors": ["#DAD299", "#B0DAB9"]
     },
