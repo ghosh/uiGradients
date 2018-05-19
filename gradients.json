@@ -1347,5 +1347,9 @@
     {
         "name": "Cool Sky",
         "colors": ["#2980B9", "#6DD5F", "#FFFFFF"]
+    },
+    {
+        "name": "Dark Ocean",
+        "colors": ["#373B44", "#4286f4"]
     }
 ]
