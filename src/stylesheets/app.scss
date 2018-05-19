@@ -22,3 +22,57 @@
 @import 'modules/palette';
 @import 'modules/modal';
 @import 'modules/codeblock';
+
+
+.sponsor {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+
+  &:hover {
+    .sponsor__cta {
+      transform: translate3d(3px,0,0)
+    }
+  }
+
+  &__add {
+    width: 14px;
+    height: 14px;
+    margin: 0 8px 0 8px;
+  }
+
+  &__logo {
+    width: 120px;
+    height: 15px;
+    fill: #48A4AB;
+  }
+
+  &__cta {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    will-change: transform;
+
+    background-color: #48A4AB;
+    height: 24px;
+    border-radius: 50px;
+    padding: 0 2px;
+    margin-left: 10px;
+  }
+
+  &__byline {
+    font-size: 12px;
+    margin-left: 8px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &__arrow {
+    transform: rotate(-90deg);
+    width: 21px;
+    height: 21px;
+    margin-left: -4px;
+    margin-top: 2px;
+    fill: #fff;
+  }
+}
