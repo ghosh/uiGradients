@@ -24,6 +24,22 @@
         "colors": ["#ffe259", "#ffa751"]
     },
     {
+        "name": "Bupe",
+        "colors": ["#00416A", "#E4E5E6"]
+    },
+    {
+        "name": "Rea",
+        "colors": ["#FFE000", "#799F0C"]
+    },
+    {
+        "name": "Ver Black",
+        "colors": ["#F7F8F8", "ACBB78"]
+    },
+  {
+        "name": "Combi",
+        "colors": ["#00416A", "#799F0C", "#FFE000"]
+    },
+    {
         "name": "Windy",
         "colors": ["#acb6e5", "#86fde8"]
     },
