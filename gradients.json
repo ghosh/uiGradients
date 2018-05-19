@@ -1235,5 +1235,9 @@
     {
         "name": "Burning Orange",
         "colors": ["#FF416C", "#FF4B2B"]
+    },
+    {
+        "name": "Ultra Voilet",
+        "colors": ["#654ea3", "#eaafc8"]
     }
-]
+  ]
