@@ -1359,5 +1359,9 @@
     {
         "name": "JShine",
         "colors": ["#12c2e9","#c471ed","#f64f59"]
+     },
+     {
+        "name": "Moonlit Asteroid",
+        "colors": ["#0F2027", "#203A43", "#2C5364"]
      }
 ]
