@@ -12,6 +12,10 @@
         "colors": ["#0052D4", "#4364F7", "#6FB1FC"]
     },
     {
+        "name": "Lunada",
+        "colors": ["#5433FF", "#20BDFF", "#A5FECB"]
+    },    
+    {
         "name": "Berimbolo",
         "colors": ["#02111D", "#037BB5", "#02111D"]
     },
