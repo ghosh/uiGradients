@@ -1243,5 +1243,17 @@
     {
       "name": "By Design",
       "colors": ["#009FFF", "#ec2F4B"]
+    },
+    {
+        "name": "Kyoo Tah",
+        "colors": ["#544a7d", "#ffd452"]
+    },
+    {
+        "name": "Kye Meh",
+        "colors": ["#8360c3", "#2ebf91"]
+    },
+    {
+        "name": "Kyoo Pal",
+        "colors": ["#dd3e54", "#6be585"]
     }
   ]
