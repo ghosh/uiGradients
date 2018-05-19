@@ -1204,4 +1204,16 @@
         "name": "Margo",
         "colors": ["#FFEFBA", "#FFFFFF"]
     }
+    {
+        "name": "Blue Raspberry",
+        "colors": ["#00B4DB", "#0083B0"]
+    },
+    {
+        "name": "Citrus Peel",
+        "colors": ["#FDC830", "#F37335"]
+    },
+    {
+        "name": "Sin City Red",
+        "colors": ["#ED213A", "#93291E"]
+    }
 ]
