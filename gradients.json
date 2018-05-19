@@ -1205,3 +1205,12 @@
         "colors": ["#FFEFBA", "#FFFFFF"]
     }
 ]
+[
+    {
+        …
+    },
+    {
+      "name": "Jeff",
+      "colors": ["#66ff00", "#66ff00"]
+    }
+]
