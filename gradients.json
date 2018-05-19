@@ -1259,5 +1259,9 @@
     {
         "name": "Metapolis",
         "colors": ["#659999", "#f4791f"]
+    },
+    {
+        "name": "Italy",
+        "colors": ["#f12711", "#f5af195"]
     }
   ]
