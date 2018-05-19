@@ -1279,5 +1279,9 @@
     {
         "name": "Neuromancer",
         "colors": ["#f953c6", "#b91d73"]
+    },
+    {
+        "name": "Harvey",
+        "colors": ["#1f4037", "#99f2c8"]
     }
 ]
