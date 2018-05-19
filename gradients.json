@@ -1215,5 +1215,9 @@
     {
         "name": "Sin City Red",
         "colors": ["#ED213A", "#93291E"]
+    },    
+    {
+        "name": "Rastafari",
+        "colors": ["#1E9600", "#FFF200", "#FF0000"]
     }
 ]
