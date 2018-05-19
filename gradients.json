@@ -1307,5 +1307,9 @@
     {
         "name": "Mongolia",
         "colors": ["#C5222B", "#005098", "#C5222B"]
+    },
+    {
+        "name": "Cool Sky",
+        "colors": ["#2980B9", "#6DD5F", "#FFFFFF"]
     }
 ]
