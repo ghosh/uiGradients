@@ -1351,5 +1351,9 @@
     {
         "name": "Dark Ocean",
         "colors": ["#373B44", "#4286f4"]
+    },
+    {
+        "name": "Evening Sunshine",
+        "colors": ["#b92b27", "#1565C0"]
     }
 ]
