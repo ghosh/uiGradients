@@ -1275,5 +1275,9 @@
     {
         "name": "Azur Lane",
         "colors": ["#7F7FD5", "#86A8E7", "#91EAE4"]
+    },
+    {
+        "name": "Neuromancer",
+        "colors": ["#f953c6", "#b91d73"]
     }
 ]
