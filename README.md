@@ -74,6 +74,8 @@ A few open source projects built with uiGradients
 - [Uigradients iOS Viewer](https://github.com/thexande/uiGradients-Viewer-iOS) - Open source iOS app for viewing gradients
 - [Potion](http://numberpicture.com/build) - React components for declaratively composing animated, interactive visualizations
 
+&nbsp;
+
 ## License
 
 [MIT](https://github.com/ghosh/uiGradients/blob/master/LICENSE.md)

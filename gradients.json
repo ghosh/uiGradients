@@ -1,5 +1,5 @@
 [
-  {
+    {
         "name": "Blu",
         "colors": ["#00416A", "#E4E5E6"]
     },
@@ -813,7 +813,7 @@
         "colors": ["#808080", "#3fada8"]
     },
     {
-        "name": "Dusk",
+        "name": "Jupiter",
         "colors": ["#ffd89b", "#19547b"]
     },
     {
@@ -1108,10 +1108,6 @@
         "colors": ["#74ebd5","#ACB6E5"]
     },
     {
-        "name": "Velvet Sun",
-        "colors": ["#e1eec3", "#f05053"]
-    },
-    {
         "name": "Orange Fun",
         "colors": ["#fc4a1a", "#f7b733"]
     },
@@ -1323,9 +1319,9 @@
     {
         "name": "JShine",
         "colors": ["#12c2e9","#c471ed","#f64f59"]
-     },
-     {
+    },
+    {
         "name": "Moonlit Asteroid",
         "colors": ["#0F2027", "#203A43", "#2C5364"]
-     }
+    }
 ]
