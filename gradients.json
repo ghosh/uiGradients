@@ -1271,5 +1271,9 @@
     {
         "name": "Witching Hour",
         "colors": ["#c31432", "#240b36"]
+    },
+    {
+        "name": "Azur Lane",
+        "colors": ["#7F7FD5", "#86A8E7", "#91EAE4"]
     }
-  ]
+]
