@@ -1219,5 +1219,9 @@
     {
         "name": "Rastafari",
         "colors": ["#1E9600", "#FFF200", "#FF0000"]
+    },
+    {
+        "name": "Summer Dog",
+        "colors": ["#a8ff78", "#78ffd6"]
     }
 ]
