@@ -1,6 +1,6 @@
 <template>
   <header class="header" v-once>
-    <Logo class="header__logo" />
+    <Logo class="header__logo" width="130" height="30"/>
     <ul class="social header__social">
       <li>
         <a
