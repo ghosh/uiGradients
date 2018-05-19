@@ -75,7 +75,7 @@
     "node-sass": "^4.7.2",
     "opn": "^5.0.0",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
-    "ora": "^1.1.0",
+    "ora": "^2.0.0",
     "phantomjs-prebuilt": "^2.1.16",
     "rimraf": "^2.6.2",
     "sass-loader": "^6.0.3",
