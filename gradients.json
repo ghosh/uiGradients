@@ -1239,5 +1239,9 @@
     {
         "name": "Ultra Voilet",
         "colors": ["#654ea3", "#eaafc8"]
+    },
+    {
+      "name": "By Design",
+      "colors": ["#009FFF", "#ec2F4B"]
     }
   ]
