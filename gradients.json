@@ -1220,4 +1220,9 @@
         "name": "Rastafari",
         "colors": ["#1E9600", "#FFF200", "#FF0000"]
     }
+  {
+      "name": "first001",
+      "colors": ["#ffffff", "#E74C3C"]
+    }
+  
 ]
