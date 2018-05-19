@@ -1183,5 +1183,9 @@
     {
         "name": "Evening Night",
         "colors": ["#005AA7", "#FFFDE4"]
+    },
+    {
+        "name": "Magic",
+        "colors": ["#59C173", "#FFFFFF", "#5D26C1"]
     }
 ]
