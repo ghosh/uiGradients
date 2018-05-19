@@ -1,4 +1,8 @@
 [
+      {
+        "name": "Welcome To Earth",
+        "colors": ["#00ffff", "#064321", "#FFFCFC"]
+    },
     {
         "name": "Anwar",
         "colors": ["#334d50", "#cbcaa5"]
