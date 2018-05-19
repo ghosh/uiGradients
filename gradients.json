@@ -1255,5 +1255,9 @@
     {
         "name": "Kyoo Pal",
         "colors": ["#dd3e54", "#6be585"]
+    },
+    {
+        "name": "Metapolis",
+        "colors": ["#659999", "#f4791f"]
     }
   ]
