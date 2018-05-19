@@ -9,15 +9,11 @@
     },
     {
         "name": "Ver Black",
-        "colors": ["#F7F8F8", "ACBB78"]
-    },
-  {
-        "name": "Combi",
-        "colors": ["#00416A", "#799F0C", "#FFE000"]
+        "colors": ["#F7F8F8", "#ACBB78"]
     },
     {
-        "name": "Earth",
-        "colors": ["#00ffff", "#064321", "#FFFCFC"]
+        "name": "Combi",
+        "colors": ["#00416A", "#799F0C", "#FFE000"]
     },
     {
         "name": "Anwar",
@@ -30,12 +26,8 @@
     {
         "name": "Lunada",
         "colors": ["#5433FF", "#20BDFF", "#A5FECB"]
-    },    
-    {
-        "name": "Berimbolo",
-        "colors": ["#02111D", "#037BB5", "#02111D"]
     },
-  {
+    {
         "name": "Reaqua",
         "colors": ["#799F0C", "#ACBB78"]
     },
@@ -50,14 +42,6 @@
     {
         "name": "Rea",
         "colors": ["#FFE000", "#799F0C"]
-    },
-    {
-        "name": "Ver Black",
-        "colors": ["#F7F8F8", "ACBB78"]
-    },
-  {
-        "name": "Combi",
-        "colors": ["#00416A", "#799F0C", "#FFE000"]
     },
     {
         "name": "Windy",
@@ -426,10 +410,6 @@
     {
         "name": "Ash",
         "colors": ["#606c88", "#3f4c6b"]
-    },
-    {
-        "name": "Shadow Night",
-        "colors": ["#000000", "#53346D"]
     },
     {
         "name": "Cherryblossoms",
@@ -1076,14 +1056,6 @@
         "colors": ["#0cebeb", "#20e3b2", "#29ffc6"]
     },
     {
-        "name": "Shift",
-        "colors": ["#000000", "#E5008D", "#FF070B"]
-    },
-    {
-        "name": "Clot",
-        "colors": ["#070000", "#4C0001", "#070000"]
-    },
-    {
         "name": "Broken Hearts",
         "colors": ["#d9a7c7", "#fffcdc"]
     },
@@ -1305,12 +1277,8 @@
         "colors": ["#659999", "#f4791f"]
     },
     {
-        "name": "Italy",
-        "colors": ["#f12711", "#f5af195"]
-    },
-    {
-        "name": "Sunset In Your Eyes",
-        "colors": ["#000000", "#e74c3c","#000000"]
+        "name": "Flare",
+        "colors": ["#f12711", "#f5af19"]
     },
     {
         "name": "Witching Hour",
@@ -1334,19 +1302,15 @@
     },
     {
         "name": "Memariani",
-        "colors": ["#aa4b6b", "#6b6b83" , "3b8d99"]
+        "colors": ["#aa4b6b", "#6b6b83" , "#3b8d99"]
     },
     {
         "name": "Yoda",
         "colors": ["#FF0099", "#493240"]
     },
     {
-        "name": "Mongolia",
-        "colors": ["#C5222B", "#005098", "#C5222B"]
-    },
-    {
         "name": "Cool Sky",
-        "colors": ["#2980B9", "#6DD5F", "#FFFFFF"]
+        "colors": ["#2980B9", "#6DD5FA", "#FFFFFF"]
     },
     {
         "name": "Dark Ocean",
