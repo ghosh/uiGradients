@@ -35,6 +35,10 @@
         "name": "Berimbolo",
         "colors": ["#02111D", "#037BB5", "#02111D"]
     },
+  {
+        "name": "Reaqua",
+        "colors": ["#799F0C", "#ACBB78"]
+    },
     {
         "name": "Mango",
         "colors": ["#ffe259", "#ffa751"]
