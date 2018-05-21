@@ -22,6 +22,7 @@ class GradientController extends Component {
   render () {
     const { gradients } = this.props
 
+
     return (
       <Fragment>
         <Container>

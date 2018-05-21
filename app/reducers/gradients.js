@@ -1,9 +1,10 @@
-import u from 'updeep'
+import update from 'immutability-helper';
 import * as type from './types'
 
-const initialState = u.freeze({})
+function gradientReducer(state = {}, action) {
+  const gradients = state.list
+  let gradientIndex = null;
 
-function gradientReducer (state = initialState, action) {
   switch (action.type) {
     case type.SET_FIREBASE_GRADIENTS:
       return Object.assign({}, state, {
@@ -32,12 +33,37 @@ function gradientReducer (state = initialState, action) {
       })
 
     case type.FAV_GRADIENT:
-      let slug = action.gradientSlug
-      let userID = action.userID
+      const slug = action.gradientSlug
+      const userID = action.userID
 
-      return {
+      //Find index of specific object using findIndex method.
+      gradientIndex = gradients.findIndex((gradient => gradient.slug == slug));
+      const prevFavs = gradients[gradientIndex].favs || {}
+      const nextFavs = { ...prevFavs, [userID]: true }
 
-      }
+      return update(state, {
+        list: {
+          [gradientIndex]: {
+            favs: { $set: nextFavs }
+          }
+        }
+      })
+
+
+    case type.UNFAV_GRADIENT:
+      //Find index of specific object using findIndex method.
+      gradientIndex = gradients.findIndex((gradient => gradient.slug == action.gradientSlug));
+      const oldFavs = gradients[gradientIndex].favs || {}
+      const newFavs = delete oldFavs[action.userID];
+
+      return update(state, {
+        list: {
+          [gradientIndex]: {
+            favs: { $set: newFavs }
+          }
+        }
+      })
+
 
     default:
       return state

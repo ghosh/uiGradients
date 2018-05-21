@@ -8,23 +8,14 @@ function syncFavGradient (gradientSlug, userID) {
   }
 }
 
-// export function FavGradient () {
-//   return dispatch => {
-//     setTimeout(() => {
-//       dispatch(syncFavGradient())
-//     }, 3000)
-//   }
-// }
+function syncUnFavGradient(gradientSlug, userID) {
+  return {
+    type: 'UNFAV_GRADIENT',
+    gradientSlug: gradientSlug,
+    userID: userID
+  }
+}
 
-// export function FavGradient (gradientSlug, userID) {
-//   return function (dispatch) {
-//     return db.favGradient(gradientSlug, userID)
-//       .then(
-//         response => dispatch(syncFavGradient(gradientSlug, userID)),
-//         error => console.log('An error occurred.', error)
-//       )
-//   }
-// }
 
 export function FavGradient (gradientSlug, userID) {
   return async function (dispatch) {
@@ -38,9 +29,12 @@ export function FavGradient (gradientSlug, userID) {
 }
 
 export function UnFavGradient (gradientSlug, userID) {
-  return {
-    type: 'UNFAV_GRADIENT',
-    gradientSlug: gradientSlug,
-    userID: userID
+  return async function (dispatch) {
+    try {
+      await db.unfavGradient(gradientSlug, userID)
+      dispatch(syncUnFavGradient(gradientSlug, userID))
+    } catch (error) {
+      console.log('An error occurred.', error)
+    }
   }
 }

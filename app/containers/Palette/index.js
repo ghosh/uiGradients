@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 
 import PropTypes from 'prop-types'
 
 import { db } from '@/firebase'
+import { FavGradient, UnFavGradient } from './actions'
 
 import { PaletteWrapper, PaletteList, PaletteItem, Palette } from '@/components/Palettes'
 
@@ -18,11 +20,11 @@ class PaletteContainer extends Component {
   }
 
   handleGradientFav (gradientSlug) {
-    db.favGradient(gradientSlug, this.props.user.uid)
+    this.props.FavGradient(gradientSlug, this.props.user.uid)
   }
 
   handleGradientUnfav (gradientSlug) {
-    db.unfavGradient(gradientSlug, this.props.user.uid)
+    this.props.UnFavGradient(gradientSlug, this.props.user.uid)
   }
 
   render () {
@@ -67,4 +69,11 @@ const mapStateToProps = (state, ownProps) => {
   }
 }
 
-export default connect(mapStateToProps, null)(PaletteContainer)
+const mapDispatchToProps = dispatch => {
+  return bindActionCreators({
+    FavGradient,
+    UnFavGradient
+  }, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(PaletteContainer)

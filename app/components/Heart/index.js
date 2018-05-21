@@ -153,10 +153,13 @@ class Heart extends PureComponent {
           </svg>
 
           <CountContainer>
-            <CountReel hearted={ this.props.hearted }>
+            <CountReel>
+              <Count>{this.props.count}</Count>
+            </CountReel>
+            {/* <CountReel hearted={ this.props.hearted }>
               <Count>{(this.props.hearted) ? this.props.count - 1 : this.props.count}</Count>
               <Count red>{(this.props.hearted) ? this.props.count : this.props.count + 1}</Count>
-            </CountReel>
+            </CountReel> */}
           </CountContainer>
         </Container>
       </Button>
