@@ -3,15 +3,24 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import PropTypes from 'prop-types'
 
-import { exists } from '@@/utils'
+import { exists } from '@/helpers/utils'
 
 import Bumper from '@/components/Bumper'
 import Canvas from '@/components/Canvas'
 import AddModal from '@/components/Modals/AddModal'
 import CodeModal from '@/components/Modals/CodeModal'
 
-import { setActiveGradient, changeGradient, rotateGradient } from './actions'
-import { getGradientsByPalette, getGradientCount, getActiveDirection } from '@/selectors'
+import {
+  setActiveGradient,
+  changeGradient,
+  rotateGradient
+} from '@/actions/canvasActions'
+
+import {
+  getGradientsByPalette,
+  getGradientCount,
+  getActiveDirection
+} from '@/selectors'
 
 class CanvasContainer extends Component {
   constructor (props) {

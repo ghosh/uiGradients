@@ -5,7 +5,7 @@ import { bindActionCreators } from 'redux'
 import PropTypes from 'prop-types'
 
 import { db } from '@/firebase'
-import { FavGradient, UnFavGradient } from './actions'
+import { FavGradient, UnFavGradient } from '@/actions/paletteActions'
 
 import { PaletteWrapper, PaletteList, PaletteItem, Palette } from '@/components/Palettes'
 

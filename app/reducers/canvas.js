@@ -1,5 +1,5 @@
 import update from 'immutability-helper';
-import * as type from './types'
+import * as type from '@/helpers/consts'
 
 function canvasReducer (state = {}, action) {
   switch (action.type) {

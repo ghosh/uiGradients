@@ -1,6 +1,6 @@
 import { db } from '@/firebase'
 
-function syncFavGradient (gradientSlug, userID) {
+function syncFavGradient(gradientSlug, userID) {
   return {
     type: 'FAV_GRADIENT',
     gradientSlug: gradientSlug,
@@ -17,7 +17,7 @@ function syncUnFavGradient(gradientSlug, userID) {
 }
 
 
-export function FavGradient (gradientSlug, userID) {
+export function FavGradient(gradientSlug, userID) {
   return async function (dispatch) {
     try {
       await db.favGradient(gradientSlug, userID)
@@ -28,7 +28,7 @@ export function FavGradient (gradientSlug, userID) {
   }
 }
 
-export function UnFavGradient (gradientSlug, userID) {
+export function UnFavGradient(gradientSlug, userID) {
   return async function (dispatch) {
     try {
       await db.unfavGradient(gradientSlug, userID)

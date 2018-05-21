@@ -39,5 +39,5 @@ export const removeDuplicatesBy = (keyFn, array) => {
 }
 
 export const mergeArraysByKey = (array1, array2, key) => {
-  return array1.map(x => Object.assign(x, array2.find(y => y[`${ key }`] === x[`${ key }`])))
+  return array1.map(x => Object.assign(x, array2.find(y => y[`${key}`] === x[`${key}`])))
 }

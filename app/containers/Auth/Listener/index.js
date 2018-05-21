@@ -6,9 +6,9 @@ import Cookies from 'js-cookie'
 
 import { firebase } from '@/firebase'
 
-import { exists } from '@@/utils'
+import { exists } from '@/helpers/utils'
 
-import { LoginUser, LogoutUser } from './actions'
+import { LoginUser, LogoutUser } from '@/actions/authActions'
 
 class listenForAuth extends Component {
   componentDidMount () {

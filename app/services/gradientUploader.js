@@ -1,5 +1,6 @@
 import Gradients from '@@/gradients.json'
-import { slugify, removeDuplicatesBy } from '@@/utils'
+
+import { slugify, removeDuplicatesBy } from '@/helpers/utils'
 import colorDetector from '@/services/colorDetector'
 
 import { db } from '@/firebase'

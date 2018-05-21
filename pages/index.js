@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 
 import { reduxPage } from '@/store'
-import { exists } from '@@/utils'
+import { exists } from '@/helpers/utils'
 import { db } from '@/firebase'
 
 import Header from '@/containers/Header'

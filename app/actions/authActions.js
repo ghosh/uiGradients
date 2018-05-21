@@ -7,6 +7,6 @@ export function LoginUser (user) {
 
 export function LogoutUser () {
   return {
-    type: 'USER_DID_LOGOUT'
+    type: 'UER_DID_LOGOUT'
   }
 }

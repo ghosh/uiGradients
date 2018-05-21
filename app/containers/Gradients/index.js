@@ -9,7 +9,7 @@ import PaletteContainer from '@/containers/Palette'
 
 import { SwatchList, Swatch } from '@/components/Swatches'
 
-import { setActivePalette } from './actions'
+import { setActivePalette } from '@/actions/gradientActions'
 import { getGradientsByPalette } from '@/selectors'
 
 const Container = styled.div`

@@ -1,4 +1,4 @@
-import * as type from './types'
+import * as type from '@/helpers/consts'
 
 function paletteReducer (state = {}, action) {
   switch (action.type) {
