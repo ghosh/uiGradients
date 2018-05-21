@@ -1,3 +1,4 @@
+import update from 'immutability-helper';
 import * as type from './types'
 
 function canvasReducer (state = {}, action) {
@@ -11,10 +12,13 @@ function canvasReducer (state = {}, action) {
         directionIndex = state.directionIndex - 1
         directionIndex = (directionIndex < 0) ? state.directions.length - 1 : directionIndex
       }
-      return Object.assign({}, state, {
-        directionIndex: directionIndex,
-        activeDirection: state.directions[directionIndex]
-      })
+
+      return update(state, {
+        directionIndex: { $set: directionIndex },
+        activeDirection: {
+          $set: state.directions[directionIndex]
+        }
+      });
 
     default:
       return state

@@ -3,20 +3,22 @@ import * as type from './types'
 
 function gradientReducer(state = {}, action) {
   const gradients = state.list
-  let gradientIndex = null;
+  let prevFavs = null
+  let nextFavs = null
+  let gradientIndex = null
 
   switch (action.type) {
     case type.SET_FIREBASE_GRADIENTS:
-      return Object.assign({}, state, {
-        list: action.payload,
-        count: action.payload.length
-      })
+      return update(state, {
+        list: { $set: action.payload },
+        count: { $set: action.payload.length }
+      });
 
     case type.SET_ACTIVE_GRADIENT:
-      return Object.assign({}, state, {
-        activeIndex: action.gradient.id,
-        activeGradient: action.gradient
-      })
+      return update(state, {
+        activeIndex: { $set: action.gradient.id },
+        activeGradient: { $set: action.gradient }
+      });
 
     case type.CHANGE_GRADIENT:
       let newIndex = 0
@@ -27,19 +29,19 @@ function gradientReducer(state = {}, action) {
         const updatedIndex = state.activeIndex + 1
         newIndex = (updatedIndex > state.list.length - 1) ? 0 : updatedIndex
       }
-      return Object.assign({}, state, {
-        activeIndex: newIndex,
-        activeGradient: state.list[newIndex]
-      })
+
+      return update(state, {
+        activeIndex: { $set: newIndex },
+        activeGradient: { $set: state.list[newIndex] }
+      });
 
     case type.FAV_GRADIENT:
       const slug = action.gradientSlug
       const userID = action.userID
 
-      //Find index of specific object using findIndex method.
       gradientIndex = gradients.findIndex((gradient => gradient.slug == slug));
-      const prevFavs = gradients[gradientIndex].favs || {}
-      const nextFavs = { ...prevFavs, [userID]: true }
+      prevFavs = gradients[gradientIndex].favs || {}
+      nextFavs = { ...prevFavs, [userID]: true }
 
       return update(state, {
         list: {
@@ -51,15 +53,14 @@ function gradientReducer(state = {}, action) {
 
 
     case type.UNFAV_GRADIENT:
-      //Find index of specific object using findIndex method.
       gradientIndex = gradients.findIndex((gradient => gradient.slug == action.gradientSlug));
-      const oldFavs = gradients[gradientIndex].favs || {}
-      const newFavs = delete oldFavs[action.userID];
+      prevFavs = gradients[gradientIndex].favs || {}
+      nextFavs = delete prevFavs[action.userID];
 
       return update(state, {
         list: {
           [gradientIndex]: {
-            favs: { $set: newFavs }
+            favs: { $set: nextFavs }
           }
         }
       })
