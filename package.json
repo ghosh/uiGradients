@@ -31,7 +31,8 @@
     "redux-devtools-extension": "^2.13.2",
     "reselect": "^3.0.1",
     "styled-components": "^3.1.5",
-    "styled-transition-group": "^1.0.0"
+    "styled-transition-group": "^1.0.0",
+    "updeep": "^1.0.0"
   },
   "devDependencies": {
     "babel-plugin-module-resolver": "^3.0.0",

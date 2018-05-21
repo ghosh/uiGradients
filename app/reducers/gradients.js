@@ -1,6 +1,9 @@
+import u from 'updeep'
 import * as type from './types'
 
-function gradientReducer (state = {}, action) {
+const initialState = u.freeze({})
+
+function gradientReducer (state = initialState, action) {
   switch (action.type) {
     case type.SET_FIREBASE_GRADIENTS:
       return Object.assign({}, state, {
@@ -27,6 +30,14 @@ function gradientReducer (state = {}, action) {
         activeIndex: newIndex,
         activeGradient: state.list[newIndex]
       })
+
+    case type.FAV_GRADIENT:
+      let slug = action.gradientSlug
+      let userID = action.userID
+
+      return {
+
+      }
 
     default:
       return state
