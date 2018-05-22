@@ -1323,5 +1323,9 @@
     {
         "name": "Moonlit Asteroid",
         "colors": ["#0F2027", "#203A43", "#2C5364"]
+    },
+    {
+        "name": "MegaTron",
+        "colors": ["#C6FFDD", "#FBD786", "#f7797d"]
     }
 ]
