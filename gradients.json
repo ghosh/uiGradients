@@ -1323,10 +1323,6 @@
     {
         "name": "Moonlit Asteroid",
         "colors": ["#0F2027", "#203A43", "#2C5364"]
-    }
-  [
-    {
-        …
     },
     {
       "name": "Tiny gradient",
