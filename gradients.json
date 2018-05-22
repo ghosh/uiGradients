@@ -1327,6 +1327,11 @@
     {
       "name": "Tiny gradient",
       "colors": ["#4574ce", "#73b47f"]
+    },
+	    {
+      "name": "Davids Colours",
+      "colors": ["#4574ce", "#f64f59"]
     }
+	
 ]
 
