@@ -25,9 +25,13 @@
 
 
 .sponsor {
-  display: flex;
   align-items: center;
   text-decoration: none;
+  display: none;
+
+  @include respond-to(sponsor) {
+    display: flex;
+  }
 
   &:hover {
     .sponsor__cta {
@@ -53,7 +57,7 @@
     transition: transform 0.3s ease-in-out;
     will-change: transform;
 
-    background-color: #48A4AB;
+    background-color: #e2e2e2;
     height: 24px;
     border-radius: 50px;
     padding: 0 2px;
@@ -63,7 +67,7 @@
   &__byline {
     font-size: 12px;
     margin-left: 8px;
-    color: #fff;
+    color: #656565;
     text-decoration: none;
   }
 
@@ -73,6 +77,6 @@
     height: 21px;
     margin-left: -4px;
     margin-top: 2px;
-    fill: #fff;
+    fill: #656565;
   }
 }
