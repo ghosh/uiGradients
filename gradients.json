@@ -1325,6 +1325,10 @@
         "colors": ["#0F2027", "#203A43", "#2C5364"]
     },
     {
+        "name": "MegaTron",
+        "colors": ["#C6FFDD", "#FBD786", "#f7797d"]
+    },
+    {
         "name": "Cool Blues",
         "colors": ["#2193b0","#6dd5ed"]
     },
