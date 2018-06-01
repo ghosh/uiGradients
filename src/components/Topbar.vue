@@ -1,6 +1,17 @@
 <template>
   <header class="header" v-once>
-    <Logo class="header__logo" width="130" height="30"/>
+    <div class="header__branding">
+      <Logo class="header__logo"/>
+      <a href="#" target="_blank" class="sponsor" @click="goToSkillshare()">
+        <Plus class="sponsor__add"/>
+        <Skillshare class="sponsor__logo"/>
+        <div class="sponsor__cta">
+          <p class="sponsor__byline">Get 2 months free</p>
+          <Arrow class="sponsor__arrow"/>
+        </div>
+      </a>
+    </div>
+
     <ul class="social header__social">
       <li>
         <a
@@ -25,20 +36,29 @@
 </template>
 
 <script>
+import Plus from '../assets/plus.svg';
+import Arrow from '../assets/arrow.svg';
 import Logo from '../assets/logo.svg';
 import Facebook from '../assets/facebook.svg';
 import Twitter from '../assets/twitter.svg';
 import Github from '../assets/github.svg';
+import Skillshare from '../assets/skillshare.svg';
 
 export default {
   name: 'topbar',
   components: {
+    Arrow,
+    Plus,
     Logo,
     Facebook,
     Twitter,
     Github,
+    Skillshare,
   },
   methods: {
+    goToSkillshare() {
+      this.$ga.event('sponsor', 'click', 'Skillshare');
+    },
     goToGithub() {
       this.$ga.event('social', 'click', 'github');
     },
