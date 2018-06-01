@@ -1323,5 +1323,17 @@
     {
         "name": "Moonlit Asteroid",
         "colors": ["#0F2027", "#203A43", "#2C5364"]
+    },
+    {
+        "name": "Cool Blues",
+        "colors": ["#2193b0","#6dd5ed"]
+    },
+    { 
+        "name": "Piggy Pink",
+        "colors": ["#ee9ca7","#ffdde1"]
+    },
+    {
+        "name": "Grade Grey",
+        "colors": ["#bdc3c7","#2c3e50"]
     }
 ]
