@@ -2,7 +2,7 @@
   <header class="header" v-once>
     <div class="header__branding">
       <Logo class="header__logo"/>
-      <a href="#" target="_blank" class="sponsor" @click="goToSkillshare()">
+      <a href="https://skillshare.evyy.net/c/488940/298081/4650" target="_blank" class="sponsor" @click="goToSkillshare()">
         <Plus class="sponsor__add"/>
         <Skillshare class="sponsor__logo"/>
         <div class="sponsor__cta">
