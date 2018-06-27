@@ -1,5 +1,9 @@
 [
     {
+        "name": "Seerat",
+        "colors": ["#f84439", "#20b4ee", "#f5aa6c", "#d94080", "#3e5998"]
+    },
+    {
         "name": "Blu",
         "colors": ["#00416A", "#E4E5E6"]
     },
