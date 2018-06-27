@@ -1340,4 +1340,8 @@
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
     }
+    {
+      "name": "Fire and Health",
+      "colors": ["#E35039", "#B16F00", "#6F8200", "#008835", "#008772", "#0080A4"]
+    }
 ]
