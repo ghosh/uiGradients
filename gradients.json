@@ -1,5 +1,9 @@
 [
     {
+        "name": "Red Hot Fire",
+        "colors": ["#E50800", "#FF0000", "#FF001E"]
+    },
+    {
         "name": "Blu",
         "colors": ["#00416A", "#E4E5E6"]
     },
