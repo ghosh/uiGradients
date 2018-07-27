@@ -1339,5 +1339,9 @@
     {
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
+    },
+    {
+        "name": "Zenta",
+        "colors": ["#2A2D3E","#FECB6E"]
     }
 ]
