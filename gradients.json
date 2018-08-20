@@ -1339,5 +1339,9 @@
     {
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
+    },
+    {
+        "name": "UnderBlueGreen",
+        "colors": ["#051937","#004d7a","#008793","#00bf72","#a8eb12"]
     }
 ]
