@@ -1339,5 +1339,9 @@
     {
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
+    },
+    {
+        "name": "Lensod",
+        "colors": ["#6025F5","#FF5555"]
     }
 ]
