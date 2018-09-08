@@ -1339,5 +1339,8 @@
     {
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
-    }
-]
+    },
+    {
+        "name": "Newspaper",
+        "colors": ["#8a2be2","#ffa500","#f8f8ff"]
+    
