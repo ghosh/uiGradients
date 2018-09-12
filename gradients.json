@@ -1339,5 +1339,9 @@
     {
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
+    },
+    {
+      "name": "Dark Blue Gradient",
+      "colors": ["#2774ae", "#002E5D", "#002E5D"]
     }
 ]
