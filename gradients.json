@@ -1,7 +1,7 @@
 [
     {
-        "name": "Blu",
-        "colors": ["#00416A", "#E4E5E6"]
+        "name": "grey",
+        "colors": ["#b2b8c4", "#b7cbf4"]
     },
     {
         "name": "Ver",
@@ -157,7 +157,7 @@
     },
     {
         "name": "Rose Water",
-        "colors": ["#E55D87", "#5FC3E4"]
+        "colors": ["#e04e4e", "#bf3939"]
     },
     {
         "name": "Frozen",
