@@ -35,6 +35,7 @@
     <CodeModal
       :gradient="currentGradient"
       :direction="currentDirection"
+      :directionWebkit="currentDirectionWebkit"
       :show="showingCodeModal"
       :closeModals="closeModals" />
   </main>
@@ -62,7 +63,9 @@ export default {
       preloading: true,
       directionIndex: 2,
       currentDirection: 'to right',
+      currentDirectionWebkit: 'left',
       directions: ['to left', 'to bottom', 'to right', 'to top'],
+      directionsWebkit: ['right', 'top', 'left', 'bottom'],
       currentGradient: {
         name: null,
         colors: ['#ffffff', '#ffffff'],
@@ -181,6 +184,7 @@ export default {
     },
     directionIndex(id) {
       this.currentDirection = this.directions[id];
+      this.currentDirectionWebkit = this.directionsWebkit[id];
       this.updateFavicon();
     },
   },
