@@ -1339,5 +1339,8 @@
     {
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
+    },{
+        "name" : "Twitter",
+        "colors" : ["#1DA1F2","#009ffc"]
     }
 ]
