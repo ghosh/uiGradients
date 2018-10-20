@@ -1343,5 +1343,9 @@
     {
         "name": "Blue Slate",
         "colors": ["#B5B9FF","#2B2C49"]
+    },
+    {
+        "name": "Space Light Green",
+        "colors": ["#9FA0A8","#5C7852"]
     }
 ]
