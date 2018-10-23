@@ -1339,5 +1339,9 @@
     {
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
+    },
+    {
+        "name": "MgC03 Cartel Red",
+        "colors": ["#ed1c24","#d00c02"]
     }
 ]
