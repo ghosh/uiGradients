@@ -1339,5 +1339,12 @@
     {
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
+    },
+    {
+      "name": "Peach Sea",
+      "colors": ["#E6AE8C", "#A8CECF"]
     }
 ]
+
+
+
