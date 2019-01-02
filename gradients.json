@@ -1339,5 +1339,11 @@
     {
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
-    }
+    },
+  {
+    "name": "Winter Woods",
+    "colors": ["#240b36", "#3E5151", "#59C173"]
+  },
+  
+  
 ]
