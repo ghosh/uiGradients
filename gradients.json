@@ -1339,5 +1339,9 @@
     {
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
+    },
+  {
+      "name": "Ameena",
+      "colors": ["#0c0c6d", "#de512b", "#98d0c1","#5bb226","#023c0d"]
     }
 ]
