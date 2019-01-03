@@ -1325,8 +1325,7 @@
         "colors": ["#0F2027", "#203A43", "#2C5364"]
     },
     {
-        "name": "MegaTron",
-        "colors": ["#C6FFDD", "#FBD786", "#f7797d"]
+       , "#f7797d"]
     },
     {
         "name": "Cool Blues",
@@ -1340,4 +1339,5 @@
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
     }
-]
+]     "name"  : "asma malik
+      "colour" :["#bd9ca7" , "#2cfe10]
