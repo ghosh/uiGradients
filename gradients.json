@@ -1339,5 +1339,10 @@
     {
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
+    },
+      {
+        "name": "emerald sea",
+        "colors": ["#05386b","#5cdb95"]
     }
+  
 ]
