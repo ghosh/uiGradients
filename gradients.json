@@ -1340,4 +1340,8 @@
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
     }
+    {
+        "name": "visual blue",
+        "colors": ["#003d4d", "#00c996"]
+    }
 ]
