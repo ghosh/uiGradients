@@ -1,5 +1,9 @@
 [
     {
+        "name": "Purple Dream",
+        "colors": ["#bf5ae0","#a811da"]
+    },
+    {
         "name": "Blu",
         "colors": ["#00416A", "#E4E5E6"]
     },
