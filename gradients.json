@@ -1339,5 +1339,9 @@
     {
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
+    },
+    {
+        "name": "Coffee Gold",
+        "colors": ["#554023","#c99846"]
     }
 ]
