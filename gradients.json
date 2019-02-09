@@ -1,5 +1,10 @@
 [
     {
+      "name":"Black & White",
+      "colors":["#000000", "#ffffff"]
+    },
+  
+    {
         "name": "Blu",
         "colors": ["#00416A", "#E4E5E6"]
     },
