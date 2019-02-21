@@ -1339,5 +1339,9 @@
     {
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
+    },
+  {
+        "name": "Andreuzza's",
+        "colors": ["#D70652","#FF025E"]
     }
 ]
