@@ -1339,5 +1339,9 @@
     {
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
+    },
+    {
+        "name": "Whinehouse",
+        "colors": ["rgb(255, 255, 255)","rgb(185, 160, 160)","rgb(121, 71, 71)", "rgb(78, 32, 32)"," rgb(0, 0, 0)"]
     }
 ]
