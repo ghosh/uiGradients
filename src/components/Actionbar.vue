@@ -68,7 +68,7 @@
 
 
 <script>
-import Swatch from './Swatch';
+import Swatch from '@/components/Swatch';
 
 import Add from '../assets/add.svg';
 import Brackets from '../assets/code.svg';
