@@ -8259,9 +8259,9 @@ webpack-hot-middleware@^2.20.0:
     querystring "^0.2.0"
     strip-ansi "^3.0.0"
 
-webpack-merge@^4.1.1:
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-4.1.2.tgz#5d372dddd3e1e5f8874f5bf5a8e929db09feb216"
+webpack-merge@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-4.2.1.tgz#5e923cf802ea2ace4fd5af1d3247368a633489b4"
   dependencies:
     lodash "^4.17.5"
 
