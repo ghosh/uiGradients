@@ -21,7 +21,7 @@
     "vue": "^2.5.9"
   },
   "devDependencies": {
-    "autoprefixer": "^7.1.6",
+    "autoprefixer": "^9.4.9",
     "avoriaz": "^6.3.0",
     "babel-core": "^6.22.1",
     "babel-eslint": "^8.2.2",
