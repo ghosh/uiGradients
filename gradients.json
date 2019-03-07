@@ -1340,4 +1340,7 @@
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
     }
+    { "name":"Adhya",
+      "colors":["#2af598","#009efd"]
+    }
 ]
