@@ -1339,5 +1339,9 @@
     {
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
+    },
+    {
+        "name": "After the Rain",
+        "colors": ["#ff75c3","#ffa647","#ffe83f","#9fff5b","#70e2ff","#cd93ff"]
     }
 ]
