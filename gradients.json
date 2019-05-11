@@ -1339,5 +1339,9 @@
     {
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
+    },
+    {
+        "name": "Dusty Grass",
+        "colors": ["#d4fc79","#96e6a1"]
     }
 ]
