@@ -1370,6 +1370,10 @@
         "colors": ["#bdc3c7","#2c3e50"]
     },
     {
+        "name": "Abbas",
+        "colors": ["#00fff0","#0083fe"]
+    },
+    {
         "name": "Winter Woods",
         "colors": ["#333333", "#a2ab58", "#A43931"]
     },
