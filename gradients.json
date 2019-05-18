@@ -1374,6 +1374,10 @@
         "colors": ["#bdc3c7","#2c3e50"]
     },
     {
+        "name": "Flower",
+        "colors": ["#DCFFBD","#CC86D1"]
+    },
+    {
         "name": "Elate The Euge",
         "colors": ["#8BDEDA", "43ADD0", "998EE0", "E17DC2", "EF9393"]
     },
