@@ -20,6 +20,11 @@
         "colors": ["#72C6EF", "#004E8F"]
     },
     {
+      "name":"Black & White",
+      "colors":["#000000", "#ffffff"]
+    },
+  
+    {
         "name": "Blu",
         "colors": ["#00416A", "#E4E5E6"]
     },
