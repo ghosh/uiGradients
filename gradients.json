@@ -1374,6 +1374,10 @@
         "colors": ["#bdc3c7","#2c3e50"]
     },
     {
+        "name": "Elate The Euge",
+        "colors": ["#8BDEDA", "43ADD0", "998EE0", "E17DC2", "EF9393"]
+    },
+    {
         "name": "Peach Sea",
         "colors": ["#E6AE8C", "#A8CECF"]
     },
@@ -1440,6 +1444,5 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
-    }
-  
+    } 
 ]
