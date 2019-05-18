@@ -1338,7 +1338,7 @@
     },
     {
         "name": "JShine",
-        "colors": ["#12c2e9","#c471ed","#f64f59"]
+        "colors": ["#12c2e9", "#c471ed", "#f64f59"]
     },
     {
         "name": "Moonlit Asteroid",
@@ -1350,17 +1350,20 @@
     },
     {
         "name": "Cool Blues",
-        "colors": ["#2193b0","#6dd5ed"]
+        "colors": ["#2193b0", "#6dd5ed"]
     },
     { 
         "name": "Piggy Pink",
-        "colors": ["#ee9ca7","#ffdde1"]
+        "colors": ["#ee9ca7", "#ffdde1"]
     },
     {
         "name": "Grade Grey",
-        "colors": ["#bdc3c7","#2c3e50"]
+        "colors": ["#bdc3c7", "#2c3e50"]
     },
     {
+        "name": "Whinehouse",
+        "colors": ["#f7f7f7", "#b9a0a0", "#794747", "#4e2020", "#111111"]
+    }
         "name": "Hyper Blue",
         "colors": ["#59CDE9","#0A2A88"]
     },
