@@ -1,4 +1,33 @@
 [
+     {
+        "name": "Purple",
+        "colors": ["#c84e89", "#F15F79"]
+    },
+    {
+        "name": "Ibtesam",
+        "colors": ["#00F5A0", "#00D9F5"]
+    },
+    {
+        "name": "Radioactive Heat",
+        "colors": ["#F7941E", "#72C6EF", "00A651"]
+    }, 
+   {
+        "name": "The Sky And The Sea",
+        "colors": ["#F7941E", "#004E8F"]
+    },
+    {
+        "name": "From Ice To Fire",
+        "colors": ["#72C6EF", "#004E8F"]
+    },
+  
+    {
+        "name": "Blue & Orange",
+        "colors": ["#FD8112", "#0085CA"]
+    },
+    {
+        "name": "Purple Dream",
+        "colors": ["#bf5ae0","#a811da"]
+    },
     {
         "name": "Blu",
         "colors": ["#00416A", "#E4E5E6"]
@@ -1318,7 +1347,7 @@
     },
     {
         "name": "JShine",
-        "colors": ["#12c2e9","#c471ed","#f64f59"]
+        "colors": ["#12c2e9", "#c471ed", "#f64f59"]
     },
     {
         "name": "Moonlit Asteroid",
@@ -1330,18 +1359,58 @@
     },
     {
         "name": "Cool Blues",
-        "colors": ["#2193b0","#6dd5ed"]
+        "colors": ["#2193b0", "#6dd5ed"]
     },
     { 
         "name": "Piggy Pink",
-        "colors": ["#ee9ca7","#ffdde1"]
+        "colors": ["#ee9ca7", "#ffdde1"]
     },
     {
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
     },
     {
-      "name": "Bleem",
-      "colors": ["#4284DB", "#29EAC4"]
+        "name": "Bleem",
+        "colors": ["#4284DB", "#29EAC4"]
+    },
+    {
+        "name": "Coffee Gold",
+        "colors": ["#554023", "#c99846"]
+    },
+    {
+        "name": "Compass",
+        "colors": ["#516b8b", "#056b3b"]
+    },
+    {
+        "name": "Andreuzza's",
+        "colors": ["#D70652", "#FF025E"]
+    },
+    {
+        "name": "Moonwalker",
+        "colors": ["#152331", "#000000"]
+    },
+    {
+        "name": "Whinehouse",
+        "colors": ["#f7f7f7", "#b9a0a0", "#794747", "#4e2020", "#111111"]
+    },
+        "name": "Hyper Blue",
+        "colors": ["#59CDE9", "#0A2A88"]
+    },
+    {
+        "name": "Racker",
+        "colors": ["#EB0000","#95008A","#3300FC"]
+    },
+    {
+        "name": "After the Rain",
+        "colors": ["#ff75c3", "#ffa647", "#ffe83f", "#9fff5b", "#70e2ff", "#cd93ff"]
+    },
+    {
+        "name": "Neon Green",
+        "colors": ["#81ff8a", "#64965e"]
+    },
+    {
+        "name": "Dusty Grass",
+        "colors": ["#d4fc79", "#96e6a1"]
     }
+    
 ]
