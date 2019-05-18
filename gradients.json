@@ -1374,6 +1374,10 @@
         "colors": ["#bdc3c7","#2c3e50"]
     },
     {
+        "name": "Blue Red",
+        "colors": ["#36B1C7","#960B33"]
+    },
+    {
         "name" : "Twitter",
         "colors" : ["#1DA1F2","#009ffc"]
     },
