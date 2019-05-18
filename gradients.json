@@ -19,10 +19,6 @@
         "name": "From Ice To Fire",
         "colors": ["#72C6EF", "#004E8F"]
     },
-    {
-      "name":"Black & White",
-      "colors":["#000000", "#ffffff"]
-    },
   
     {
         "name": "Blu",
@@ -1364,6 +1360,10 @@
     {
         "name": "Grade Grey",
         "colors": ["#bdc3c7","#2c3e50"]
+    },
+    {
+        "name": "Compass",
+        "colors": ["#516b8b","#056b3b"]
     },
     {
         "name": "Andreuzza's",
