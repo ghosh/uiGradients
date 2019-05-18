@@ -1371,11 +1371,19 @@
     },
     {
         "name": "Grade Grey",
-        "colors": ["#bdc3c7","#2c3e50"]
+        "colors": ["#bdc3c7", "#2c3e50"]
+    },
+    {
+        "name": "Blue Slate",
+        "colors": ["#B5B9FF", "#2B2C49"]
+    },
+    {
+        "name": "Space Light Green",
+        "colors": ["#9FA0A8", "#5C7852"]
     },
     {
         "name": "Flower",
-        "colors": ["#DCFFBD","#CC86D1"]
+        "colors": ["#DCFFBD", "#CC86D1"]
     },
     {
         "name": "Elate The Euge",
