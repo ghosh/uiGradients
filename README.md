@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://www.dropbox.com/s/h6vdbd2ar3c8mw6/logo.png?dl=0&raw=1" width="300" />
+  <img src="https://www.dropbox.com/s/h6vdbd2ar3c8mw6/logo.png?dl=0&raw=1" width="240" />
 </p>
 
 <p align="center">
