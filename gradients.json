@@ -1,4 +1,8 @@
 [
+     {
+        "name": "Purple",
+        "colors": ["#c84e89", "#F15F79"]
+    },
     {
         "name": "Ibtesam",
         "colors": ["#00F5A0", "#00D9F5"]
