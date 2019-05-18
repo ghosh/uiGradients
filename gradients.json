@@ -21,6 +21,10 @@
     },
   
     {
+        "name": "Blue & Orange",
+        "colors": ["#FD8112", "#0085CA"]
+    },
+    {
         "name": "Blu",
         "colors": ["#00416A", "#E4E5E6"]
     },
