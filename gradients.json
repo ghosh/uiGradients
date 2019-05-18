@@ -1,10 +1,8 @@
 [
-   
-     {
+    {
       "name": "Ibtesam",
       "colors": ["#00F5A0", "#00D9F5"]
-    }
-  
+    },
     {
         "name": "Blu",
         "colors": ["#00416A", "#E4E5E6"]
