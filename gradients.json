@@ -1370,6 +1370,10 @@
         "colors": ["#bdc3c7","#2c3e50"]
     },
     {
+        "name": "Bleem",
+        "colors": ["#4284DB", "#29EAC4"]
+    },
+    {
         "name": "Coffee Gold",
         "colors": ["#554023", "#c99846"]
     },
@@ -1379,18 +1383,18 @@
     },
     {
         "name": "Andreuzza's",
-        "colors": ["#D70652","#FF025E"]
+        "colors": ["#D70652", "#FF025E"]
     },
     {
         "name": "Moonwalker",
-        "colors": ["#152331","#000000"]
+        "colors": ["#152331", "#000000"]
     },
     {
         "name": "Whinehouse",
         "colors": ["#f7f7f7", "#b9a0a0", "#794747", "#4e2020", "#111111"]
     },
         "name": "Hyper Blue",
-        "colors": ["#59CDE9","#0A2A88"]
+        "colors": ["#59CDE9", "#0A2A88"]
     },
     {
         "name": "Racker",
