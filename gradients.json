@@ -1366,8 +1366,12 @@
         "colors": ["#bdc3c7","#2c3e50"]
     },
     {
+        "name": "Coffee Gold",
+        "colors": ["#554023", "#c99846"]
+    },
+    {
         "name": "Compass",
-        "colors": ["#516b8b","#056b3b"]
+        "colors": ["#516b8b", "#056b3b"]
     },
     {
         "name": "Andreuzza's",
@@ -1390,7 +1394,7 @@
     },
     {
         "name": "After the Rain",
-        "colors": ["#ff75c3","#ffa647","#ffe83f","#9fff5b","#70e2ff","#cd93ff"]
+        "colors": ["#ff75c3", "#ffa647", "#ffe83f", "#9fff5b", "#70e2ff", "#cd93ff"]
     },
     {
         "name": "Neon Green",
@@ -1398,7 +1402,7 @@
     },
     {
         "name": "Dusty Grass",
-        "colors": ["#d4fc79","#96e6a1"]
+        "colors": ["#d4fc79", "#96e6a1"]
     }
     
 ]
