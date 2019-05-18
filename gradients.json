@@ -1374,16 +1374,20 @@
         "colors": ["#bdc3c7","#2c3e50"]
     },
     {
+      "name": "Flame",
+      "colors": ["#ff0000", #fdcf58"]
+    },
+    {
         "name": "Blue Red",
-        "colors": ["#36B1C7","#960B33"]
+        "colors": ["#36B1C7", "#960B33"]
     },
     {
         "name" : "Twitter",
-        "colors" : ["#1DA1F2","#009ffc"]
+        "colors" : ["#1DA1F2", "#009ffc"]
     },
     {
         "name": "Blooze",
-        "colors": ["#6da6be","#4b859e","#6da6be"]
+        "colors": ["#6da6be", "#4b859e", "#6da6be"]
     },
     {
         "name": "Blue Slate",
@@ -1468,5 +1472,5 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
-    } 
+    }
 ]
