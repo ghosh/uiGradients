@@ -107,6 +107,10 @@
     {
         "name": "Sel",
         "colors": ["#00467F", "#A5CC82"]
+    }, 
+    {
+        "name": "Afternoon",
+        "colors": ["#000C40", "#607D8B"]
     },
     {
         "name": "Skyline",
