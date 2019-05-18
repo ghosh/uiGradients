@@ -1,4 +1,24 @@
 [
+     {
+        "name": "Purple",
+        "colors": ["#c84e89", "#F15F79"]
+    },
+    {
+        "name": "Ibtesam",
+        "colors": ["#00F5A0", "#00D9F5"]
+    },
+    {
+        "name": "Radioactive Heat",
+        "colors": ["#F7941E", "#72C6EF", "00A651"]
+    }, 
+   {
+        "name": "The Sky And The Sea",
+        "colors": ["#F7941E", "#004E8F"]
+    },
+    {
+        "name": "From Ice To Fire",
+        "colors": ["#72C6EF", "#004E8F"]
+    },
     {
         "name": "Blu",
         "colors": ["#00416A", "#E4E5E6"]
@@ -1341,7 +1361,23 @@
         "colors": ["#bdc3c7","#2c3e50"]
     },
     {
-        "name": "TN Hyper Blue",
+        "name": "Hyper Blue",
         "colors": ["#59CDE9","#0A2A88"]
     },
+    {
+        "name": "Racker",
+        "colors": ["#EB0000","#95008A","#3300FC"]
+    },
+    {
+        "name": "After the Rain",
+        "colors": ["#ff75c3","#ffa647","#ffe83f","#9fff5b","#70e2ff","#cd93ff"]
+    },
+    {
+        "name": "Neon Green",
+        "colors": ["#81ff8a", "#64965e"]
+    },
+    {
+        "name": "Dusty Grass",
+        "colors": ["#d4fc79","#96e6a1"]
+    }
 ]
