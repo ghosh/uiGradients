@@ -1370,6 +1370,9 @@
         "colors": ["#bdc3c7","#2c3e50"]
     },
     {
+        "name": "Emerald sea",
+        "colors": ["#05386b","#5cdb95"]
+    {
         "name": "Bleem",
         "colors": ["#4284DB", "#29EAC4"]
     },
@@ -1416,4 +1419,5 @@
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
     }
+  
 ]
