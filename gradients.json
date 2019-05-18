@@ -1378,6 +1378,10 @@
         "colors": ["#bdc3c7","#2c3e50"]
     },
     {
+      "name": "Beleko",
+      "colors": ["#ff1e56", "#f9c942", "#1e90ff"]
+    },
+    {
         "name": "Mango Papaya",
         "colors": [#de8a41","#2ada53"]
     },
