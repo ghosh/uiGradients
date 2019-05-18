@@ -1378,6 +1378,10 @@
         "colors": ["#bdc3c7","#2c3e50"]
     },
     {
+        "name": "Mango Papaya",
+        "colors": [#de8a41","#2ada53"]
+    },
+    {
         "name": "Unicorn Rainbow",
         "colors": ["#f7f0ac","#acf7f0","#f0acf7"]
     },
