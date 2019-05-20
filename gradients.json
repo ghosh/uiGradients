@@ -1386,16 +1386,20 @@
         "colors": ["#bdc3c7","#2c3e50"]
     },
     {
+      "name": "Dark Blue Gradient",
+      "colors": ["#2774ae", "#002E5D", "#002E5D"]
+    },
+    {
         "name": "Dark Blu Two",
         "colors": ["#004680","#4484BA"]
     },
     {
-      "name": "Lemon Lime",
-      "colors":["#7ec6bc","#ebe717"]
+        "name": "Lemon Lime",
+        "colors":["#7ec6bc","#ebe717"]
     },
     {
-      "name": "Beleko",
-      "colors": ["#ff1e56", "#f9c942", "#1e90ff"]
+        "name": "Beleko",
+        "colors": ["#ff1e56", "#f9c942", "#1e90ff"]
     },
     {
         "name": "Mango Papaya",
