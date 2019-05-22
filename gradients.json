@@ -1386,6 +1386,10 @@
         "colors": ["#bdc3c7","#2c3e50"]
     },
     {
+        "name": "Lensod",
+        "colors": ["#6025F5","#FF5555"]
+    },
+    {
         "name": "Newspaper",
         "colors": ["#8a2be2","#ffa500","#f8f8ff"]
     },
