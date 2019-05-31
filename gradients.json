@@ -1386,6 +1386,10 @@
         "colors": ["#bdc3c7","#2c3e50"]
     },
     {
+        "name": "Zenta",
+        "colors": ["#2A2D3E","#FECB6E"]
+    },
+    {
         "name": "Electric Peacock",
         "colors": ["#8a2be2","#0000cd","#228b22","#ccff00"]
     },
@@ -1524,5 +1528,5 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
-    } 
+    }
 ]
