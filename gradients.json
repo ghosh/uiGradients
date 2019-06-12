@@ -373,6 +373,10 @@
         "colors": ["#d53369", "#cbad6d"]
     },
     {
+        "name": "Athena",
+        "colors": ["#FF7F50", "#FFFDD0"]
+    },
+    {
         "name": "Vasily",
         "colors": ["#e9d362", "#333333"]
     },
