@@ -1533,4 +1533,11 @@
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
     }
+
+   },
+    {
+        "name": "Primary",
+        "colors": ["#ff0000","#0026ff","#0026ff]
+    }
+
 ]
