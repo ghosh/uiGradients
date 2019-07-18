@@ -1,5 +1,9 @@
 [
     {
+        "name": "Death",
+        "colors": ["#fcfcfc", "#181915"]
+    };
+  {
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
     },
