@@ -1530,6 +1530,10 @@
         "colors": ["#d4fc79", "#96e6a1"]
     },
     {
+        "name": "Mighty Space",
+        "colors": ["#06052D", "#1B196F"]
+    },
+    {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
     }
