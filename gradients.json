@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "India Flag",
+        "colors": ["#FF9933", "#FFFFFF", "#138808"]
     }
 ]
