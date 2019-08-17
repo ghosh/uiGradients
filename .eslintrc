@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "ghosh/standard",
+    "ghosh/react"
+  ]
+}
