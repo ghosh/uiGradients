@@ -1,0 +1,16 @@
+// TODO: Enable other properties
+// https://www.styled-components.com/docs/tooling#usage
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    [
+      "styled-components",
+      {
+        "ssr": true,
+        "displayName": true
+      }
+    ]
+  ]
+}
