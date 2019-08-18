@@ -5,7 +5,9 @@ module.exports = {
     Object.assign(
       // Aliases
       config.resolve.alias, {
-        '@modules': path.join(__dirname, 'components/modules')
+        '@lib': path.join(__dirname, 'components/lib'),
+        '@modules': path.join(__dirname, 'components/modules'),
+        '@features': path.join(__dirname, 'components/features')
       }
     )
 
