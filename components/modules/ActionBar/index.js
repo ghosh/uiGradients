@@ -2,6 +2,7 @@ import React from 'react'
 
 import ActionItems from '@features/ActionItems'
 import Swatches from '@features/Swatches'
+import Navbar from '@features/Navbar'
 
 import {
   Bar,
@@ -22,7 +23,7 @@ const ActionBar = () => {
       </Palettes>
 
       <Menu>
-        Menu
+        <Navbar />
       </Menu>
     </Bar>
   )
