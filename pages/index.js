@@ -3,6 +3,7 @@ import Head from 'next/head'
 
 import Header from '@modules/Header'
 import ActionBar from '@modules/ActionBar'
+import Sandbox from '@modules/Sandbox'
 
 const Home = () => (
   <>
@@ -11,6 +12,7 @@ const Home = () => (
     </Head>
     <Header />
     <ActionBar />
+    <Sandbox />
   </>
 )
 
