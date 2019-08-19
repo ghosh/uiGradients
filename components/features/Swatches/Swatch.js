@@ -26,6 +26,7 @@ const Color = styled.p`
   margin: 0;
   font-size: 13px;
   letter-spacing: 1px;
+  color: #373737;
 `
 
 const Swatch = ({ color }) => {

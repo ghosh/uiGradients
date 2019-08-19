@@ -7,7 +7,7 @@ const LinkItem = styled.a`
   align-items: center;
   padding: 0 12px;
   cursor: pointer;
-  color: initial;
+  color: #373737;
   font-size: 14px;
 
   &:hover {

@@ -11,7 +11,7 @@ const Swatches = () => {
     <>
       <Swatch color="#514a9d"/>
       <Spacer mr={1} />
-      <Arrow />
+      <Arrow stroke="#373737" />
       <Spacer mr={1} />
       <Swatch color="#69D8E7"/>
     </>

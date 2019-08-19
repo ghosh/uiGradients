@@ -13,6 +13,10 @@ const Wrapper = styled.div`
   &:hover {
     background-color: #E4EBF2;
   }
+
+  svg {
+    stroke: #373737;
+  }
 `
 
 const Burger = () => {

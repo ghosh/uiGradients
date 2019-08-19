@@ -17,13 +17,13 @@ const Wrapper = styled.div`
   cursor: pointer;
 
   &:hover {
-    background-color: #3366cc;
+    background-color: #E4EBF2;
 
-    svg { stroke: #ffffff }
+    svg { stroke: #3366cc; }
   }
 
   svg {
-    stroke: #323a40;
+    stroke: #373737;
   }
 `
 
