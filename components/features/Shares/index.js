@@ -5,6 +5,7 @@ import Spacer from '@lib/Spacer'
 
 import { ReactComponent as FBLogo } from './icons/facebook.svg'
 import { ReactComponent as TWLogo } from './icons/twitter.svg'
+import { ReactComponent as GithubLogo } from './icons/github.svg'
 
 const Button = styled.button`
   color: #fff;
@@ -50,7 +51,16 @@ const TwitterButton = () => {
   )
 }
 
+const GithubIcon = () => {
+  return (
+    <a href="https://github.com/ghosh/uiGradients" target="_blank" rel="noopener noreferrer">
+      <GithubLogo viewBox="0 0 26 26" />
+    </a>
+  )
+}
+
 export {
   FacebookButton,
-  TwitterButton
+  TwitterButton,
+  GithubIcon
 }

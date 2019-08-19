@@ -4,11 +4,11 @@ import Spacer from '@lib/Spacer'
 
 import {
   FacebookButton,
-  TwitterButton
+  TwitterButton,
+  GithubIcon
 } from '@features/Shares'
 
 import { ReactComponent as Logo } from './icons/logo.svg'
-import { ReactComponent as GithubLogo } from './icons/github.svg'
 
 import {
   HeaderContainer,
@@ -27,7 +27,7 @@ const Header = () => {
         <Spacer mr={3} />
         <TwitterButton />
         <Spacer mr={3} />
-        <GithubLogo viewBox="0 0 26 26"/>
+        <GithubIcon />
       </SocialContainer>
     </HeaderContainer>
   )
