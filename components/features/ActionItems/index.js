@@ -17,9 +17,9 @@ const Wrapper = styled.div`
   cursor: pointer;
 
   &:hover {
-    background-color: #eaeaea;
+    background-color: #3366cc;
 
-    svg { stroke: #3366cc }
+    svg { stroke: #ffffff }
   }
 
   svg {
@@ -27,6 +27,7 @@ const Wrapper = styled.div`
   }
 `
 
+// TODO: Make each icon and background a different color
 const ActionItems = () => {
   return (
     <>

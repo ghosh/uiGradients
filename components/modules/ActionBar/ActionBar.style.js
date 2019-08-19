@@ -14,10 +14,11 @@ const Actions = styled.div`
   align-items: center;
 `
 
-const Swatches = styled.div`
+const Palettes = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
 `
 
 const Menu = styled.div`
@@ -29,6 +30,6 @@ const Menu = styled.div`
 export {
   Bar,
   Actions,
-  Swatches,
+  Palettes,
   Menu
 }
