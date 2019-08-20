@@ -31,8 +31,8 @@ const Color = styled.p`
 
 const Swatch = ({ color }) => {
   return (
-    <Warapper>
-      <Palette color={color}/>
+    <Warapper color={color} >
+      <Palette color={color} />
       <Color>
         {color}
       </Color>
