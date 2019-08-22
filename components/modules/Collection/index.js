@@ -9,6 +9,7 @@ const Box = styled.div`
   /* Box = Header + Action bar + 2 1px borders */
   height: calc(100vh - 90px);
   background-color: #ffffff;
+  background-color: slategray;
   position: absolute;
   top: 0;
   left: 0;

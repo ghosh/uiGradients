@@ -3,12 +3,7 @@ import React from 'react'
 import { ThemeProvider } from 'styled-components'
 
 import GlobalStyle from '../GlobalStyle'
-
-const theme = {
-  colors: {
-    primary: '#0070f3'
-  }
-}
+import Theme from '../theme'
 
 export default class MyApp extends App {
   render () {
@@ -16,7 +11,7 @@ export default class MyApp extends App {
     return (
       <>
       <GlobalStyle />
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={Theme}>
         <Component {...pageProps} />
       </ThemeProvider>
       </>
