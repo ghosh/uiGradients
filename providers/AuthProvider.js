@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
+import pick from 'lodash/pick'
+
 import { auth, logout, login } from '../firebase'
 
 // Context
@@ -12,7 +14,9 @@ const AuthProvider = (props) => {
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
-      if (user) setUser(user)
+      console.log(user)
+      const details = pick(user, ['displayName', 'email', 'photoURL', 'uid'])
+      if (user) setUser(details)
       if (!user) setUser(null)
     })
     // Unsubscribe
