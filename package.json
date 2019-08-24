@@ -10,6 +10,7 @@
   "dependencies": {
     "@svgr/webpack": "^4.3.2",
     "dotenv": "^8.1.0",
+    "easy-peasy": "^3.0.2",
     "eslint": "^6.1.0",
     "eslint-config-ghosh": "^0.1.3",
     "firebase": "^6.4.2",
