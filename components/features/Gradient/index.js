@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
@@ -37,14 +38,24 @@ const Palette = styled.div`
   border-radius: 4px;
 `
 
-const Gradient = () => {
+const Gradient = ({
+  name
+}) => {
   return (
     <Wrapper>
       <Palette>
-        <p>Gradient</p>
+        <p>{name}</p>
       </Palette>
     </Wrapper>
   )
+}
+
+Gradient.propTypes = {
+  name: PropTypes.string
+}
+
+Gradient.defaultProps = {
+  name: 'Gradient'
 }
 
 export default Gradient

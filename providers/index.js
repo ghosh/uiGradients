@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import { AuthProvider } from './AuthProvider'
+import { GradientProvider } from './GradientProvider'
 import { ThemeProvider } from 'styled-components'
 
 import GlobalStyle from '../GlobalStyle'
@@ -13,7 +14,9 @@ const AppProvider = ({ children }) => {
     <GlobalStyle />
     <ThemeProvider theme={Theme}>
       <AuthProvider>
-        {children}
+        <GradientProvider>
+          {children}
+        </GradientProvider>
       </AuthProvider>
     </ThemeProvider>
     </>

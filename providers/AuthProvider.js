@@ -14,7 +14,6 @@ const AuthProvider = (props) => {
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((user) => {
-      console.log(user)
       const details = pick(user, ['displayName', 'email', 'photoURL', 'uid'])
       if (user) setUser(details)
       if (!user) setUser(null)

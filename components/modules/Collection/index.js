@@ -1,9 +1,12 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import Gradient from '@features/Gradient'
 import Filterbar from '@features/Filterbar'
 import Sortbar from '@features/Sortbar'
+
+import { useGradients } from '@providers/GradientProvider'
 
 const Box = styled.div`
   /* 90 = 48 + 40 + 1 + 1 */
@@ -37,7 +40,15 @@ const CollectionPane = styled.section`
   padding: 10px;
 `
 
-const Collecton = () => {
+const Collection = ({ gradients }) => {
+  // let grads = null
+
+  // if (!gradients) {
+  //   const { gradients } = useGradients()
+  //   grads = gradients
+  // } else {
+  //   grads = gradients
+  // }
   return (
     <Box>
       <FilterPane>
@@ -45,299 +56,18 @@ const Collecton = () => {
         <Sortbar />
       </FilterPane>
       <CollectionPane>
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
-        <Gradient />
+        {
+          gradients && gradients.map((gradient, index) => {
+            return <Gradient name={gradient.name} key={index} />
+          })
+        }
       </CollectionPane>
     </Box>
   )
 }
 
-export default Collecton
+Collection.propTypes = {
+  gradients: PropTypes.array
+}
+
+export default Collection
