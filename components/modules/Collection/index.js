@@ -6,8 +6,6 @@ import Gradient from '@features/Gradient'
 import Filterbar from '@features/Filterbar'
 import Sortbar from '@features/Sortbar'
 
-import { useGradients } from '@providers/GradientProvider'
-
 const Box = styled.div`
   /* 90 = 48 + 40 + 1 + 1 */
   /* Box = Header + Action bar + 2 1px borders */
@@ -41,14 +39,6 @@ const CollectionPane = styled.section`
 `
 
 const Collection = ({ gradients }) => {
-  // let grads = null
-
-  // if (!gradients) {
-  //   const { gradients } = useGradients()
-  //   grads = gradients
-  // } else {
-  //   grads = gradients
-  // }
   return (
     <Box>
       <FilterPane>

@@ -8,9 +8,14 @@ import Sandbox from '@modules/Sandbox'
 import Canvas from '@modules/Canvas'
 import Collection from '@modules/Collection'
 
-import { store } from '../firebase'
+import { useGradients } from '@providers/GradientProvider'
+
+import { store } from '../firebase/db'
 
 const Home = (props) => {
+  const { gradients } = useGradients()
+
+  const gradientData = gradients || props.gradients
   return (
     <>
       <Head>
@@ -19,7 +24,7 @@ const Home = (props) => {
       <Header />
       <ActionBar />
       <Sandbox>
-        <Collection gradients={props.gradients}/>
+        <Collection gradients={gradientData}/>
         <Canvas />
       </Sandbox>
     </>
@@ -30,7 +35,7 @@ Home.propTypes = {
   gradients: PropTypes.array
 }
 
-Home.getInitialProps = async ({ req }) => {
+Home.getInitialProps = async () => {
   const gradients = await store.gradients()
   return { gradients }
 }
