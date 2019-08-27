@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Oceanic Saga",
+        "colors": ["#17909B", "#55DDE0", "2F4858"]
     }
 ]
