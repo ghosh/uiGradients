@@ -1,9 +1,5 @@
 [
     {
-        "name": "Quake",
-        "colors": ["#7ac6ce", "#9ba2a2"]
-    },
-    {
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
     },
@@ -1536,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Quake",
+        "colors": ["#7ac6ce", "#9ba2a2"]
     }
 ]
