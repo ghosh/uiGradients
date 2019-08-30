@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import Link from 'next/link'
 
 import Gradient from '@features/Gradient'
 import Filterbar from '@features/Filterbar'
@@ -38,6 +39,29 @@ const CollectionPane = styled.section`
   padding: 10px;
 `
 
+const Anchor = styled.a`
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  flex-basis: 100%;
+
+  @media (${ props => props.theme.breakpoints.sm }) {
+    flex-basis: 50%;
+  }
+
+  @media (${ props => props.theme.breakpoints.md }) {
+    flex-basis: 33.333%;
+  }
+
+ @media (${ props => props.theme.breakpoints.lg }) {
+    flex-basis: 25%;
+  }
+
+ @media (${ props => props.theme.breakpoints.xxl }) {
+    flex-basis: 20%;
+  }
+`
+
 const Collection = ({ gradients }) => {
   return (
     <Box>
@@ -48,7 +72,19 @@ const Collection = ({ gradients }) => {
       <CollectionPane>
         {
           gradients && gradients.map((gradient, index) => {
-            return <Gradient name={gradient.name} key={index} />
+            return (
+              <Link
+                href="/gradient/[id]"
+                as={`/gradient/${ gradient.slug }`}
+                key={index}
+              >
+                <Anchor>
+                  <Gradient
+                    name={gradient.slug}
+                  />
+                </Anchor>
+              </Link>
+            )
           })
         }
       </CollectionPane>
