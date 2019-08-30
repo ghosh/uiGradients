@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -42,7 +43,11 @@ const Header = () => {
   return (
     <HeaderContainer>
       <LogoContainer>
-        <Logo />
+        <Link href="/">
+          <a>
+            <Logo />
+          </a>
+        </Link>
       </LogoContainer>
       <SocialContainer>
         <FacebookButton />

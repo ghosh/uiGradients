@@ -1,43 +1,18 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import Head from 'next/head'
+import Router from 'next/router'
 
-import Header from '@modules/Header'
-import ActionBar from '@modules/ActionBar'
-import Sandbox from '@modules/Sandbox'
-import Canvas from '@modules/Canvas'
-import Collection from '@modules/Collection'
+const Home = () => <p>Home</p>
 
-import { useGradients } from '@providers/GradientProvider'
-
-import { store } from '../firebase/db'
-
-const Home = (props) => {
-  const { gradients } = useGradients()
-
-  const gradientData = gradients || props.gradients
-  return (
-    <>
-      <Head>
-        <title>uiGradients</title>
-      </Head>
-      <Header />
-      <ActionBar />
-      <Sandbox>
-        <Collection gradients={gradientData}/>
-        <Canvas />
-      </Sandbox>
-    </>
-  )
-}
-
-Home.propTypes = {
-  gradients: PropTypes.array
-}
-
-Home.getInitialProps = async () => {
-  const gradients = await store.gradients()
-  return { gradients }
+Home.getInitialProps = async ({ res }) => {
+  if (res) {
+    res.writeHead(302, {
+      Location: '/gradients'
+    })
+    res.end()
+  } else {
+    Router.push('/gradients')
+  }
+  return {}
 }
 
 export default Home
