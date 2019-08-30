@@ -9,6 +9,7 @@
       "styled-components",
       {
         "ssr": true,
+        "fileName": false,
         "displayName": true
       }
     ]
