@@ -1,7 +1,12 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const Box = styled.div`
+const Box = styled.div.attrs(({ colors }) => ({
+  style: {
+    background: `linear-gradient(to right, ${ colors })`
+  }
+}))`
   /* 90 = 48 + 40 + 1 + 1 */
   /* Box = Header + Action bar + 2 1px borders */
   height: calc(100vh - 90px);
@@ -16,10 +21,16 @@ const Box = styled.div`
   border-radius: 24px 24px 0 0;
 `
 
-const Canvas = () => {
+const Canvas = ({ gradient }) => {
+  console.log(gradient)
+  const colors = [...gradient.colors].join(', ')
   return (
-    <Box />
+    <Box colors={colors} />
   )
+}
+
+Canvas.propTypes = {
+  gradient: PropTypes.object
 }
 
 export default Canvas
