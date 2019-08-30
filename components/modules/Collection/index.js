@@ -74,8 +74,8 @@ const Collection = ({ gradients }) => {
           gradients && gradients.map((gradient, index) => {
             return (
               <Link
-                href="/gradient/[id]"
-                as={`/gradient/${ gradient.slug }`}
+                href="/g/[id]"
+                as={`/g/${ gradient.slug }`}
                 key={index}
               >
                 <Anchor>

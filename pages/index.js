@@ -4,13 +4,16 @@ import Router from 'next/router'
 const Home = () => <p>Home</p>
 
 Home.getInitialProps = async ({ res }) => {
+  const slugs = ['atlas', 'hazel', 'moonrise', 'predawn']
+  var rando = slugs[Math.floor(Math.random() * slugs.length)]
+
   if (res) {
     res.writeHead(302, {
-      Location: '/gradients'
+      Location: `/g/${ rando }`
     })
     res.end()
   } else {
-    Router.push('/gradients')
+    Router.push(`/g/${ rando }`)
   }
   return {}
 }
