@@ -22,7 +22,6 @@ const Box = styled.div.attrs(({ colors }) => ({
 `
 
 const Canvas = ({ gradient }) => {
-  console.log(gradient)
   const colors = [...gradient.colors].join(', ')
   return (
     <Box colors={colors} />

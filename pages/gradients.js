@@ -14,8 +14,8 @@ import { store } from '../firebase/db'
 
 const Gradients = (props) => {
   const { gradients } = useGradients()
-
   const gradientData = gradients || props.gradients
+
   return (
     <>
       <Head>
@@ -38,6 +38,9 @@ Gradients.propTypes = {
 }
 
 Gradients.getInitialProps = async () => {
+  if (process.browser) return {}
+
+  console.log('Server: Fetching from gradients')
   const gradients = await store.gradients()
   return { gradients }
 }

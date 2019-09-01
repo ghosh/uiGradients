@@ -14,21 +14,13 @@ import { useGradients } from '@providers/GradientProvider'
 import { store } from '../../firebase/db'
 
 const Gradient = (props) => {
-  // const { gradients } = useGradients()
-  // const gradientData = gradients || props.gradients
-  let gradientData = null
-  if (!props.gradients) {
-    const { gradients } = useGradients()
-    gradientData = gradients
-  }
-  gradientData = props.gradients
+  const { gradients } = useGradients()
+  const gradientData = gradients || props.gradients
 
   const router = useRouter()
   const { id } = router.query
 
   const gradient = gradientData.filter(g => g.slug === id)
-
-  console.log(gradient)
 
   return (
     <>
@@ -52,6 +44,9 @@ Gradient.propTypes = {
 }
 
 Gradient.getInitialProps = async () => {
+  if (process.browser) return {}
+
+  console.log('Server: Fetching from gradient')
   const gradients = await store.gradients()
   return { gradients }
 }

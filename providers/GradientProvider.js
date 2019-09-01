@@ -12,6 +12,7 @@ const GradientProvider = (props) => {
   const [gradients, setGradients] = useState(null)
 
   useEffect(() => {
+    console.log('Fetching from provider')
     const fetch = async () => {
       const data = await store.gradients()
       setGradients(data)
