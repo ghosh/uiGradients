@@ -25,7 +25,7 @@ const Gradients = (props) => {
       <ActionBar />
       <Sandbox>
         <Collection gradients={gradientData} />
-        <Canvas />
+        {/* <Canvas /> */}
       </Sandbox>
     </>
   )
