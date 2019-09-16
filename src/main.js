@@ -2,7 +2,7 @@ import Vue from 'vue';
 import VueClipboards from 'vue-clipboards';
 import VueAnalytics from 'vue-analytics';
 
-import App from './App';
+import App from '@/App';
 
 require('./stylesheets/app.scss');
 

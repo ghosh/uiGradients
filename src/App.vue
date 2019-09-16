@@ -41,16 +41,16 @@
 </template>
 
 <script>
-import Preload from './components/Preload';
-import Topbar from './components/Topbar';
-import Actionbar from './components/Actionbar';
-import Display from './components/Display';
-import List from './components/List';
-import GradientModal from './components/modals/GradientModal';
-import CodeModal from './components/modals/CodeModal';
+import Preload from '@/components/Preload';
+import Topbar from '@/components/Topbar';
+import Actionbar from '@/components/Actionbar';
+import Display from '@/components/Display';
+import List from '@/components/List';
+import GradientModal from '@/components/modals/GradientModal';
+import CodeModal from '@/components/modals/CodeModal';
 
-import Download from './services/gradientDownloader';
-import Favicon from './services/faviconUpdater';
+import Download from '@/services/gradientDownloader';
+import Favicon from '@/services/faviconUpdater';
 
 import Gradients from '../gradients.json';
 
