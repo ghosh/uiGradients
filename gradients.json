@@ -1533,4 +1533,13 @@
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
     }
+] 
+[
+    {
+        …
+    },
+    {
+      "name": "Coral",
+      "colors": ["#00e59a", "#bf003e"]
+    }
 ]
