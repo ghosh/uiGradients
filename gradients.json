@@ -1533,4 +1533,8 @@
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
     }
+    {
+        "name": "White Green",
+        "colors": ["#4fbc9a", "#40b89c"]
+    }
 ]
