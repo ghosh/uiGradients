@@ -1,4 +1,8 @@
 [
+   {
+        "name": "Lovely sky",
+        "colors": ["#03b3c6", "#096cb6","#05c794"]
+    },
   {
         "name": "Lovely Kiss",
         "colors": ["#ff0844", "#ffb199"]
