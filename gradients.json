@@ -1,4 +1,9 @@
 [
+  
+    {
+      "name": "Vital Ocean",
+      "colors": ["#1CB5E0", "#000851"]
+    },
     {
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
