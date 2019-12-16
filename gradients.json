@@ -6,7 +6,11 @@
     {
         "name": "Farhan",
         "colors": ["#9400D3", "#4B0082"]
-    }, 
+    },
+    {
+        "name": "Abhinav",
+        "colors": ["#830727", "#00FFE0"]
+    },
     {
         "name": "Purple",
         "colors": ["#c84e89", "#F15F79"]
