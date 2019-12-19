@@ -1532,5 +1532,13 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "An actual love",
+        "colors": ["#FF3463", "#444444", "#FFEAEF"]
+    },
+    {
+        "name": "An eye love",
+        "colors": ["#EBD1D6", "#99E1D9", "#76AAE8"]
     }
 ]
