@@ -6,7 +6,7 @@
     {
         "name": "Farhan",
         "colors": ["#9400D3", "#4B0082"]
-    }, 
+    },
     {
         "name": "Purple",
         "colors": ["#c84e89", "#F15F79"]
@@ -18,7 +18,7 @@
     {
         "name": "Radioactive Heat",
         "colors": ["#F7941E", "#72C6EF", "#00A651"]
-    }, 
+    },
     {
         "name": "The Sky And The Sea",
         "colors": ["#F7941E", "#004E8F"]
@@ -27,7 +27,7 @@
         "name": "From Ice To Fire",
         "colors": ["#72C6EF", "#004E8F"]
     },
-  
+
     {
         "name": "Blue & Orange",
         "colors": ["#FD8112", "#0085CA"]
@@ -115,7 +115,7 @@
     {
         "name": "Sel",
         "colors": ["#00467F", "#A5CC82"]
-    }, 
+    },
     {
         "name": "Afternoon",
         "colors": ["#000C40", "#607D8B"]
@@ -1276,7 +1276,7 @@
     {
         "name": "Sin City Red",
         "colors": ["#ED213A", "#93291E"]
-    },    
+    },
     {
         "name": "Rastafari",
         "colors": ["#1E9600", "#FFF200", "#FF0000"]
@@ -1377,7 +1377,7 @@
         "name": "Cool Blues",
         "colors": ["#2193b0", "#6dd5ed"]
     },
-    { 
+    {
         "name": "Piggy Pink",
         "colors": ["#ee9ca7", "#ffdde1"]
     },
@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Mary Geoise",
+        "colors": ["#185A9D", "#43CEA2"]
     }
 ]
