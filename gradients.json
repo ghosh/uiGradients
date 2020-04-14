@@ -1532,5 +1532,12 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
-    }
+    },
+    {
+        "name": "White to Royal",
+        "colors": ["#F0F2F0", "#141E30"]
+    },
+  
+  
+  
 ]
