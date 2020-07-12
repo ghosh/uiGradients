@@ -1532,9 +1532,5 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
-    },
-    {
-        "name": "Mr. Blue Sky",
-        "colors": ["#2584c4", "#4aabec", "#2584c4"]
-    },
+    }
 ]
