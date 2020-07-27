@@ -34,7 +34,6 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^7.4.0",
     "eslint-config-ghosh": "^0.1.3"
   }
 }
