@@ -70,7 +70,7 @@
     "karma-spec-reporter": "^0.0.31",
     "karma-webpack": "^2.0.5",
     "lolex": "^2.3.1",
-    "mocha": "^4.0.1",
+    "mocha": "^8.1.0",
     "nightwatch": "^0.9.19",
     "node-sass": "^4.7.2",
     "opn": "^5.0.0",
