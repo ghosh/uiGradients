@@ -10,14 +10,10 @@ const Button = styled.button`
   border: 2px solid palevioletred;
 `
 
-class Home extends React.Component {
-  render () {
-    return (
-      <div>
-        <Button>Hello</Button>
-      </div>
-    )
-  }
-}
+const Home = () => (
+  <div>
+    <Button>Hello</Button>
+  </div>
+)
 
 export default Home
