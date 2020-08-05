@@ -1,14 +1,11 @@
 import React from 'react'
-import GlobalStyle from './GlobalStyle'
+import { Route, Switch } from 'react-router-dom'
+import Home from './pages/Home'
 
-function App () {
-  return (
-    <div className="App">
-      <GlobalStyle />
-
-      <p>Hello</p>
-    </div>
-  )
-}
+const App = () => (
+  <Switch>
+    <Route exact path="/" component={Home} />
+  </Switch>
+)
 
 export default App
