@@ -6,6 +6,7 @@
     "start": "razzle start",
     "build": "razzle build",
     "test": "razzle test --env=jsdom",
+    "commit": "npx git-cz",
     "lint": "./node_modules/.bin/eslint ./src --ext .js",
     "start:prod": "NODE_ENV=production node build/server.js"
   },
