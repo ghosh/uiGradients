@@ -1,9 +1,9 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 
-import Global from './styles/Global'
+import Global from '@/styles/Global'
 
-import Home from './pages/Home'
+import Home from '@/pages/Home'
 
 const App = () => (
   <>
