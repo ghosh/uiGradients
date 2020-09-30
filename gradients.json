@@ -1530,6 +1530,10 @@
         "colors": ["#d4fc79", "#96e6a1"]
     },
     {
+        "name": "PSS Purple",
+        "colors": ["#f0c27b", "#642ca9"]
+    },
+    {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
     }
