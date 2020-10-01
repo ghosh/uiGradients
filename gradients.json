@@ -1,5 +1,17 @@
-[
+[  
+  {
+        "name": "Ritmo Col",
+        "colors": ["#fc0061","#1fc9fd"]
+    },
+  {
+        "name": "Sun Late",
+        "colors": ["#f04393" ,"#f9c449"]
+    },
      {
+        "name": "Alom play",
+        "colors": ["#00ffff", "#f9c449"]
+    },
+  {
         "name": "Red Power",
         "colors": ["#fec194", "#f04393"]
     },
