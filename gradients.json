@@ -806,6 +806,10 @@
         "colors": ["#0B486B", "#F56217"]
     },
     {
+        "name": "Magas del Sur",
+        "colors": ["#9B7C4D", "#ffffff", "#E2E271"]
+    },
+    {
         "name": "Grapefruit Sunset",
         "colors": ["#e96443", "#904e95"]
     },
