@@ -1,5 +1,13 @@
 [
     {
+        "name": "Firefox",
+        "colors": ["#ffdc3e", "#ff3648", "#e51168"]
+    },
+    {
+        "name": "Vpeach",
+        "colors": ["#833ab4", "#fd1d1d", "#fcb045"]
+    },
+    {
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
     },
