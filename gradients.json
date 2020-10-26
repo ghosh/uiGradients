@@ -1,5 +1,9 @@
 [
     {
+        "name": "TrungPQ",
+        "colors": ["#3F0041", "#3F0041", "#012E8B"]
+    },
+    {
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
     },
