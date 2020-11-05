@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Macaroon",
+        "colors": ["#ffb6b9", "#fae3d9", "#bbded6", "#8ac6d1"]
     }
 ]
