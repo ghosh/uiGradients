@@ -1532,5 +1532,13 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Spring Autumn",
+        "colors": ["#240600", "#797009", "#00ff5d"]
+    },
+    {
+        "name": "Shindy",
+        "colors": ["#130024", "#790949", "##ff9100"]
     }
 ]
