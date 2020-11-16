@@ -1,5 +1,9 @@
 [
     {
+      "name": "Bisexual Flag",
+      "colors": ["#D60270", "#9B4F96", "#0038A8"]
+    },
+    {
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
     },
