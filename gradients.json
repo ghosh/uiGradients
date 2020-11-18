@@ -1532,5 +1532,13 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Big Sur",
+        "colors": ["#4F467D", "#D80F7E", "#FE0336", "#FE5E48", "#FE4739", "#FFAF11", "#D3E9FD", "#0E77C0"]
+    },
+    {
+        "name": "Polarize",
+        "colors": ["#212A7B", "#FE0336", "#FFD338"]
     }
 ]
