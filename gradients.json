@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Development",
+        "colors": ["#55c500", "#29c77d", "#4097db"]
     }
 ]
