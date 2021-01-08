@@ -1532,5 +1532,17 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Night Fade",
+        "colors": ["#a18cd1", "#fbc2eb"]
+    },
+    {
+        "name": "Tempting Azure",
+        "colors": ["#84fab0", "#8fd3f4"]
+    },
+    {
+        "name": "Lady Lips",
+        "colors": ["#ff9a9e", "#fecfef"]
     }
 ]
