@@ -4,8 +4,12 @@
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
     },
     {
-        "name": "Farhan",
-        "colors": ["#9400D3", "#4B0082"]
+        "name": "Omolon",
+        "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
+    },
+    {
+        "name": "Ice",
+        "colors": ["#5A89AB", "#DEDED4", "#8B94A9"]
     }, 
     {
         "name": "Purple",
