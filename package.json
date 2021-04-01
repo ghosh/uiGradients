@@ -59,7 +59,7 @@
     "gh-pages-deploy": "^0.4.2",
     "hex-to-hsl": "^1.0.2",
     "html-webpack-plugin": "^3.0.4",
-    "http-proxy-middleware": "^0.17.3",
+    "http-proxy-middleware": "^1.1.0",
     "inject-loader": "^3.0.0-beta4",
     "karma": "^2.0.0",
     "karma-coverage": "^1.1.1",
