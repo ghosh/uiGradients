@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Mini to Dawn",
+        "colors": ["#FF8235", "#3B4371"]
     }
 ]
