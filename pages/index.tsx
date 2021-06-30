@@ -13,12 +13,26 @@ interface HomeProps {
 
 const Home = ({ gradients }: HomeProps) => {
 
+  const handleGradientClick = (e: React.MouseEvent<HTMLElement>) => {
+    // If trying to open in new tab, allow it
+    if (e.ctrlKey || e.shiftKey || e.metaKey || (e.button && e.button == 1)) {
+      return
+    }
+
+    e.preventDefault()
+    console.log('Handle inline');
+  }
+
   return (
     <>
       <h1>Home</h1>
       <ul>
         {gradients.map((gradient) => (
-          <li key={gradient.slug}>{gradient.name}</li>
+          <li key={gradient.slug}>
+            <a href={`/${gradient.slug}`} onClick={handleGradientClick}>
+              {gradient.name}
+            </a>
+          </li>
         ))}
       </ul>
     </>
