@@ -11,7 +11,7 @@ interface HomeProps {
   gradients: Gradient[]
 }
 
-function Home({ gradients }: HomeProps) {
+const Home = ({ gradients }: HomeProps) => {
 
   return (
     <>
@@ -25,7 +25,7 @@ function Home({ gradients }: HomeProps) {
   )
 }
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       gradients
