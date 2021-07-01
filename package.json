@@ -77,7 +77,7 @@
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^2.0.0",
     "phantomjs-prebuilt": "^2.1.16",
-    "rimraf": "^2.6.2",
+    "rimraf": "^3.0.2",
     "sass-loader": "^6.0.3",
     "selenium-server": "^3.7.1",
     "semver": "^5.3.0",
