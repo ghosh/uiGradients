@@ -1,0 +1,26 @@
+{
+  "name": "uigradients",
+  "version": "1.0.0",
+  "description": "Community contributed collection of beautiful multi-color gradients",
+  "private": true,
+  "workspaces": [
+    "app",
+    "api"
+  ],
+  "scripts": {
+    "dev": "yarn workspace @uigradients/app next dev",
+    "build": "yarn workspace @uigradients/app next build",
+    "start": "yarn workspace @uigradients/app next start",
+    "lint": "yarn workspace @uigradients/app next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghosh/uiGradients.git"
+  },
+  "author": "Indrashish Ghosh <mail@ghosh.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ghosh/uiGradients/issues"
+  },
+  "homepage": "https://uigradients.com"
+}
