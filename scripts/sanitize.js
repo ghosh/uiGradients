@@ -53,6 +53,7 @@ colors.forEach(color => {
   copyFile(color)
 })
 
+// TODO: Remove slug and hues from api
 fs.copyFile(`./stubs/gradients.json`, `./api/public/json/all.json`, (err) => {
   if (err) console.log(err)
 })
