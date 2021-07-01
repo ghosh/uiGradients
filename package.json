@@ -12,11 +12,9 @@
     "app:dev": "yarn workspace @uigradients/app next dev",
     "app:start": "yarn workspace @uigradients/app next start",
     "app:build": "yarn workspace @uigradients/app next build",
-    "app:lint": "yarn workspace @uigradients/app next lint",
     "api:dev": "yarn workspace @uigradients/api next dev -p 8080",
     "api:start": "yarn workspace @uigradients/api next start -p 8080",
-    "api:build": "yarn workspace @uigradients/api next build",
-    "api:lint": "yarn workspace @uigradients/api next lint"
+    "api:build": "yarn workspace @uigradients/api next build"
   },
   "repository": {
     "type": "git",

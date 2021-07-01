@@ -6,6 +6,7 @@
 const fs = require('fs')
 const slugify = require('./slugify')
 const colorify = require('./colorify')
+const classify = require('./classify')
 var Gradients = require('../gradients.json')
 
 const ensureDirectoryExists = (dirname) => {
@@ -24,10 +25,23 @@ const writeToFile = (fileName, content) => {
   }
 }
 
-const sluggedGradients = slugify(Gradients)
-const colorizedGradients = colorify(sluggedGradients.gradients)
+const slugged = slugify(Gradients)
+const colorized = colorify(slugged.gradients)
+const classified = classify(colorized)
+
+// console.log(colorized);
 
 ensureDirectoryExists('./stubs/')
 
-writeToFile('gradients', colorizedGradients)
-writeToFile('slugs', sluggedGradients.slugs)
+writeToFile('gradients', colorized)
+writeToFile('slugs', slugged.slugs)
+writeToFile('cyans', classified.cyans)
+writeToFile('reds', classified.reds)
+writeToFile('oranges', classified.oranges)
+writeToFile('yellows', classified.yellows)
+writeToFile('greens', classified.greens)
+writeToFile('blues', classified.blues)
+writeToFile('magentas', classified.magentas)
+writeToFile('blacks', classified.blacks)
+writeToFile('whites', classified.whites)
+writeToFile('grays', classified.grays)

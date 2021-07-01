@@ -1,5 +1,5 @@
 /**
- * Adds a hue item to gradient
+ * Adds a hue item to the gradient object
  */
 
 const colorDetective = require('./utils/colorDetective');
