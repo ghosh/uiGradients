@@ -54,6 +54,7 @@ colors.forEach(color => {
 })
 
 // TODO: Remove slug and hues from api
+// TODO: Add a color constants api endpoint
 fs.copyFile(`./stubs/gradients.json`, `./api/public/json/all.json`, (err) => {
   if (err) console.log(err)
 })
