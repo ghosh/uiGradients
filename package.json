@@ -1,6 +1,6 @@
 {
   "name": "uigradients",
-  "version": "1.0.0",
+  "version": "3.0.0",
   "description": "Community contributed collection of beautiful multi-color gradients",
   "private": true,
   "workspaces": [
@@ -9,9 +9,13 @@
   ],
   "scripts": {
     "app:dev": "yarn workspace @uigradients/app next dev",
-    "app:build": "yarn workspace @uigradients/app next build",
     "app:start": "yarn workspace @uigradients/app next start",
-    "app:lint": "yarn workspace @uigradients/app next lint"
+    "app:build": "yarn workspace @uigradients/app next build",
+    "app:lint": "yarn workspace @uigradients/app next lint",
+    "api:dev": "yarn workspace @uigradients/api next dev -p 8080",
+    "api:start": "yarn workspace @uigradients/api next start -p 8080",
+    "api:build": "yarn workspace @uigradients/api next build",
+    "api:lint": "yarn workspace @uigradients/api next lint"
   },
   "repository": {
     "type": "git",
