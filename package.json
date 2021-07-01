@@ -86,7 +86,7 @@
     "url-loader": "^0.6.2",
     "vue-analytics": "^5.10.4",
     "vue-clipboards": "^1.2.1",
-    "vue-loader": "^14.2.2",
+    "vue-loader": "^16.3.0",
     "vue-style-loader": "^3.1.2",
     "vue-svg-loader": "0.3.0",
     "vue-template-compiler": "^2.5.13",
