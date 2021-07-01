@@ -8,6 +8,7 @@
     "api"
   ],
   "scripts": {
+    "sanitze": "node scripts/sanitize.js",
     "app:dev": "yarn workspace @uigradients/app next dev",
     "app:start": "yarn workspace @uigradients/app next start",
     "app:build": "yarn workspace @uigradients/app next build",
@@ -26,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/ghosh/uiGradients/issues"
   },
-  "homepage": "https://uigradients.com"
+  "homepage": "https://uigradients.com",
+  "devDependencies": {
+    "hex-to-hsl": "^1.0.2"
+  }
 }
