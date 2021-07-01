@@ -8,10 +8,10 @@
     "api"
   ],
   "scripts": {
-    "dev": "yarn workspace @uigradients/app next dev",
-    "build": "yarn workspace @uigradients/app next build",
-    "start": "yarn workspace @uigradients/app next start",
-    "lint": "yarn workspace @uigradients/app next lint"
+    "app:dev": "yarn workspace @uigradients/app next dev",
+    "app:build": "yarn workspace @uigradients/app next build",
+    "app:start": "yarn workspace @uigradients/app next start",
+    "app:lint": "yarn workspace @uigradients/app next lint"
   },
   "repository": {
     "type": "git",
