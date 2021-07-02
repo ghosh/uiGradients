@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/search/:match*",
+      "destination": "/api/search/:match*"
+    },
+    {
       "source": "/gradients",
       "destination": "/api/all"
     },
