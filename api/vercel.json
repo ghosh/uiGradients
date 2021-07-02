@@ -1,8 +1,52 @@
 {
   "rewrites": [
     {
+      "source": "/reds",
+      "destination": "/json/reds.json"
+    },
+    {
+      "source": "/oranges",
+      "destination": "/json/oranges.json"
+    },
+    {
+      "source": "/yellows",
+      "destination": "/json/yellows.json"
+    },
+    {
+      "source": "/greens",
+      "destination": "/json/greens.json"
+    },
+    {
+      "source": "/cyans",
+      "destination": "/json/cyans.json"
+    },
+    {
       "source": "/blues",
-      "destination": "/json/blues"
+      "destination": "/json/blues.json"
+    },
+    {
+      "source": "/magentas",
+      "destination": "/json/magentas.json"
+    },
+    {
+      "source": "/whites",
+      "destination": "/json/whites.json"
+    },
+    {
+      "source": "/grays",
+      "destination": "/json/grays.json"
+    },
+    {
+      "source": "/greys",
+      "destination": "/json/grays.json"
+    },
+    {
+      "source": "/blacks",
+      "destination": "/json/blacks.json"
+    },
+    {
+      "source": "/random",
+      "destination": "/api/random"
     }
   ]
 }

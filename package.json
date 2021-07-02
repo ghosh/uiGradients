@@ -8,6 +8,7 @@
     "api"
   ],
   "scripts": {
+    "deploy:api": "cd api && vercel --prod",
     "sanitze": "node scripts/sanitize.js",
     "app:dev": "yarn workspace @uigradients/app next dev",
     "app:start": "yarn workspace @uigradients/app next start",
