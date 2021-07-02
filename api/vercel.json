@@ -1,6 +1,14 @@
 {
   "rewrites": [
     {
+      "source": "/gradients",
+      "destination": "/api/all"
+    },
+    {
+      "source": "/random",
+      "destination": "/api/random"
+    },
+    {
       "source": "/reds",
       "destination": "/json/reds.json"
     },
@@ -43,10 +51,6 @@
     {
       "source": "/blacks",
       "destination": "/json/blacks.json"
-    },
-    {
-      "source": "/random",
-      "destination": "/api/random"
     }
   ]
 }
