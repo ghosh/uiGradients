@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/blues",
+      "destination": "/json/blues"
+    }
+  ]
+}
