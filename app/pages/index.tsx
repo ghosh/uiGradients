@@ -1,5 +1,13 @@
 import { GetStaticProps } from 'next'
+import styled from 'styled-components'
+
 import gradients from '../../stubs/gradients.json'
+
+const Title = styled.h1`
+  color: red;
+  font-size: 50px;
+`
+
 
 interface Gradient {
   name: string,
@@ -33,7 +41,7 @@ const Home = ({ gradients }: HomeProps) => {
 
   return (
     <>
-      <h1>Home</h1>
+      <Title>Home</Title>
       <ul>
         {gradients.map((gradient) => (
           <li key={gradient.slug}>
