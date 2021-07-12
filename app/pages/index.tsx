@@ -13,7 +13,7 @@ interface HomeProps {
 
 const Home = ({ gradients }: HomeProps) => {
 
-  const handleGradientClick = (e: React.MouseEvent<HTMLElement>) => {
+  const handleGradientClick = (e: React.MouseEvent<HTMLElement>, g: Gradient) => {
     // If trying to open in new tab, allow it
     if (e.ctrlKey || e.shiftKey || e.metaKey || (e.button && e.button == 1)) {
       return
@@ -21,6 +21,9 @@ const Home = ({ gradients }: HomeProps) => {
 
     e.preventDefault()
     console.log('Handle inline');
+
+    // TODO: Test for edge cases
+    history.pushState('', g.name, `/${g.slug}`)
   }
 
   return (
@@ -29,7 +32,7 @@ const Home = ({ gradients }: HomeProps) => {
       <ul>
         {gradients.map((gradient) => (
           <li key={gradient.slug}>
-            <a href={`/${gradient.slug}`} onClick={handleGradientClick}>
+            <a href={`/${gradient.slug}`} onClick={(e) => handleGradientClick(e, gradient)}>
               {gradient.name}
             </a>
           </li>
