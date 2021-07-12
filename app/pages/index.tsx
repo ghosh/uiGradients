@@ -15,7 +15,12 @@ const Home = ({ gradients }: HomeProps) => {
 
   const handleGradientClick = (e: React.MouseEvent<HTMLElement>, g: Gradient) => {
     // If trying to open in new tab, allow it
-    if (e.ctrlKey || e.shiftKey || e.metaKey || (e.button && e.button == 1)) {
+    if (
+      e.ctrlKey
+      || e.shiftKey
+      || e.metaKey
+      || (e.button && e.button == 1)
+    ) {
       return
     }
 
