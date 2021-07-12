@@ -4,15 +4,15 @@
   "description": "Community contributed collection of beautiful multi-color gradients",
   "private": true,
   "workspaces": [
-    "app",
+    "web",
     "api"
   ],
   "scripts": {
     "deploy:api": "cd api && vercel --prod",
     "sanitze": "node scripts/sanitize.js",
-    "app:dev": "yarn workspace @uigradients/app next dev",
-    "app:start": "yarn workspace @uigradients/app next start",
-    "app:build": "yarn workspace @uigradients/app next build",
+    "web:dev": "yarn workspace @uigradients/web next dev",
+    "web:start": "yarn workspace @uigradients/web next start",
+    "web:build": "yarn workspace @uigradients/web next build",
     "api:dev": "yarn workspace @uigradients/api next dev -p 8080",
     "api:start": "yarn workspace @uigradients/api next start -p 8080",
     "api:build": "yarn workspace @uigradients/api next build"
