@@ -3,6 +3,7 @@ import { GetStaticProps } from 'next'
 import gradients from '../../stubs/gradients.json'
 
 import Header from '../components/core/Header'
+import Actionbar from '../components/core/Actionbar'
 
 interface Gradient {
   name: string,
@@ -38,6 +39,7 @@ const Home = ({ gradients }: HomeProps) => {
   return (
     <>
       <Header />
+      <Actionbar />
       <ul>
         {gradients.map((gradient) => (
           <li key={gradient.slug}>
