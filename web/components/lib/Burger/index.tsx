@@ -57,26 +57,17 @@ const Hamburger = styled.span<HamburgerInterface>`
   `}
 `
 
-const Burger = ({
-  width,
-  height,
-  gutter,
-  color,
-  rounded,
-  duration,
-  active,
-  onClick
-}: BurgerProps) => {
+const Burger = (props: BurgerProps) => {
   return (
-    <BurgerBox onClick={onClick}>
+    <BurgerBox onClick={props.onClick}>
       <Hamburger
-        width={width}
-        height={height}
-        gutter={gutter}
-        color={color}
-        rounded={rounded}
-        duration={duration}
-        active={active}
+        width={props.width}
+        height={props.height}
+        gutter={props.gutter}
+        color={props.color}
+        rounded={props.rounded}
+        duration={props.duration}
+        active={props.active}
       />
     </BurgerBox>
   )
