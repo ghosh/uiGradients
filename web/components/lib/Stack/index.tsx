@@ -1,19 +1,16 @@
 import React from "react";
+import styled from 'styled-components'
 
 interface StackProps {
   children: React.ReactNode,
   gap: number
 }
 
-const Stack = ({ children, gap }: StackProps) => {
-  const styles = {
-    display: "flex",
-    gap: `${4 * gap}px`,
-    alignItems: "center"
-  };
-
-  return <div style={styles}>{children}</div>;
-};
+const Stack = styled.div<StackProps>`
+  display: flex;
+  gap: ${p => p.gap * 4}px;
+  align-items: center
+`
 
 Stack.displayName = "Stack";
 
