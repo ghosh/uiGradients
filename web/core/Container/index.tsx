@@ -7,7 +7,8 @@ interface ContainerProps {
 }
 
 const Container = styled.div<ContainerProps>`
-  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 `
 
