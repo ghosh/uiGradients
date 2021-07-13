@@ -1,16 +1,43 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import Stack from '../../lib/Stack'
 import Burger from '../../lib/Burger'
 
+import Social from './Social'
+
+import LG from './icons/logo.svg'
 import FB from './icons/facebook.svg'
 import TW from './icons/twitter.svg'
+import GH from './icons/github.svg'
 
-import { Wrapper, Logo, Social, Github } from './header.styles'
+import Container from '../Container'
 
+const Logo = styled(LG)`
+  color: black;
+  width: 114px;
+  height: 26px;
+`
 
+const Github = styled(GH)`
+  fill: #2d2d2d;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 
-const Header: React.FC = () => {
+  &:hover {
+    fill: black;
+  }
+`
+
+const Wrapper = styled(Container)`
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`
+
+const Header = () => {
   return (
     <Wrapper as="header">
       <section>

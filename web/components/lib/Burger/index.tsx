@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const BurgerBox = styled.span`
   cursor: pointer;
@@ -19,7 +19,7 @@ const Hamburger = styled.span<HamburgerInterface>`
     height: ${(p) => p.height};
     background-color: ${(p) => p.color};
 
-    ${p => p.rounded && `
+    ${p => p.rounded && css`
       border-radius: 4px;
     `}
 
@@ -41,9 +41,7 @@ const Hamburger = styled.span<HamburgerInterface>`
     top: calc(${(p) => p.height} + ${(p) => p.gutter});
   }
 
-  ${({ active, height, gutter }) =>
-    active &&
-    `
+  ${({ active, height, gutter }) => active && css`
 
     & {
       background-color: transparent;

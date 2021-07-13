@@ -1,40 +1,12 @@
+import React from 'react'
 import styled, { css } from 'styled-components'
-
-import Container from '../Container'
-
-import RawLogo from './icons/logo.svg'
-import GH from './icons/github.svg'
-
-export const Logo = styled(RawLogo)`
-  color: black;
-  width: 114px;
-  height: 26px;
-`
-
-export const Github = styled(GH)`
-  fill: #2d2d2d;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-
-  &:hover {
-    fill: black;
-  }
-`
-
-export const Wrapper = styled(Container)`
-  height: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`
 
 interface SocialProps {
   facebook?: boolean,
   twitter?: boolean,
 }
 
-export const Social = styled.button<SocialProps>`
+const Social = styled.button<SocialProps>`
   border: 0;
   border-radius: 4px;
   color: #fff;
@@ -74,3 +46,5 @@ export const Social = styled.button<SocialProps>`
     }
   `}
 `
+
+export default Social
