@@ -2,8 +2,7 @@ import React from 'react'
 import styled, { css } from 'styled-components'
 
 interface SocialProps {
-  facebook?: boolean,
-  twitter?: boolean,
+  media: 'FB' | 'TW'
 }
 
 const Social = styled.button<SocialProps>`
@@ -32,14 +31,14 @@ const Social = styled.button<SocialProps>`
     margin-right: 8px;
   }
 
-  ${p => p.facebook && css`
+  ${({ media }) => media === 'FB' && css`
     background-color: #3b5998;
     &:hover {
       background-color: #2c4272;
     }
   `}
 
-  ${p => p.twitter && css`
+  ${({ media }) => media === 'TW' && css`
     background-color: #1da1f2;
     &:hover {
       background-color: #0c81ca;

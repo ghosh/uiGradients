@@ -49,12 +49,12 @@ const Header = () => {
       <section>
 
         <Stack gap={3}>
-          <Social facebook={true}>
+          <Social media="FB">
             <FB />
             <span>Share on Facebook</span>
           </Social>
 
-          <Social twitter={true}>
+          <Social media="TW">
             <TW />
             <span>Share on Twitter</span>
           </Social>
