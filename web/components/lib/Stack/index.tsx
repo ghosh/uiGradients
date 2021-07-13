@@ -2,13 +2,12 @@ import React from "react";
 import styled from 'styled-components'
 
 interface StackProps {
-  children: React.ReactNode,
-  gap: number
+  gap?: number
 }
 
 const Stack = styled.div<StackProps>`
   display: flex;
-  gap: ${p => p.gap * 4}px;
+  gap: ${({ gap = 1 }) => gap * 4}px;
   align-items: center
 `
 
