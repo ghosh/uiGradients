@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 
 import Container from '../Container'
 
-import Stack from '../../components/Stack'
+import Stack from '../../lib/Stack'
 
 import RawLogo from './icons/logo.svg'
 import FB from './icons/facebook.svg'

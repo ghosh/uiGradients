@@ -2,7 +2,7 @@ import { GetStaticProps } from 'next'
 
 import gradients from '../../stubs/gradients.json'
 
-import Header from '../core/Header'
+import Header from '../components/core/Header'
 
 interface Gradient {
   name: string,
