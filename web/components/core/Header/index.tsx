@@ -25,12 +25,11 @@ interface SocialProps {
   twitter?: boolean,
 }
 
-const Social = styled.div<SocialProps>`
+const Social = styled.button<SocialProps>`
   border: 0;
   border-radius: 4px;
   color: #fff;
   font-weight: 600;
-  padding: 0 8px 0 8px;
   background-color: #eaeaea;
   text-decoration: none;
   height: 30px;
@@ -47,7 +46,7 @@ const Social = styled.div<SocialProps>`
   svg {
     width: 16px;
     height: 16px;
-    margin-right: 4px;
+    margin-right: 8px;
   }
 
   ${props => props.facebook && css`
@@ -73,7 +72,7 @@ const Header: React.FC = () => {
       </section>
       <section>
 
-        <Stack gap={2}>
+        <Stack gap={3}>
           <Social facebook={true}>
             <FB />
             <span>Facebook</span>
