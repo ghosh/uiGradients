@@ -60,14 +60,14 @@ export const Social = styled.button<SocialProps>`
     margin-right: 8px;
   }
 
-  ${props => props.facebook && css`
+  ${p => p.facebook && css`
     background-color: #3b5998;
     &:hover {
       background-color: #2c4272;
     }
   `}
 
-  ${props => props.twitter && css`
+  ${p => p.twitter && css`
     background-color: #1da1f2;
     &:hover {
       background-color: #0c81ca;

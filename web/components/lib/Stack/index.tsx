@@ -8,7 +8,8 @@ interface StackProps {
 const Stack = ({ children, gap }: StackProps) => {
   const styles = {
     display: "flex",
-    gap: `${4 * gap}px`
+    gap: `${4 * gap}px`,
+    alignItems: "center"
   };
 
   return <div style={styles}>{children}</div>;

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Stack from '../../lib/Stack'
+import Burger from '../../lib/Burger'
 
 import FB from './icons/facebook.svg'
 import TW from './icons/twitter.svg'
@@ -13,7 +14,10 @@ const Header: React.FC = () => {
   return (
     <Wrapper as="header">
       <section>
-        <Logo />
+        <Stack>
+          <Burger />
+          <Logo />
+        </Stack>
       </section>
       <section>
 
