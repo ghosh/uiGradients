@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Text from '../../lib/Text'
-import Stack from '../../lib/Stack'
+import Text from '@/lib/Text'
+import Stack from '@/lib/Stack'
 
 import Container from '../Container'
 

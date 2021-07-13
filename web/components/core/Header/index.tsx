@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Stack from '../../lib/Stack'
-import Burger from '../../lib/Burger'
+import Stack from '@/lib/Stack'
+import Burger from '@/lib/Burger'
 
 import Social from './Social'
 

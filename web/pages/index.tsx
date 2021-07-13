@@ -2,8 +2,8 @@ import { GetStaticProps } from 'next'
 
 import gradients from '../../stubs/gradients.json'
 
-import Header from '../components/core/Header'
-import Actionbar from '../components/core/Actionbar'
+import Header from '@/core/Header'
+import Actionbar from '@/core/Actionbar'
 
 interface Gradient {
   name: string,
