@@ -1,9 +1,9 @@
-import React from "react";
-import styled, { css } from "styled-components";
+import React from "react"
+import styled, { css } from "styled-components"
 
 const BurgerBox = styled.span`
   cursor: pointer;
-`;
+`
 
 const Hamburger = styled.span<HamburgerInterface>`
   margin-right: 10px;
@@ -55,7 +55,7 @@ const Hamburger = styled.span<HamburgerInterface>`
     }
 
   `}
-`;
+`
 
 const Burger = ({
   width,
@@ -79,8 +79,8 @@ const Burger = ({
         active={active}
       />
     </BurgerBox>
-  );
-};
+  )
+}
 
 interface HamburgerInterface {
   width: string;
@@ -106,6 +106,6 @@ Burger.defaultProps = {
   rounded: true,
   active: false,
   onClick: () => { }
-};
+}
 
-export default Burger;
+export default Burger

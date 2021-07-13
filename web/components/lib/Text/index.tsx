@@ -8,7 +8,7 @@ interface TextProps {
 const Text = styled.p<TextProps>`
   color: #50616F;
 
-  /* Default Props */
+  /* Default Prop for size */
   ${({ size = 'p' }) => size === 'p' && css`
     font-size: 16px;
   `}

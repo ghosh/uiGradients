@@ -30,7 +30,7 @@ const Home = ({ gradients }: HomeProps) => {
     }
 
     e.preventDefault()
-    console.log('Handle inline');
+    console.log('Handle inline')
 
     // TODO: Test for edge cases
     history.pushState('', g.name, `/${g.slug}`)

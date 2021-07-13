@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import styled from 'styled-components'
 
 interface StackProps {
@@ -11,10 +11,10 @@ const Stack = styled.div<StackProps>`
   align-items: center
 `
 
-Stack.displayName = "Stack";
+Stack.displayName = "Stack"
 
 Stack.defaultProps = {
   gap: 1
-};
+}
 
-export default Stack;
+export default Stack
