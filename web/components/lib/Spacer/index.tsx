@@ -26,8 +26,8 @@ const Spacer = styled.div<SpacerProps>`
   `};
 
   ${({ my = null }) => my && isNumber(my) && css`
-    margin-left: ${my * 4}px;
-    margin-right: ${my * 4}px;
+    margin-top: ${my * 4}px;
+    margin-bottom: ${my * 4}px;
   `};
 
   ${({ mt = null }) => mt && isNumber(mt) && css`

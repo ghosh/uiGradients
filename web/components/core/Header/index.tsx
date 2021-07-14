@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import Stack from '@/lib/Stack'
 import Burger from '@/lib/Burger'
+import Spacer from '@/lib/Spacer'
 
 import Social from './Social'
 
@@ -39,30 +40,32 @@ const Wrapper = styled(Container)`
 
 const Header = () => {
   return (
-    <Wrapper as="header">
-      <section>
-        <Stack>
-          <Burger />
-          <Logo />
-        </Stack>
-      </section>
-      <section>
+    <Spacer my={4} as="header">
+      <Wrapper>
+        <section>
+          <Stack>
+            <Burger />
+            <Logo />
+          </Stack>
+        </section>
+        <section>
 
-        <Stack gap={3}>
-          <Social media="FB">
-            <FB />
-            <span>Share on Facebook</span>
-          </Social>
+          <Stack gap={3}>
+            <Social media="FB">
+              <FB />
+              <span>Share on Facebook</span>
+            </Social>
 
-          <Social media="TW">
-            <TW />
-            <span>Share on Twitter</span>
-          </Social>
+            <Social media="TW">
+              <TW />
+              <span>Share on Twitter</span>
+            </Social>
 
-          <Github />
-        </Stack>
-      </section>
-    </Wrapper>
+            <Github />
+          </Stack>
+        </section>
+      </Wrapper>
+    </Spacer>
   )
 }
 
