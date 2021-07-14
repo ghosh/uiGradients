@@ -42,28 +42,25 @@ const Header = () => {
   return (
     <Spacer my={1} as="header">
       <Wrapper>
-        <section>
-          <Stack>
-            <Burger />
-            <Logo />
-          </Stack>
-        </section>
-        <section>
+        <Stack>
+          <Burger />
+          <Logo />
+        </Stack>
 
-          <Stack gap={3}>
-            <Social media="FB">
-              <FB />
-              <span>Share on Facebook</span>
-            </Social>
+        <Stack gap={3}>
+          <Social media="FB">
+            <FB />
+            <span>Share on Facebook</span>
+          </Social>
 
-            <Social media="TW">
-              <TW />
-              <span>Share on Twitter</span>
-            </Social>
+          <Social media="TW">
+            <TW />
+            <span>Share on Twitter</span>
+          </Social>
 
-            <Github />
-          </Stack>
-        </section>
+          <Github />
+        </Stack>
+
       </Wrapper>
     </Spacer>
   )
