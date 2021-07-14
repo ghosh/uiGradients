@@ -1,6 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Stack from '@/lib/Stack'
+import Text from '@/lib/Text'
+
+import Plus from './icons/plus.svg'
+
 const Wrapper = styled.div`
   flex-grow: 1;
   display: flex;
@@ -11,7 +16,10 @@ const Wrapper = styled.div`
 const Actions = () => {
   return (
     <Wrapper>
-      <p>Actions here</p>
+      <Stack gap={2}>
+        <Plus />
+        <Text variant="p">Add gradient</Text>
+      </Stack>
     </Wrapper>
   )
 }

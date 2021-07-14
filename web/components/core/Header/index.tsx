@@ -40,7 +40,7 @@ const Wrapper = styled(Container)`
 
 const Header = () => {
   return (
-    <Spacer my={4} as="header">
+    <Spacer my={1} as="header">
       <Wrapper>
         <section>
           <Stack>
