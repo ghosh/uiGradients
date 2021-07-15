@@ -7,19 +7,20 @@ import Controls from './Controls'
 import Swatches from './Swatches'
 import Actions from './Actions'
 
-const Bar = styled.div`
+const Bar = styled(Container)`
+  height: ${p => p.theme.heights.actionbar};
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 `
 
 const Actionbar = () => {
   return (
-    <Container as="section">
-      <Bar>
-        <Controls />
-        <Swatches />
-        <Actions />
-      </Bar>
-    </Container>
+    <Bar as="section">
+      <Controls />
+      <Swatches />
+      <Actions />
+    </Bar>
   )
 }
 

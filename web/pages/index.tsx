@@ -5,6 +5,9 @@ import gradients from '../../stubs/gradients.json'
 import Header from '@/core/Header'
 import Actionbar from '@/core/Actionbar'
 import Canvas from '@/core/Canvas'
+import Footer from '@/core/Footer'
+
+import Spacer from '@/lib/Spacer'
 
 interface Gradient {
   name: string,
@@ -42,7 +45,8 @@ const Home = ({ gradients }: HomeProps) => {
       <Header />
       <Actionbar />
       <Canvas />
-      <ul>
+      <Footer />
+      {/* <ul>
         {gradients.map((gradient) => (
           <li key={gradient.slug}>
             <a href={`/${gradient.slug}`} onClick={(e) => handleGradientClick(e, gradient)}>
@@ -50,7 +54,7 @@ const Home = ({ gradients }: HomeProps) => {
             </a>
           </li>
         ))}
-      </ul>
+      </ul> */}
     </>
   )
 }

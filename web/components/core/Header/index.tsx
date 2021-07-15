@@ -32,7 +32,7 @@ const Github = styled(GH)`
 `
 
 const Wrapper = styled(Container)`
-  height: 40px;
+  height: ${p => p.theme.heights.header};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,29 +40,27 @@ const Wrapper = styled(Container)`
 
 const Header = () => {
   return (
-    <Spacer my={1} as="header">
-      <Wrapper>
-        <Stack>
-          <Burger />
-          <Logo />
-        </Stack>
+    <Wrapper as="header">
+      <Stack>
+        <Burger />
+        <Logo />
+      </Stack>
 
-        <Stack gap={3}>
-          <Social media="FB">
-            <FB />
-            <span>Share on Facebook</span>
-          </Social>
+      <Stack gap={3}>
+        <Social media="FB">
+          <FB />
+          <span>Share on Facebook</span>
+        </Social>
 
-          <Social media="TW">
-            <TW />
-            <span>Share on Twitter</span>
-          </Social>
+        <Social media="TW">
+          <TW />
+          <span>Share on Twitter</span>
+        </Social>
 
-          <Github />
-        </Stack>
+        <Github />
+      </Stack>
 
-      </Wrapper>
-    </Spacer>
+    </Wrapper>
   )
 }
 
