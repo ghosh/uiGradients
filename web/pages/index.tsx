@@ -4,6 +4,7 @@ import gradients from '../../stubs/gradients.json'
 
 import Header from '@/core/Header'
 import Actionbar from '@/core/Actionbar'
+import Canvas from '@/core/Canvas'
 
 interface Gradient {
   name: string,
@@ -40,6 +41,7 @@ const Home = ({ gradients }: HomeProps) => {
     <>
       <Header />
       <Actionbar />
+      <Canvas />
       <ul>
         {gradients.map((gradient) => (
           <li key={gradient.slug}>

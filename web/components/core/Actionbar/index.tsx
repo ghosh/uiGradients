@@ -13,7 +13,7 @@ const Bar = styled.div`
 
 const Actionbar = () => {
   return (
-    <Container>
+    <Container as="section">
       <Bar>
         <Controls />
         <Swatches />
