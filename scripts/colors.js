@@ -1,14 +1,14 @@
 const COLORS = {
-  Cyans: 'Cyans',
-  Reds: 'Reds',
-  Oranges: 'Oranges',
-  Yellows: 'Yellows',
-  Greens: 'Greens',
-  Blues: 'Blues',
-  Magentas: 'Magentas',
-  Blacks: 'Blacks',
-  Whites: 'Whites',
-  Grays: 'Grays'
+  Cyans: 'cyans',
+  Reds: 'reds',
+  Oranges: 'oranges',
+  Yellows: 'yellows',
+  Greens: 'greens',
+  Blues: 'blues',
+  Magentas: 'magentas',
+  Blacks: 'blacks',
+  Whites: 'whites',
+  Grays: 'grays'
 }
 
 module.exports = COLORS
