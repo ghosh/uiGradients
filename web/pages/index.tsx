@@ -7,8 +7,6 @@ import Actionbar from '@/core/Actionbar'
 import Canvas from '@/core/Canvas'
 import Footer from '@/core/Footer'
 
-import Spacer from '@/lib/Spacer'
-
 interface Gradient {
   name: string,
   colors: string[],
