@@ -41,11 +41,17 @@ const Display = () => {
 
   const activeGradient = useStore(state => state.activeGradient)
 
+  const nextGradient = useStore(state => state.nextGradient)
+  const prevGradient = useStore(state => state.prevGradient)
+
+
   return (
     <Wrapper visible={isDisplayShowing} gradient={activeGradient}>
       <h1 onClick={toggleDisplay}>
         {activeGradient?.name}
       </h1>
+      <p onClick={prevGradient}>Prev</p>
+      <p onClick={nextGradient}>Next</p>
     </Wrapper>
   )
 }
