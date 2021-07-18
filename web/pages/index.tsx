@@ -22,8 +22,9 @@ const Home = ({ gradients, gradient, index }: HomeProps) => {
   const setGradients = useStore(state => state.setGradients)
   const setActiveGradient = useStore(state => state.setActiveGradient)
   const setActiveIndex = useStore(state => state.setActiveIndex)
+  const activeGradient = useStore(state => state.activeGradient)
 
-
+  // Sets up initial state on page load
   useEffect(() => {
     setGradients(gradients)
     setActiveGradient(gradient)
@@ -31,6 +32,13 @@ const Home = ({ gradients, gradient, index }: HomeProps) => {
 
     history.pushState('', gradient.name, `/${gradient.slug}`)
   }, [gradients, gradient, index, setGradients, setActiveGradient, setActiveIndex])
+
+  // Updates url on gradient change
+  useEffect(() => {
+    if (activeGradient) {
+      history.pushState('', activeGradient.name, `/${activeGradient.slug}`)
+    }
+  }, [activeGradient])
 
   return (
     <>

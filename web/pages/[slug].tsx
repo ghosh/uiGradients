@@ -21,14 +21,23 @@ const Gradient = ({ gradients, gradient, index }: GradientProps) => {
   const setGradients = useStore(state => state.setGradients)
   const setActiveGradient = useStore(state => state.setActiveGradient)
   const setActiveIndex = useStore(state => state.setActiveIndex)
+  const activeGradient = useStore(state => state.activeGradient)
 
-
+  // Sets up initial state on page load
   useEffect(() => {
     setGradients(gradients)
     setActiveGradient(gradient)
     setActiveIndex(index)
 
   }, [gradients, gradient, index, setGradients, setActiveGradient, setActiveIndex])
+
+
+  // Updates url on gradient change
+  useEffect(() => {
+    if (activeGradient) {
+      history.pushState('', activeGradient.name, `/${activeGradient.slug}`)
+    }
+  }, [activeGradient])
 
   return (
     <>
