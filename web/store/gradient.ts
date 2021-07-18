@@ -1,6 +1,6 @@
 import create from 'zustand'
 
-interface AppState {
+interface GradientState {
   gradients: [] | UIG.Gradient[],
   setGradients: (gs: UIG.Gradient[]) => void,
 
@@ -24,7 +24,7 @@ const log = (config: any) => (set: any, get: any, api: any) => config((args: any
   console.log("  new state", get())
 }, get, api)
 
-const useStore = create<AppState>(set => ({
+const useGradientStore = create<GradientState>(set => ({
   gradients: [],
   setGradients: (gs) => set(state => ({ gradients: gs })),
 
@@ -59,4 +59,4 @@ const useStore = create<AppState>(set => ({
   }))
 }))
 
-export default useStore
+export default useGradientStore

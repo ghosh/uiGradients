@@ -8,8 +8,8 @@
       "@/lib/*": [
         "components/lib/*"
       ],
-      "@/store": [
-        "store"
+      "@/store/*": [
+        "store/*"
       ]
     },
     "target": "es5",

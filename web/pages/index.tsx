@@ -3,7 +3,7 @@ import { GetStaticProps } from 'next'
 
 import gradients from '../../stubs/gradients.json'
 
-import useStore from '@/store'
+import useStore from '@/store/gradient'
 
 import Header from '@/core/Header'
 import Actionbar from '@/core/Actionbar'
