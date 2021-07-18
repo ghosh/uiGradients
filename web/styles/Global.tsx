@@ -51,6 +51,7 @@ const Globals = createGlobalStyle`
   }
   body {
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    background-color: #F1F4F7;
   }
 `
 
