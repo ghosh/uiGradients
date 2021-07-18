@@ -2,7 +2,7 @@ import React from 'react'
 import styled, { css } from 'styled-components'
 
 interface TextProps {
-  variant?: 'p'
+  variant?: 'p' | 'sm'
 }
 
 const Text = styled.p<TextProps>`
@@ -11,6 +11,10 @@ const Text = styled.p<TextProps>`
   /* Default Prop for size */
   ${({ variant = 'p' }) => variant === 'p' && css`
     font-size: 16px;
+  `}
+
+  ${({ variant }) => variant === 'sm' && css`
+    font-size: 12px;
   `}
 `
 

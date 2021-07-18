@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import Text from '@/lib/Text'
 import Container from '@/core/Container'
 
 const Wrapper = styled(Container)`
@@ -13,7 +14,7 @@ const Wrapper = styled(Container)`
 const Footer = () => {
   return (
     <Wrapper as='footer'>
-      <p>This is the footer k?</p>
+      <Text variant="sm">This is the footer k?</Text>
     </Wrapper>
   )
 }
