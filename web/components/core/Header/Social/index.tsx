@@ -15,7 +15,7 @@ const Social = styled.button<SocialProps>`
   height: 30px;
   line-height: 30px;
   font-size: 12px;
-  width: 160px;
+  width: 170px;
   padding: 0 12px;
   outline: 0;
   transition: background-color 0.1s ease-in-out;
