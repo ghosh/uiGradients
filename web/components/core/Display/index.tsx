@@ -4,6 +4,10 @@ import styled, { css } from 'styled-components'
 import useGradientStore from '@/store/gradient'
 import useUiStore from '@/store/ui'
 
+interface DisplayProps {
+  gradient?: UIG.Gradient
+}
+
 interface WrapperProps {
   visible: boolean,
   gradient?: null | UIG.Gradient
@@ -36,7 +40,7 @@ const Wrapper = styled.div<WrapperProps>`
   `}
 `
 
-const Display = () => {
+const Display = ({ gradient }: DisplayProps) => {
   const isDisplayShowing = useUiStore(s => s.isDisplayShowing)
   const toggleDisplay = useUiStore(s => s.toggleDisplay)
 
@@ -47,7 +51,7 @@ const Display = () => {
 
 
   return (
-    <Wrapper visible={isDisplayShowing} gradient={activeGradient}>
+    <Wrapper visible={isDisplayShowing} gradient={activeGradient || gradient}>
       <h1 onClick={toggleDisplay}>
         {activeGradient?.name}
       </h1>

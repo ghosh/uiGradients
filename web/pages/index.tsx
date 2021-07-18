@@ -13,10 +13,12 @@ import Grid from '@/core/Grid'
 import Footer from '@/core/Footer'
 
 interface HomeProps {
-  gradients: UIG.Gradient[]
+  gradients: UIG.Gradient[],
+  gradient: UIG.Gradient,
+  index: number
 }
 
-const Home = ({ gradients }: HomeProps) => {
+const Home = ({ gradients, gradient, index }: HomeProps) => {
   const setGradients = useStore(state => state.setGradients)
   const setActiveGradient = useStore(state => state.setActiveGradient)
   const setActiveIndex = useStore(state => state.setActiveIndex)
@@ -24,24 +26,18 @@ const Home = ({ gradients }: HomeProps) => {
 
   useEffect(() => {
     setGradients(gradients)
-
-    const randomGradient = gradients[Math.floor(Math.random() * gradients.length)]
-    const index = gradients.findIndex(g => g === randomGradient)
-
-    setActiveGradient(randomGradient)
+    setActiveGradient(gradient)
     setActiveIndex(index)
 
-    // history.pushState('', randomGradient.name, `/${randomGradient.slug}`)
-  }, [gradients, setGradients, setActiveGradient, setActiveIndex])
-
-  // Update url
+    history.pushState('', gradient.name, `/${gradient.slug}`)
+  }, [gradients, gradient, index, setGradients, setActiveGradient, setActiveIndex])
 
   return (
     <>
       <Header />
       <Actionbar />
       <Canvas>
-        <Display />
+        <Display gradient={gradient} />
         <Grid gradients={gradients} />
       </Canvas>
       <Footer />
@@ -50,9 +46,15 @@ const Home = ({ gradients }: HomeProps) => {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
+  // Picks a random gradient as the first gradient to show
+  const gradient = gradients[Math.floor(Math.random() * gradients.length)]
+  const index = gradients.findIndex(g => g === gradient)
+
   return {
     props: {
-      gradients
+      gradients,
+      gradient,
+      index
     }
   }
 }
