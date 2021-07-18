@@ -1,14 +1,8 @@
 import { GetStaticProps, GetStaticPaths } from 'next'
 import gradients from '../../stubs/gradients.json'
 
-interface Gradient {
-  name: string,
-  colors: string[],
-  slug: string
-}
-
 interface GradientProps {
-  gradient: Gradient
+  gradient: UIG.Gradient
 }
 
 const Gradient = ({ gradient }: GradientProps) => {

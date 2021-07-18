@@ -14,11 +14,15 @@ const Viewer = styled.div`
   overflow-x: scroll;
 `
 
-const Canvas = () => {
+interface CanvasProps {
+  children: React.ReactNode
+}
+
+const Canvas = ({ children }: CanvasProps) => {
   return (
     <Wrapper as="main">
       <Viewer>
-        <h1>Canvas here</h1>
+        {children}
       </Viewer>
     </Wrapper>
   )
