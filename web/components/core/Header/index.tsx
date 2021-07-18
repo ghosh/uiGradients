@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import styled from 'styled-components'
 
 import Stack from '@/lib/Stack'
@@ -43,7 +44,11 @@ const Header = () => {
     <Wrapper as="header">
       <Stack>
         <Burger />
-        <Logo />
+        <Link href="/">
+          <a>
+            <Logo />
+          </a>
+        </Link>
       </Stack>
 
       <Stack gap={3}>
@@ -60,7 +65,7 @@ const Header = () => {
         <Github />
       </Stack>
 
-    </Wrapper>
+    </Wrapper >
   )
 }
 
