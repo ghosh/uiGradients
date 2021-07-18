@@ -1,28 +1,36 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import useStore from '@/store/gradient'
+
 import Stack from '@/lib/Stack'
 
-const Swatch = styled.span`
+interface SwatchProps {
+  color: string
+}
+
+const Swatch = styled.span<SwatchProps>`
   height: 16px;
   width: 16px;
   border-radius: 100%;
-  background-color: #018472;
+  background-color: ${p => p.color};
 `
 
 const Wrapper = styled.div`
-    flex-grow: 0;
-    display: flex;
-    justify-content: center;
+  flex-grow: 0;
+  display: flex;
+  justify-content: center;
 `
 
 const Swatches = () => {
+  const activeGradient = useStore(state => state.activeGradient)
+
   return (
     <Wrapper>
       <Stack gap={2}>
-        <Swatch />
-        <Swatch />
-        <Swatch />
+        {activeGradient?.colors.map((c, i) => (
+          <Swatch key={i} color={c} />
+        ))}
       </Stack>
     </Wrapper>
   )
