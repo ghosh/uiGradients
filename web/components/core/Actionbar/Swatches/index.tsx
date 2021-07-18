@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import useStore from '@/store/gradient'
+import useGradientStore from '@/store/gradient'
+import useUiStore from '@/store/ui'
 
 import Stack from '@/lib/Stack'
 
@@ -23,8 +24,8 @@ const Wrapper = styled.div`
 `
 
 const Swatches = () => {
-  const isDisplayShowing = useStore(state => state.isDisplayShowing)
-  const activeGradient = useStore(state => state.activeGradient)
+  const isDisplayShowing = useUiStore(s => s.isDisplayShowing)
+  const activeGradient = useGradientStore(s => s.activeGradient)
 
   return (
     <Wrapper>

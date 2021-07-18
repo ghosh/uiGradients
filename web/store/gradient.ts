@@ -11,10 +11,7 @@ interface GradientState {
   setActiveGradient: (g: UIG.Gradient) => void,
 
   nextGradient: () => void,
-  prevGradient: () => void,
-
-  isDisplayShowing: boolean,
-  toggleDisplay: () => void
+  prevGradient: () => void
 }
 
 
@@ -51,12 +48,7 @@ const useGradientStore = create<GradientState>(set => ({
       activeIndex: safePrev,
       activeGradient: s.gradients[safePrev]
     }
-  }),
-
-  isDisplayShowing: true,
-  toggleDisplay: () => set(state => ({
-    isDisplayShowing: !state.isDisplayShowing
-  }))
+  })
 }))
 
 export default useGradientStore

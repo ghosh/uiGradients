@@ -1,7 +1,8 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 
-import useStore from '@/store/gradient'
+import useGradientStore from '@/store/gradient'
+import useUiStore from '@/store/ui'
 
 interface WrapperProps {
   visible: boolean,
@@ -36,13 +37,13 @@ const Wrapper = styled.div<WrapperProps>`
 `
 
 const Display = () => {
-  const isDisplayShowing = useStore(state => state.isDisplayShowing)
-  const toggleDisplay = useStore(state => state.toggleDisplay)
+  const isDisplayShowing = useUiStore(s => s.isDisplayShowing)
+  const toggleDisplay = useUiStore(s => s.toggleDisplay)
 
-  const activeGradient = useStore(state => state.activeGradient)
+  const activeGradient = useGradientStore(s => s.activeGradient)
 
-  const nextGradient = useStore(state => state.nextGradient)
-  const prevGradient = useStore(state => state.prevGradient)
+  const nextGradient = useGradientStore(s => s.nextGradient)
+  const prevGradient = useGradientStore(s => s.prevGradient)
 
 
   return (
