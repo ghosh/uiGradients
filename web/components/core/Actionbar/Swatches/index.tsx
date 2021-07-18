@@ -23,15 +23,18 @@ const Wrapper = styled.div`
 `
 
 const Swatches = () => {
+  const isDisplayShowing = useStore(state => state.isDisplayShowing)
   const activeGradient = useStore(state => state.activeGradient)
 
   return (
     <Wrapper>
-      <Stack gap={2}>
-        {activeGradient?.colors.map((c, i) => (
-          <Swatch key={i} color={c} />
-        ))}
-      </Stack>
+      {isDisplayShowing &&
+        <Stack gap={2}>
+          {activeGradient?.colors.map((c, i) => (
+            <Swatch key={i} color={c} />
+          ))}
+        </Stack>
+      }
     </Wrapper>
   )
 }
