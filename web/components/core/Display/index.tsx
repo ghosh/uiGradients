@@ -14,6 +14,10 @@ const Wrapper = styled.div`
   right: 20px;
   padding: 0 20px;
   border-radius: 8px;
+
+  backface-visibility: hidden;
+  transition: all .25s cubic-bezier(.62,.28,.23,.99);
+  will-change: transform;
 `
 
 const Display = ({ gradient }: DisplayProps) => {
