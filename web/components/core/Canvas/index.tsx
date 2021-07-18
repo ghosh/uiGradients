@@ -4,14 +4,10 @@ import styled from 'styled-components'
 import Container from '@/core/Container'
 
 const Wrapper = styled(Container)`
-  height: calc(100vh - 40px - 30px - 20px)
-`
-
-const Viewer = styled.div`
-  height: 100%;
-  background-color: #1a1a1a;
+  height: calc(100vh - 40px - 30px - 20px);
   border-radius: 8px;
-  overflow-x: scroll;
+  position: relative;
+  overflow: hidden;
 `
 
 interface CanvasProps {
@@ -21,9 +17,7 @@ interface CanvasProps {
 const Canvas = ({ children }: CanvasProps) => {
   return (
     <Wrapper as="main">
-      <Viewer>
-        {children}
-      </Viewer>
+      {children}
     </Wrapper>
   )
 }

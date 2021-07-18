@@ -7,6 +7,11 @@ interface GridProps {
   gradients: UIG.Gradient[]
 }
 
+const Wrapper = styled.div`
+  overflow-y: scroll;
+  height: 100%;
+`
+
 const List = styled.ul`
   background-color: #E7EBEF;
   display: grid;
@@ -17,19 +22,16 @@ const List = styled.ul`
 
 const Grid = ({ gradients }: GridProps) => {
   return (
-    <List>
-      {gradients.map((gradient) => (
-        <Palette
-          gradient={gradient}
-          key={gradient.slug}
-        />
-        // <Item key={gradient.slug}>
-        //   <a href={`/${gradient.slug}`} onClick={(e) => handleGradientClick(e, gradient)}>
-        //     {gradient.name}
-        //   </a>
-        // </Item>
-      ))}
-    </List>
+    <Wrapper>
+      <List>
+        {gradients.map((gradient) => (
+          <Palette
+            gradient={gradient}
+            key={gradient.slug}
+          />
+        ))}
+      </List>
+    </Wrapper>
   )
 }
 
