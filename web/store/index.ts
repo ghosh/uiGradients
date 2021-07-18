@@ -14,16 +14,21 @@ interface AppState {
   toggleDisplay: () => void
 }
 
-// const demoGradient = { "name": "Dark Ocean", "colors": ["#373B44", "#4286f4"], "slug": "dark-ocean", "hues": ["grays", "blues"] }
+
+const log = (config: any) => (set: any, get: any, api: any) => config((args: any) => {
+  console.log("  applying", args)
+  set(args)
+  console.log("  new state", get())
+}, get, api)
 
 const useStore = create<AppState>(set => ({
   gradients: [],
-  setGradients: (gs) => set(() => ({ gradients: gs })),
+  setGradients: (gs) => set(state => ({ gradients: gs })),
 
   activeIndex: null,
   activeGradient: null,
-  setActiveGradient: (g) => set(() => ({ activeGradient: g })),
-  setActiveIndex: (i) => set(() => ({ activeIndex: i })),
+  setActiveGradient: (g) => set(state => ({ activeGradient: g })),
+  setActiveIndex: (i) => set(state => ({ activeIndex: i })),
 
   isDisplayShowing: true,
   toggleDisplay: () => set(state => ({

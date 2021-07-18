@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { GetStaticProps } from 'next'
 
 import gradients from '../../stubs/gradients.json'
@@ -21,15 +21,19 @@ const Home = ({ gradients }: HomeProps) => {
   const setActiveGradient = useStore(state => state.setActiveGradient)
   const setActiveIndex = useStore(state => state.setActiveIndex)
 
-  setGradients(gradients)
 
+  useEffect(() => {
+    setGradients(gradients)
 
-  const randomGradient = gradients[Math.floor(Math.random() * gradients.length)]
-  const index = gradients.findIndex(g => g === randomGradient)
+    const randomGradient = gradients[Math.floor(Math.random() * gradients.length)]
+    const index = gradients.findIndex(g => g === randomGradient)
 
-  setActiveGradient(randomGradient)
-  setActiveIndex(index)
-  // Pass picked gradient to display
+    setActiveGradient(randomGradient)
+    setActiveIndex(index)
+
+    // history.pushState('', randomGradient.name, `/${randomGradient.slug}`)
+  }, [gradients, setGradients, setActiveGradient, setActiveIndex])
+
   // Update url
 
   return (

@@ -43,7 +43,9 @@ const Display = () => {
 
   return (
     <Wrapper visible={isDisplayShowing} gradient={activeGradient}>
-      <h1 onClick={toggleDisplay}>Gradient</h1>
+      <h1 onClick={toggleDisplay}>
+        {activeGradient?.name}
+      </h1>
     </Wrapper>
   )
 }
