@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Container from '@/core/Container'
 
 const Wrapper = styled(Container)`
-  height: calc(100vh - 40px - 30px - 20px);
+  height: ${p => p.theme.heights.display};
   border-radius: 8px;
   position: relative;
   overflow: hidden;

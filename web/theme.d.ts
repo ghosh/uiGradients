@@ -5,7 +5,8 @@ declare module 'styled-components' {
     heights: {
       header: string,
       actionbar: string,
-      footer: string
+      footer: string,
+      display: string
     }
   }
 }
