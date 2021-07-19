@@ -10,6 +10,7 @@ interface GridProps {
 const Wrapper = styled.div`
   overflow-y: scroll;
   height: 100%;
+  border-radius: 8px;
 `
 
 const List = styled.ul`
