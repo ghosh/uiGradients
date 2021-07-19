@@ -1,14 +1,19 @@
 import React from "react"
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 interface StackProps {
-  gap?: number
+  gap?: number,
+  align?: string
 }
 
 const Stack = styled.div<StackProps>`
   display: flex;
   gap: ${({ gap = 1 }) => gap * 4}px;
-  align-items: center
+  align-items: center;
+
+  ${({ align }) => align === 'center' && css`
+    justify-content: center;
+  `}
 `
 
 Stack.displayName = "Stack"

@@ -30,8 +30,8 @@ const Display = ({ gradient }: DisplayProps) => {
 
   return (
     <Wrapper visible={isDisplayShowing} gradient={activeGradient || gradient}>
-      <Nav />
       <Meta gradient={activeGradient} />
+      <Nav />
     </Wrapper>
   )
 }
