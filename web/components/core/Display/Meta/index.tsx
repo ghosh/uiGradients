@@ -25,18 +25,49 @@ const Name = styled(Text)`
 
 const Wrapper = styled.div`
   max-width: 300px;
+  z-index: 2;
+`
+
+const Icon = styled.span`
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  will-change: transform;
+  transition: scale .2s cubic-bezier(.62,.28,.23,.99);
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, .1);
+  }
+
+  &:active {
+    transform: scale(1);
+    background-color: rgba(255, 255, 255, .1);
+  }
 `
 
 const Meta = ({ gradient }: MetaProps) => {
   return (
     <Wrapper>
       <Name>{gradient?.name}</Name>
-      <Spacer my={4} />
+      <Spacer my={3} />
       <Stack gap={3} align="center">
-        <Heart style={{ width: '20px' }} />
-        <Rotate style={{ width: '20px' }} />
-        <Code style={{ width: '20px' }} />
-        <Download style={{ width: '20px' }} />
+        <Icon>
+          <Heart style={{ width: '20px' }} />
+        </Icon>
+        <Icon>
+          <Rotate style={{ width: '20px' }} />
+        </Icon>
+        <Icon>
+          <Code style={{ width: '20px' }} />
+        </Icon>
+        <Icon>
+          <Download style={{ width: '20px' }} />
+        </Icon>
       </Stack>
     </Wrapper>
   )
