@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled, { css } from 'styled-components'
 
 import useGradientStore from '@/store/gradient'
 import useUiStore from '@/store/ui'
+
+import useKeyPress from '@/hooks/useKeyPress'
 
 interface DisplayProps {
   gradient?: UIG.Gradient
@@ -41,14 +43,21 @@ const Wrapper = styled.div<WrapperProps>`
 `
 
 const Display = ({ gradient }: DisplayProps) => {
+
+  const nextPress = useKeyPress("ArrowRight")
+  const prevPress = useKeyPress("ArrowLeft")
+
   const isDisplayShowing = useUiStore(s => s.isDisplayShowing)
   const toggleDisplay = useUiStore(s => s.toggleDisplay)
 
   const activeGradient = useGradientStore(s => s.activeGradient)
-
   const nextGradient = useGradientStore(s => s.nextGradient)
   const prevGradient = useGradientStore(s => s.prevGradient)
 
+  useEffect(() => {
+    nextPress && nextGradient()
+    prevPress && prevGradient()
+  }, [nextPress, prevPress, nextGradient, prevGradient])
 
   return (
     <Wrapper visible={isDisplayShowing} gradient={activeGradient || gradient}>
