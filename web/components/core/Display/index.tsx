@@ -46,6 +46,7 @@ const Display = ({ gradient }: DisplayProps) => {
 
   const nextPress = useKeyPress("ArrowRight")
   const prevPress = useKeyPress("ArrowLeft")
+  const escPress = useKeyPress("Escape")
 
   const isDisplayShowing = useUiStore(s => s.isDisplayShowing)
   const hideDisplay = useUiStore(s => s.hideDisplay)
@@ -56,14 +57,17 @@ const Display = ({ gradient }: DisplayProps) => {
   const prevGradient = useGradientStore(s => s.prevGradient)
 
   useEffect(() => {
-    showDisplay()
-    nextPress && nextGradient()
-    prevPress && prevGradient()
+    if (isDisplayShowing && escPress) hideDisplay()
+  }, [escPress, hideDisplay, isDisplayShowing])
+
+  useEffect(() => {
+    if (nextPress) showDisplay(), nextGradient()
+    if (prevPress) prevGradient(), showDisplay()
   }, [nextPress, prevPress, nextGradient, prevGradient, showDisplay])
 
   return (
     <Wrapper visible={isDisplayShowing} gradient={activeGradient || gradient}>
-      <h1 onClick={hideDisplay}>
+      <h1>
         {activeGradient?.name}
       </h1>
       <p onClick={prevGradient}>Prev</p>
