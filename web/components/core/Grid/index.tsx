@@ -24,9 +24,10 @@ const Grid = ({ gradients }: GridProps) => {
   return (
     <Wrapper>
       <List>
-        {gradients.map((gradient) => (
+        {gradients.map((gradient, index) => (
           <Palette
             gradient={gradient}
+            index={index}
             key={gradient.slug}
           />
         ))}

@@ -1,8 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import useGradientStore from '@/store/gradient'
+import useUiStore from '@/store/ui'
+
 interface PaletteProps {
-  gradient: UIG.Gradient
+  gradient: UIG.Gradient,
+  index: number
 }
 
 interface BackgroundProps {
@@ -47,12 +51,14 @@ const Link = styled.a`
   text-decoration: none;
 `
 
-const Palette = ({ gradient }: PaletteProps) => {
+const Palette = ({ gradient, index }: PaletteProps) => {
+  const setActiveGradient = useGradientStore(s => s.setActiveGradient)
+  const setActiveIndex = useGradientStore(s => s.setActiveIndex)
+  const toggleDisplay = useUiStore(s => s.toggleDisplay)
 
-  // TODO: Move out to global scope
   const handleGradientClick = (
     e: React.MouseEvent<HTMLElement>,
-    g: UIG.Gradient
+    gradient: UIG.Gradient
   ) => {
     // If trying to open in new tab, allow it
     if (
@@ -63,10 +69,12 @@ const Palette = ({ gradient }: PaletteProps) => {
     ) { return }
 
     e.preventDefault()
-    console.log('Handle inline')
 
-    // TODO: Test for edge cases
-    history.pushState('', g.name, `/${g.slug}`)
+    setActiveGradient(gradient)
+    setActiveIndex(index)
+
+    history.pushState('', gradient.name, `/${gradient.slug}`)
+    toggleDisplay()
   }
 
   return (
