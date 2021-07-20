@@ -11,7 +11,7 @@ const Bar = styled(Container)`
   height: ${p => p.theme.heights.actionbar};
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 `
 
 const Actionbar = () => {
