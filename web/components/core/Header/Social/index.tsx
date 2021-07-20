@@ -9,7 +9,6 @@ const Social = styled.button<SocialProps>`
   border: 0;
   border-radius: 4px;
   color: #fff;
-  font-weight: 600;
   background-color: #eaeaea;
   text-decoration: none;
   height: 30px;

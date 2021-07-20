@@ -24,8 +24,9 @@ const Name = styled(Text)`
 `
 
 const Wrapper = styled.div`
-  max-width: 300px;
+  /* max-width: 300px; */
   z-index: 2;
+  height: 100px;
 `
 
 const Icon = styled.span`
