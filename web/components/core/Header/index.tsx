@@ -16,7 +16,7 @@ import GH from './icons/github.svg'
 import Container from '../Container'
 
 const Logo = styled(LG)`
-  color: black;
+  color: #394650;
   width: 114px;
   height: 26px;
 `
