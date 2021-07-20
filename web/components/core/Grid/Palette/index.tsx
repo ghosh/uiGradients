@@ -21,7 +21,7 @@ const Background = styled.li.attrs<BackgroundProps>(
     },
   })
 ) <BackgroundProps>`
-  height: 200px;
+  height: 160px;
   border-radius: 4px;;
   background-color: #000;
   display: flex;
@@ -37,7 +37,7 @@ const Background = styled.li.attrs<BackgroundProps>(
 `
 
 const Label = styled.p`
-  background-color: rgba(255, 255, 255, .1);
+  /* background-color: rgba(255, 255, 255, .1); */
   padding: 8px;
   border-radius: 4px;;
   font-family: Source Code Pro,monospace;

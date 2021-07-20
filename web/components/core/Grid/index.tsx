@@ -15,6 +15,7 @@ const Wrapper = styled.div`
 
 const List = styled.ul`
   background-color: #E7EBEF;
+  background-color: #222527;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 16px;
