@@ -14,6 +14,7 @@ const Wrapper = styled.div<WrapperProps>`
   position: absolute;
   right: 20px;
   border-radius: 8px;
+  z-index: 2;
 
   display: flex;
   justify-content: center;

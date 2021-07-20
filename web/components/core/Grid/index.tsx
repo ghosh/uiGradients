@@ -16,6 +16,7 @@ const Wrapper = styled.div`
 const List = styled.ul`
   background-color: #E7EBEF;
   background-color: #c1cfdc;
+  background-color: #2c3e50;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 16px;
@@ -40,4 +41,4 @@ const Grid = ({ gradients }: GridProps) => {
 
 Grid.displayName = 'Grid'
 
-export default Grid
+export default React.memo(Grid)

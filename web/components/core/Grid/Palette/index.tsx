@@ -28,11 +28,19 @@ const Background = styled.li.attrs<BackgroundProps>(
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+  backface-visibility: hidden;
 
   &:hover {
+    transform: scale(1.02);
+
     p {
       background-color: rgba(255, 255, 255, .2);
     }
+  }
+
+  &:active {
+    transform: scale(1);
   }
 `
 
