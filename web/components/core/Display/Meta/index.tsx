@@ -20,7 +20,6 @@ const Name = styled(Text)`
   user-select: none;
   margin-top: 24px;
   text-align: center;
-  font-weight: 300;
 `
 
 const Wrapper = styled.div`
@@ -62,8 +61,8 @@ const Meta = ({ gradient }: MetaProps) => {
   return (
     <Wrapper>
       <Name>{gradient?.name}</Name>
-      <Spacer my={3} />
-      <Stack gap={5} align="center">
+      <Spacer my={4} />
+      <Stack gap={4} align="center">
         <Icon>
           <Heart style={{ width: '18px' }} />
         </Icon>
