@@ -30,8 +30,8 @@ const Wrapper = styled.div`
 `
 
 const Icon = styled.span`
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   cursor: pointer;
   border-radius: 4px;
   display: flex;
@@ -40,14 +40,21 @@ const Icon = styled.span`
   will-change: transform;
   transition: scale .2s cubic-bezier(.62,.28,.23,.99);
 
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 2px 32px 0 rgba( 0, 0, 0, 0.2 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 8px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
   &:hover {
     transform: scale(1.1);
-    background-color: rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, 0.10);
   }
 
   &:active {
     transform: scale(1);
-    background-color: rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, 0.45);
   }
 `
 
@@ -56,18 +63,18 @@ const Meta = ({ gradient }: MetaProps) => {
     <Wrapper>
       <Name>{gradient?.name}</Name>
       <Spacer my={3} />
-      <Stack gap={3} align="center">
+      <Stack gap={5} align="center">
         <Icon>
-          <Heart style={{ width: '20px' }} />
+          <Heart style={{ width: '18px' }} />
         </Icon>
         <Icon>
-          <Rotate style={{ width: '20px' }} />
+          <Rotate style={{ width: '18px' }} />
         </Icon>
         <Icon>
-          <Code style={{ width: '20px' }} />
+          <Code style={{ width: '18px' }} />
         </Icon>
         <Icon>
-          <Download style={{ width: '20px' }} />
+          <Download style={{ width: '18px' }} />
         </Icon>
       </Stack>
     </Wrapper>

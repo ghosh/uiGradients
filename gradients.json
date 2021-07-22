@@ -1,5 +1,12 @@
 [
   {
+    "name": "Pebble",
+    "colors": [
+      "#988e94",
+      "#dbd3d8"
+    ]
+  },
+  {
     "name": "Omolon",
     "colors": [
       "#091E3A",
