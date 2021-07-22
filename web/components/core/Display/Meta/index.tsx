@@ -42,8 +42,8 @@ const Icon = styled.span`
 
   background: rgba( 255, 255, 255, 0.25 );
   box-shadow: 0 2px 32px 0 rgba( 0, 0, 0, 0.2 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
+  /* backdrop-filter: blur( 4px ); */
+  /* -webkit-backdrop-filter: blur( 4px ); */
   border-radius: 8px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 
