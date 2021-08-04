@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Gamecube",
+        "colors": ["#5949a7", "#595ca7"]
     }
 ]
