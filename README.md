@@ -75,6 +75,7 @@ A few open source projects built with uiGradients
 - [Potion](http://numberpicture.com/build) - React components for declaratively composing animated, interactive visualizations
 - [Randient](https://github.com/uias/Randient) - Randomised, radient gradients for iOS.
 - [RandomGradient](https://github.com/Gabriel-Denys/RandomGradient) - Radomised gradients via json api
+- [uigradients - Figma Style Library](https://www.figma.com/community/file/875833147744160021) - 300+ gradients as ready-to-use Figma style library.
 
 &nbsp;
 
