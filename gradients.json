@@ -1,4 +1,8 @@
 [
+   {
+        "name": "Brownie",
+        "colors": ["#2f220d", "#281d0d", "#21190c", "#1a140c", "#120f0b"]
+    },
     {
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
