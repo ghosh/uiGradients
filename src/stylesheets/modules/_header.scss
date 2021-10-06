@@ -16,9 +16,15 @@
     justify-content: space-between;
   }
 
+  &__branding {
+    display: flex;
+    align-items: center;
+  }
+
   &__logo {
     width: 130px;
     height: 30px;
+    margin-top: -4px;
   }
 
   &__social {
@@ -32,6 +38,7 @@
   &__github {
     width: 30px;
     height: 30px;
+    fill: #000;
     display: none;
 
     @include respond-to(medium) {

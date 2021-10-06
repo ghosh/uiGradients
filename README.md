@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://www.dropbox.com/s/8e17cyl1xlg74e5/logo.svg?raw=1" width="180px">
+  <img src="https://www.dropbox.com/s/h6vdbd2ar3c8mw6/logo.png?dl=0&raw=1" width="240" />
 </p>
 
 <p align="center">
@@ -22,12 +22,6 @@ uiGradients is a community contributed collection of beautiful multi-color gradi
 </p>
 
 ---
-
-&nbsp;
-
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/U7SKSneQBRgvgkE68HFbqR1q/ghosh/uiGradients'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/U7SKSneQBRgvgkE68HFbqR1q/ghosh/uiGradients.svg' />
-</a>
 
 &nbsp;
 
@@ -78,6 +72,15 @@ A few open source projects built with uiGradients
 - [uigradients-scss](https://github.com/subinsebastian/uigradients-scss) - uiGradients ported to scss
 - [helper-uigradient](https://github.com/helpers/helper-uigradient) - Handlebar helper for uiGradients
 - [Uigradients iOS Viewer](https://github.com/thexande/uiGradients-Viewer-iOS) - Open source iOS app for viewing gradients
+- [Potion](http://numberpicture.com/build) - React components for declaratively composing animated, interactive visualizations
+- [Randient](https://github.com/uias/Randient) - Randomised, radient gradients for iOS.
+- [RandomGradient](https://github.com/Gabriel-Denys/RandomGradient) - Radomised gradients via json api
+
+&nbsp;
+
+## License
+
+[MIT](https://github.com/ghosh/uiGradients/blob/master/LICENSE.md)
 
 &nbsp;
 
