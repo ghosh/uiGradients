@@ -1532,5 +1532,10 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Trans Flag",
+        "colors": ["#55CDFC", "#ffffff", "#F7A8B8"]
+    
     }
 ]
