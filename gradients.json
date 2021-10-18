@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+      "name": "Radio Vie FM",
+      "colors": ["#f1e300", "#72cfd5", "#91e983"]
     }
 ]
