@@ -4,6 +4,10 @@
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
     },
     {
+      "name": "Radio Vie FM",
+      "colors": ["#f1e300", "#72cfd5", "#91e983"]
+    }
+    {
         "name": "Farhan",
         "colors": ["#9400D3", "#4B0082"]
     }, 
