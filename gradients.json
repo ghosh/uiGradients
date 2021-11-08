@@ -1,5 +1,9 @@
 [
     {
+     "name": "Home Depot",
+      "colors": ["#FA6303", "#272727", "#7A33BD"]
+    },
+    {
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
     },
