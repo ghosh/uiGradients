@@ -55,7 +55,7 @@ const Home = ({ gradients, gradient, index }: HomeProps) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   // Picks a random gradient as the first gradient to show
-  const gradient = gradients[Math.floor(Math.random() * gradients.length)]
+  const gradient : UIG.Gradient = gradients[Math.floor(Math.random() * gradients.length)]
   const index = gradients.findIndex(g => g === gradient)
 
   return {
