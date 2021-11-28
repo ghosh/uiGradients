@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+      "name": "Funky Light",
+      "colors": ["#e0ffff", "#ffe0f7", "#e0ffff"]
     }
 ]
