@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+  {
+        "name": "Tesrt Blue",
+        "colors": ["#002d3d", "#96c296"]
     }
 ]
