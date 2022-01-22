@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Hot Sunset",
+        "colors": ["#ff5100", "#ff7f50", "#ff6347"]
     }
 ]
