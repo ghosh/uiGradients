@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
-    }
+    },
+    {
+        "name": "Energy Transition",
+        "colors": ["#ff0000", "#fd027f", "#800080"]
+    },
 ]
