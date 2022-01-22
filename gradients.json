@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
-    }
+    },
+    {
+        "name": "Water Lake",
+        "colors": ["#36a59e", "#1ac05a", "#49b265"]
+    },
 ]
