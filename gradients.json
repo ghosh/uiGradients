@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
-    }
+    },
+    {
+        "name": "Gold Dust",
+        "colors": ["#c29618", "#c5b076", "#c29618"]
+    },
 ]
