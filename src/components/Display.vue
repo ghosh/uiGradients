@@ -105,5 +105,7 @@ export default {
   created() {
     window.addEventListener('keydown', this.handleKeyboardEvents);
   },
+  destroyed() {
+    window.removeEventListener('keydown', this.handleKeyboardEvents);
 };
 </script>
