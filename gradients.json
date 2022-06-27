@@ -1532,5 +1532,10 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Rizwan India",
+        "colors": ["#FF9933", "#ffffff","#138808"]
     }
+    
 ]
