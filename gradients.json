@@ -160,6 +160,10 @@
         "name": "YouTube",
         "colors": ["#e52d27", "#b31217"]
     },
+  {
+        "name": "hy",
+        "colors": ["# B8E1FF ", "#001D70"]
+    }
     {
         "name": "Cool Brown",
         "colors": ["#603813", "#b29f94"]
