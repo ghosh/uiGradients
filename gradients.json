@@ -32,7 +32,7 @@
         "name": "Blue & Orange",
         "colors": ["#FD8112", "#0085CA"]
     },
-    {
+     {
         "name": "Purple Dream",
         "colors": ["#bf5ae0","#a811da"]
     },
@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+      "name": "Sky View",
+      "colors": ["#6FF7E8", "#1F7EA1"]
     }
 ]
