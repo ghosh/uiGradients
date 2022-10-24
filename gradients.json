@@ -1,15 +1,15 @@
 [
     {
-        "name": "Omolon",
-        "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
+        "name": "Cantarell-01",
+        "colors": ["#1A3458", "#2DADFF", "#F3F9FF"]
     },
     {
-        "name": "Farhan",
-        "colors": ["#9400D3", "#4B0082"]
+        "name": "Cantarell-02",
+        "colors": ["#1A3458", "#3092FA", "#F1F1E6"]
     }, 
     {
-        "name": "Purple",
-        "colors": ["#c84e89", "#F15F79"]
+        "name": "Cantarell-03",
+        "colors": ["#1A3458", "#3092FA", "#F5F9FF"]
     },
     {
         "name": "Ibtesam",
