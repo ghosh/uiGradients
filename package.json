@@ -5,11 +5,13 @@
   "private": true,
   "workspaces": [
     "web",
-    "api"
+    "api",
+    "app"
   ],
   "scripts": {
     "deploy:api": "cd api && vercel --prod",
     "sanitze": "node scripts/sanitize.js",
+    "app:dev": "yarn workspace @uigradients/app dev",
     "web:dev": "yarn workspace @uigradients/web next dev",
     "web:start": "yarn workspace @uigradients/web next start",
     "web:build": "yarn workspace @uigradients/web next build",
