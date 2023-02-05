@@ -1,0 +1,19 @@
+:root {
+  --bg-site: #000212;
+  --accent: #8190fe;
+
+  --tc-hi: #f7f8f8;
+  --tc-lo: #8a8f98
+}
+
+body {
+  background-color: var(--bg-site);
+}
+
+h1, h2, h3, h4 {
+  color: var(--tc-hi)
+}
+
+p {
+  color: var(--tc-lo)
+}
