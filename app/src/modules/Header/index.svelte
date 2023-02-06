@@ -11,15 +11,15 @@
 	</div>
 
 	<div class="socials">
-		<div class="social facebook">
-			<span class="icon-small">
+		<div class="share share--facebook">
+			<span class="icon--small">
 				<Facebook />
 			</span>
 			<p>Share on Facebook</p>
 		</div>
 
-		<div class="social twitter">
-			<span class="icon-small">
+		<div class="share share--twitter">
+			<span class="icon--small">
 				<Twitter />
 			</span>
 			<p>Share on Twitter</p>
@@ -31,7 +31,7 @@
 	</div>
 </header>
 
-<style>
+<style lang="scss">
 	header {
 		display: flex;
 		justify-content: space-between;
@@ -48,10 +48,10 @@
 
 	.icon {
 		width: 24px;
-	}
 
-	.icon-small {
-		width: 16px;
+		&--small {
+			width: 12px;
+		}
 	}
 
 	.socials {
@@ -61,27 +61,35 @@
 		justify-content: center;
 	}
 
-	.social {
+	.share {
 		gap: 6px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: 4px 12px;
+		padding: 2px 12px;
 		border-radius: 4px;
-	}
+		height: 24px;
+		cursor: pointer;
+		color: white;
 
-	.facebook {
-		background-color: #1877f2;
-	}
+		&:hover {
+			opacity: 0.8;
+		}
 
-	.twitter {
-		background-color: #1da1f2;
-	}
+		&--facebook {
+			background-color: #1877f2;
+		}
 
-	p {
-		margin: 0;
-		padding: 0;
-		font-size: 14px;
-		margin-top: 2px;
+		&--twitter {
+			background-color: #1da1f2;
+		}
+
+		p {
+			margin: 0;
+			padding: 0;
+			font-size: 12px;
+			font-weight: 500;
+			margin-top: 2px;
+		}
 	}
 </style>
