@@ -1,8 +1,8 @@
 <script lang="ts">
 	import Logo from 'src/svg/Logo.svelte';
 	import Github from 'src/svg/Github.svelte';
-	import Facebook from 'src/svg/Facebook.svelte';
 	import Twitter from 'src/svg/Twitter.svelte';
+	import Facebook from 'src/svg/Facebook.svelte';
 </script>
 
 <header>
@@ -11,19 +11,19 @@
 	</div>
 
 	<div class="socials">
-		<div class="share share--facebook">
+		<button class="share share--facebook">
 			<span class="icon--small">
 				<Facebook />
 			</span>
 			<p>Share on Facebook</p>
-		</div>
+		</button>
 
-		<div class="share share--twitter">
+		<button class="share share--twitter">
 			<span class="icon--small">
 				<Twitter />
 			</span>
 			<p>Share on Twitter</p>
-		</div>
+		</button>
 
 		<div class="icon">
 			<Github />
@@ -62,6 +62,7 @@
 	}
 
 	.share {
+		all: unset;
 		gap: 6px;
 		display: flex;
 		align-items: center;
@@ -71,9 +72,15 @@
 		height: 24px;
 		cursor: pointer;
 		color: white;
+		transition: transform 100ms ease-out;
+		will-change: transform;
 
 		&:hover {
 			opacity: 0.8;
+		}
+
+		&:active {
+			transform: scale(0.95);
 		}
 
 		&--facebook {
