@@ -39,7 +39,7 @@
 		height: 54px;
 		padding: 0 24px;
 		margin: auto;
-		border-bottom: solid 1px blue;
+		/* border-bottom: solid 1px blue; */
 	}
 
 	.logo {

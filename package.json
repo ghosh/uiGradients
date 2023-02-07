@@ -31,5 +31,6 @@
   "homepage": "https://uigradients.com",
   "devDependencies": {
     "hex-to-hsl": "^1.0.2"
-  }
+  },
+  "dependencies": {}
 }
