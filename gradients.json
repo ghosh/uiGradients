@@ -1,5 +1,9 @@
 [
     {
+        "name": "RVRB",
+        "colors": ["#950B36", "#0D1527"]
+    },
+    {
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
     },
