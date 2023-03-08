@@ -15,7 +15,7 @@
 		height: 100vh;
 		display: grid;
 		grid-template-columns: auto;
-		grid-template-rows: 40px 20px 1fr;
+		grid-template-rows: 40px 0px 1fr;
 		grid-template-areas:
 			'header'
 			'actionbar'
