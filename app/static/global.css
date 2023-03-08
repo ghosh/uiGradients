@@ -34,6 +34,10 @@ p, h1, h2, h3, h4, h5, h6 {
   Custom styles
 */
 
+:root {
+  --sitePadding: 14px;
+}
+
 body {
   font-family: sans-serif;
 }

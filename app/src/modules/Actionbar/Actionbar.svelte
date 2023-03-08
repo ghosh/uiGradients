@@ -1,14 +1,18 @@
-<div class="wrapper flex">
-	<div>menu</div>
-	<div>favs</div>
-</div>
+<section class="wrapper flex">
+	<p>menu</p>
+	<p>favs</p>
+</section>
 
-<style>
+<style lang="scss">
 	.wrapper {
 		margin: auto;
-		height: 30px;
-		padding: 0 24px;
+		width: calc(100vw - var(--sitePadding));
+		height: 100%;
 		justify-content: space-between;
+	}
+
+	p {
+		font-size: 14px;
 	}
 
 	.flex {

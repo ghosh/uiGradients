@@ -33,12 +33,13 @@
 
 <style lang="scss">
 	header {
+		grid-area: header;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		height: 54px;
-		padding: 0 24px;
 		margin: auto;
+		width: calc(100vw - var(--sitePadding));
+		height: 100%;
 		/* border-bottom: solid 1px blue; */
 	}
 
