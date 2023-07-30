@@ -1183,5 +1183,9 @@
     {
         "name": "Evening Night",
         "colors": ["#005AA7", "#FFFDE4"]
+    },
+    {
+        "name": "Solana",
+        "colors": ["#18fc9b", "#9946ff"]
     }
 ]
