@@ -1,5 +1,5 @@
 <template>
-  <li class="hex mono" @click="copy" :id="colorID">
+  <li class="hex mono" @click="copy" :id="colorID" v-clipboard="copycolor">
     <span
       class="hex__block"
       :style="{ background: color }"
