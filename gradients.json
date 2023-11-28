@@ -1533,4 +1533,8 @@
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
     }
+   {
+        "name": "Pingy Pongy",
+        "colors": ["#add5d5", "#a7bcd7"]
+    }
 ]
