@@ -1536,5 +1536,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Straighter Red",
+        "colors": ["#f30909", "#FFFCB9"]
     }
 ]
