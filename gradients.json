@@ -1532,5 +1532,17 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
-    }
+    },
+    {
+        "name": "Pink Beach",
+        "colors": ["#4e8b95", "#afc6c9", "#d7b1b0"]
+    },
+    {
+        "name": "Twilight",
+        "colors": ["#dbae9d", "#795b69", "#182841"]
+    },
+    {
+        "name": "Petals Blossom",
+        "colors": ["#bda590", "#644b37", "#470434"]
+    }    
 ]
