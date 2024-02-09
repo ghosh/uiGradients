@@ -4,6 +4,10 @@
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
     },
     {
+        "name": "KurdLab",
+        "colors": ["#00c0ff", "#1de9b6"]
+    }, 
+    {
         "name": "Farhan",
         "colors": ["#9400D3", "#4B0082"]
     }, 
