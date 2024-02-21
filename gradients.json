@@ -1,5 +1,9 @@
 [
     {
+        "name": "Maulop",
+        "colors": ["#3d3d3c", "#FFFFFF", "#273889"]
+    },
+    {
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
     },
