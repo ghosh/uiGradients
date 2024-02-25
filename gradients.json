@@ -1536,5 +1536,9 @@
     {
         "name": "Starlight",
         "colors": ["#bbb5ac", "#ede7dd"]
+    },
+    {
+        "name": "Midnight",
+        "colors": ["#5f6571", "#272b34"]
     }
 ]
