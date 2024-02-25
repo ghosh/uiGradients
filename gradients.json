@@ -1532,5 +1532,13 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Starlight",
+        "colors": ["#bbb5ac", "#ede7dd"]
+    },
+    {
+        "name": "Midnight",
+        "colors": ["#5f6571", "#272b34"]
     }
 ]
