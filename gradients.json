@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "The Setting Sun",
+        "colors": [#6f90b1, #6f90b1, #fee3c8, #f6a995, #a0828c]
     }
 ]
