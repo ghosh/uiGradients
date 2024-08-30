@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+   {
+        "name": "Campy.",
+        "colors": ["#86c1ff", "#4f6f66", "#606958"]
     }
 ]
