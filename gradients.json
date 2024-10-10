@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+   {
+        "name": "E-Fine",
+        "colors": ["#E07936", "#CB2951", "#580AB7"]
     }
 ]
