@@ -1,4 +1,18 @@
 [
+
+    
+    {
+      "name": "TrueNature",
+      "colors": ["#2b602d", "#98bc62"]
+    }
+
+    {
+      "name": "Reconnection",
+      "colors": ["#f1eaff", "#ebc8f8", "#b3c5f9"]
+    }
+
+
+  
     {
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
