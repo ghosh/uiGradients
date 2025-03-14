@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
-    }
+    },
+  {
+    "name": "Earth Tones",
+    "colors": ["#ECE6CC","#C8D9B1","#A3C093","#5F9F5A","#2E7D32"]
+  }
 ]
