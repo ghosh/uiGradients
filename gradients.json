@@ -1533,4 +1533,8 @@
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
     }
+     {
+        "name": "Sea Breeze",
+        "colors": ["#57a0ae", "aedcdf"]
+    }
 ]
