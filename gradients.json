@@ -1532,5 +1532,10 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
-    }
+    },
+  {    
+        "name": "Solana",
+        "colors": ["#18fc9b", "#9946ff"]
+
+  }
 ]
