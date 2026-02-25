@@ -1,5 +1,9 @@
 [
     {
+        "name": "be",
+        "colors": ["#6600AA", "#7F00FF"]
+    }
+    {
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
     },
