@@ -4,6 +4,10 @@
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
     },
     {
+        "name": "Afrizz",
+        "colors": ["#EA1818", "#EDD920", "#2DA007"]
+    },
+    {
         "name": "Farhan",
         "colors": ["#9400D3", "#4B0082"]
     }, 
@@ -1532,5 +1536,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Straighter Red",
+        "colors": ["#f30909", "#FFFCB9"]
     }
 ]
