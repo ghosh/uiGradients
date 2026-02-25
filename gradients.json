@@ -1532,5 +1532,13 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Purple Fusion",
+        "colors": ["#6b54a2", "#8F7FB7"]
+    },
+    {
+        "name": "Lavender Dream",
+        "colors": ["#6b54a2", "#AFA3CD"]
     }
 ]
