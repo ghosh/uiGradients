@@ -1,5 +1,9 @@
 [
     {
+      "name": "Yellow",
+      "colors": ["#ffcf00", "#e2ad06"]
+    },
+    {
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
     },
