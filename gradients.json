@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+      "name": "Shades of the Sky",
+      "colors": ["#f6d282", "#bbf0f1"]
     }
 ]
