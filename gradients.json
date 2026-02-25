@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+      "name": "Bluex3",
+      "colors": ["#f5f5f5", "#c5d4ff", "#738bd1"]
     }
 ]
