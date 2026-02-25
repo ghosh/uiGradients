@@ -3,6 +3,10 @@
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
     },
+  	{
+        "name": "Sour Blue",
+        "colors": ["#5B6EB9", "#2FA9BC", "#20BFA5"]
+    },
     {
         "name": "Farhan",
         "colors": ["#9400D3", "#4B0082"]
