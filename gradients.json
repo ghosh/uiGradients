@@ -1532,5 +1532,13 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+      "name": "Morning Blues",
+      "colors": ["#001f3f", "#00b5ad"]
+    },
+  {
+      "name": "Aquatic",
+      "colors": ["#00d2ff", "#f0f0f0"]
     }
 ]
