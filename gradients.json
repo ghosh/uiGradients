@@ -1532,5 +1532,11 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Memariani",
+        "colors": ["#f50000", "#6b6b83" , "#3b8d99"]
     }
+
+  
 ]
