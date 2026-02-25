@@ -1,4 +1,9 @@
 [
+    
+    {
+        "name": "Terra Cotta Dream",
+        "colors": ["#e2725b", "#eeac9e", "#fff7e7"]
+    },
     {
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
