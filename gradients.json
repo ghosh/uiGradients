@@ -1,4 +1,7 @@
 [
+    { "name": "Techx",
+     "colors": ["#C1E9FF", "D1C1FF"]
+     }
     {
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
