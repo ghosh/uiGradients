@@ -54,6 +54,11 @@ import Favicon from './services/faviconUpdater';
 
 import Gradients from '../gradients.json';
 
+const gradients = [...Gradients].reverse();
+const WHITESPACE_RE = /\s/g;
+
+let faviconTimer = null;
+
 export default {
   name: 'app',
   data() {
@@ -143,11 +148,14 @@ export default {
     },
 
     updateFavicon() {
-      Favicon(this.currentDirection, ...this.currentGradient.colors);
+      clearTimeout(faviconTimer);
+      faviconTimer = setTimeout(() => {
+        Favicon(this.currentDirection, ...this.currentGradient.colors);
+      }, 150);
     },
 
     fetchGradients() {
-      this.gradients = Gradients.reverse();
+      this.gradients = gradients;
     },
 
     setCurrentGradient() {
@@ -176,7 +184,7 @@ export default {
   watch: {
     index(val) {
       this.currentGradient = this.gradients[val];
-      window.location.hash = this.currentGradient.name.replace(/\s/g, '');
+      window.location.hash = this.currentGradient.name.replace(WHITESPACE_RE, '');
       this.updateFavicon();
     },
     directionIndex(id) {

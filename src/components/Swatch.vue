@@ -1,5 +1,5 @@
 <template>
-  <li class="hex mono" @click="copy" :id="colorID" v-clipboard="copycolor">
+  <li class="hex mono" @click="copy" :id="colorID">
     <span
       class="hex__block"
       :style="{ background: color }"
@@ -15,14 +15,11 @@
 
 
 <script>
-import Clipboard from 'clipboard';
-
 export default {
   name: 'swatch',
   props: ['color', 'gradient'],
   data() {
-    let c = this.color;
-    c = c.substring(1);
+    const c = this.color.substring(1);
     return {
       copied: false,
       colorID: `c-${c}`,
@@ -33,34 +30,16 @@ export default {
       return (!value) ? '' : value.toString().toLowerCase();
     },
   },
-  computed: {
-    copycolor() {
-      return this.color;
-    },
-  },
   methods: {
     uncopy() {
       this.copied = false;
     },
     copy() {
       this.$ga.event('copy hex', 'click', this.gradient.name);
+      navigator.clipboard.writeText(this.color);
       this.copied = true;
       setTimeout(this.uncopy, 10);
     },
-  },
-  /**
-   * Changes instance of clipboard to force
-   * re-evaluation of text to copy
-   */
-  updated() {
-    let c = this.color;
-    c = c.substring(1);
-    /* eslint-disable no-new */
-    new Clipboard(`#c-${c}`, {
-      text() {
-        return `#${c}`;
-      },
-    });
   },
 };
 </script>

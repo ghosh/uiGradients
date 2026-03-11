@@ -10,10 +10,9 @@ export default {
   props: ['gradient', 'direction', 'updateGradient'],
   computed: {
     backgroundStyle() {
-      const colors = [...this.gradient.colors];
       const { direction } = this;
       return {
-        background: `linear-gradient(${direction}, ${colors})`,
+        background: `linear-gradient(${direction}, ${this.gradient.colors})`,
       };
     },
   },

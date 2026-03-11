@@ -13,7 +13,7 @@
 
     <ul class="palette__list">
 
-      <li class="palette__item" v-for="gradient in filteredGradients">
+      <li class="palette__item" v-for="gradient in filteredGradients" :key="gradient.name">
         <Palette
           :gradient="gradient"
           :direction="direction"
@@ -37,6 +37,8 @@ export default {
   data() {
     return {
       currentFilter: false,
+      classifiedGradients: [],
+      groupedPaletteMap: {},
       shortlists: [
         { name: 'reds', color: '#cb2d3e' },
         { name: 'oranges', color: '#d76b26' },
@@ -66,79 +68,34 @@ export default {
       this.currentFilter = name;
     },
   },
+  watch: {
+    gradients: {
+      immediate: true,
+      handler(gradients) {
+        const classified = gradients.map(gradient => ({
+          ...gradient,
+          palletes: gradient.colors.map(color => detect(color)),
+        }));
+        this.classifiedGradients = classified;
+
+        const grouped = {};
+        classified.forEach((gradient) => {
+          new Set(gradient.palletes).forEach((palette) => {
+            if (!grouped[palette]) grouped[palette] = [];
+            grouped[palette].push(gradient);
+          });
+        });
+        this.groupedPaletteMap = grouped;
+      },
+    },
+  },
   computed: {
     filteredGradients() {
       if (this.currentFilter) {
-        switch (this.currentFilter) {
-          case 'reds':
-            return this.redPalettes;
-          case 'oranges':
-            return this.orangePalettes;
-          case 'yellows':
-            return this.yellowPalettes;
-          case 'greens':
-            return this.greenPalettes;
-          case 'cyans':
-            return this.cyanPalettes;
-          case 'blues':
-            return this.bluePalettes;
-          case 'magentas':
-            return this.magentaPalettes;
-          case 'whites':
-            return this.whitePalettes;
-          case 'grays':
-            return this.greyPalettes;
-          case 'blacks':
-            return this.blackPalettes;
-          default:
-            break;
-        }
+        const key = this.currentFilter.charAt(0).toUpperCase() + this.currentFilter.slice(1);
+        return this.groupedPaletteMap[key] || this.classifiedGradients;
       }
-      return this.classifiedColors;
-    },
-    // Identitifies a color range for each color in gradient
-    classifiedColors() {
-      const { gradients } = this;
-      gradients.forEach((gradient) => {
-        const tags = [];
-        gradient.colors.forEach(color => tags.push(detect(color)));
-        /* eslint-disable no-param-reassign */
-        gradient.palletes = tags;
-      });
-      return gradients;
-    },
-    filterPalettes() {
-      return color => this.classifiedColors.filter(gradient => gradient.palletes.includes(color));
-    },
-    cyanPalettes() {
-      return this.filterPalettes('Cyans');
-    },
-    redPalettes() {
-      return this.filterPalettes('Reds');
-    },
-    orangePalettes() {
-      return this.filterPalettes('Oranges');
-    },
-    yellowPalettes() {
-      return this.filterPalettes('Yellows');
-    },
-    greenPalettes() {
-      return this.filterPalettes('Greens');
-    },
-    bluePalettes() {
-      return this.filterPalettes('Blues');
-    },
-    magentaPalettes() {
-      return this.filterPalettes('Magentas');
-    },
-    blackPalettes() {
-      return this.filterPalettes('Blacks');
-    },
-    whitePalettes() {
-      return this.filterPalettes('Whites');
-    },
-    greyPalettes() {
-      return this.filterPalettes('Grays');
+      return this.classifiedGradients;
     },
   },
 };
