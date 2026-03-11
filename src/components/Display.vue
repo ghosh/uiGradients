@@ -34,7 +34,7 @@ export default {
   },
   computed: {
     backgroundStyle() {
-      const colors = [...this.gradient.colors].join(', ');
+      const colors = this.gradient.colors.join(', ');
       const { direction } = this;
       return {
         background: `linear-gradient(${direction}, ${colors})`,
@@ -104,6 +104,9 @@ export default {
   },
   created() {
     window.addEventListener('keydown', this.handleKeyboardEvents);
+  },
+  beforeDestroy() {
+    window.removeEventListener('keydown', this.handleKeyboardEvents);
   },
 };
 </script>

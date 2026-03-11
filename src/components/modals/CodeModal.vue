@@ -53,9 +53,10 @@ export default {
   },
   computed: {
     copyData() {
+      const reversed = [...this.gradient.colors].reverse().join(', ');
       return `background: ${this.gradient.colors[0]};  /* fallback for old browsers */
-background: -webkit-linear-gradient(${this.direction}, ${[...this.gradient.colors].reverse().join(', ')});  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(${this.direction}, ${[...this.gradient.colors].reverse().join(', ')}); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(${this.direction}, ${reversed});  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(${this.direction}, ${reversed}); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 `;
     },
   },
