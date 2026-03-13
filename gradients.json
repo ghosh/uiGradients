@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Bright Modernity",
+        "colors": ["#4EB1AD", "#865BB8", "#84B14E"]
     }
 ]
