@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Bi flag",
+        "colors": ["#d60270", "#9b4f96", "#0038a8]
     }
 ]
