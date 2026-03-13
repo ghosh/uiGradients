@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Frozen ET",
+        "colors": ["#7d4745", "#a9a79c", "#ed752a", "#59bbb6"]
     }
 ]
