@@ -12,6 +12,10 @@
         "colors": ["#c84e89", "#F15F79"]
     },
     {
+        "name": "Purple Void",
+        "colors": ["#000428", "#464775", "#292828"]
+    },
+    {
         "name": "Ibtesam",
         "colors": ["#00F5A0", "#00D9F5"]
     },
