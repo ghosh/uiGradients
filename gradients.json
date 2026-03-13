@@ -1532,5 +1532,10 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Gold Horizon",
+        "colors": ["#f598a8", "#f6edb2"]
     }
+
 ]
