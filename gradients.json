@@ -1533,4 +1533,9 @@
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
     }
+  {
+      "name": "Retro Apple",
+      "colors": ["#949494", "#d1d1d1"]
+    }
 ]
+
