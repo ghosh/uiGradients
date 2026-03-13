@@ -1532,5 +1532,10 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "TFMC",
+        "colors": ["#00A3E0", "#512D6D", "#CB2C30"]
     }
+  
 ]
