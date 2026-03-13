@@ -1,4 +1,8 @@
 [
+  {
+        "name": "James Villas",
+        "colors": ["#003865", "#00457A"]
+    },
     {
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
