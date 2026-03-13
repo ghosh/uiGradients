@@ -1,5 +1,17 @@
 [
     {
+        "name": "White to Blue",
+        "colors": ["#FFFFFF", "#0000FF"]
+    },
+    {
+        "name": "White to Green",
+        "colors": ["#FFFFFF", "#008000"]
+    },
+    {
+        "name": "White to Red",
+        "colors": ["#FFFFFF", "#FF0000"]
+    },
+    {
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
     },
