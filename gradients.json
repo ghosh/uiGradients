@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Cyanogen",
+        "colors": ["#05C7F2", "#05DBF2", "#05F2F2"]
     }
 ]
