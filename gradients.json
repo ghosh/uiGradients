@@ -1,5 +1,9 @@
 [
     {
+        "name": "Italian Ice",
+        "colors": ["#FF1CDD", "#54D3F7", "#E7E88B"]
+    },
+    {
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
     },
