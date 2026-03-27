@@ -1532,5 +1532,10 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+     {
+        "name": "House of M",
+        "colors": ["#1d3c8a", "#142358", "#080829"]
     }
+    
 ]
