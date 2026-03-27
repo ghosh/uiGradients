@@ -42,7 +42,7 @@ To add your gradient, fork this repository, add your gradient colors in the HEX 
     },
     {
       "name": "Career",
-      "colors": ["#cb202d", "#dc1e28", "#3366cc"]
+      "colors": ["#1F2937", "#FFD166", "#F59E0B"]
     }
 ]
 ```
