@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Neo Soul",
+        "colors": ["#C47F42", "E5AF9C"]
     }
 ]
