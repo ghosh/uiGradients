@@ -1532,5 +1532,10 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+
+    {
+        "name": "Violet Dream",
+        "colors": ["#3A0CA3", "#6C1EEF", "#EC38BC", "#FDEFF9"]
     }
 ]
