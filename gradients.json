@@ -1533,4 +1533,7 @@
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
     }
-]
+    {
+        "name": "Maderas MO",
+        "colors": ["#8f5c1d", "#b77c34", "#dd9b4b"]
+    },
