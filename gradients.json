@@ -1532,5 +1532,10 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Trifecta",
+        "colors": ["#ff9049", "ffad19", "#00c8d0"]
     }
+  
 ]
