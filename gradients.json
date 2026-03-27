@@ -1,5 +1,9 @@
 [
     {
+      "name": "Universe",
+      "colors": ["#02172D", "#000115", "#1B0E3A"]
+    },
+    {
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
     },
