@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
-    }
+    },
+	{
+		"name": "The Verge",
+		"colors": ["#f7c626", "#f68c2f", "#e5127d"]
+	}
 ]
