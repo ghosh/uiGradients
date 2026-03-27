@@ -1533,4 +1533,8 @@
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
     }
+    {
+        "name": "Cold to Hot Sweetness",
+        "colors": ["#62FFFF", "C838F8"]
+    }
 ]
