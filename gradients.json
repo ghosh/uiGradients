@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "aston",
+        "colors": ["#6C9BE0", "#F5C47A"]
     }
 ]
