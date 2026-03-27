@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Black Pupple",
+        "colors": ["#000000", "#343465"]
     }
 ]
