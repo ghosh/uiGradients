@@ -3,6 +3,7 @@
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
     },
+  
     {
         "name": "Farhan",
         "colors": ["#9400D3", "#4B0082"]
@@ -10,6 +11,10 @@
     {
         "name": "Purple",
         "colors": ["#c84e89", "#F15F79"]
+    },
+    {
+        "name": "Deep Blue",
+        "colors": ["#141539","#1f3756"]
     },
     {
         "name": "Ibtesam",
