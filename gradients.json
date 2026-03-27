@@ -1532,5 +1532,9 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Dreams of Clowns"
+        "colors": ["#0bff12", "#77f200", "#a5e400", "#c8d400", "#e5c200", "#fdaf00", "#ff9a00", "#ff8200", "#ff6908", "#ff4c38", "#ff2856", "#ff0071", "#ff008b", "#ff00a4", "#ff00bc"]
     }
 ]
