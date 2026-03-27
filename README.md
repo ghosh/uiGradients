@@ -18,6 +18,10 @@
 </p>
 
 <p align="center">
+<a href="https://www.producthunt.com/posts/uigradients?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-uigradients" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=316898&theme=dark" alt="uiGradients - Beautiful colour gradients for design and code | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+  </p>
+
+<p align="center">
 uiGradients is a community contributed collection of beautiful multi-color gradients
 </p>
 
