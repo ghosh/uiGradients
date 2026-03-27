@@ -12,6 +12,30 @@
         "colors": ["#c84e89", "#F15F79"]
     },
     {
+        "name": "Blue -> Orange",
+        "colors": ["#0f3248", "#ff9966"]
+    },
+    {
+        "name": "Blue -> Bege",
+        "colors": ["#0f3248", "#fad8bc"]
+    },
+    {
+        "name": "Blue -> Pink",
+        "colors": ["#0f3248", "#ff757a"]
+    },
+    {
+        "name": "Pink -> Orange",
+        "colors": ["#ff757a", "#ff9966"]
+    },
+    {
+        "name": "Pink -> Bege",
+        "colors": ["#ff757a", "#fad8bc"]
+    },
+    {
+        "name": "Orange -> Bege",
+        "colors": ["#ff9966", "#fad8bc"]
+    },
+    {
         "name": "Ibtesam",
         "colors": ["#00F5A0", "#00D9F5"]
     },
