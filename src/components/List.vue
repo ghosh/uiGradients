@@ -25,8 +25,8 @@
 </template>
 
 <script>
-import Palette from './Palette';
-import detect from '../services/colorDetector';
+import Palette from '@/components/Palette';
+import detect from '@/services/colorDetector';
 
 export default {
   name: 'list',
