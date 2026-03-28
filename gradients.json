@@ -1526,6 +1526,10 @@
         "colors": ["#81ff8a", "#64965e"]
     },
     {
+        "name": "Vibrant Spectrum",
+        "colors": ["#FF0018", "#FFA52C", "#FFFF41", "#008018", "#0000F9", "#86007D"]
+    },
+    {
         "name": "Dusty Grass",
         "colors": ["#d4fc79", "#96e6a1"]
     },
@@ -1533,4 +1537,5 @@
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
     }
+  
 ]
