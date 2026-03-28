@@ -217,6 +217,10 @@
         "colors": ["#FF512F", "#DD2476"]
     },
     {
+        "name": "Beach House",
+        "colors": ["#93F0DE", "#EE7674", "#FFEEDB", "#C3F0FE", "#3E7779"]
+    },
+    {
         "name": "Aubergine",
         "colors": ["#AA076B", "#61045F"]
     },
