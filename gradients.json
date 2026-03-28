@@ -1532,5 +1532,17 @@
     {
         "name": "Visual Blue",
         "colors": ["#003d4d", "#00c996"]
+    },
+    {
+        "name": "Aqua Splash",
+        "colors": ["#13547a", "#80d0c7"]
+    },
+    {
+        "name": "Clean Mirror",
+        "colors": ["#93a5cf", "#e4efe9"]
+    },
+    {
+        "name": "Angel Care",
+        "colors": ["#ffe2a0", "#ff729b"]
     }
 ]
