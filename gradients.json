@@ -1,5 +1,9 @@
 [
     {
+        "name": "INSO",
+        "colors": ["#1a4087", "#07142c"]
+    },  
+    {
         "name": "Omolon",
         "colors": ["#091E3A", "#2F80ED", "#2D9EE0"]
     },
